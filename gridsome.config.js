@@ -7,6 +7,10 @@
 module.exports = {
   siteName: 'Magic Green',
   siteDescription: 'Magic Green magazine is a showcase of examples, infos and addresses of all stuff green from South East Asia and beyond.',
+  siteUrl: 'https://magicgreen.junglestar.org',
+  plugins: [
+    'gridsome-plugin-robots-txt'
+  ],
 
   templates: {
     Post: '/:title',
@@ -15,6 +19,26 @@ module.exports = {
   },
 
   plugins: [
+    {
+      use: 'gridsome-plugin-robots-txt',
+      options: {
+        policy: [
+          {
+            userAgent: "Googlebot",
+            allow: "/",
+            disallow: "/search",
+            crawlDelay: 2
+          },
+          {
+            userAgent: "*",
+            allow: "/",
+            disallow: "/search",
+            crawlDelay: 10,
+            cleanParam: "ref /articles/"
+          }
+        ]
+      }
+    },
     {
       // Create posts from markdown files
       use: '@gridsome/source-filesystem',

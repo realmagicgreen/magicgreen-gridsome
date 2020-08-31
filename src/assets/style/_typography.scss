@@ -38,24 +38,24 @@ h1 {
 
 .h2,
 h2 {
-  font-size: calc(var(--heading1/10*8)); //gridsome was 1.602em;
+  font-size: calc(var(--heading1)/10*8); //gridsome was 1.602em;
   text-transform: uppercase;
 }
 
 .h3,
 h3 {
-  font-size: calc(var(--heading1/10*7)); //gridsome was 1.424em;
+  font-size: calc(var(--heading1)/10*7); //gridsome was 1.424em;
   text-transform: uppercase;
 }
 
 .h4,
 h4 {
-  font-size: calc(var(--heading1/10*6.5)); //gridsome was 1.266em;
+  font-size: calc(var(--heading1)/10*6.5); //gridsome was 1.266em;
 }
 
 .h5,
 h5 {
-  font-size: calc(var(--heading1/10*5.5)); //gridsome was 1.125em;
+  font-size: calc(var(--heading1)/10*5.5); //gridsome was 1.125em;
 }
 
 small {
