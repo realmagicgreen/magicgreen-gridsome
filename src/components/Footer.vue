@@ -1,24 +1,21 @@
 <template>
 	<footer class="footer"  role="contentinfo">
 		<div class="container">
+			<Logo />
 
 			<div class="menu menu_footer">
 
-				<!-- <div class="menu_posts" role="menu">
+				<div class="menu_posts" role="menu">
 					<div class="title">Latest articles</div>
-				</div> -->
+					<div class="menu_item"><a href="#">111</a></div>
+					<div class="menu_item"><a href="#">222</a></div>
+				</div>
 
 				<div class="menu_contacts" role="menu">
 
-					<div class="author__site-title">
+					<div class="title">
 						About {{ $static.metadata.siteName }}
 					</div>
-
-					<!-- <div class="name">
-						<a class="menu_item" role="menuitem" href="/about-us/" title="about us">
-							<span>About us</span>
-						</a>
-					</div> -->
 
           <div v-for="navItem in $static.metadata.footerNavigation" :key="navItem.name" class="menu_item">
             <g-link
@@ -27,7 +24,7 @@
               :to="navItem.link"
               :title="navItem.name"
               v-if="navItem.external!=true"
-            >{{ navItem.name}}</g-link>
+            >{{ navItem.name}} {{ navItem.username}}</g-link>
             <a
 							class="menu_item"
 							role="menuitem"
@@ -35,7 +32,7 @@
               target="_blank"
               :title="navItem.name"
               v-if="navItem.external==true"
-            >{{ navItem.name}}</a>
+            >{{ navItem.name}} {{ navItem.username}}</a>
           </div>
 
 					<div class="menu_item footer_icon qr_box">
@@ -66,15 +63,23 @@ query {
     siteName
 		footerNavigation {
 	    name
+			username
 	    link
 	    external
 	  }
   }
-
 }
 </static-query>
 
+
 <script>
+import Logo from '~/components/Logo'
+
+export default {
+  components: {
+    Logo
+  }
+}
 </script>
 
 <style lang="scss">
@@ -84,8 +89,13 @@ query {
   display: block;
   padding: var(--space) 0;
   width: 100%;
-  background-color:  var(--brand_color_bg);
-  color: var(--light_text_color);
+  background-color:  var(--black);
+  color: var(--brand_color--dark);
+
+	a:not(.button) {
+		text-decoration: none;
+		color: var(--brand_color);
+	}
 
   .container {
     -webkit-box-shadow: none;
@@ -109,7 +119,7 @@ query {
     padding-top: var(--space);
     padding-bottom: calc(var(--space)/6);
     margin-bottom: calc(var(--space)/6);
-    border-bottom: 1px solid var(--light_text_color);
+    border-bottom: 1px solid var(--brand_color--dark);
     width: 100%;
     text-transform: uppercase;
     @media only screen and (min-width: var(--mediaBp1Width)) {
@@ -152,7 +162,7 @@ query {
 
       span {
         padding: 5px;
-        border: var(--light_text_color) solid 1px;
+        border: var(--brand_color--dark) solid 1px;
       }
     }
 }
@@ -208,8 +218,8 @@ query {
   margin-top: var(--space);
 }
 
-.menu.menu_footer .menu_item {
-  text-transform: none;
+.menu_item {
+
 }
 
 </style>

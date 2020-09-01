@@ -38,22 +38,26 @@
   ],
   "footerNavigation": [
     {
-      "name": "about us",
+      "name": "About us",
+      "username": "",
       "link": "/about",
       "external" : false
     },
     {
-      "name": "facebook",
+      "name": "FB:",
+      "username": "magicgreen.junglestar.org",
       "link": "https://web.facebook.com/magicgreen.junglestar.org",
       "external": true
     },
     {
-      "name": "instagram",
+      "name": "IG:",
+      "username": "realmagicgreen",
       "link": "https://www.instagram.com/realmagicgreen",
       "external": true
     },
     {
-      "name": "email",
+      "name": "",
+      "username": "magicgreen@junglestar.org",
       "link": "mailto:magicgreen@junglestar.org",
       "external": false
     }

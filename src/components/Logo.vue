@@ -33,7 +33,7 @@ query {
 
 	&__text {
 		text-transform: uppercase;
-		color: var(--logo-color);
+		color: var(--brand_color);
 		font-size: 7.5vw;
 		@media only screen and (min-width: 641px) {
     font-size: 8.5vw;
@@ -46,7 +46,7 @@ query {
 	&__image {
 		height: 60px;
 		width: 60px;
-		fill: var(--logo-color);
+		fill: var(--brand_color);
 		margin-right: var(--space-small);
 	}
 }
