@@ -6,62 +6,40 @@
 
 				<!-- <div class="menu_posts" role="menu">
 					<div class="title">Latest articles</div>
-
 				</div> -->
 
 				<div class="menu_contacts" role="menu">
 
-					<!-- <div class="title">About {{site.company.name}}</div> -->
 					<div class="author__site-title">
 						About {{ $static.metadata.siteName }}
 					</div>
 
-					<div class="name">
+					<!-- <div class="name">
 						<a class="menu_item" role="menuitem" href="/about-us/" title="about us">
 							<span>About us</span>
 						</a>
-					</div>
-
-
-					<!-- <div class="footer_icon facebook">
-						<a class="menu_item" role="menuitem" href="{{site.company.facebook_page}}" title="{{site.company.facebook_page}} Facebook page">
-							<span>
-								{% include svg/use.html id="icn--facebook" class="facebook" %}
-							</span>
-							<span>FB: {{site.company.facebook_page | replace: "https://web.facebook.com/", "" }}</span>
-						</a>
 					</div> -->
 
-					<!-- <div class="footer_icon instagram">
-						<a class="menu_item" role="menuitem" href="{{site.company.instagram}}" title="{{site.company.instagram | downcase}} on Instagram">
-							<span>
-								{% include svg/use.html id="icn--instagram" class="instagram" %}
-							</span>
-							<span>IG: {{site.company.instagram  | downcase | replace: "https://www.instagram.com/", "" }}</span>
-						</a>
-					</div> -->
-
-					<!-- <div class="footer_icon twitter">
-						<a class="menu_item" role="menuitem" href="{site.company.twitter}}" title="{{site.company.twitter}} at twitter">
-							<span>
-								{% include svg/use.html id="icn--twitter" class="twitter" %}
-							</span>
-							<span>Follow us on Twitter</span>
-						</a>
-					</div> -->
-
-					<!-- <div class="footer_icon email">
-						<a class="menu_item" role="menuitem" class="" href="mailto:{{site.company.email}}" title="{{site.company.email}}">
-							<span>
-								{% include svg/use.html id="icn--email" class="email" %}
-							</span>
-							<span>{{site.company.email}}</span>
-						</a>
-					</div> -->
+          <div v-for="navItem in $static.metadata.footerNavigation" :key="navItem.name" class="menu_item">
+            <g-link
+							class="menu_item"
+							role="menuitem"
+              :to="navItem.link"
+              :title="navItem.name"
+              v-if="navItem.external!=true"
+            >{{ navItem.name}}</g-link>
+            <a
+							class="menu_item"
+							role="menuitem"
+              :href="navItem.link"
+              target="_blank"
+              :title="navItem.name"
+              v-if="navItem.external==true"
+            >{{ navItem.name}}</a>
+          </div>
 
 					<div class="menu_item footer_icon qr_box">
 						<span>
-
 
 						</span>
 					</div>
@@ -86,7 +64,13 @@
 query {
   metadata {
     siteName
+		footerNavigation {
+	    name
+	    link
+	    external
+	  }
   }
+
 }
 </static-query>
 

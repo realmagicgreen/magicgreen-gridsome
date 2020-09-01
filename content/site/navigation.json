@@ -1,0 +1,61 @@
+{
+  "headerNavigation": [
+    {
+      "name": "services",
+      "link": "/services",
+      "external": false
+    },
+    {
+      "name": "products",
+      "link": "/products",
+      "external": false
+    },
+    {
+      "name": "techniques",
+      "link": "/techniques",
+      "external": false
+    },
+    {
+      "name": "solutions",
+      "link": "/solutions",
+      "external": false
+    },
+    {
+      "name": "know",
+      "link": "/know",
+      "external": false
+    },
+    {
+      "name": "health",
+      "link": "/health",
+      "external": false
+    },
+    {
+      "name": "resources",
+      "link": "/resources",
+      "external": false
+    }
+  ],
+  "footerNavigation": [
+    {
+      "name": "about us",
+      "link": "/about",
+      "external" : false
+    },
+    {
+      "name": "facebook",
+      "link": "https://web.facebook.com/magicgreen.junglestar.org",
+      "external": true
+    },
+    {
+      "name": "instagram",
+      "link": "https://www.instagram.com/realmagicgreen",
+      "external": true
+    },
+    {
+      "name": "email",
+      "link": "mailto:magicgreen@junglestar.org",
+      "external": false
+    }
+  ]
+}
