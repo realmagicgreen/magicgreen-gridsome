@@ -9,3 +9,5 @@ node_modules
 .idea
 Icon
 dist
+dist/
+dist/*.*

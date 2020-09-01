@@ -7,18 +7,15 @@
 module.exports = {
   siteName: 'Magic Green',
   siteDescription: 'Magic Green magazine is a showcase of examples, infos and addresses of all stuff green from South East Asia and beyond.',
-  siteUrl: 'https://magicgreen.junglestar.org',
+  siteUrl: 'https://magicgreensome.netlify.app',
   plugins: [
     'gridsome-plugin-robots-txt'
   ],
 
-  templates: {
-    Post: '/:title',
-    Tag: '/tag/:id',
-    Category: '/category/:id'
-  },
-
   plugins: [
+    {
+      use: '@gridsome/plugin-sitemap'
+    },
     {
       use: 'gridsome-plugin-robots-txt',
       options: {
@@ -60,6 +57,13 @@ module.exports = {
       }
     }
   ],
+
+
+  templates: {
+    Post: '/:title',
+    Tag: '/tag/:id',
+    Category: '/category/:id'
+  },
 
   transformers: {
     //Add markdown support to all file-system sources
