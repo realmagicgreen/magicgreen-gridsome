@@ -2,38 +2,31 @@
   "headerNavigation": [
     {
       "name": "services",
-      "link": "/services",
-      "external": false
+      "link": "/services"
     },
     {
       "name": "products",
-      "link": "/products",
-      "external": false
+      "link": "/products"
     },
     {
       "name": "techniques",
-      "link": "/techniques",
-      "external": false
+      "link": "/techniques"
     },
     {
       "name": "solutions",
-      "link": "/solutions",
-      "external": false
+      "link": "/solutions"
     },
     {
       "name": "know",
-      "link": "/know",
-      "external": false
+      "link": "/know"
     },
     {
       "name": "health",
-      "link": "/health",
-      "external": false
+      "link": "/health"
     },
     {
       "name": "resources",
-      "link": "/resources",
-      "external": false
+      "link": "/resources"
     }
   ],
   "footerNavigation": [

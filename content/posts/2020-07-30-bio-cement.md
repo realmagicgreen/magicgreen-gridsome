@@ -6,10 +6,11 @@ published: true
 category: solutions
 tags:
   - biodiversity
-  - bio-cement
+  - green-building
   - design
   - co-entrepreneurs
   - eco-friendly
+  - healthier
   - social-responsibility
   - sustainable-development
 cover_image: ../../static/images/posts/solutions/bio-cement/bio-cement.jpg

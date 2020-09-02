@@ -39,13 +39,13 @@ query {
 </page-query>
 
 <script>
-import Author from '~/components/Author.vue'
+import Header from '~/components/Header.vue'
 import PostCard from '~/components/PostCard.vue'
 import Footer from '~/components/Footer.vue'
 
 export default {
   components: {
-    Author,
+    Header,
     PostCard,
     Footer
   },

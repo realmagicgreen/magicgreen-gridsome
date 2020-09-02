@@ -67,8 +67,16 @@ module.exports = {
 
   templates: {
     Post: '/:title',
-    Tag: '/tag/:id',
-    Category: '/category/:id'
+    Category: [{
+      path: '/:title',
+      component: '~/templates/Category.vue'
+    }],
+    Tag: [{
+      path: '/:title',
+      component: '~/templates/Tag.vue'
+    }]
+    // Tag: '/tag/:id',
+    // Category: '/category/:id'
   },
 
   transformers: {

@@ -9,7 +9,7 @@ tags:
   - Costa-Rica
   - eco-entrepreneurs
   - eco-friendly
-  - health
+  - healthier
   - initiative
   - Nusa-Penida
   - Micronesia
