@@ -52,7 +52,7 @@ body {
 
 	//color that change in dark module
 	--black: #161616;
-	--bg-color: #F3F7F9;
+	--bg-color: #e4ffcc;
 	--bg-content-color: #fff;
 	--border-color: rgba(0,0,0,0.35);
 	--text-color: #444;
@@ -64,7 +64,7 @@ body {
 body[data-theme="dark"] {
 	--black: #000;
 	--bg-color: #161616;
-	--bg-content-color: #0f431f;
+	--bg-content-color: #000; //#0f431f;
 	--border-color: rgba(255,255,255,0.35);
 	--text-color: #ced8de;
 	--title-color: #fff;

@@ -28,8 +28,10 @@ export default {
 
 <style lang="scss">
 .post-card {
+  background-color: var(--bg-content-color);
   margin-bottom: var(--space);
   position: relative;
+  border: 1px solid var(--black);
 
   &__header {
     margin-left: calc(var(--space) * -1);
