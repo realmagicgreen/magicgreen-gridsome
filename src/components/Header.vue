@@ -37,6 +37,7 @@ export default {
 .header {
   background-color: var(--black);
   display: flex;
+	flex-direction: column;
   justify-content: space-between;
   align-items: center;
   min-height: var(--header-height);
@@ -54,6 +55,7 @@ export default {
     //Make header sticky for large screens, maybe...
     position: sticky;
     width: 100%;
+		flex-direction: row;
   }
 }
 
