@@ -7,8 +7,11 @@
 
 				<div class="menu_posts" role="menu">
 					<div class="title">Latest articles</div>
-					<div class="menu_item"><a href="#">111</a></div>
-					<div class="menu_item"><a href="#">222</a></div>
+
+					<div class="post_link_block">
+						<PostLink v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+					</div>
+
 				</div>
 
 				<div class="menu_contacts" role="menu">
@@ -28,6 +31,7 @@
             <a
 							class="menu_item"
 							role="menuitem"
+							rel="noopener"
               :href="navItem.link"
               target="_blank"
               :title="navItem.name"
@@ -49,8 +53,8 @@
 			<div class="copyright">
 				Copyright © {{ new Date().getFullYear() }}.
 				<br class="show_on_phones">
-			  Released under <a id="magicgreen-to-creativecommons" title="This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most accommodating of licenses offered. Recommended for maximum dissemination and use of licensed materials." href="https://creativecommons.org/licenses/by/4.0/">CC_BY license</a>. <br class="show_on_phones">
-				Powered by <a id="magicgreen-to-junglestar" href="https://junglestar.org">Junglestar</a>
+			  Released under <a rel="noopener" id="magicgreen-to-creativecommons" title="This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most accommodating of licenses offered. Recommended for maximum dissemination and use of licensed materials." href="https://creativecommons.org/licenses/by/4.0/">CC_BY license</a>. <br class="show_on_phones">
+				Powered by <a title="This website was designed and coded by the fabulous Junglestar" id="magicgreen-to-junglestar" rel="noopener" href="https://junglestar.org">Junglestar</a>
 		  </div>
 
 		</div>
@@ -68,16 +72,31 @@ query {
 	    external
 	  }
   }
+	posts: allPost {
+		edges {
+			node {
+				id
+				title
+				...on Post {
+				id
+				title
+				path
+				}
+			}
+		}
+	}
 }
 </static-query>
 
 
 <script>
 import Logo from '~/components/Logo'
+import PostLink from '~/components/PostLink.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+		PostLink
   }
 }
 </script>
@@ -85,7 +104,6 @@ export default {
 <style lang="scss">
 
 .footer {
-  box-shadow: var(--top_shadow);
   display: block;
   padding: var(--space) 0;
   width: 100%;
@@ -114,15 +132,13 @@ export default {
   }
 
   .title {
-    font-weight: var(--semibold_font_weight);
-    font-size: 1rem;
     padding-top: var(--space);
-    padding-bottom: calc(var(--space)/6);
-    margin-bottom: calc(var(--space)/6);
+    padding-bottom: calc(var(--space)/3);
+    margin-bottom: calc(var(--space)/3);
     border-bottom: 1px solid var(--brand_color--dark);
     width: 100%;
     text-transform: uppercase;
-    @media only screen and (min-width: var(--mediaBp1Width)) {
+    @media only screen and (min-width: var(--bp1Width)) {
       border-bottom: 0 none;
       width: auto;
     }

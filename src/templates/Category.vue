@@ -31,6 +31,19 @@ query Tag ($id: ID!) {
       }
     }
   }
+  posts: allPost {
+		edges {
+			node {
+				id
+				title
+				...on Post {
+				id
+				title
+				path
+				}
+			}
+		}
+	}
 }
 </page-query>
 

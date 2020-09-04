@@ -32,29 +32,6 @@
   </Layout>
 </template>
 
-<script>
-import PostMeta from '~/components/PostMeta'
-import PostTags from '~/components/PostTags'
-
-export default {
-  components: {
-    PostMeta,
-    PostTags
-  },
-  metaInfo () {
-    return {
-      title: this.$page.post.title,
-      subtitle: this.$page.post.subtitle,
-      meta: [
-        {
-          name: 'description',
-          content: this.$page.post.description
-        }
-      ]
-    }
-  }
-}
-</script>
 
 <page-query>
 query Post ($id: ID!) {
@@ -73,8 +50,48 @@ query Post ($id: ID!) {
     content
     cover_image (width: 860, blur: 10)
   }
+  posts: allPost {
+		edges {
+			node {
+				id
+				title
+				...on Post {
+				id
+				title
+				path
+				}
+			}
+		}
+	}
 }
 </page-query>
+
+<script>
+import PostMeta from '~/components/PostMeta'
+import PostTags from '~/components/PostTags'
+import PostLink from '~/components/PostLink'
+
+export default {
+  components: {
+    PostMeta,
+    PostTags,
+    PostLink
+  },
+  metaInfo () {
+    return {
+      title: this.$page.post.title,
+      subtitle: this.$page.post.subtitle,
+      meta: [
+        {
+          name: 'description',
+          content: this.$page.post.description
+        }
+      ]
+    }
+  }
+}
+</script>
+
 
 <style lang="scss">
 .post-title {

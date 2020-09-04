@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .post-meta {
   padding-top: var(--space-small);
   font-size: .8em;
