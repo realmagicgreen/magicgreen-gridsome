@@ -8,6 +8,12 @@
       <h2 class="post-subtitle__text border_top border_bottom">
         {{ $page.post.subtitle }}
       </h2>
+      <div class="post_category">
+
+
+
+
+      </div>
 
       <PostMeta :post="$page.post" />
 

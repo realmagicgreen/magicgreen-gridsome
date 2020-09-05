@@ -47,9 +47,6 @@ export default {
     Header,
     PostCard,
     Footer
-  },
-  metaInfo: {
-    title: 'Sustainable and environment-friendly examples from South East Asia and beyond.'
   }
 }
 </script>

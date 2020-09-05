@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1 class="tag-title text-center space-bottom">
-      # {{ $page.category.title }}
+      {{ $page.category.title }}
     </h1>
 
     <div class="posts">
@@ -11,7 +11,7 @@
 </template>
 
 <page-query>
-query Tag ($id: ID!) {
+query Category ($id: ID!) {
   category (id: $id) {
     title
     belongsTo {
@@ -48,12 +48,10 @@ query Tag ($id: ID!) {
 </page-query>
 
 <script>
-import Author from '~/components/Author.vue'
 import PostCard from '~/components/PostCard.vue'
 
 export default {
   components: {
-    Author,
     PostCard
   },
   metaInfo: {

@@ -11,7 +11,7 @@ tags:
   - social-responsibility
   - waste
 cover_image: ./images/solutions/indonesian-waste-platform/indonesian-waste-platform.jpg
-description: "I.W.P. is a hub to connect stakeholders, share news and contribute to capacity building cross-sector collaborations for solutions on the waste problems."
+description: "Indonesian Waste Platform is a hub – promoting and facilitating. IWP works on a daily basis to connect stakeholders, share news and contribute to capacity building cross-sector collaborations for solutions on the waste problems in Indonesia."
 ad: # use 'true' to have post displaying AD
 featured: # use 'true' to have it displayed in home
 sticky: # 'true' or empty

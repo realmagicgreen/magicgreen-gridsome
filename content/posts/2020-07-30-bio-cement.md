@@ -14,7 +14,7 @@ tags:
   - social-responsibility
   - sustainable-development
 cover_image: ./images/solutions/bio-cement/bio-cement.jpg
-description: "Leading innovator bioMASON® offers the lowest carbon footprint cement product in the market. Their pre-cast materials are grown employing microorganisms.."
+description: "Leading innovator bioMASON® offers the lowest carbon footprint cement product in the market. Their pre-cast materials are grown employing microorganisms."
 ad: # use 'true' to have post displaying AD
 featured: true # use 'true' to have it displayed in home
 sticky: true # 'true' or empty
