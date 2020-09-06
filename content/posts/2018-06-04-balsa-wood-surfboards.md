@@ -10,7 +10,7 @@ tags:
   - environment-friendly
   - eco-friendly
 cover_image: ./images/products/balsa-wood-surfboards/balsa-wood-surfboards.jpg
-description: "Surfing is one of the most environment-friendly sports , because of the love to the ocean every surfer keeps. But there is also a side of it thats not eco-friendly at all: the equipment. Everything is made out of plastic and the boards are mostly out of foam with epoxy, what is not very green. Vince Tierny changed that. Since the early 80s he came from France to Indonesia and more or less stayed here. He grew up a manufactory of wooden Surfboards, with some struggling, but he kept on going until now, where they produce up to 150 boards annually."
+description: "Surfing equipment is not eco-friendly, lots of plastic, foam and resin. Vince Tierny is changing that, manufactoring greener wooden Surfboards." # max 160 cos dunno how to trip it, yet...
 ad:  true # use 'true' to have post displaying AD
 featured: true # use 'true' to have it displayed in home
 sticky: # 'true' or empty

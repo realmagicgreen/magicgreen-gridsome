@@ -20,6 +20,7 @@
   </div>
 </template>
 
+
 <script>
 import PostMeta from '~/components/PostMeta'
 
@@ -64,11 +65,6 @@ export default {
     box-shadow: 1px 10px 30px 0 rgba(0,0,0,.1);
   }
 
-  // &__tags {
-  //   z-index: 1;
-  //   position: relative;
-  // }
-
   &__link {
     position: absolute;
     top: 0;
@@ -79,6 +75,17 @@ export default {
     overflow: hidden;
     text-indent: -9999px;
     z-index: 0;
+  }
+
+  .post_tag_block,
+  .post_date {
+    display: none;
+  }
+  
+  .post_metas {
+    justify-content: flex-start;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 </style>

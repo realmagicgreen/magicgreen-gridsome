@@ -19,7 +19,7 @@ tags:
   - tropical
   - wellness
 cover_image: ./images/services/bambu-indah/bambu-indah.jpg
-description: "Located an hour’s drive to the north of Bali’s capital Denpasar, Ubud is already internationally acknowledged for its visual arts and performance, as well as exceptional arts and crafts, making it one of the most important cultural and artistic centres in Indonesia."
+description: "In Bali Ubud is internationally acknowledged for its visual arts, performances and crafts, making it an atractive cultural and artistic centres in Indonesia." # max 160 cos dunno how to trip it, yet...
 ad: true # use 'true' to have post displaying AD
 featured: # use 'true' to have it displayed in home
 sticky: # 'true' or empty

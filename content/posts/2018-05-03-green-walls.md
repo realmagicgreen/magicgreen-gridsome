@@ -13,7 +13,7 @@ tags:
   - Indonesia
 canonical_url: false
 cover_image: ./images/solutions/green-walls/green-walls.jpg
-description: "Green walls are not only visually pleasant, but naturally absorb CO2 and other pollutants thus cleaning the air."
+description: "Green walls are not only visually pleasant, but naturally absorb CO2 and other pollutants thus cleaning the air." # max 160 cos dunno how to trip it, yet...
 ad: # use 'true' to have post displaying AD
 featured: # use 'true' to have it displayed in home
 sticky: # 'true' or empty

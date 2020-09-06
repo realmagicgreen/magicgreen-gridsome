@@ -14,7 +14,7 @@ tags:
   - energy-efficiency
   - Indonesia
 cover_image: ./images/solutions/maya-green-roof/maya-green-roof.jpg
-description: "Designed by award-winning architect, Budiman Hendropurnomo of Denton Corker Marshall, Maya new Sanur Resort in Bali features an innovative design that elevates aesthetics to exciting new heights. Structurally, the resort is sheltered by a stunning rooftop garden with a collection of intimate spaces and inspiring pond views beneath."
+description: "Designed by Budiman Hendropurnomo, Maya new Sanur Resort in Bali features an innovative design with a stunning rooftop garden, intimate spaces and pond views." # max 160 cos dunno how to trip it, yet...
 ad: # use 'true' to have post displaying AD
 featured: # use 'true' to have it displayed in home
 sticky: # 'true' or empty

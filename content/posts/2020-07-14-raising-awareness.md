@@ -19,7 +19,7 @@ tags:
   - save-oceans
   - water
 cover_image: ./images/solutions/raising-awareness/raising-awareness.jpg
-description: "Mission Blue inspires action to explore and protect the ocean, ignite public support for a global network of marine protected areas"
+description: "Mission Blue inspires action to explore and protect the ocean, ignite public support for a global network of marine protected areas." # max 160 cos dunno how to trip it, yet...
 ad: # use 'true' to have post displaying AD
 featured: true # use 'true' to have it displayed in home
 sticky: true # 'true' or empty

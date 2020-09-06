@@ -1,38 +1,35 @@
 <template>
   <Layout>
-    <div class="post-title">
-      <h1 class="post-title__text">
-        {{ $page.post.title }}
-      </h1>
 
-      <h2 class="post-subtitle__text border_top border_bottom">
-        {{ $page.post.subtitle }}
-      </h2>
-      <div class="post_category">
+    <g-image
+    alt="Cover image"
+    v-if="$page.post.cover_image"
+    :src="$page.post.cover_image"
+    class="post_cover_image"
+    />
 
-
-
-
-      </div>
-
-      <PostMeta :post="$page.post" />
-
+    <div class="post_category">
+      {{ $page.post.category.title }}
     </div>
 
-    <div class="post content-box">
-      <div class="post__header">
-        <g-image
-        alt="Cover image"
-        v-if="$page.post.cover_image"
-        :src="$page.post.cover_image"
-        />
+    <div class="post_container">
+
+      <div class="post_header">
+
+        <h1 class="post_title">
+          {{ $page.post.title }}
+        </h1>
+
+        <h2 class="post_subtitle border_top border_bottom">
+          {{ $page.post.subtitle }}
+        </h2>
+
+        <PostMeta :post="$page.post" />    
+
       </div>
 
-      <div class="post__content" v-html="$page.post.content" />
+      <div class="post_content" v-html="$page.post.content" />
 
-      <div class="post__footer">
-        <PostTags :post="$page.post" />
-      </div>
     </div>
 
   </Layout>
@@ -44,6 +41,9 @@ query Post ($id: ID!) {
   post: post (id: $id) {
     title
     subtitle
+    category {
+      title
+    }
     path
     date (format: "DD MMMM YYYY")
     timeToRead
@@ -54,7 +54,7 @@ query Post ($id: ID!) {
     }
     description
     content
-    cover_image (width: 860, blur: 10)
+    cover_image ( blur: 10)
   }
   posts: allPost {
 		edges {
@@ -74,13 +74,11 @@ query Post ($id: ID!) {
 
 <script>
 import PostMeta from '~/components/PostMeta'
-import PostTags from '~/components/PostTags'
 import PostLink from '~/components/PostLink'
 
 export default {
   components: {
     PostMeta,
-    PostTags,
     PostLink
   },
   metaInfo () {
@@ -100,20 +98,31 @@ export default {
 
 
 <style lang="scss">
-.post-title {
-  padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
-  text-align: center;
-}
 
 .post {
 
-  &__header {
-    width: calc(100% + var(--space) * 2);
-    margin-left: calc(var(--space) * -1);
-    margin-top: calc(var(--space) * -1);
-    margin-bottom: calc(var(--space) / 2);
-    overflow: hidden;
-    border-radius: var(--radius) var(--radius) 0 0;
+  &_container {
+
+    margin-left: var(--space);
+    margin-right: var(--space);
+    @media screen and (min-width: 881px) {
+      max-width: 880px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &_title {
+    padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
+    text-align: center;
+  }
+
+  &_category {
+    text-transform: uppercase;
+  }
+
+  &_header {
+    width: 100%;
 
     img {
       width: 100%;
@@ -124,7 +133,7 @@ export default {
     }
   }
 
-  &__content {
+  &_content {
     h2:first-child {
       margin-top: 0;
     }
@@ -143,15 +152,6 @@ export default {
   }
 }
 
-.post-comments {
-  padding: calc(var(--space) / 2);
 
-  &:empty {
-    display: none;
-  }
-}
 
-.post-author {
-  margin-top: calc(var(--space) / 2);
-}
 </style>

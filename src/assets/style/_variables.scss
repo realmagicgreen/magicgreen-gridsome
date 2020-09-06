@@ -1,15 +1,10 @@
-// original fonts sizes still to implement!!!
-// $base_font_size--tiny: 17px;
-// $base_font-size--min: 18px;
-// $base_font_size--bp1: 19px;
-// $base_font_size--max: 20px;
+// BREAK-POINTS - NOT WORKING AS VAR(--MINWIDTH) IN MEDIA QUERIES!
+// --minWidth: 640px;
+// --bp1Width: 880px;
+// --maxWidth: 1260px;
 
 // Default variables
 html {
-	// Predefined Break-points
-	--minWidth: 640px;
-	--bp1Width: 880px;
-	--maxWidth: 1260px;
 	// fonts sizes
 	--font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 	--base-font-size: 20px;

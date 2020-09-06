@@ -14,21 +14,21 @@
 .container {
 	padding: calc(var(--space-small)*1.5);
 	max-width: 100%;
-	@media screen and (max-width: var(--minWidth)) {
+	@media screen and (min-width: 640px) {
 		padding: var(--space);
 	}
-	@media screen and (max-width: var(--bp1Width)) {
-		max-width: calc(var(--bp1Width)*1.15);
+	@media screen and (min-width: 880px) {
+		max-width: calc(880px*1.15);
 		margin: 0 auto;
 	}
-	@media screen and (max-width: var(--maxWidth)) {
-		max-width: calc(var(--bp1Width)*1.15);
+	@media screen and (min-width: 1260px) {
+		max-width: calc(880px*1.15);
 		margin: 0 auto;
 	}
 
 	&.small {
-		@media screen and (max-width: var(--bp1Width)) {
-			max-width: var(--bp1Width);
+		@media screen and (min-width: 880px) {
+			max-width: 880px;
 		}
 	}
 }
