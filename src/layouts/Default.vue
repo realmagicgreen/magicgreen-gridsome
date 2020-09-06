@@ -27,6 +27,7 @@ export default {
 <style lang="scss">
 .main {
   margin: 0 auto;
+  padding-bottom: 2rem;
   //padding: 1.5vw 15px 0;
 }
 </style>

@@ -118,7 +118,8 @@ export default {
     }
     h2,
     h3 {
-      border-bottom: 1px solid rgba(0,0,0,0.35);
+      color: var(--title-color);
+      border-bottom: 1px solid var(--border-color);
     }
   }
 
@@ -138,6 +139,7 @@ export default {
     text-align: right;
     padding-right: var(--space-small);
     background-color: var(--category_03);
+    color: var(--black);
     text-transform: uppercase;
   }
 
@@ -170,10 +172,10 @@ export default {
     }
 
     img {
-      width: calc(100% + var(--space) * 2);
-      margin-left: calc(var(--space) * -1);
+      // width: calc(100% + var(--space) * 2);
+      // margin-left: calc(var(--space) * -1);
       display: block;
-      max-width: none;
+      // max-width: none;
     }
   }
 }

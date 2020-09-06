@@ -17,26 +17,6 @@ module.exports = {
       use: '@gridsome/plugin-sitemap'
     },
     {
-      use: 'gridsome-plugin-robots-txt',
-      options: {
-        policy: [
-          {
-            userAgent: "Googlebot",
-            allow: "/",
-            disallow: "/search",
-            crawlDelay: 2
-          },
-          {
-            userAgent: "*",
-            allow: "/",
-            disallow: "/search",
-            crawlDelay: 10,
-            cleanParam: "ref /articles/"
-          }
-        ]
-      }
-    },
-    {
       // Create posts from markdown files
       use: '@gridsome/source-filesystem',
       options: {
@@ -64,7 +44,6 @@ module.exports = {
     }
   ],
 
-
   templates: {
     Post: '/:title',
     Category: [{
@@ -75,8 +54,6 @@ module.exports = {
       path: '/:title',
       component: '~/templates/Tag.vue'
     }]
-    // Tag: '/tag/:id',
-    // Category: '/category/:id'
   },
 
   transformers: {
@@ -86,7 +63,9 @@ module.exports = {
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       anchorClassName: 'icon icon-link',
       plugins: [
-        '@gridsome/remark-prismjs'
+        '@gridsome/remark-prismjs',
+        // Add remark-unwrap-images plugin
+				'gridsome-remark-unwrap-images'
       ]
     }
   }

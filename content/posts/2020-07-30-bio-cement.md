@@ -24,11 +24,9 @@ photography: # put here photographer name
 ---
 
 
-As an architect or designer, what is your role in the building industry?
+As an architect or designer, what is your role in the building industry? Are you making conscious decisions to support a sustainable economy? It all starts with the materials we use.
 
-Are you making conscious decisions to support a sustainable economy?
-
-It all starts with the materials we use. Our 99.4% carbon free biocement is the right choice for the health of our environment without sacrificing durability or lifespan of the material.
+Bio cement, 99.4% carbon free cement, is the right choice for the health of our environment without sacrificing durability or lifespan of the material.
 
 ![carbon free biocement floor](./images/solutions/bio-cement/bio-cement-02.jpg)
 

@@ -66,7 +66,7 @@ export default {
   color: var(--grey) !important;
   text-decoration: none;
   &:hover {
-    color: var(--black) !important;
+    color: var(--title-color) !important;
   }
 }
 
