@@ -67,9 +67,15 @@ strong {
 }
 
 blockquote {
-  border-left: 4px solid var(--border-color);
+  border-left: 2px solid var(--black);
   padding-left: calc(var(--space) / 2);
   color: var(--title-color);
+  font-size: 1.25rem;
+  line-height: 1.25;
+  @media screen and (min-width: 881px) {
+    margin-right: 12vw;
+    margin-left: 10%;
+  }
 }
 
 em {

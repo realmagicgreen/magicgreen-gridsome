@@ -13,7 +13,7 @@ tags:
   - recycle
   - sustainable-development
 cover_image: ./images/solutions/bali-plastic-bags-ban/bali-plastic-bags-ban.jpg
-description: "Starting 2019, Bali Denpasar area has banned the plastic bags. The ban is expected to cover the whole island coming into effect in June 2019." # max 160 cos dunno how to trip it, yet...
+description: "Starting 2019, Bali Denpasar area has banned the plastic bags. The ban is expected to cover the whole island coming into effect in June 2019." # max 160 digits cos dunno how to trim it, yet......
 ad: # use 'true' to have post displaying AD
 featured: true # use 'true' to have it displayed in home
 sticky: true # 'true' or empty

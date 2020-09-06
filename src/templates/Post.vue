@@ -24,7 +24,7 @@
           {{ $page.post.subtitle }}
         </h2>
 
-        <PostMeta :post="$page.post" />    
+        <PostMeta :post="$page.post" />
 
       </div>
 
@@ -53,6 +53,7 @@ query Post ($id: ID!) {
       path
     }
     description
+    photography
     content
     cover_image ( blur: 10)
   }
@@ -89,6 +90,10 @@ export default {
         {
           name: 'description',
           content: this.$page.post.description
+        },
+        {
+          name: 'photography',
+          content: this.$page.post.photography
         }
       ]
     }
@@ -105,11 +110,21 @@ export default {
 
     margin-left: var(--space);
     margin-right: var(--space);
+
     @media screen and (min-width: 881px) {
       max-width: 880px;
       margin-left: auto;
       margin-right: auto;
     }
+    h2,
+    h3 {
+      border-bottom: 1px solid rgba(0,0,0,0.35);
+    }
+  }
+
+  &_cover_image {
+    padding: 0;
+    margin: 0;
   }
 
   &_title {
@@ -118,6 +133,11 @@ export default {
   }
 
   &_category {
+    margin-top: -8px;
+    padding-bottom: 2px;
+    text-align: right;
+    padding-right: var(--space-small);
+    background-color: var(--category_03);
     text-transform: uppercase;
   }
 
@@ -134,13 +154,19 @@ export default {
   }
 
   &_content {
-    h2:first-child {
-      margin-top: 0;
+
+    p {
+      max-width: 600px;
+      margin: 0 0 0 auto;
     }
 
-    p:first-of-type {
-      font-size: 1.2em;
-      color: var(--title-color);
+    blockquote p {
+      max-width: none;
+      em {
+        font-size: 0.75rem;
+        padding-top: .5rem;
+        display: block;
+      }
     }
 
     img {

@@ -10,7 +10,7 @@ tags:
   - environment-friendly
   - eco-friendly
 cover_image: ./images/products/balsa-wood-surfboards/balsa-wood-surfboards.jpg
-description: "Surfing equipment is not eco-friendly, lots of plastic, foam and resin. Vince Tierny is changing that, manufactoring greener wooden Surfboards." # max 160 cos dunno how to trip it, yet...
+description: "Surfing equipment is not eco-friendly, lots of plastic, foam and resin. Vince Tierny is changing that, manufactoring greener wooden Surfboards." # max 160 digits cos dunno how to trim it, yet......
 ad:  true # use 'true' to have post displaying AD
 featured: true # use 'true' to have it displayed in home
 sticky: # 'true' or empty

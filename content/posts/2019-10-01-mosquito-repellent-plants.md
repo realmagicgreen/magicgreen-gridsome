@@ -10,7 +10,7 @@ tags:
   - plants
   - mosquitoes
 cover_image: ./images/solutions/mosquito-repellent-plants/mosquito-repellent-plants.jpg
-description: "Mosquitoes spread serious diseases as malaria, dengue, yellow fever, encephalitis and West Nile and Zika viruses. They can give heart worm to pets." # max 160 cos dunno how to trip it, yet...
+description: "Mosquitoes spread serious diseases as malaria, dengue, yellow fever, encephalitis and West Nile and Zika viruses. They can give heart worm to pets." # max 160 digits cos dunno how to trim it, yet......
 ad: # use 'true' to have post displaying AD
 featured: true # use 'true' to have it displayed in home
 sticky: true # 'true' or empty

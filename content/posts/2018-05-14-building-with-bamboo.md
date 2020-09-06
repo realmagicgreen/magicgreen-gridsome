@@ -14,7 +14,7 @@ tags:
   - save-trees
   - wood
 cover_image: ./images/techniques/building-with-bamboo/building-with-bamboo.jpg
-description: "Bamboo has been used in building for centuries. Impressive strength, twice the compressive strength of concrete and same strength-to-weight of steel in tension." # max 160 cos dunno how to trip it, yet...
+description: "Bamboo has been used in building for centuries. Impressive strength, twice the compressive strength of concrete and same strength-to-weight of steel in tension." # max 160 digits cos dunno how to trim it, yet......
 ad: # use 'true' to have post displaying AD
 featured: true # use 'true' to have it displayed in home
 sticky: # 'true' or empty

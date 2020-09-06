@@ -19,7 +19,7 @@ tags:
   - tropical
   - wellness
 cover_image: ./images/services/bambu-indah/bambu-indah.jpg
-description: "In Bali Ubud is internationally acknowledged for its visual arts, performances and crafts, making it an atractive cultural and artistic centres in Indonesia." # max 160 cos dunno how to trip it, yet...
+description: "In Bali Ubud is internationally acknowledged for its visual arts, performances and crafts, making it an atractive cultural and artistic centres in Indonesia." # max 160 digits cos dunno how to trim it, yet......
 ad: true # use 'true' to have post displaying AD
 featured: # use 'true' to have it displayed in home
 sticky: # 'true' or empty
@@ -29,7 +29,7 @@ photography: Rokma # put here photographer name
 ---
 
 
-Bali is  at the heart of the Indonesian archipelago stretching 150 km wide and 80km from north to south. Its unique variant of Hinduism influences every aspect of island culture, from day-to-day village life to art, dance, food and music.
+Bali is  at the heart of the Indonesian archipelago stretching 150km wide and 80km from north to south. Its unique variant of Hinduism influences every aspect of island culture, from day-to-day village life to art, dance, food and music.
 
 
 Located an hour’s drive to the north of Bali’s capital Denpasar, Ubud is already internationally acknowledged for its visual arts and performance, as well as exceptional arts and crafts, making it one of the most important cultural and artistic centres in Indonesia.
@@ -42,11 +42,11 @@ Unlike the beach areas, Ubud is laden with rice terraces and river crossings and
 
 Bambu Indah is a radically distinctive boutique hotel in Sanyan, Ubud, carefully curated by designers and long term residents of Bali, John and Cynthia Hardy.
 
-In 2005, eleven antique Javanese bridal homes were brought to Bali, restored, and decorated with the finest details.
+In 2005, eleven antique Javanese bridal homes were brought to Bali, restored, and decorated with fine details.
 
 ![Antique Javanese bridal home. Photo by Rokma](./images/services/bambu-indah/bambu-indah-07.jpg)
 
-Now, Bambu Indah is available to travelers from around the world seeking unique experiences while being comforted by the luxury of a natural environment and service of an intimate hotel.
+Now, Bambu Indah is available to travelers seeking unique experiences while being comforted by the luxury of a natural environment and service of an intimate hotel.
 
 ![The Sumba style house. Photo by Rokma](./images/services/bambu-indah/bambu-indah-11.jpg)
 
@@ -72,7 +72,7 @@ Every ingredient, ice cube and stick of firewood is lovingly carried down to the
 
 ![Every ingredient is carried down to the river on heads and backs.. Photo by Rokma](./images/services/bambu-indah/bambu-indah-02.jpg)
 
-The Bambu Kitchen Restaurant is open daily from 6.30am to 10pm and feature local cuisine. It received 2014 Snail of Approval by complying with **Slow Food** Bali’s guidelines of using at least 75% Indonesia-produced ingredients, sustainably managing the waste and paying fare wages to staff.
+The Bambu Kitchen Restaurant is open daily from 6.30am to 10pm and feature local cuisine. It received _'2014 Snail of Approval'_ by complying with **Slow Food** Bali’s guidelines of using at least 75% Indonesia-produced ingredients, sustainably managing the waste and paying fare wages to staff.
 
 ![The Bambu Kitchen Restaurant is open daily. Photo by Rokma](./images/services/bambu-indah/bambu-indah-08.jpg)
 
