@@ -1,5 +1,5 @@
 <template>
-  <div class="post-card content-box" :class="{'post-card--has-poster' : post.poster}">
+  <div class="post-card content-box">
     <div class="post-card__header">
       <g-image
       alt="Cover image"
@@ -10,6 +10,9 @@
     </div>
     <div class="post-card__content">
       <h2 class="post-card__title h1" v-html="post.title" />
+
+      <!-- <span class="ad"></span> -->
+
       <h3 class="post-card__title border_top border_bottom" v-html="post.subtitle" />
       <p class="post-card__description" v-html="post.description" />
 
@@ -81,7 +84,7 @@ export default {
   .post_date {
     display: none;
   }
-  
+
   .post_metas {
     justify-content: flex-start;
     padding-top: 0;

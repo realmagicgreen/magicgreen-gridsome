@@ -28,6 +28,6 @@ export default {
 .main {
   margin: 0 auto;
   padding-bottom: 2rem;
-  //padding: 1.5vw 15px 0;
+  // padding: 0 5px; //move to post_container
 }
 </style>

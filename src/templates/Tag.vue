@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1 class="tag-title text-center space-bottom">
-      # {{ $page.tag.title }}
+      {{ $page.tag.title }}
     </h1>
 
     <div class="posts">
@@ -65,6 +65,8 @@ export default {
 }
 </script>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+.posts {
+  padding: 10px;
+}
 </style>

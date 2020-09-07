@@ -18,6 +18,7 @@
 
         <h1 class="post_title">
           {{ $page.post.title }}
+          <span class="ad" v-if="$page.post.ad">ad</span>
         </h1>
 
         <h2 class="post_subtitle border_top border_bottom">
@@ -54,6 +55,7 @@ query Post ($id: ID!) {
     }
     description
     photography
+    ad
     content
     cover_image ( blur: 10)
   }
@@ -86,6 +88,7 @@ export default {
     return {
       title: this.$page.post.title,
       subtitle: this.$page.post.subtitle,
+      ad: this.$page.post.ad,
       meta: [
         {
           name: 'description',
@@ -107,7 +110,7 @@ export default {
 .post {
 
   &_container {
-
+    padding: 0 5px;
     margin-left: var(--space);
     margin-right: var(--space);
 
@@ -135,12 +138,14 @@ export default {
 
   &_category {
     margin-top: -8px;
+    padding-top: 3px;
     padding-bottom: 2px;
     text-align: right;
     padding-right: var(--space-small);
     background-color: var(--category_03);
     color: var(--black);
     text-transform: uppercase;
+
   }
 
   &_header {
@@ -179,7 +184,21 @@ export default {
     }
   }
 }
-
+.ad {
+  font-family: arial, sans-serif;
+  margin-left: 7px;
+  margin-right: 0px;
+  background-color: #fff;
+  border-radius: 3px;
+  color: #006621;
+  display: inline-block;
+  font-size: 11px;
+  border: 1px solid #006621;
+  padding: 1px 3px 0 2px;
+  line-height: 11px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
 
 
 </style>

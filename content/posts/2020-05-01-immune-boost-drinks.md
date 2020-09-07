@@ -73,7 +73,7 @@ For the love of medicinal plants, private lessons, online studies on traditional
 
 Supplying the restaurant of my friends surf resort here in Canggu.
 
-##  What motivates you and where are you going, as a company?
+## What motivates you and where are you going, as a company?
 
 My main motivation is to bring ancient knowledge back paying attention to recent/modern research and applying techniques in the way we process the plants into the products, engineering unadulterated natural products.
 

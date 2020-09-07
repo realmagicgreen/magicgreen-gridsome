@@ -1,6 +1,10 @@
 <template>
   <Layout :show-logo="true">
 
+    <div class="slogan">
+
+    </div>
+
     <div class="posts">
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
@@ -50,3 +54,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.posts {
+  padding: 10px;
+}
+</style>
