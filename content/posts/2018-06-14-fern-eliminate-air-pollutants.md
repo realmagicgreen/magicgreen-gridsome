@@ -28,7 +28,27 @@ The importance of indoor air quality to human health has become of increasing in
 
 Scientists studying the air-purification capacities of indoor plants have found that plants can absorb many other gases in addition to carbon dioxide, including a long list of volatile organic compounds (VOCs).
 
-While most leafy plants are adept at purifying indoor air, some of the plants that scientists have found most useful in removing VOCs include **Japanese royal ferns** (Osmunda japonica), Spider plants (Chlorophytum comosum), **Boston ferns** (Nephrolepis exaltata), Purple Waffle plants (Hemigraphis alternata), English Ivy (Hedera helix), [Areca Palms]({{ site.baseurl }}{% post_url 2018-06-07-areca-palm %}) (Dypsis lutescens), [Golden Pothos]({{ site.baseurl }}{% post_url 2018-06-03-golden-pothos %}) (Epipremnum aureum), [Aloe Vera]({{ site.baseurl }}{% post_url 2018-05-02-aloe-vera %}), [Snake plants]({{ site.baseurl }}{% post_url 2018-05-05-snake-plant %}) (Sansevieria trifasciata) and [Peace Lilies]({{ site.baseurl }}{% post_url 2018-05-25-peace-lilies %}) (Spathiphyllum).
+While most leafy plants are adept at purifying indoor air, some of the plants that scientists have found most useful in removing volatile organic compounds are:
+
+- **Japanese royal ferns** (Osmunda japonica)
+
+- Spider plants (Chlorophytum comosum)
+
+- **Boston ferns** (Nephrolepis exaltata)
+
+- Purple Waffle plants (Hemigraphis alternata)
+
+- English Ivy (Hedera helix)
+
+- [Areca Palms (Dypsis lutescens)]({{ site.baseurl }}{% post_url 2018-06-07-areca-palm %})
+
+- [Golden Pothos (Epipremnum aureum)]({{ site.baseurl }}{% post_url 2018-06-03-golden-pothos %})
+
+- [Aloe Vera]({{ site.baseurl }}{% post_url 2018-05-02-aloe-vera %})
+
+- [Snake plants ((Sansevieria trifasciata))]({{ site.baseurl }}{% post_url 2018-05-05-snake-plant %})
+
+- [Peace Lilies (Spathiphyllum)]({{ site.baseurl }}{% post_url 2018-05-25-peace-lilies %})
 
 
 Fern is the common name for plants in the phylum or division Pterophyta, also known as Filicophyta, sometimes called sword or ladder fern. Ferns are vascular plants that reproduce via spores and have neither seeds nor flowers.
