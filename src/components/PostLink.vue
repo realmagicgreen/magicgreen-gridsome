@@ -1,9 +1,9 @@
 <template>
-  <div class="menu_item post_link" >
-    <g-link class="" :to="post.path">
+
+    <g-link class="menu_item post_link" :to="post.path">
       <div class="post-card__title" v-html="post.title" />
     </g-link>
-  </div>
+
 </template>
 
 <script>

@@ -44,9 +44,10 @@ body {
 	--transparent_grey: hsla(0,0%,0%,.65);
 	--brand_color: hsla(92, 100%, 50%, 1); // rgba(119, 255, 0, 1) // #7f0
 	--brand_color--dark: hsla(92, 100%, 28%, 1);
+	--black--soft: #161616;
 
 	//color that change in dark module
-	--black: #161616;
+	--black: #000;
 	--bg-color: #e4ffcc;
 	--bg-content-color: #fff;
 	--border-color: rgba(0,0,0,0.35);

@@ -1,25 +1,21 @@
 <template>
 	<header class="header">
-		<div class="header__left">
-			<Logo v-if="showLogo" />
+
+		<Logo v-if="showLogo" />
+
+		<div class="header_menus">
+			<ToggleTheme />
+			<HeadMenu />
 		</div>
 
-		<div class="header__right">
-			<HeadMenu />
-			<ToggleTheme />
-		</div>
 	</header>
 </template>
-
-<static-query>
-
-</static-query>
 
 
 <script>
 import Logo from '~/components/Logo.vue'
-import HeadMenu from '~/components/HeadMenu.vue'
 import ToggleTheme from '~/components/ToggleTheme.vue'
+import HeadMenu from '~/components/HeadMenu.vue'
 
 export default {
   props: {
@@ -27,8 +23,8 @@ export default {
   },
   components: {
     Logo,
-    HeadMenu,
-    ToggleTheme
+    ToggleTheme,
+    HeadMenu
   }
 }
 </script>
@@ -37,26 +33,31 @@ export default {
 .header {
   background-color: var(--black);
   display: flex;
-	flex-direction: column;
+	flex-direction: row;
   justify-content: space-between;
   align-items: center;
   min-height: var(--header-height);
-  padding: 0 var(--space) var(--space) var(--space);
-  top:0;
-  z-index: 10;
+  padding: var(--space-small) calc(var(--space-small)/2);
+  flex-wrap: nowrap;
+	.logo {
+		flex-grow: 4;
+	}
 
-  &__left,
-  &__right {
-    display: flex;
-    align-items: center;
-  }
+	@media screen and (min-width: 880px) {
+		flex-direction: column;
+		.logo {
+			min-height: 70px;
+		}
+	}
 
-  @media screen and (min-width: 1300px) {
-    //Make header sticky for large screens, maybe...
-    position: sticky;
-    width: 100%;
+	@media screen and (min-width: 1260px) {
 		flex-direction: row;
-  }
-}
+	}
 
+
+	.header_menus {
+		display: flex;
+		align-items: center;
+	}
+}
 </style>

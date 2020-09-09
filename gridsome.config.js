@@ -8,13 +8,12 @@ module.exports = {
   siteName: 'Magic Green',
   siteDescription: 'Magic Green magazine is a showcase of examples, infos and addresses of all stuff green from South East Asia and beyond.',
   siteUrl: 'https://magicgreensome.netlify.app',
-  plugins: [
-    'gridsome-plugin-robots-txt'
-  ],
 
   plugins: [
     {
-      use: '@gridsome/plugin-sitemap'
+      use: '@gridsome/plugin-sitemap',
+      options: {
+      }
     },
     {
       // Create posts from markdown files

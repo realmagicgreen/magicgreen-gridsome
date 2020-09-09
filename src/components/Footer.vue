@@ -1,63 +1,65 @@
 <template>
-	<footer class="footer"  role="contentinfo">
-		<div class="container">
-			<Logo />
+	<footer class="footer" role="contentinfo">
 
-			<div class="menu menu_footer">
+		<div class="container small flex flex_align_center flex_justify_center">
+			<Logo />
+		</div>
+
+		<div class="container small menu_container">
+
+			<div class="menu_footer">
+
+				<div class="title">Latest articles</div>
 
 				<div class="menu_posts" role="menu">
-					<div class="title">Latest articles</div>
 
-					<div class="post_link_block">
-						<PostLink v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
-					</div>
+					<PostLink v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
 
 				</div>
 
+			</div>
+
+			<div class="menu_footer">
+
+				<div class="title"> About {{ $static.metadata.siteName }}</div>
+
 				<div class="menu_contacts" role="menu">
 
-					<div class="title">
-						About {{ $static.metadata.siteName }}
-					</div>
-
-          <div v-for="navItem in $static.metadata.footerNavigation" :key="navItem.name" class="menu_item">
-            <g-link
+					<div v-for="navItem in $static.metadata.footerNavigation" :key="navItem.name" class="menu_item">
+						<g-link
 							class="menu_item"
 							role="menuitem"
-              :to="navItem.link"
-              :title="navItem.name"
-              v-if="navItem.external!=true"
-            >{{ navItem.name}} {{ navItem.username}}</g-link>
-            <a
+							:to="navItem.link"
+							:title="navItem.name"
+							v-if="navItem.external!=true"
+						>{{ navItem.name}} {{ navItem.username}}</g-link>
+						<a
 							class="menu_item"
 							role="menuitem"
 							rel="noopener"
-              :href="navItem.link"
-              target="_blank"
-              :title="navItem.name"
-              v-if="navItem.external==true"
-            >{{ navItem.name}} {{ navItem.username}}</a>
-          </div>
+							:href="navItem.link"
+							target="_blank"
+							:title="navItem.name"
+							v-if="navItem.external==true"
+						>{{ navItem.name}} {{ navItem.username}}</a>
+					</div>
 
 					<div class="menu_item footer_icon qr_box">
-						<span>
-
-						</span>
+						<span></span>
 					</div>
 
 				</div>
 
 			</div>
 
-
-			<div class="copyright">
-				Copyright © {{ new Date().getFullYear() }}.
-				<br class="show_on_phones">
-			  Released under <a rel="noopener" id="magicgreen-to-creativecommons" title="This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most accommodating of licenses offered. Recommended for maximum dissemination and use of licensed materials." href="https://creativecommons.org/licenses/by/4.0/">CC_BY license</a>. <br class="show_on_phones">
-				Powered by <a title="This website was designed and coded by the fabulous Junglestar" id="magicgreen-to-junglestar" rel="noopener" href="https://junglestar.org">Junglestar</a>
-		  </div>
-
 		</div>
+
+		<div class="container small copyright">
+			Copyright © {{ new Date().getFullYear() }}.
+			<br class="show_on_phones">Released under <a class="inline" rel="noopener" id="magicgreen-to-creativecommons" title="This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most accommodating of licenses offered. Recommended for maximum dissemination and use of licensed materials." href="https://creativecommons.org/licenses/by/4.0/">CC_BY license</a>. <br class="show_on_phones">
+			Powered by <a class="inline" title="This website was designed and coded by the fabulous Junglestar" id="magicgreen-to-junglestar" rel="noopener" href="https://junglestar.org">Junglestar</a>
+		</div>
+
 	</footer>
 </template>
 
@@ -115,30 +117,22 @@ export default {
 		color: var(--brand_color);
 	}
 
-  .container {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    max-width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    align-items: center;
-  }
+	.menu_container {
+		display: flex;
+		flex-direction: column;
+		@media only screen and (min-width: 880px) {
+      flex-direction: row;
+    }
+	}
 
   .title {
     padding-top: var(--space);
     padding-bottom: calc(var(--space)/3);
-    margin-bottom: calc(var(--space)/3);
+    margin-bottom: var(--space);
     border-bottom: 1px solid var(--brand_color--dark);
     width: 100%;
     text-transform: uppercase;
-    @media only screen and (min-width: var(--bp1Width)) {
+    @media only screen and (min-width: 880px) {
       border-bottom: 0 none;
       width: auto;
     }
@@ -148,22 +142,10 @@ export default {
 
 .menu_footer {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  @media only screen and (min-width:var(--mediaBp1Width)) {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    max-width: 700px;
+  @media only screen and (min-width:880px) {
+
   }
 
   .menu_item {
@@ -171,15 +153,15 @@ export default {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-
+		align-items: center;
+		border: transparent solid 1px;
+		white-space: nowrap;
 
     &.active {
       border-bottom: 0 none;
-
-      span {
-        padding: 5px;
-        border: var(--brand_color--dark) solid 1px;
-      }
+			padding-left: var(--space-small);
+			padding-right: var(--space-small);
+			border: var(--brand_color--dark) solid 1px;
     }
 }
 
@@ -201,9 +183,6 @@ export default {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  @media only screen and (min-width:var(--mediaBp1Width)) {
-    max-width: 47%;
-  }
 }
 
 .menu_contacts {
@@ -216,26 +195,10 @@ export default {
   }
 }
 
-.footer_company_name {
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  margin-top: var(--space);
-  margin-bottom: var(--space);
-  text-align: center;
-  @media only screen and (min-width:var(--mediaBp1Width)) {
-    // width: 24%;
-    text-align: left;
-  }
-}
-
 .copyright {
   font-size: 14px;
+	text-align: center;
   padding-top: var(--space);
   margin-top: var(--space);
 }
-
-.menu_item {
-
-}
-
 </style>
