@@ -63,7 +63,8 @@ export default {
   margin-left: .2rem;
   margin-right: .2rem;
   padding: .4rem .1rem;
-  color: var(--grey) !important;
+  color: var(	--text-color) !important;
+  font-style: italic;
   text-decoration: none;
   &:hover {
     color: var(--title-color) !important;
@@ -78,7 +79,8 @@ export default {
 .post_date,
 .post_time_to_read,
 .post_photography {
-  color: var(--grey);
+  color: var(	--text-color);
+  font-style: italic;
   padding: .4rem .1rem;
 }
 

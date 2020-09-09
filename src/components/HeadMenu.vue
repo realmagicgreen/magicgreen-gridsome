@@ -3,6 +3,7 @@
 
 		<button
 		class="toggle_menu_button"
+		aria-label="Toggle menu"
 		:class="{'is-active': isMenuActive}"
 		@click="isMenuActive = !isMenuActive"
 		@keyup="isMenuActive = !isMenuActive">
@@ -20,7 +21,8 @@
 				class="menu_item"
 				role="menuitem"
         :to="navItem.link"
-        :title="navItem.name">
+        :title="navItem.name"
+				@click="isMenuActive = !isMenuActive">
 				  {{ navItem.name}}
 				</g-link>
 	    </div>
@@ -68,6 +70,13 @@ export default {
 			border: 0 none;
 			margin-left: calc(var(--space-small)/2);
 			margin-right: calc(var(--space-small)/2);
+		}
+		&.active {
+			border: 2px solid #7f0;
+			padding-top: 10px;
+      padding-bottom: 10px;
+			font-weight: 600;
+      font-size: 115%;
 		}
 	}
 }

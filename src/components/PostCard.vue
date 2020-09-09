@@ -89,6 +89,7 @@ export default {
     justify-content: flex-start;
     padding-top: 0;
     padding-bottom: 0;
+    font-style: italic;
   }
 }
 </style>
