@@ -57,7 +57,7 @@ query Post ($id: ID!) {
     photography
     ad
     content
-    cover_image (width: 1920, blur: 10)
+    cover_image (width: 1920)
   }
   posts: allPost {
 		edges {

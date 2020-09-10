@@ -5,8 +5,7 @@
         class=""
         alt="Cover image"
         v-if="post.cover_image"
-        :src="post.cover_image"
-        />
+        :src="post.cover_image"/>
       </div>
       <div class="card_post_text">
         <h2 class="h1" v-html="post.title" />
@@ -20,10 +19,8 @@
     </g-link>
 </template>
 
-
 <script>
 import PostMeta from '~/components/PostMeta'
-
 export default {
   components: {
     PostMeta
@@ -33,7 +30,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 .post_metas {
   justify-content: flex-start;
   padding-top: 0;
@@ -115,5 +111,4 @@ export default {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 97%, 0% 88%);
   clip-path: polygon(0 0, 100% 0, 100% 97%, 0% 88%);
 }
-
 </style>
