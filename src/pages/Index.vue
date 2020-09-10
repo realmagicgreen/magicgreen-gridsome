@@ -23,7 +23,7 @@ query {
         date (format: "DD MMMM YYYY")
         timeToRead
         description
-        cover_image (width: 880, quality: 33, blur: 40)
+        cover_image (width: 1015, quality: 33, blur: 40)
         ...on Post {
         id
         title
@@ -70,6 +70,7 @@ export default {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  overflow: hidden;
 
   > * {
     display: block;
