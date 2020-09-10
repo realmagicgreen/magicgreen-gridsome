@@ -1,5 +1,5 @@
 <template>
-	<g-link class="logo" to="/">
+	<div class="logo">
 		<span class="logo__image">
 			<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -12,7 +12,7 @@
 	  <span class="logo__text">
 	    {{ $static.metadata.siteName }}
 	  </span>
-	</g-link>
+	</div>
 </template>
 
 <static-query>
@@ -29,6 +29,8 @@ query {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	padding-top: 6px;
+	padding-bottom: 6px;
 
 	&__text {
 		text-transform: uppercase;

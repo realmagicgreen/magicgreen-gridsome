@@ -1,7 +1,9 @@
 <template>
 	<header class="header">
 
-		<Logo v-if="showLogo" />
+		<g-link class="logo_wrapper" to="/">
+			<Logo v-if="showLogo" />
+		</g-link>
 
 		<div class="header_menus">
 			<ToggleTheme />
@@ -40,13 +42,14 @@ export default {
   padding: var(--space-small) calc(var(--space-small)/2);
   flex-wrap: nowrap;
 
-	.logo {
+	.logo_wrapper {
 		flex-grow: 4;
+		text-decoration: none;
 	}
 
 	@media screen and (min-width: 880px) {
 		flex-direction: column;
-		.logo {
+		.logo_wrapper {
 			min-height: 70px;
 		}
 	}
