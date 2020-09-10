@@ -48,12 +48,10 @@ query Category ($id: ID!) {
 </page-query>
 
 <script>
-import Header from '~/components/Header.vue'
 import PostCard from '~/components/PostCard.vue'
 
 export default {
   components: {
-    Header,
     PostCard
   },
   metaInfo: {

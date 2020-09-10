@@ -36,6 +36,15 @@ module.exports = {
       }
     },
     {
+      // Create pages from markdown files
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'CustomPage',
+        baseDir: './content/pages',
+        path: '*.md'
+      }
+    },
+    {
       use: 'gridsome-source-static-meta',
       options: {
         path: 'content/site/*.json'
@@ -45,6 +54,10 @@ module.exports = {
 
   templates: {
     Post: '/:title',
+    CustomPage: [{
+      path: '/:title',
+      component: '~/templates/CustomPage.vue'
+    }],
     Category: [{
       path: '/:title',
       component: '~/templates/Category.vue'
@@ -60,7 +73,6 @@ module.exports = {
     remark: {
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      anchorClassName: 'icon icon-link',
       plugins: [
         '@gridsome/remark-prismjs',
         // Add remark-unwrap-images plugin

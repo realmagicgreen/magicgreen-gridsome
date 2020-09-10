@@ -90,6 +90,7 @@ query {
 			}
 		}
 	}
+	
 }
 </static-query>
 
