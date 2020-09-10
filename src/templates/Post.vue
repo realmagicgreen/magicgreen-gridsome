@@ -57,7 +57,7 @@ query Post ($id: ID!) {
     photography
     ad
     content
-    cover_image ( blur: 10)
+    cover_image (width: 1920, blur: 10)
   }
   posts: allPost {
 		edges {
@@ -123,6 +123,7 @@ export default {
     h3 {
       color: var(--title-color);
       border-bottom: 1px solid var(--border-color);
+      margin-bottom: 20px;
     }
   }
 
@@ -162,9 +163,14 @@ export default {
 
   &_content {
 
-    p {
+    p,
+    ol,
+    ul {
       max-width: 600px;
       margin: 0 0 0 auto;
+    }
+    ul, ol {
+      padding-left: 20px;
     }
 
     blockquote p {
@@ -188,7 +194,7 @@ export default {
   font-family: arial, sans-serif;
   margin-left: 7px;
   margin-right: 0px;
-  background-color: #fff;
+  background-color: var(--bg-content-color);
   border-radius: 3px;
   color: #006621;
   display: inline-block;

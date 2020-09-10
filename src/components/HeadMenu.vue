@@ -15,14 +15,14 @@
 		<div
 		role="contentinfo"
 		class="head_menu togglable_menu"
-		:class="{'is-active': isMenuActive}">
+		:class="{'is-active': isMenuActive}"
+		@click="isMenuActive = !isMenuActive">
 	    <div v-for="navItem in $static.metadata.headerNavigation" :key="navItem.name" class="menu_item_wrap">
 			  <g-link
 				class="menu_item"
 				role="menuitem"
         :to="navItem.link"
-        :title="navItem.name"
-				@click="isMenuActive = !isMenuActive">
+        :title="navItem.name">
 				  {{ navItem.name}}
 				</g-link>
 	    </div>
@@ -66,11 +66,6 @@ export default {
     margin-left: 20vw;
     margin-right: 20vw;
     min-height: 7vh;
-		@media only screen and (min-width: 880px) {
-			border: 0 none;
-			margin-left: calc(var(--space-small)/2);
-			margin-right: calc(var(--space-small)/2);
-		}
 		&.active {
 			border: 2px solid #7f0;
 			padding-top: 10px;
@@ -78,6 +73,18 @@ export default {
 			font-weight: 600;
       font-size: 115%;
 		}
+		@media only screen and (min-width: 880px) {
+			border: 0 none;
+			margin-left: calc(var(--space-small)/2);
+			margin-right: calc(var(--space-small)/2);
+			&.active {
+				border: 0 none;
+				font-size: 100%;
+				font-weight: normal;
+				border-bottom: 1px solid #7f0;
+			}
+		}
+
 	}
 }
 
@@ -138,23 +145,25 @@ export default {
 }
 .togglable_menu {
 	display: none;
-	&.is-active {
-		background-color: var(--black);
-		position: absolute;
-		left: 0;
-		right: 0;
-    z-index: 10;
-		display: flex;
-    min-width: 100%;
-    padding-top: 1rem;
-    flex-direction: column;
-    justify-content: space-around;
-    min-height: calc(100vh - 94px);
-    min-width: 100%;
-    padding-top: 6vh;
-    padding-bottom: 6vh;
-
+	@media only screen and (max-width: 880px) {
+		&.is-active {
+			background-color: var(--black);
+			position: absolute;
+			left: 0;
+			right: 0;
+			z-index: 10;
+			display: flex;
+			min-width: 100%;
+			padding-top: 1rem;
+			flex-direction: column;
+			justify-content: space-around;
+			min-height: calc(100vh - 94px);
+			min-width: 100%;
+			padding-top: 6vh;
+			padding-bottom: 6vh;
+		}
 	}
+
 }
 
 @media only screen and (min-width: 880px) {

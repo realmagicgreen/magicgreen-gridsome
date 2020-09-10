@@ -5,7 +5,7 @@
 
     </div>
 
-    <div class="posts">
+    <div class="posts post_grid">
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
 
@@ -58,5 +58,28 @@ export default {
 <style lang="scss" scoped>
 .posts {
   padding: 10px;
+}
+
+
+.post_grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  > * {
+    display: block;
+    max-width: 100%;
+    @media screen and (min-width: 880px) {
+      max-width: calc(50% - 10px);
+    }
+    @media screen and (min-width: 1260px) {
+      max-width: calc(33.33% - 10px);
+    }
+  }
 }
 </style>

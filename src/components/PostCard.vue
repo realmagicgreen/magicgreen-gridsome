@@ -1,26 +1,23 @@
 <template>
-  <div class="post-card content-box">
-    <div class="post-card__header">
-      <g-image
-      alt="Cover image"
-      v-if="post.cover_image"
-      class="post-card__image"
-      :src="post.cover_image"
-      />
-    </div>
-    <div class="post-card__content">
-      <h2 class="post-card__title h1" v-html="post.title" />
+    <g-link class="card content-box" :to="post.path">
+      <div class="card_post_image clipped">
+        <g-image
+        class=""
+        alt="Cover image"
+        v-if="post.cover_image"
+        :src="post.cover_image"
+        />
+      </div>
+      <div class="card_post_text">
+        <h2 class="h1" v-html="post.title" />
+        <!-- <span class="ad"></span> -->
+        <h3 class="border_top border_bottom" v-html="post.subtitle" />
+        <p class="card_post_text_content" v-html="post.description" />
 
-      <!-- <span class="ad"></span> -->
+        <PostMeta class="card_meta" :post="post" />
 
-      <h3 class="post-card__title border_top border_bottom" v-html="post.subtitle" />
-      <p class="post-card__description" v-html="post.description" />
-
-      <PostMeta class="post-card__meta" :post="post" />
-
-      <g-link class="post-card__link" :to="post.path">Link</g-link>
-    </div>
-  </div>
+      </div>
+    </g-link>
 </template>
 
 
@@ -36,60 +33,87 @@ export default {
 </script>
 
 <style lang="scss">
-.post-card {
-  background-color: var(--bg-content-color);
-  margin-bottom: var(--space);
+
+.post_metas {
+  justify-content: flex-start;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-style: italic;
+}
+
+.post_tag_block,
+.post_date {
+  display: none;
+}
+
+//originals
+.card {
+  text-decoration: none;
   position: relative;
-  border: 1px solid var(--black);
+  background-color: var(--bg-content-color);
+  box-shadow: --card-shadow;
+  transition: --transition_shadow;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space);
 
-  &__header {
-    margin-left: calc(var(--space) * -1);
-    margin-right: calc(var(--space) * -1);
-    margin-bottom: calc(var(--space) / 2);
-    margin-top: calc(var(--space) * -1);
-    overflow: hidden;
-    border-radius: var(--radius) var(--radius) 0 0;
+  .card_post_image {
+    position: relative;
+    width: 100%;
+    color: var(--transparent_grey);
+    transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  }
 
-    &:empty {
-      display: none;
+  &:focus,
+  &:hover {
+    -webkit-box-shadow: --card-shadow--hover;
+    box-shadow: --card-shadow--hover;
+
+    .card_post_image {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
     }
   }
 
-  &__image {
-    min-width: 100%;
+  &:active {
+    -webkit-transform: translateY(0.25em);
+    transform: translateY(0.25em);
   }
 
-  &__title {
-    margin-top: 0;
-  }
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 1px 10px 30px 0 rgba(0,0,0,.1);
-  }
-
-  &__link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.0;
-    overflow: hidden;
-    text-indent: -9999px;
-    z-index: 0;
-  }
-
-  .post_tag_block,
-  .post_date {
-    display: none;
-  }
-
-  .post_metas {
-    justify-content: flex-start;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-style: italic;
+  h1,
+  h3 {
+    text-transform: uppercase;
   }
 }
+
+.card_post_text {
+  padding: 0 var(--space-small);
+  margin-top: -10px;
+  margin-bottom: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  & > * + * {
+    margin-top: calc(var(--space-small)/2);
+  }
+}
+
+.card_post_text_content {
+  margin-top: calc(var(--space)/2);
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  //flex-grow: 1;
+  color: var(--title-color);
+}
+
+.clipped {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 97%, 0% 88%);
+  clip-path: polygon(0 0, 100% 0, 100% 97%, 0% 88%);
+}
+
 </style>

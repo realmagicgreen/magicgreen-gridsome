@@ -39,6 +39,7 @@ export default {
   min-height: var(--header-height);
   padding: var(--space-small) calc(var(--space-small)/2);
   flex-wrap: nowrap;
+
 	.logo {
 		flex-grow: 4;
 	}
@@ -52,6 +53,10 @@ export default {
 
 	@media screen and (min-width: 1260px) {
 		flex-direction: row;
+		padding-left: var(--space-small);
+		padding-right: var(--space-small);
+		margin: 0 auto;
+		max-width: 1300px;
 	}
 
 

@@ -31,28 +31,25 @@ photography: Rokma # put here photographer name
 
 Bali is  at the heart of the Indonesian archipelago stretching 150km wide and 80km from north to south. Its unique variant of Hinduism influences every aspect of island culture, from day-to-day village life to art, dance, food and music.
 
+![The cocoon tree house. Photo by Rokma](./images/services/bambu-indah/bambu-indah-05.jpg)
 
 Located an hour’s drive to the north of Bali’s capital Denpasar, Ubud is already internationally acknowledged for its visual arts and performance, as well as exceptional arts and crafts, making it one of the most important cultural and artistic centres in Indonesia.
 
-![The cocoon tree house. Photo by Rokma](./images/services/bambu-indah/bambu-indah-05.jpg)
+![The cocoon tree house. Photo by Rokma](./images/services/bambu-indah/bambu-indah-06.jpg)
 
 Unlike the beach areas, Ubud is laden with rice terraces and river crossings and forests. Coupled with a higher altitude, the overall climate is noticeably cooler than beachside locations in Bali.
 
-![The cocoon tree house. Photo by Rokma](./images/services/bambu-indah/bambu-indah-06.jpg)
+![Antique Javanese bridal home. Photo by Rokma](./images/services/bambu-indah/bambu-indah-07.jpg)
 
 Bambu Indah is a radically distinctive boutique hotel in Sanyan, Ubud, carefully curated by designers and long term residents of Bali, John and Cynthia Hardy.
 
-In 2005, eleven antique Javanese bridal homes were brought to Bali, restored, and decorated with fine details.
-
-![Antique Javanese bridal home. Photo by Rokma](./images/services/bambu-indah/bambu-indah-07.jpg)
-
-Now, Bambu Indah is available to travelers seeking unique experiences while being comforted by the luxury of a natural environment and service of an intimate hotel.
-
 ![The Sumba style house. Photo by Rokma](./images/services/bambu-indah/bambu-indah-11.jpg)
 
+In 2005, eleven antique Javanese bridal homes were brought to Bali, restored, and decorated with fine details.
 
 ![The Sumba style house living room. Photo by Rokma](./images/services/bambu-indah/bambu-indah-12.jpg)
 
+Now, Bambu Indah is available to travelers seeking unique experiences while being comforted by the luxury of a natural environment and service of an intimate hotel.
 
 ![The Sumba style house bathroom. Photo by Rokma](./images/services/bambu-indah/bambu-indah-13.jpg)
 

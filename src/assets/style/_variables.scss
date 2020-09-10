@@ -44,10 +44,18 @@ body {
 	--transparent_grey: hsla(0,0%,0%,.65);
 	--brand_color: hsla(92, 100%, 50%, 1); // rgba(119, 255, 0, 1) // #7f0
 	--brand_color--dark: hsla(92, 100%, 28%, 1);
+	--black: #000;
 	--black--soft: #161616;
 
+	//shadows
+	--top_shadow: 0 -2px 5px 0 rgba(var(--black),0.12), 0 -4px 10px 0 rgba(var(--black),0.24);
+	--bottom_shadow: 0 4px 10px 0 rgba(var(--black),0.24);
+	--card_shadow: 1px 1px 2px 0 rgba(var(--black),0.12), 2px 2px 3px 0 rgba(var(--black),0.24);
+	--card_shadow--hover: 4px 4px 8px 0 rgba(var(--black),0.12), 8px 8px 8px 0 rgba(var(--black),0.24);
+
+	--transition_shadow: box-shadow .2s ease;
+
 	//color that change in dark module
-	--black: #000;
 	--bg-color: #e4ffcc;
 	--bg-content-color: #fff;
 	--border-color: rgba(0,0,0,0.35);
@@ -58,7 +66,6 @@ body {
 
 // Override variables for Dark theme
 body[data-theme="dark"] {
-	--black: #000;
 	--bg-color: #000;
 	--bg-content-color: #161616; //#0f431f;
 	--border-color: rgba(255,255,255,0.35);
