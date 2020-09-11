@@ -38,12 +38,12 @@ query CustomPage ($id: ID!) {
     cover_image
     content
   }
-  pages: allCustomPage {
+  posts: allPost {
 		edges {
 			node {
 				id
 				title
-				...on CustomPage {
+				...on Post {
 				id
 				title
 				path
