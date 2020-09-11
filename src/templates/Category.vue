@@ -4,7 +4,7 @@
       {{ $page.category.title }}
     </h1>
 
-    <div class="posts">
+    <div class="posts post_grid">
       <PostCard v-for="edge in $page.category.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
   </Layout>

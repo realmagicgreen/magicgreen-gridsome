@@ -190,6 +190,13 @@ export default {
     }
   }
 }
+
+.post_metas {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-style: italic;
+}
+
 .ad {
   font-family: arial, sans-serif;
   margin-left: 7px;

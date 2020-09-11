@@ -57,26 +57,4 @@ export default {
 }
 
 
-.post_grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  overflow: hidden;
-
-  > * {
-    display: block;
-    max-width: 100%;
-    @media screen and (min-width: 880px) {
-      max-width: calc(50% - 10px);
-    }
-    @media screen and (min-width: 1260px) {
-      max-width: calc(33.33% - 10px);
-    }
-  }
-}
 </style>
