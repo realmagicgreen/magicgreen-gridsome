@@ -41,7 +41,7 @@ export default {
   min-height: 48px;
   background-color: transparent;
   border: 0;
-  color: white;//var(--text-color);
+  color: white;//var(--text_color);
   cursor: pointer;
 
   &:hover {

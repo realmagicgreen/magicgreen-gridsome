@@ -17,7 +17,10 @@
 		class="head_menu togglable_menu"
 		:class="{'is-active': isMenuActive}"
 		@click="isMenuActive = !isMenuActive">
-	    <div v-for="navItem in $static.metadata.headerNavigation" :key="navItem.name" class="menu_item_wrap">
+	    <div
+			v-for="navItem in $static.metadata.headerNavigation"
+			:key="navItem.name"
+			class="menu_item_wrap">
 			  <g-link
 				class="menu_item"
 				role="menuitem"
@@ -75,8 +78,8 @@ export default {
 		}
 		@media only screen and (min-width: 880px) {
 			border: 0 none;
-			margin-left: calc(var(--space-small)/2);
-			margin-right: calc(var(--space-small)/2);
+			margin-left: calc(var(--space--small)/2);
+			margin-right: calc(var(--space--small)/2);
 			&.active {
 				border: 0 none;
 				font-size: 100%;

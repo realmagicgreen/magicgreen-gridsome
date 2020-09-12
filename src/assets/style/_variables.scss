@@ -6,8 +6,8 @@
 // Default variables
 html {
 	// fonts sizes
-	--font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-	--base-font-size: 20px;
+	--font_family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	--base_font_size: 20px;
 	--base-line-height: 1.4446;
 	// all headings are derived from:
 	--heading1: 1.7rem;
@@ -17,11 +17,11 @@ html {
 body {
 	//spaces
 	--space: 2rem;
-	--space-small: 1rem;
+	--space--small: 1rem;
 
 	//gridsome theme block sizes
-	--content-width: 860px;
-	--header-height: 80px;
+	--content_width: 860px;
+	--header_height: 80px;
 
 	//mix
 	--radius: 5px;
@@ -48,40 +48,40 @@ body {
 	--black--soft: #161616;
 
 	//shadows
-	--top_shadow: 0 -2px 5px 0 rgba(var(--black),0.12), 0 -4px 10px 0 rgba(var(--black),0.24);
-	--bottom_shadow: 0 4px 10px 0 rgba(var(--black),0.24);
-	--card_shadow: 1px 1px 2px 0 rgba(var(--black),0.12), 2px 2px 3px 0 rgba(var(--black),0.24);
-	--card_shadow--hover: 4px 4px 8px 0 rgba(var(--black),0.12), 8px 8px 8px 0 rgba(var(--black),0.24);
+	--top_shadow: 0 -2px 5px 0 rgba(0,0,0,0.12), 0 -4px 10px 0 rgba(0,0,0,0.24);
+	--bottom_shadow: 0 4px 10px 0 rgba(0,0,0,0.24);
+	--card_shadow: 1px 1px 2px 0 rgba(0,0,0,0.12), 2px 2px 3px 0 rgba(0,0,0,0.24);
+	--card_shadow--hover: 4px 4px 8px 0 rgba(0,0,0,0.12), 8px 8px 8px 0 rgba(0,0,0,0.24);
 
 	--transition_shadow: box-shadow .2s ease;
 
 	//color that change in dark module
-	--bg-color: #e4ffcc;
-	--bg-content-color: #fff;
-	--border-color: rgba(0,0,0,0.35);
-	--text-color: #444;
-	--title-color: #111;
-	--link-color: hsla(92, 100%, 13%, 1);
+	--bg_color: #e4ffcc;
+	--bg_content_color: #fff;
+	--border_color: rgba(0,0,0,0.35);
+	--text_color: #444;
+	--title_color: #111;
+	--link_color: hsla(92, 100%, 13%, 1);
 }
 
 // Override variables for Dark theme
 body[data-theme="dark"] {
-	--bg-color: #000;
-	--bg-content-color: #161616; //#0f431f;
-	--border-color: rgba(255,255,255,0.35);
-	--text-color: #ced8de;
-	--title-color: #fff;
-	--link-color: hsla(92, 100%, 75%, 1);
+	--bg_color: #000;
+	--bg_content_color: #161616; //#0f431f;
+	--border_color: rgba(255,255,255,0.35);
+	--text_color: #ced8de;
+	--title_color: #fff;
+	--link_color: hsla(92, 100%, 75%, 1);
 }
 
 // Make  things smaller for mobile
 @media screen and (max-width: 640px) {
 	html {
-		--base-font-size: 18px;
+		--base_font_size: 18px;
 	}
 
 	body {
 		--space: 1rem;
-		--header-height: 60px;
+		--header_height: 60px;
 	}
 }

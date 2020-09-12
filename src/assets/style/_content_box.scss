@@ -1,8 +1,8 @@
 // Used to wrap content inside a nice box.
 
-.content-box {
-	// background-color: var(--bg-content-color);
-	max-width: var(--content-width);
+.content_box {
+	// background-color: var(--bg_content_color);
+	max-width: var(--content_width);
 	margin: 0 auto;
 	transition: background-color .6s;
 	// padding: var(--space);
@@ -12,7 +12,7 @@
 }
 
 .container {
-	padding: calc(var(--space-small)*1.5);
+	padding: calc(var(--space--small)*1.5);
 	max-width: 100%;
 	@media screen and (min-width: 640px) {
 		padding: var(--space);

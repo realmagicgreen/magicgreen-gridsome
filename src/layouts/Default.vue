@@ -31,7 +31,7 @@ export default {
   padding-bottom: 2rem;
   max-width: 1500px;
   @media only screen and (min-width: 1500px) {
-    margin: 0 auto;
+    margin: var(--space--small) auto 0 auto;
   }
 }
 </style>

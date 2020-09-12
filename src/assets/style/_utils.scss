@@ -1,17 +1,21 @@
-.text-center {
+.center {
 	text-align: center;
 }
 
-.space-bottom {
+.margin_top {
+	margin-top: var(--space);
+}
+
+.margin_bottom {
 	margin-bottom: var(--space);
 }
 
 .border_top {
-	border-top: 1px solid var(--border-color);
+	border-top: 1px solid var(--border_color);
 }
 
 .border_bottom {
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border_color);
 }
 
 .show_on_phones {

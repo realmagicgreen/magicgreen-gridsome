@@ -24,10 +24,11 @@
 .card {
 	text-decoration: none;
 	position: relative;
-	background-color: var(--bg-content-color);
-	box-shadow: --card-shadow;
-	transition: --transition_shadow;
-	border: 1px solid var(--border-color);
+	background-color: var(--bg_content_color);
+	-webkit-box-shadow: var(--card_shadow);
+	box-shadow: var(--card_shadow);
+	transition: var(--transition_shadow);
+	border: 1px solid var(--border_color);
 	border-radius: 5px;
 	overflow: hidden;
 	display: flex;
@@ -51,8 +52,8 @@
 
 	&:focus,
 	&:hover {
-		-webkit-box-shadow: --card-shadow--hover;
-		box-shadow: --card-shadow--hover;
+		-webkit-box-shadow: var(--card_shadow--hover);
+		box-shadow: var(--card_shadow--hover);
 
 		.card_post_image {
 			-webkit-transform: scale(1.05);
@@ -77,7 +78,7 @@
 }
 
 .card_post_text {
-	padding: 0 var(--space-small);
+	padding: 0 var(--space--small);
 	margin-top: -10px;
 	margin-bottom: 0;
 	height: 100%;
@@ -86,7 +87,7 @@
 	justify-content: space-between;
 
 	& > * + * {
-		margin-top: calc(var(--space-small)/2);
+		margin-top: calc(var(--space--small)/2);
 	}
 }
 
@@ -95,7 +96,7 @@
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
 	//flex-grow: 1;
-	color: var(--title-color);
+	color: var(--title_color);
 }
 
 .clipped {

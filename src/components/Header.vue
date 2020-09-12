@@ -38,7 +38,8 @@ export default {
 	flex-direction: row;
   justify-content: center;
   align-items: center;
-  min-height: var(--header-height);
+  min-height: var(--header_height);
+	box-shadow: var(--bottom_shadow);
 
 	.header_wrap {
 		display: flex;
@@ -46,7 +47,7 @@ export default {
 	  justify-content: space-between;
 	  align-items: center;
 		flex-wrap: nowrap;
-		padding: var(--space-small) calc(var(--space-small)/2);
+		padding: var(--space--small) calc(var(--space--small)/2);
 		width: 100%;
 		max-width: 1500px;
 
@@ -59,8 +60,8 @@ export default {
 
 		@media screen and (min-width: 1260px) {
 			flex-direction: row;
-			padding-left: var(--space-small);
-			padding-right: var(--space-small);
+			padding-left: var(--space--small);
+			padding-right: var(--space--small);
 			margin: 0 auto;
 		}
 

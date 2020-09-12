@@ -38,7 +38,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: var(--space-small);
+  padding-top: var(--space--small);
   padding-bottom: calc(var(--space)/2);
   padding-right: calc(var(--space)/2);
   font-size: .9rem;
@@ -63,11 +63,11 @@ export default {
   margin-left: .2rem;
   margin-right: .2rem;
   padding: .4rem .1rem;
-  color: var(	--text-color) !important;
+  color: var(	--text_color) !important;
   font-style: italic;
   text-decoration: none;
   &:hover {
-    color: var(--title-color) !important;
+    color: var(--title_color) !important;
   }
 }
 
@@ -79,7 +79,7 @@ export default {
 .post_date,
 .post_time_to_read,
 .post_photography {
-  color: var(	--text-color);
+  color: var(	--text_color);
   font-style: italic;
   padding: .4rem .1rem;
 }

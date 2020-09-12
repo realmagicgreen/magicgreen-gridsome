@@ -114,6 +114,7 @@ export default {
   width: 100%;
   background-color:  var(--black);
   color: var(--brand_color--dark);
+	box-shadow: var(--top_shadow);
 
 	a:not(.button) {
 		text-decoration: none;
@@ -162,8 +163,8 @@ export default {
 
     &.active {
       border-bottom: 0 none;
-			padding-left: var(--space-small);
-			padding-right: var(--space-small);
+			padding-left: var(--space--small);
+			padding-right: var(--space--small);
 			border: var(--brand_color--dark) solid 1px;
     }
 }

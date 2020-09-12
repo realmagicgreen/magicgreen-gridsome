@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="tag-title text-center space-bottom">
+    <h1 class="tag-title center margin_bottom">
       {{ $page.category.title }}
     </h1>
 
@@ -61,7 +61,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.posts {
-  padding: 10px;
-}
+// in post.scss so to have one source of truth...
 </style>

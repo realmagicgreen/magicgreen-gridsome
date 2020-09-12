@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="tag-title text-center space-bottom">
+    <h1 class="tag-title center margin_bottom">
       {{ $page.tag.title }}
     </h1>
 

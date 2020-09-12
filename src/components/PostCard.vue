@@ -1,5 +1,5 @@
 <template>
-    <g-link class="card content-box" :to="post.path">
+    <g-link class="card content_box" :to="post.path">
       <div class="card_post_image clipped">
         <g-image
         class=""
@@ -30,5 +30,5 @@ export default {
 </script>
 
 <style lang="scss">
-
+// in card.scss, so tag and cat pages get it!
 </style>
