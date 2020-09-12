@@ -3,7 +3,7 @@ title: Ferns eliminate air pollutants
 subtitle: This ancient plant offers a superior pollutants removal efficiency. A must have for an healthy home.
 date: 2018-06-14
 published: true
-description: The importance of indoor air quality to human health has become of increasing interest in developed countries where inhabitants often spend over 90% of their time indoors. Scientists studying the air-purification capacities of indoor plants have found that plants can absorb many other gases in addition to carbon dioxide, including a long list of volatile organic compounds (VOCs). # max 160 digits cos dunno how to trim it, yet......
+description: Air-purification capacities of indoor plants have found that plants can absorb many pollutants, including a long list of volatile organic compounds (VOCs). # max 160 digits cos dunno how to trim it, yet......
 category: health
 tags:
   - CO2
