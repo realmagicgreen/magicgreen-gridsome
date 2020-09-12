@@ -40,6 +40,13 @@
 		color: var(--transparent_grey);
 		transition: transform .25s ease-in-out;
 		transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+		max-height: 60vw;
+		@media screen and (min-width: 880px) {
+			max-height: 30vw;
+		}
+		@media screen and (min-width: 1260px) {
+			max-height: 20vw;
+		}
 	}
 
 	&:focus,
@@ -76,6 +83,7 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 
 	& > * + * {
 		margin-top: calc(var(--space-small)/2);

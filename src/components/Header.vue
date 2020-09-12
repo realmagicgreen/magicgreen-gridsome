@@ -40,8 +40,6 @@ export default {
   align-items: center;
   min-height: var(--header-height);
 
-
-
 	.header_wrap {
 		display: flex;
 		flex-direction: row;
