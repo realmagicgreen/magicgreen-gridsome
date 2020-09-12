@@ -25,9 +25,13 @@ export default {
 </script>
 
 <style lang="scss">
+
 .main {
   margin: 0 auto;
   padding-bottom: 2rem;
-  // padding: 0 5px; //move to post_container
+  max-width: 1500px;
+  @media only screen and (min-width: 1500px) {
+    margin: 0 auto;
+  }
 }
 </style>

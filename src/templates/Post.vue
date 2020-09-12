@@ -130,6 +130,7 @@ export default {
   &_cover_image {
     padding: 0;
     margin: 0;
+    border-radius: 5px 5px 0 0;
   }
 
   &_title {
@@ -141,6 +142,7 @@ export default {
     margin-top: -8px;
     padding-top: 3px;
     padding-bottom: 2px;
+    border-radius: 0 0 5px 5px;
     text-align: right;
     padding-right: var(--space-small);
     background-color: var(--category_03);
