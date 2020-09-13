@@ -12,13 +12,4 @@ module.exports = function (api) {
   api.loadSource(({ addCollection }) => {
     // Use the Data store API here: https://gridsome.org/docs/data-store-api/
   });
-  // api.onCreateNode(options => {
-  //   if (options.internal.typeName === 'CustomPage') {
-  //     options.recordType = options.internal.typeName;
-  //     // options.sidebar = !!(options.sidebar);
-  //     return {
-  //       ...options
-  //     };
-  //   }
-  // });
 }
