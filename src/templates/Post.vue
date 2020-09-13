@@ -16,9 +16,8 @@
 
       <div class="post_header">
 
-        <h1 class="post_title">
+        <h1 class="post_title" :class="[$page.post.ad ? 'is-adv' : '' ]" >
           {{ $page.post.title }}
-          <span class="ad" v-if="$page.post.ad">ad</span>
         </h1>
 
         <h2 class="post_subtitle border_top border_bottom">
