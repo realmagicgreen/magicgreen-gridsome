@@ -21,6 +21,7 @@ query Tag ($id: ID!) {
             title
             subtitle
             path
+            ad
             date (format: "D. MMMM YYYY")
             timeToRead
             tags {
