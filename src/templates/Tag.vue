@@ -29,6 +29,9 @@ query Tag ($id: ID!) {
               title
               path
             }
+            category {
+              title
+            }
             description
             content
             cover_image (width: 860, blur: 10)

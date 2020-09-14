@@ -20,6 +20,9 @@ query {
         id
         title
         subtitle
+        category {
+          title
+        }
         date (format: "DD MMMM YYYY")
         timeToRead
         description

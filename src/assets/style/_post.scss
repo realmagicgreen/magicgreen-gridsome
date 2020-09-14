@@ -31,21 +31,6 @@
 		text-align: center;
 	}
 
-	&_category {
-		margin-top: -8px;
-		padding-top: 3px;
-		padding-bottom: 2px;
-		text-align: right;
-		padding-right: var(--space--small);
-		background-color: var(--category_03);
-		color: var(--black);
-		text-transform: uppercase;
-		@media screen and (min-width: 1500px) {
-			border-radius: 0 0 5px 5px;
-		}
-
-	}
-
 	&_header {
 		width: 100%;
 
@@ -90,6 +75,54 @@
 		padding-top: 0;
 		padding-bottom: 0;
 		font-style: italic;
+	}
+
+}
+
+.post_image .category {
+	margin-top: -8px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	text-align: right;
+	padding-right: var(--space--small);
+	background-color: var(--category_03);
+	color: var(--black);
+	text-transform: uppercase;
+	@media screen and (min-width: 1500px) {
+		border-radius: 0 0 5px 5px;
+	}
+
+}
+
+.category {
+	color: var(--black);
+
+	.services & {
+		background-color: var(--category_01);
+	}
+
+	.products & {
+		background-color: var(--category_02);
+	}
+
+	.techniques & {
+		background-color: var(--category_03);
+	}
+
+	.solutions & {
+		background-color: var(--category_04);
+	}
+
+	.know & {
+		background-color: var(--category_05);
+	}
+
+	.health & {
+		background-color: var(--category_06);
+	}
+
+	.resources & {
+		background-color: var(--category_07);
 	}
 
 }

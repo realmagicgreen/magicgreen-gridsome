@@ -1,15 +1,16 @@
 <template>
   <Layout>
 
-    <g-image
-    alt="Cover image"
-    v-if="$page.post.cover_image"
-    :src="$page.post.cover_image"
-    class="post_cover_image"
-    />
+    <div class="post_image" :class="[$page.post.category.title]">
+      <g-image
+      alt="Cover image"
+      v-if="$page.post.cover_image"
+      :src="$page.post.cover_image"
+      class="post_cover_image"/>
 
-    <div class="post_category">
-      {{ $page.post.category.title }}
+      <div class="category">
+        {{ $page.post.category.title }}
+      </div>
     </div>
 
     <div class="post_container">
