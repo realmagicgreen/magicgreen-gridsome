@@ -1,11 +1,6 @@
 .post_grid {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
 	justify-content: space-between;
 	overflow: hidden;
 
@@ -25,7 +20,6 @@
 	text-decoration: none;
 	position: relative;
 	background-color: var(--bg_content_color);
-	-webkit-box-shadow: var(--card_shadow);
 	box-shadow: var(--card_shadow);
 	transition: var(--transition_shadow);
 	border: 1px solid var(--border_color);
@@ -34,13 +28,13 @@
 	display: flex;
 	flex-direction: column;
 	margin-bottom: var(--space);
+	transform: scale(1.005);
 
 	.card_post_image {
 		position: relative;
 		width: 100%;
 		color: var(--transparent_grey);
 		transition: transform .25s ease-in-out;
-		transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
 		max-height: 60vw;
 		@media screen and (min-width: 880px) {
 			max-height: 30vw;
@@ -52,17 +46,14 @@
 
 	&:focus,
 	&:hover {
-		-webkit-box-shadow: var(--card_shadow--hover);
 		box-shadow: var(--card_shadow--hover);
 
 		.card_post_image {
-			-webkit-transform: scale(1.05);
 			transform: scale(1.05);
 		}
 	}
 
 	&:active {
-		-webkit-transform: translateY(0.25em);
 		transform: translateY(0.25em);
 	}
 

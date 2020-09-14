@@ -36,11 +36,15 @@ query {
 		text-transform: uppercase;
 		color: var(--brand_color);
 		font-size: 7.2vw;
+		font-weight: 600;
 		@media only screen and (min-width: 641px) {
     font-size: 7vw;
 		}
 		@media only screen and (min-width: 881px) {
-			font-size: 34px;
+			font-size: 47px;
+		}
+		@media only screen and (min-width: 1260px) {
+			font-size: 36px;
 		}
 	}
 

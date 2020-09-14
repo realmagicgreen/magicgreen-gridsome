@@ -35,6 +35,7 @@
 							:to="navItem.link"
 							:title="navItem.name"
 							v-if="navItem.external!=true"
+							:class="[navItem.fullname]"
 						>{{ navItem.name}} {{ navItem.username}}</g-link>
 						<a
 							class="menu_item"
@@ -44,6 +45,7 @@
 							target="_blank"
 							:title="navItem.name"
 							v-if="navItem.external==true"
+							:class="[navItem.fullname]"
 						>{{ navItem.name}} {{ navItem.username}}</a>
 					</div>
 
@@ -78,6 +80,7 @@ query {
     siteName
 		footerNavigation {
 	    name
+			fullname
 			username
 	    link
 	    external
@@ -197,6 +200,32 @@ export default {
   .name {
     color: black;
   }
+	.menu_item {
+		&.facebook:before {
+	    content: "";
+	    //position: absolute;
+	    background: url("../assets/svgs/facebook.svg") no-repeat;
+			width: 30px;
+			height: 30px;
+			padding-right: 10px;
+		}
+		&.instagram:before {
+	    content: "";
+	    //position: absolute;
+	    background: url("../assets/svgs/instagram.svg") no-repeat;
+			width: 30px;
+			height: 30px;
+			padding-right: 10px;
+		}
+		&.email:before {
+	    content: "";
+	    //position: absolute;
+	    background: url("../assets/svgs/email.svg") no-repeat;
+			width: 30px;
+			height: 30px;
+			padding-right: 10px;
+		}
+	}
 }
 
 .copyright {
