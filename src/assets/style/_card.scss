@@ -28,7 +28,6 @@
 	display: flex;
 	flex-direction: column;
 	margin-bottom: var(--space);
-	transform: scale(1.005);
 
 	.card_post_image {
 		position: relative;
@@ -36,6 +35,7 @@
 		color: var(--transparent_grey);
 		transition: transform .25s ease-in-out;
 		max-height: 60vw;
+		transform: scale(1.005);
 		@media screen and (min-width: 880px) {
 			max-height: 30vw;
 		}

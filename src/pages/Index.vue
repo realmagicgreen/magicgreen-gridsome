@@ -2,7 +2,7 @@
   <Layout :show-logo="true">
 
     <div class="slogan">
-
+      
     </div>
 
     <div class="posts post_grid">

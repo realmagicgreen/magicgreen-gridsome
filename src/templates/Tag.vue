@@ -1,8 +1,11 @@
 <template>
   <Layout>
-    <h1 class="tag-title center margin_bottom">
-      {{ $page.tag.title }}
-    </h1>
+
+    <div class="title_wrapper">
+      <h1 class="tag_page_title">
+        {{ $page.tag.title }}
+      </h1>
+    </div>
 
     <div class="posts post_grid">
       <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
@@ -72,5 +75,40 @@ export default {
 <style lang="scss" scoped>
 .posts {
   padding: 10px;
+}
+
+[data-theme="light"] .tag_page_title {
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    background: url("../assets/svgs/tag.svg") no-repeat;
+    width: 36px;
+    height: 34px;
+    padding-right: 10px;
+    left: -40px;
+    top: 24px;
+  }
+}
+
+[data-theme="dark"] .tag_page_title {
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    background: url("../assets/svgs/tag_white.svg") no-repeat;
+    width: 36px;
+    height: 34px;
+    padding-right: 10px;
+    left: -40px;
+    top: 24px;
+  }
+}
+
+
+.title_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>

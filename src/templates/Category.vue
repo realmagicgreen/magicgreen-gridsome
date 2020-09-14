@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="tag-title center margin_bottom">
+    <h1 class="hide">
       {{ $page.category.title }}
     </h1>
 
@@ -66,4 +66,7 @@ export default {
 
 <style lang="scss" scoped>
 // in post.scss so to have one source of truth...
+.post_grid {
+  padding-top: 10px;
+}
 </style>

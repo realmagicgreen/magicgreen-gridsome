@@ -203,7 +203,6 @@ export default {
 	.menu_item {
 		&.facebook:before {
 	    content: "";
-	    //position: absolute;
 	    background: url("../assets/svgs/facebook.svg") no-repeat;
 			width: 30px;
 			height: 30px;
@@ -211,7 +210,6 @@ export default {
 		}
 		&.instagram:before {
 	    content: "";
-	    //position: absolute;
 	    background: url("../assets/svgs/instagram.svg") no-repeat;
 			width: 30px;
 			height: 30px;
@@ -219,7 +217,6 @@ export default {
 		}
 		&.email:before {
 	    content: "";
-	    //position: absolute;
 	    background: url("../assets/svgs/email.svg") no-repeat;
 			width: 30px;
 			height: 30px;
