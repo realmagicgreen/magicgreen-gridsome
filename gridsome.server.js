@@ -7,7 +7,7 @@
 
 module.exports = function (api) {
   api.loadSource(async store => {
-    store.addMetadata('siteSubname', 'Sustainable and environment-friendly examples from South East Asia and beyond.')
+    store.addMetadata('slogan', 'Sustainable and environment-friendly examples from South East Asia and beyond.')
   })
   api.loadSource(({ addCollection }) => {
     // Use the Data store API here: https://gridsome.org/docs/data-store-api/

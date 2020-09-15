@@ -2,7 +2,7 @@
   <Layout :show-logo="true">
 
     <div class="slogan">
-      <!-- <h2>{{ $static.metadata.siteSubname }}</h2> -->
+      <Slogan />
     </div>
 
     <div class="posts post_grid">
@@ -14,9 +14,6 @@
 
 <page-query>
 query {
-  metadata {
-    siteSubname
-  }
   posts: allPost(filter: { published: { eq: true }}) {
     edges {
       node {
@@ -50,10 +47,15 @@ query {
 
 <script>
 import PostCard from '~/components/PostCard.vue'
+import Slogan from '~/components/Slogan.vue'
 
 export default {
   components: {
-    PostCard
+    PostCard,
+    Slogan
+  },
+  metaInfo: {
+    title: 'Hello, greener world!'
   }
 }
 </script>
