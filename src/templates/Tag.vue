@@ -2,7 +2,7 @@
   <Layout>
 
     <div class="title_wrapper">
-      <h1 class="tag_page_title">
+      <h1 class="tag_page_title h2">
         {{ $page.tag.title }}
       </h1>
     </div>
@@ -79,6 +79,10 @@ export default {
 
 [data-theme="light"] .tag_page_title {
   position: relative;
+  left: 28px;
+  margin-top: 10px;
+  max-width: 50%;
+  font-weight: 400;
   &:before {
     position: absolute;
     content: "";
@@ -86,8 +90,8 @@ export default {
     width: 36px;
     height: 34px;
     padding-right: 10px;
-    left: -40px;
-    top: 24px;
+    left: -36px;
+    top: 20px;
   }
 }
 
@@ -100,8 +104,8 @@ export default {
     width: 36px;
     height: 34px;
     padding-right: 10px;
-    left: -40px;
-    top: 24px;
+    left: -36px;
+    top: 20px;
   }
 }
 
@@ -110,5 +114,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 </style>

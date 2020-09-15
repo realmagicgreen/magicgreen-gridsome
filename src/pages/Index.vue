@@ -2,7 +2,7 @@
   <Layout :show-logo="true">
 
     <div class="slogan">
-      
+      <!-- <h2>{{ $static.metadata.siteSubname }}</h2> -->
     </div>
 
     <div class="posts post_grid">
@@ -14,6 +14,9 @@
 
 <page-query>
 query {
+  metadata {
+    siteSubname
+  }
   posts: allPost(filter: { published: { eq: true }}) {
     edges {
       node {

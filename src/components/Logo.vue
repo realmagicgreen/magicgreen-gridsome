@@ -36,7 +36,7 @@ query {
 		text-transform: uppercase;
 		color: var(--brand_color);
 		font-size: 7.2vw;
-		font-weight: 600;
+		font-weight: 500;
 		@media only screen and (min-width: 641px) {
     font-size: 7vw;
 		}

@@ -6,6 +6,10 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+html {
+	background-color: black;
+}
+
 body {
 	background-color: var(--bg_color);
 	color: var(--text_color);
