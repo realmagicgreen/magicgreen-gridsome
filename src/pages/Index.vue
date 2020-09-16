@@ -1,7 +1,7 @@
 <template>
   <Layout :show-logo="true">
 
-    <div class="slogan">
+    <div class="slogan_block">
       <Slogan />
     </div>
 
@@ -64,6 +64,7 @@ export default {
 .posts {
   padding: 10px;
 }
+
 
 
 </style>

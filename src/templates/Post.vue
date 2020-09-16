@@ -1,6 +1,8 @@
 <template>
   <Layout>
 
+    <SEO/>
+
     <div class="post_image" :class="[$page.post.category.title]">
       <g-image
       alt="Cover image"
@@ -78,27 +80,25 @@ query Post ($id: ID!) {
 <script>
 import PostMeta from '~/components/PostMeta'
 import PostLink from '~/components/PostLink'
+import SEO from '~/components/SEO.vue'
 
 export default {
   components: {
     PostMeta,
-    PostLink
+    PostLink,
+    SEO
   },
   metaInfo () {
     return {
       title: this.$page.post.title,
       subtitle: this.$page.post.subtitle,
-      ad: this.$page.post.ad,
-      meta: [
-        {
-          name: 'description',
-          content: this.$page.post.description
-        },
-        {
-          name: 'photography',
-          content: this.$page.post.photography
-        }
-      ]
+      ad: this.$page.post.ad
+      // meta: [
+      //   {
+      //     name: 'description',
+      //     content: this.$page.post.description
+      //   }
+      // ]
     }
   }
 }

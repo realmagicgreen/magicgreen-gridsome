@@ -51,6 +51,7 @@ query {
 		headerNavigation {
 	    name
 	    link
+			slogan
 	  }
   }
 }

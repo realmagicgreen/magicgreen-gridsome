@@ -44,15 +44,26 @@ Finally the tree get in the manufactory cut and the shapers start to do their wo
 
 ![Vince Tierny showroom](./images/products/balsa-wood-surfboards/balsa-wood-surfboards-03.jpg)
 
-They have a [showroom in Berawa, Canggu](https://goo.gl/maps/6kgsznMZLdK2) where they sell some standard boards, which are always available and you can also by cotton T-shirts, organic wax or bamboo fins.
+They had a [showroom in Berawa, Canggu](https://goo.gl/maps/6kgsznMZLdK2) where they sell some standard boards, which are always available and you can also by cotton T-shirts, organic wax or bamboo fins.
 
 The prices for a signature board starts at 315 USD up to 2200 USD, but for the customized boards the price always depends on the size and which kind of features you like to have.
 
-You also can order boards or your customized one [online](http://vincetierny.com/order/) but for a customized board it is always good to get there and talk about your wishes.
+Un fortunately Vince business is now permanently closed, here is [Vince Tierny Fb page](https://www.facebook.com/pg/vincetierny/shop/) in case you want to still get in contact with him.
 
+You can get a Balsa Surfboard form one of the links below, or even build one yourself, following [this video tutorial](https://youtu.be/00HYKyeiDe0) or [this other one](https://youtu.be/Df96N1WCBe8) or even make yourself a [5'10" bamboo shortboard](https://youtu.be/xhBOHScs2Ec).
 
 **_See more:_**
 
-[Vincent Tierny - website](http://vincetierny.com/)
+[Kayu surfboards - Bali](https://kayusurfboards.com/)
 
-[Vincent sustainable production](http://vincetierny.com/sustainable-production/)
+[Riley Balsawood Surfboards - Australia](https://balsawoodsurfboardsriley.com/)
+
+[Gaspard Surfboards - France](http://gaspard-surfboards.fr/)
+
+[Kuntiqi - Spain](https://www.kuntiqi.com/)
+
+[Ecosurfshop - Europe](https://ecosurfshop.eu/)
+
+[Yanasurf - Usa](https://yanasurf.com/balsa-wood-surfboards/)
+
+[Grain Surfboards - Usa](https://www.grainsurfboards.com/)

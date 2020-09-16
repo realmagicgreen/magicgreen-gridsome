@@ -53,7 +53,9 @@ module.exports = {
   ],
 
   templates: {
-    Post: '/:title',
+    Post: [{
+      path: '/:category/:title'
+    }],
     CustomPage: [{
       path: '/:title',
       component: '~/templates/CustomPage.vue'

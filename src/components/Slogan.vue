@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2 class="center" v-html="$static.metadata.slogan" />
+    <h2 class="center slogan" v-html="$static.metadata.slogan" />
   </div>
 </template>
 
@@ -11,3 +11,14 @@ query {
   }
 }
 </static-query>
+
+
+
+
+<style lang="scss" scoped>
+
+[data-theme="dark"] .slogan {
+    color: var(--brand_color);
+}
+
+</style>

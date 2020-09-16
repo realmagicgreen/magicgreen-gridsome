@@ -3,6 +3,9 @@
     <h1 class="hide">
       {{ $page.category.title }}
     </h1>
+    <h2 class="h3">
+      <CategorySlogan />
+    </h2>
 
     <div class="posts post_grid">
       <PostCard v-for="edge in $page.category.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
@@ -58,8 +61,10 @@ export default {
   components: {
     PostCard
   },
-  metaInfo: {
-    title: 'category'
+  metaInfo () {
+    return {
+      title: this.$page.category.title
+    }
   }
 }
 </script>
