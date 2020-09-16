@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2 v-html="$static.metadata.slogan" />
+    <h2 class="center" v-html="$static.metadata.slogan" />
   </div>
 </template>
 
