@@ -57,12 +57,9 @@ export default {
       let coverImage = "";
       const cover = this.$page.post.cover_image;
       if (cover != null) {
-        coverImage = `${this.getBaseUrl}${this.$page.post.cover_image.src}`;
+        coverImage = `${this.$page.post.cover_image.src}`;
       }
       return coverImage;
-    },
-    getBaseUrl() {
-      return process.env.GRIDSOME_BASE_URL;
     }
   }
 };
