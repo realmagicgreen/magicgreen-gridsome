@@ -21,7 +21,7 @@ export default {
         // Some Open Graph Tags
         { property: "og:title", content: this.$page.post.title },
         { property: "og:description", content: this.$page.post.description },
-        { property: "og:image", content: this.$page.post.cover_image },
+        { property: "og:image", content: this.getCoverImage },
         {
           property: "og:url",
           content: this.$static.metadata.siteUrl + this.$page.post.path
@@ -30,7 +30,7 @@ export default {
         // Some Twitter Cards Tags
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: this.$page.post.title },
-        { name: "twitter:image", content: this.$page.post.cover_image },
+        { name: "twitter:image", content: this.getCoverImage  },
         { name: "twitter:description", content: this.$page.post.description }
       ],
       //Some ld+json tags
@@ -51,6 +51,19 @@ export default {
         }
       ]
     };
+  },
+  computed: {
+    getCoverImage() {
+      let coverImage = "";
+      const cover = this.$page.post.cover_image;
+      if (cover != null) {
+        coverImage = `${this.getBaseUrl}${this.$page.post.cover_image.src}`;
+      }
+      return coverImage;
+    },
+    getBaseUrl() {
+      return process.env.GRIDSOME_BASE_URL;
+    }
   }
 };
 </script>
