@@ -1,7 +1,5 @@
 <template>
-  <div class="container">
-    <h2 class="center slogan" v-html="$static.metadata.slogan" />
-  </div>
+  <h2 class="center slogan" v-html="$static.metadata.slogan" />
 </template>
 
 <static-query>

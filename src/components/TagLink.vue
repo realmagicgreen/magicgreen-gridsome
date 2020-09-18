@@ -1,13 +1,33 @@
 <template>
   <g-link
-  class="menu_item post_link"
+  class="tag_link"
   :to="tag.path"
-  role="menuitem">
+  role="menuitem"
+  >
     <div
-    class="post-card__title"
-    v-html="tag.title" />
+    class="tag_title"
+    v-html="tag.title"
+    :class=""/>
   </g-link>
+
 </template>
+
+<!-- <static-query>
+query {
+  tags: allTag {
+    totalCount
+    edges {
+      node {
+        title
+        path
+        belongsTo {
+          totalCount
+        }
+      }
+    }
+  }
+}
+</static-query> -->
 
 <script>
 export default {
@@ -15,6 +35,11 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+  .tag_link {
+    padding: 5px;
+    margin: 0 2px;
+    text-decoration: none;
+  }
 
 </style>

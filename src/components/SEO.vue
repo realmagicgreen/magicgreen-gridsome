@@ -46,7 +46,7 @@ export default {
               name: this.$page.post.author
             },
             headline: this.$page.post.title,
-            image: this.$page.post.cover_image,
+            image: this.getCoverImage,
           }
         }
       ]

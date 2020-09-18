@@ -1,15 +1,17 @@
 <template>
   <Layout :show-logo="true">
 
-    <div class="slogan_block">
+    <div class="slogan_block container">
       <Slogan />
     </div>
 
-    <TagLink
-    v-for="edge in $page.tags.edges"
-    :key="edge.node.id"
-    :tag="edge.node"
-    />
+    <div class="tag_cloud container">
+      <TagLink
+      v-for="edge in $page.tags.edges"
+      :key="edge.node.id"
+      :tag="edge.node"
+      />
+    </div>
 
     <div class="posts post_grid">
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
@@ -83,7 +85,11 @@ export default {
 .posts {
   padding: 10px;
 }
-
-
+.tag_cloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
 </style>
