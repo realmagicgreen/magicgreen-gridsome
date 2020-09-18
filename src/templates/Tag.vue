@@ -18,6 +18,11 @@ query Tag ($id: ID!) {
   tag (id: $id) {
     title
     belongsTo {
+      totalCount
+      pageInfo {
+        totalPages
+        currentPage
+      }
       edges {
         node {
           ...on Post {
@@ -66,6 +71,12 @@ export default {
   components: {
     PostCard
   },
+  computed: {
+    postLabel: function() {
+      var pluralize = require("pluralize");
+      return pluralize("post", this.$page.tag.belongsTo.totalCount);
+    }
+  },
   metaInfo: {
     title: 'Tags'
   }
@@ -77,43 +88,45 @@ export default {
   padding: 10px;
 }
 
-[data-theme="light"] .tag_page_title {
+.tag_page_title {
   position: relative;
-  left: 28px;
-  margin-top: 10px;
-  max-width: 50%;
+  left: 20px;
+  padding-bottom: 6px;
+  padding-top: 20px;
+  max-width: 70%;
   font-weight: 400;
   &:before {
     position: absolute;
     content: "";
-    background: url("../assets/svgs/tag.svg") no-repeat;
     width: 36px;
     height: 34px;
     padding-right: 10px;
     left: -36px;
     top: 20px;
+    [data-theme="light"] & {
+      background: url("../assets/svgs/tag.svg") no-repeat;
+    }
+    [data-theme="dark"] & {
+      background: url("../assets/svgs/tag_white.svg") no-repeat;
+    }
+
   }
 }
-
-[data-theme="dark"] .tag_page_title {
-  position: relative;
-  &:before {
-    position: absolute;
-    content: "";
-    background: url("../assets/svgs/tag_white.svg") no-repeat;
-    width: 36px;
-    height: 34px;
-    padding-right: 10px;
-    left: -36px;
-    top: 20px;
-  }
-}
-
 
 .title_wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-bottom: 10px;
+}
+.tag_count {
+  text-transform: uppercase;
+  font-size: 80%;
+  opacity: .65;
+  text-align: left;
+  width: 70%;
+  padding-left: 25px;
 }
 </style>

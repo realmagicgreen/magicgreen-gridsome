@@ -8,6 +8,7 @@
     class="tag_title"
     v-html="tag.title"
     :class=""/>
+    <!-- {{ $page.tag.belongsTo.totalCount }} -->
   </g-link>
 
 </template>
