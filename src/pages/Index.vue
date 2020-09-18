@@ -5,14 +5,6 @@
       <Slogan />
     </div>
 
-    <div class="tag_cloud container">
-      <TagLink
-      v-for="edge in $page.tags.edges"
-      :key="edge.node.id"
-      :tag="edge.node"
-      />
-    </div>
-
     <div class="posts post_grid">
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
@@ -22,17 +14,6 @@
 
 <page-query>
 query {
-  tags: allTag {
-    edges {
-      node {
-        title
-        path
-        belongsTo {
-          totalCount
-        }
-      }
-    }
-  }
   posts: allPost(filter: { published: { eq: true }}) {
     edges {
       node {

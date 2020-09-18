@@ -71,12 +71,6 @@ export default {
   components: {
     PostCard
   },
-  computed: {
-    postLabel: function() {
-      var pluralize = require("pluralize");
-      return pluralize("post", this.$page.tag.belongsTo.totalCount);
-    }
-  },
   metaInfo: {
     title: 'Tags'
   }
