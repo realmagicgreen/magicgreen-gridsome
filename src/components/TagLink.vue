@@ -8,27 +8,11 @@
     class="tag_title"
     v-html="tag.title"
     :class=""/>
-    <!-- {{ $page.tag.belongsTo.totalCount }} -->
+
   </g-link>
 
 </template>
 
-<!-- <static-query>
-query {
-  tags: allTag {
-    totalCount
-    edges {
-      node {
-        title
-        path
-        belongsTo {
-          totalCount
-        }
-      }
-    }
-  }
-}
-</static-query> -->
 
 <script>
 export default {

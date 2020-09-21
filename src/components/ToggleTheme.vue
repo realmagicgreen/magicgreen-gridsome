@@ -1,6 +1,5 @@
 <template>
   <button
-  role="button"
   aria-label="Toggle dark/light"
   @click.prevent="toggleTheme"
   class="toggle_theme"

@@ -2,12 +2,12 @@
   "headerNavigation": [
     {
       "name": "services",
-      "link": "/services",
+      "link": "/services/",
       "slogan": "services to lower your environmental impact."
     },
     {
       "name": "products",
-      "link": "/products",
+      "link": "/products/",
       "slogan": "sometimes it's easy to stop buying polluting products and start supporting more sustainable ones."
     },
     {

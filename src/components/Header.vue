@@ -28,7 +28,8 @@
 				    <div
 						v-for="navItem in $static.metadata.headerNavigation"
 						:key="navItem.name"
-						class="menu_item_wrap">
+						class="menu_item_wrap"
+						role="menu">
 						  <g-link
 							class="menu_item"
 							role="menuitem"
