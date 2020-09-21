@@ -11,9 +11,7 @@ module.exports = {
 
   plugins: [
     {
-      use: '@gridsome/plugin-sitemap',
-      options: {
-      }
+      use: '@gridsome/plugin-sitemap'
     },
     {
       // Create posts from markdown files
