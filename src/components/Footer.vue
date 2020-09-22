@@ -1,5 +1,5 @@
 <template>
-	<footer class="footer" role="contentinfo">
+	<footer class="footer">
 
 		<div class="container small flex flex_align_center flex_justify_center">
 			<Logo />
@@ -86,19 +86,6 @@ query {
 	    external
 	  }
   }
-	posts: allPost {
-		edges {
-			node {
-				id
-				title
-				...on Post {
-				id
-				title
-				path
-				}
-			}
-		}
-	}
 }
 </static-query>
 

@@ -1,0 +1,28 @@
+.pagination_block {
+  a {
+    border: 1px solid var(--link_color);
+    text-decoration: none;
+    margin: 6px 10px;
+    padding: 10px;
+    font-size: 125%;
+    border-radius: 3px;
+
+    &:first-child,
+    &:last-child {
+      border: 0 none;
+    }
+
+    &.active {
+      font-size: 165%;
+
+      &:first-child {
+        border: 1px solid var(--link_color);
+      }
+
+      &:last-child {
+        border: 1px solid var(--link_color);
+      }
+    }
+
+  }
+}

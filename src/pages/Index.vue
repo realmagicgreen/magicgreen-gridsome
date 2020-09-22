@@ -9,12 +9,18 @@
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
 
+    <Pager :info="$page.posts.pageInfo" class="pagination_block center"/>
+
   </Layout>
 </template>
 
 <page-query>
-query {
-  posts: allPost(filter: { published: { eq: true }}) {
+query ($page: Int){
+  posts: allPost(filter: { published: { eq: true }} perPage: 6, page: $page) @paginate {
+    pageInfo {
+      totalPages
+      currentPage
+    }
     edges {
       node {
         id
@@ -49,12 +55,14 @@ query {
 import PostCard from '~/components/PostCard.vue'
 import Slogan from '~/components/Slogan.vue'
 import TagLink from '~/components/TagLink.vue'
+import { Pager } from 'gridsome'
 
 export default {
   components: {
     PostCard,
     Slogan,
-    TagLink
+    TagLink,
+    Pager
   },
   metaInfo: {
     title: 'Hello, greener world!'
@@ -72,5 +80,6 @@ export default {
   align-items: center;
   justify-content: center;
 }
+
 
 </style>

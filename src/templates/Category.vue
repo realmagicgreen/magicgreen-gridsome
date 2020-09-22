@@ -10,6 +10,9 @@
     <div class="posts post_grid">
       <PostCard v-for="edge in $page.category.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
+
+    <!-- <Pager :info="$page.category.pageInfo" class="pagination_block center"/> -->
+
   </Layout>
 </template>
 
@@ -56,10 +59,12 @@ query Category ($id: ID!) {
 
 <script>
 import PostCard from '~/components/PostCard.vue'
+import { Pager } from 'gridsome'
 
 export default {
   components: {
-    PostCard
+    PostCard,
+    Pager
   },
   metaInfo () {
     return {
