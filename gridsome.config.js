@@ -81,6 +81,7 @@ module.exports = {
     remark: {
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon_link',
       plugins: [
         '@gridsome/remark-prismjs',
         // Add remark-unwrap-images plugin
