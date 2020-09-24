@@ -8,7 +8,6 @@
     class="tag_title"
     v-html="tag.title"
     :class=""/>
-
   </g-link>
 </template>
 

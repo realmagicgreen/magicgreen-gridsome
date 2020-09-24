@@ -113,7 +113,7 @@ export default {
       background-size: cover;
     }
     [data-theme="dark"] & {
-      background: url("../assets/svgs/tag_white.svg") no-repeat center center;
+      background: url("../assets/svgs/tag_green.svg") no-repeat center center;
       -webkit-background-size: cover;
       background-size: cover;
     }
