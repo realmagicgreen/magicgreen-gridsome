@@ -98,17 +98,17 @@ export default {
     PostLink,
     SEO
   },
+  mounted () {
+    import('medium-zoom').then(mediumZoom => {
+      this.zoom = mediumZoom.default('.post_content .g-image')
+      this.zoom = mediumZoom.background('#BADA55')
+    })
+  },
   metaInfo () {
     return {
       title: this.$page.post.title,
       subtitle: this.$page.post.subtitle,
       ad: this.$page.post.ad
-      // meta: [
-      //   {
-      //     name: 'description',
-      //     content: this.$page.post.description
-      //   }
-      // ]
     }
   }
 }
