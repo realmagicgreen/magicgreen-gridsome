@@ -100,8 +100,6 @@ export default {
   font-weight: 400;
   text-align: center;
 
-
-
   &:before {
     position: absolute;
     content: "";

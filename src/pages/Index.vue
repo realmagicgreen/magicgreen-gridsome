@@ -111,25 +111,6 @@ export default {
   .posts {
     padding: 10px;
   }
-  .links_list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .tag_cloud.container {
-    background-color: var(--tag_page_bg_color);
-    max-width: none;
-  }
-  .tag_link {
-    padding: 5px;
-    margin: 0 2px;
-    text-decoration: none;
-    color: var(--link_color);
-    :hover {
-      color: var(--link_color_hover);
-    }
-  }
+  
 
 </style>
