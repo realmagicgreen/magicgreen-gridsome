@@ -1,6 +1,8 @@
 <template>
   <Layout :show-logo="true">
 
+
+
     <div class="slogan_block container">
       <Slogan />
     </div>
@@ -11,11 +13,36 @@
 
     <Pager :info="$page.posts.pageInfo" class="pagination_block center"/>
 
+    <div class="tag_cloud container">
+      <div class="tag_icon">
+
+      </div>
+      <div class="links_list">
+        <TagLink
+        v-for="edge in $page.tags.edges"
+        :key="edge.node.id"
+        :tag="edge.node"
+        />
+      </div>
+    </div>
+
   </Layout>
 </template>
 
 <page-query>
 query ($page: Int){
+  tags: allTag(sortBy: "title", order: ASC) {
+    totalCount
+    edges {
+      node {
+        title
+        path
+        belongsTo {
+          totalCount
+        }
+      }
+    }
+  }
   links: allPost(filter: { published: { eq: true }}) {
     edges {
       node {
@@ -26,7 +53,7 @@ query ($page: Int){
       }
     }
   }
-  posts: allPost(filter: { published: { eq: true }} perPage: 9, page: $page) @paginate {
+  posts: allPost(filter: { published: { eq: true }} perPage: 3, page: $page) @paginate {
     pageInfo {
       totalPages
       currentPage
@@ -84,10 +111,25 @@ export default {
   .posts {
     padding: 10px;
   }
-  .tag_cloud {
+  .links_list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
   }
+  .tag_cloud.container {
+    background-color: var(--tag_page_bg_color);
+    max-width: none;
+  }
+  .tag_link {
+    padding: 5px;
+    margin: 0 2px;
+    text-decoration: none;
+    color: var(--link_color);
+    :hover {
+      color: var(--link_color_hover);
+    }
+  }
+
 </style>

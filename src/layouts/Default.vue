@@ -28,7 +28,7 @@ export default {
 
 .main {
   margin: 0 auto;
-  padding-bottom: 2rem;
+  margin-bottom: 0;
   max-width: 1920px;
   @media only screen and (min-width: 1921px) {
     margin-top: var(--space--small);

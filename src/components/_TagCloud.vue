@@ -1,26 +1,17 @@
 <template>
+
 <!-- to fix -->
-  <div class="tag_cloud container">
+<div class="tag_cloud container">
+  <div class="links_list">
     <TagLink
     v-for="edge in $page.tags.edges"
     :key="edge.node.id"
     :tag="edge.node"
     />
   </div>
+</div>
 <!--end to fix -->
-
-
-  <g-link
-  class="tag_link"
-  :to="tag.path"
-  role="menuitem"
-  >
-    <div
-    class="tag_title"
-    v-html="tag.title"
-    :class=""/>
-    <!-- {{ $page.tag.belongsTo.totalCount }} -->
-  </g-link>
+<!-- {{ $page.tag.belongsTo.totalCount }} works!-->
 
 </template>
 
@@ -53,5 +44,6 @@ export default {
     margin: 0 2px;
     text-decoration: none;
   }
+  
 
 </style>

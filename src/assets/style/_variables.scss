@@ -61,7 +61,9 @@ body {
 	--border_color: rgba(0,0,0,0.35);
 	--text_color: #444;
 	--title_color: #111;
-	--link_color: hsla(92, 100%, 25%, 1);
+	--link_color: hsla(92, 100%, 20%, 1);
+	--link_color_hover: hsla(92, 100%, 8%, 1);
+	--tag_page_bg_color: #adff66;
 }
 
 // Override variables for Dark theme
@@ -72,6 +74,8 @@ body[data-theme="dark"] {
 	--text_color: #ced8de;
 	--title_color: #fff;
 	--link_color: hsla(92, 100%, 75%, 1);
+	--link_color_hover: hsla(92, 100%, 35%, 1);
+	--tag_page_bg_color: darken(#adff66, 55%);
 }
 
 // Make  things smaller for mobile

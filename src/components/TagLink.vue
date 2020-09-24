@@ -1,6 +1,6 @@
 <template>
   <g-link
-  class="tag_link"
+  class="tag_link tag_title"
   :to="tag.path"
   role="menuitem"
   >
@@ -10,7 +10,6 @@
     :class=""/>
 
   </g-link>
-
 </template>
 
 

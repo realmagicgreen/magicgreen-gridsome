@@ -1,10 +1,13 @@
 .pagination_block {
+  padding: 2rem;
+  margin-bottom: 2rem;
+
   a {
     border: 1px solid var(--link_color);
     text-decoration: none;
-    margin: 6px 10px;
-    padding: 10px;
-    font-size: 125%;
+    margin: 3px 5px;
+    padding: 5px 8px;
+    font-size: 110%;
     border-radius: 3px;
 
     &[aria-label*="first"],
@@ -26,6 +29,10 @@
         border: 1px solid var(--link_color);
       }
     }
-
+    @media screen and (min-width: 640px) {
+      font-size: 125%;
+      margin: 6px 10px;
+      padding: 10px;
+    }
   }
 }

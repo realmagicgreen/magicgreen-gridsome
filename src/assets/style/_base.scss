@@ -28,6 +28,10 @@ img {
 	max-width: 100%;
 }
 
-.post_content .g-image {
-	border-radius: 5px;
+.post_content {
+	margin-bottom: calc(var(--space)*2);
+
+	.g-image {
+		border-radius: 5px;
+	}
 }
