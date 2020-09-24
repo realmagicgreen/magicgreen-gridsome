@@ -8,7 +8,10 @@
     border-radius: 3px;
 
     &:first-child,
-    &:last-child {
+    &:last-child,
+    &[aria-label*="next"],
+    &[aria-label*="last"],
+    &[aria-label*="previous"] {
       border: 0 none;
     }
 

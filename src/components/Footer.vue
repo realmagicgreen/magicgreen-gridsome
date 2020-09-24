@@ -76,7 +76,7 @@
 
 <static-query>
 query {
-  metadata {
+	metadata {
     siteName
 		footerNavigation {
 	    name
@@ -86,6 +86,19 @@ query {
 	    external
 	  }
   }
+	posts: allPost {
+		edges {
+			node {
+				id
+				title
+				...on Post {
+				id
+				title
+				path
+				}
+			}
+		}
+	}
 }
 </static-query>
 
