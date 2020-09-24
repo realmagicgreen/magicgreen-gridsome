@@ -16,7 +16,17 @@
 
 <page-query>
 query ($page: Int){
-  posts: allPost(filter: { published: { eq: true }} perPage: 3, page: $page) @paginate {
+  links: allPost(filter: { published: { eq: true }}) {
+    edges {
+      node {
+        id
+        title
+        ad
+        path
+      }
+    }
+  }
+  posts: allPost(filter: { published: { eq: true }} perPage: 9, page: $page) @paginate {
     pageInfo {
       totalPages
       currentPage
@@ -71,15 +81,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.posts {
-  padding: 10px;
-}
-.tag_cloud {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-
+  .posts {
+    padding: 10px;
+  }
+  .tag_cloud {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 </style>

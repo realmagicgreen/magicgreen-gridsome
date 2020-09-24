@@ -38,6 +38,16 @@ query CustomPage ($id: ID!) {
     cover_image
     content
   }
+  links: allPost(filter: { published: { eq: true }}) {
+    edges {
+      node {
+        id
+        title
+        ad
+        path
+      }
+    }
+  }
   posts: allPost {
 		edges {
 			node {

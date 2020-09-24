@@ -41,6 +41,16 @@ query Category ($id: ID!) {
       }
     }
   }
+  links: allPost(filter: { published: { eq: true }}) {
+    edges {
+      node {
+        id
+        title
+        ad
+        path
+      }
+    }
+  }
   posts: allPost {
 		edges {
 			node {

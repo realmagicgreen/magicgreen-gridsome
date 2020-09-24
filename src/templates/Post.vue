@@ -61,6 +61,16 @@ query Post ($id: ID!) {
     content
     cover_image (width: 1920)
   }
+  links: allPost(filter: { published: { eq: true }}) {
+    edges {
+      node {
+        id
+        title
+        ad
+        path
+      }
+    }
+  }
   posts: allPost {
 		edges {
 			node {

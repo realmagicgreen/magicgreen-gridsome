@@ -14,7 +14,7 @@
 				<div class="menu_posts" role="menu">
 
 					<PostLink
-					v-for="edge in $page.posts.edges"
+					v-for="edge in $page.links.edges"
 					:key="edge.node.id"
 					:post="edge.node"/>
 
@@ -85,6 +85,16 @@ query {
 	    link
 	    external
 	  }
+  }
+	links: allPost(filter: { published: { eq: true }}) {
+    edges {
+      node {
+        id
+        title
+        ad
+        path
+      }
+    }
   }
 	posts: allPost {
 		edges {

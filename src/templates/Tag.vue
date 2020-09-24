@@ -15,6 +15,16 @@
 
 <page-query>
 query Tag ($id: ID!) {
+  links: allPost(filter: { published: { eq: true }}) {
+    edges {
+      node {
+        id
+        title
+        ad
+        path
+      }
+    }
+  }
   tag (id: $id) {
     title
     belongsTo {
