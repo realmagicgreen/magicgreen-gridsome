@@ -7,12 +7,12 @@
     font-size: 125%;
     border-radius: 3px;
 
-    &:first-child,
-    &:last-child,
-    &[aria-label*="next"],
+    &[aria-label*="first"],
     &[aria-label*="last"],
+    &[aria-label*="next"],
     &[aria-label*="previous"] {
       border: 0 none;
+      font-size: 150%;
     }
 
     &.active {
