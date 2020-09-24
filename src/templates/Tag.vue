@@ -1,6 +1,5 @@
 <template>
   <Layout>
-
     <div class="title_wrapper">
       <h1 class="tag_page_title h2">
         {{ $page.tag.title }}
@@ -94,26 +93,32 @@ export default {
 
 .tag_page_title {
   position: relative;
-  left: 20px;
+  margin: 6rem 0 4rem 0;
   padding-bottom: 6px;
   padding-top: 20px;
-  max-width: 70%;
+  max-width: 80%;
   font-weight: 400;
+  text-align: center;
+
+
+
   &:before {
     position: absolute;
     content: "";
-    width: 36px;
-    height: 34px;
-    padding-right: 10px;
-    left: -36px;
-    top: 20px;
+    width: 50px;
+    height: 50px;
+    left: calc(50% - 25px);
+    top: -50px;
     [data-theme="light"] & {
-      background: url("../assets/svgs/tag.svg") no-repeat;
+      background: url("../assets/svgs/tag.svg") no-repeat center center;
+      -webkit-background-size: cover;
+      background-size: cover;
     }
     [data-theme="dark"] & {
-      background: url("../assets/svgs/tag_white.svg") no-repeat;
+      background: url("../assets/svgs/tag_white.svg") no-repeat center center;
+      -webkit-background-size: cover;
+      background-size: cover;
     }
-
   }
 }
 
