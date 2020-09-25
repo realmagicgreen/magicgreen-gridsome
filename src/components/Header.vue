@@ -144,12 +144,12 @@ export default {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border: 1px solid #306600;
+		border: 1px solid var(--link_color);
     margin-left: 20vw;
     margin-right: 20vw;
     min-height: 7vh;
 		&.active {
-			border: 2px solid #7f0;
+			border: 2px solid var(--brand_color);
 			padding-top: 10px;
       padding-bottom: 10px;
 			font-weight: 600;
@@ -163,7 +163,7 @@ export default {
 				border: 0 none;
 				font-size: 100%;
 				font-weight: normal;
-				border-bottom: 1px solid #7f0;
+				border-bottom: 1px solid var(--brand_color);
 			}
 		}
 

@@ -1,0 +1,39 @@
+.svg_fill_black {
+	fill: var(--black);
+}
+
+.svg_fill_white {
+	fill: #fff;
+}
+
+.svg_fill_brand {
+	fill: var(--brand_color);
+}
+
+.svg_stroke_brand {
+	stroke: var(--brand_color);
+}
+
+.svg_fill_brand_dark {
+	fill: var(--brand_color--dark);
+}
+
+.svg_fill_link_color {
+	fill: var(--link_color);
+}
+
+.svg_stroke_black {
+	stroke: var(--black);
+}
+
+.svg_stroke_width05 {
+	stroke-width: .5;
+}
+
+.svg_stroke_width1 {
+	stroke-width: 1;
+}
+
+.svg_stroke_width2 {
+	stroke-width: 2;
+}
