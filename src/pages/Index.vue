@@ -16,7 +16,7 @@
     <!-- tagCloudBlock -->
     <div class="tag_cloud container">
       <div class="tag_block_icon">
-        <svg class="tagcloud_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#bbff80" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line  stroke-width="1.5" x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+        <!-- <svg class="tagcloud_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#bbff80" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line  stroke-width="1.5" x1="7" y1="7" x2="7.01" y2="7"></line></svg> -->
       </div>
       <div class="links_list" role="menu">
         <TagLink
@@ -113,26 +113,30 @@ export default {
   .posts {
     padding: 10px;
   }
-
-
-.tag_block_icon {
-	min-height: 100px;
-  width: 100;
-  display: flex;
-	align-items: center;
-  justify-content: center;
-
-  .tagcloud_svg {
-    height: 100px;
-    [data-theme="light"] & {
-      stroke: var(--link_color);
-		}
-
-		[data-theme="dark"] & {
-      stroke: var(--link_color);
-		}
+  .tag_cloud.container {
+    box-shadow: var(--top_shadow);
   }
-}
 
+  .tag_block_icon {
+  	min-height: 80px;
+    width: 80px;
+    display: flex;
+  	align-items: center;
+    justify-content: center;
+    &:before {
+      content: "";
 
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      left: calc(50% - 40px);
+      [data-theme="light"] & {
+        background: url("../assets/svgs/tagcloud.svg") no-repeat;
+  		}
+
+  		[data-theme="dark"] & {
+        background: url("../assets/svgs/tagcloud_green.svg") no-repeat;
+  		}
+    }
+  }
 </style>

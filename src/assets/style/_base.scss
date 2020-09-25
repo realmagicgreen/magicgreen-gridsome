@@ -22,6 +22,10 @@ body {
 
 a:not(.button) {
 	color: var(--link_color);
+
+	&:hover {
+		color: var(--link_color_hover);
+	}
 }
 
 img {

@@ -30,10 +30,10 @@ body {
 	--icon_size: 30px;
 
 	//shadows
-	--top_shadow: 0 -2px 5px 0 rgba(0,0,0,0.12), 0 -4px 10px 0 rgba(0,0,0,0.24);
-	--bottom_shadow: 0 4px 10px 0 rgba(0,0,0,0.24);
-	--card_shadow: 1px 1px 2px 0 rgba(0,0,0,0.12), 2px 2px 3px 0 rgba(0,0,0,0.24);
-	--card_shadow--hover: 4px 4px 8px 0 rgba(0,0,0,0.12), 8px 8px 8px 0 rgba(0,0,0,0.24);
+	--top_shadow: 0 -2px 4px 0 rgba(0,0,0,0.1), 0 -4px 10px 0 rgba(0,0,0,0.2);
+	--bottom_shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+	--card_shadow: 1px 1px 2px 0 rgba(0,0,0,0.1), 2px 2px 3px 0 rgba(0,0,0,0.2);
+	--card_shadow--hover: 4px 4px 8px 0 rgba(0,0,0,0.1), 8px 8px 8px 0 rgba(0,0,0,0.2);
 
 	--transition_shadow: box-shadow .2s ease;
 
@@ -55,6 +55,7 @@ body {
 
 	// - BRAND COLOR
 	--brand_color: hsla(100, 88%, 64%, 1);
+	--brand_color--hex: #88f452;
 	--brand_color--dark: hsla(100, 88%, 28%, 1);
 
 	// - COLOR THAT CHANGE IN DARK MODULE
@@ -63,9 +64,9 @@ body {
 	--border_color: rgba(0,0,0,0.35);
 	--text_color: #444;
 	--title_color: #111;
-	--link_color: hsla(100, 88%, 28%, 1);
-	--link_color_hover: hsla(100, 100%, 12%, 1);
-	--tag_page_bg_color: hsla(100, 88%, 16%, 1);
+	--link_color: hsla(100, 88%, 14%, 1);
+	--link_color_hover: hsla(100, 88%, 28%, 1);
+	--tag_page_bg_color: hsla(93, 93%, 69%, 1);
 }
 
 // - OVERRIDE VARIABLES FOR DARK THEME

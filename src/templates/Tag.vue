@@ -103,17 +103,17 @@ export default {
   &:before {
     position: absolute;
     content: "";
-    width: 50px;
-    height: 50px;
-    left: calc(50% - 25px);
-    top: -50px;
+    width: 80px;
+    height: 80px;
+    left: calc(50% - 40px);
+    top: -80px;
     [data-theme="light"] & {
-      background: url("../assets/svgs/tag.svg") no-repeat center center;
+      background: url("../assets/svgs/tagcloud.svg") no-repeat center center;
       -webkit-background-size: cover;
       background-size: cover;
     }
     [data-theme="dark"] & {
-      background: url("../assets/svgs/tag_green.svg") no-repeat center center;
+      background: url("../assets/svgs/tagcloud_white.svg") no-repeat center center;
       -webkit-background-size: cover;
       background-size: cover;
     }
