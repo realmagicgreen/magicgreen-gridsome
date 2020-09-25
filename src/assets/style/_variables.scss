@@ -30,22 +30,20 @@ body {
 	--icon_size: 30px;
 
 	// categories colors
-	--category_01: hsla(40, 80%, 75%, 1); //services rgba(242, 208, 140, 1)
-	--category_02: hsla(60, 80%, 65%, 1); //products rgba(237, 237, 94, 1)
-	--category_03: hsla(90, 80%, 75%, 1); //techniques rgba(191, 242, 140,1)
-	--category_04: hsla(110, 80%, 70%, 1); //solutions rgba(138, 240, 117, 1)
-	--category_05: hsla(110, 60%, 50%, 1); //know rgba(77, 204, 51, 1)
-	--category_06: hsla(200, 80%, 70%, 1); //health rgba(117, 199, 240, 1)
-	--category_07: hsla(200, 80%, 30%, 1); //resources rgba(15, 97, 138, 1)
+	--category_01: hsla(40, 64%, 75%, 1); //services rgba(242, 208, 140, 1)
+	--category_02: hsla(60, 64%, 65%, 1); //products rgba(237, 237, 94, 1)
+	--category_03: hsla(90, 64%, 75%, 1); //techniques rgba(191, 242, 140,1)
+	--category_04: hsla(110, 64%, 70%, 1); //solutions rgba(138, 240, 117, 1)
+	--category_05: hsla(110, 64%, 50%, 1); //know rgba(77, 204, 51, 1)
+	--category_06: hsla(200, 64%, 70%, 1); //health rgba(117, 199, 240, 1)
+	--category_07: hsla(200, 64%, 30%, 1); //resources rgba(15, 97, 138, 1)
 
 	//base colors
+	--black: #000;
+	--black--soft: #161616;
 	--grey: hsl(0,0%,45%);
 	--grey--light: hsl(0,0%,85%);
 	--transparent_grey: hsla(0,0%,0%,.65);
-	--brand_color: hsla(92, 100%, 50%, 1); // rgba(119, 255, 0, 1) // #7f0
-	--brand_color--dark: hsla(92, 100%, 28%, 1);
-	--black: #000;
-	--black--soft: #161616;
 
 	//shadows
 	--top_shadow: 0 -2px 5px 0 rgba(0,0,0,0.12), 0 -4px 10px 0 rgba(0,0,0,0.24);
@@ -55,15 +53,20 @@ body {
 
 	--transition_shadow: box-shadow .2s ease;
 
+	//--brand_color: hsla(92, 100%, 50%, 1); // rgba(119, 255, 0, 1) // #7f0
+	//new maybe #BADA55; //rgba(186, 218, 85, 1) hsla(74, 64%, 59%, 1)
+	--brand_color: #BADA55;
+	--brand_color--dark: hsla(74, 100%, 25%, 1); // was hsla(92, 100%, 28%, 1);
+
 	//color that change in dark module
-	--bg_color: hsla(92, 100%, 90%, 1);
+	--bg_color: hsla(74, 64%, 80%, 1); //hsla(92, 100%, 90%, 1);
 	--bg_content_color: #fff;
 	--border_color: rgba(0,0,0,0.35);
 	--text_color: #444;
 	--title_color: #111;
-	--link_color: hsla(92, 100%, 20%, 1);
+	--link_color: hsla(74, 84%, 20%, 1); //hsla(92, 100%, 20%, 1);
 	--link_color_hover: hsla(92, 100%, 8%, 1);
-	--tag_page_bg_color: hsla(92, 100%, 70%, 1);
+	--tag_page_bg_color: #BADA55; // was hsla(92, 100%, 70%, 1);
 }
 
 // Override variables for Dark theme
@@ -73,8 +76,8 @@ body[data-theme="dark"] {
 	--border_color: rgba(255,255,255,0.35);
 	--text_color: #ced8de;
 	--title_color: #fff;
-	--link_color: hsla(92, 100%, 75%, 1);
-	--link_color_hover: hsla(92, 100%, 35%, 1);
+	--link_color: #BADA55; // before was hsla(92, 100%, 75%, 1);
+	--link_color_hover: hsla(74, 84%, 35%, 1); // was hsla(92, 100%, 35%, 1);
 	--tag_page_bg_color: hsla(92, 100%, 8%, 1);
 }
 

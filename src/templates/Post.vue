@@ -100,8 +100,10 @@ export default {
   },
   mounted () {
     import('medium-zoom').then(mediumZoom => {
-      this.zoom = mediumZoom.default('.post_content .g-image')
-      this.zoom = mediumZoom.background('#BADA55')
+      this.zoom = mediumZoom.default(
+        '.post_content .g-image',
+        { background: 'var(--bg_color)' }
+      )
     })
   },
   metaInfo () {
