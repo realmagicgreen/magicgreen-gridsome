@@ -1,12 +1,15 @@
 <template>
-	<header class="header" :class="{'menu-is-open': isMenuActive}">
-		<div class="header_wrap">
+	<header class="header_wrap" :class="{'menu-is-open': isMenuActive}">
+		<div class="header">
+
 			<g-link class="logo_wrapper" to="/">
 				<Logo v-if="showLogo" />
 			</g-link>
 
 			<div class="header_menus">
+
 				<ToggleTheme />
+
 				<div class="menu_wrap header_item">
 
 					<button
@@ -41,7 +44,9 @@
 					</div>
 
 				</div>
+
 			</div>
+
 		</div>
 	</header>
 </template>
@@ -79,7 +84,7 @@ export default {
 
 
 <style lang="scss">
-.header {
+.header_wrap {
   background-color: var(--black);
   display: flex;
 	flex-direction: row;
@@ -93,7 +98,7 @@ export default {
 		width: 100%;
 	}
 
-	.header_wrap {
+	.header {
 		display: flex;
 		flex-direction: row;
 	  justify-content: space-between;

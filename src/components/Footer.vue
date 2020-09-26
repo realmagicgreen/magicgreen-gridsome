@@ -1,7 +1,7 @@
 <template>
 	<footer class="footer">
 
-		<div class="container small flex flex_align_center flex_justify_center">
+		<div class="container small flex flex_align_center flex_justify_center logo_wrapper">
 			<Logo />
 		</div>
 
@@ -36,7 +36,7 @@
 							:title="navItem.name"
 							v-if="navItem.external!=true"
 							:class="[navItem.fullname]"
-						>{{ navItem.name}} {{ navItem.username}}</g-link>
+						>{{ navItem.name}}&nbsp;<span class="user_name">{{ navItem.username}}</span></g-link>
 						<a
 							class="menu_item"
 							role="menuitem"
@@ -46,7 +46,7 @@
 							:title="navItem.name"
 							v-if="navItem.external==true"
 							:class="[navItem.fullname]"
-						>{{ navItem.name}} {{ navItem.username}}</a>
+						>{{ navItem.name}}&nbsp;<span class="user_name">{{ navItem.username}}</span></a>
 					</div>
 
 					<div class="menu_item footer_icon qr_box">
@@ -134,10 +134,6 @@ export default {
 	  color: var(--brand_color--dark);
 		box-shadow: var(--top_shadow);
 
-		a:not(.button) {
-			text-decoration: none;
-			color: var(--brand_color);
-		}
 
 		.menu_container {
 			display: flex;
@@ -210,29 +206,44 @@ export default {
 	    color: black;
 	  }
 		.menu_item {
-			&.facebook:before {
-		    content: "";
-		    background: url("../assets/svgs/facebook.svg") no-repeat;
-				width: 30px;
-				height: 30px;
-				padding-right: 10px;
+			//can be a link!
+			&:hover {
+				border-bottom-color: transparent!important;
+				.user_name {
+					//the social profile name or email
+					font-weight: 600!important;
+				}
 			}
-			&.instagram:before {
-		    content: "";
-		    background: url("../assets/svgs/instagram.svg") no-repeat;
-				width: 30px;
-				height: 30px;
-				padding-right: 10px;
+			&.facebook {
+				&:before {
+			    content: "";
+			    background: url("../assets/svgs/facebook.svg") no-repeat;
+					width: 30px;
+					height: 30px;
+					padding-right: 10px;
+				}
 			}
-			&.email:before {
-		    content: "";
-		    background: url("../assets/svgs/email.svg") no-repeat;
-				width: 30px;
-				height: 30px;
-				padding-right: 10px;
+			&.instagram {
+				&:before {
+			    content: "";
+			    background: url("../assets/svgs/instagram.svg") no-repeat;
+					width: 30px;
+					height: 30px;
+					padding-right: 10px;
+				}
+			}
+			&.email {
+				&:before {
+			    content: "";
+			    background: url("../assets/svgs/email.svg") no-repeat;
+					width: 30px;
+					height: 30px;
+					padding-right: 10px;
+				}
 			}
 		}
 	}
+
 
 	.copyright {
 	  font-size: 14px;

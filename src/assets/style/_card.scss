@@ -29,6 +29,13 @@
 	flex-direction: column;
 	margin-bottom: var(--space);
 
+	&.content_box {
+		//a
+		&:hover {
+			border-color: currentColor;
+		}
+	}
+
 	.card_post_image {
 		position: relative;
 		width: 100%;

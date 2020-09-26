@@ -118,15 +118,14 @@ export default {
   }
 
   .post_tag_link {
+    //a
     margin-left: .2rem;
     margin-right: .2rem;
     padding: .4rem .1rem;
     color: var(	--text_color) !important;
+    border-bottom: 1px solid transparent;
     font-style: italic;
     text-decoration: none;
-    &:hover {
-      color: var(--title_color) !important;
-    }
   }
 
   .post_tag_links {

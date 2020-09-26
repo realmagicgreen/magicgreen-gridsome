@@ -11,12 +11,10 @@
 }
 
 .tag_link {
+	//a
+	//.tag_title
 	padding: 5px;
 	margin: 0 2px;
 	text-decoration: none;
 	color: var(--link_color);
-
-	:hover {
-		color: var(--link_color_hover);
-	}
 }

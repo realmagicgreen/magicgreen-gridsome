@@ -24,6 +24,9 @@ query {
 </static-query>
 
 <style lang="scss">
+
+
+
 .logo {
 	text-decoration: none;
 	display: flex;
@@ -55,4 +58,19 @@ query {
 		margin-right: calc(var(--space--small)/2);
 	}
 }
+.logo_wrapper {
+	cursor: pointer;
+	// transition: all 3s ease-in-out;
+	&:hover {
+		.logo__image {
+			animation: pulse 1s infinite;
+		}
+	}
+}
+
+
+@keyframes pulse {
+	10% {transform: scale(1.1)}
+}
+
 </style>

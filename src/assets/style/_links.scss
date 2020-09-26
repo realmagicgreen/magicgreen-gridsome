@@ -1,0 +1,20 @@
+a:not(.button):not(.logo_wrapper) {
+	color: var(--link_color);
+	text-decoration: none;
+	border-bottom: 1px solid trasparent;
+
+	&:hover:not(.active) {
+		border-bottom-color: currentColor;
+		border-bottom: 1px solid currentColor;
+	}
+
+	&:visited {
+		color: var(--link_color_hover);
+		border-bottom: 1px solid trasparent;
+
+		&:hover {
+			//color: var(--link_color_hover);
+			border-bottom: 1px solid var(--link_color_hover);
+		}
+	}
+}

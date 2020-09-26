@@ -8,7 +8,6 @@ module.exports = {
   siteName: 'Magic Green',
   siteDescription: 'Magic Green magazine is a showcase of examples, infos and addresses of all stuff green from South East Asia and beyond.',
   siteUrl: 'https://magicgreensome.netlify.app',
-
   plugins: [
     {
       use: '@gridsome/plugin-critical',
@@ -17,6 +16,19 @@ module.exports = {
         width: 1300,
         height: 900
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options:
+        {
+          path: 'component/site/*.yml',
+          typeName: 'Yaml',
+          yamljson: {
+            plugins: [
+              // ...local plugins
+            ]
+          }
+        }
     },
     {
       use: '@gridsome/plugin-sitemap'
@@ -77,6 +89,7 @@ module.exports = {
   },
 
   transformers: {
+    yamljson:{},
     //Add markdown support to all file-system sources
     remark: {
       externalLinksTarget: '_blank',

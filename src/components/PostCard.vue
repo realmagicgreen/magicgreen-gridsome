@@ -6,7 +6,7 @@
     <div class="card_post_image clipped">
       <g-image
       width="1014"
-      class=""
+      class="card_post_image--actually"
       alt="Cover image"
       v-if="post.cover_image"
       :src="post.cover_image"/>
