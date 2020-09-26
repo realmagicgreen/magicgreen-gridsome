@@ -22,7 +22,7 @@
 	background-color: var(--bg_content_color);
 	box-shadow: var(--card_shadow);
 	transition: var(--transition_shadow);
-	border: 1px solid var(--border_color);
+	border: 1px solid var(--border_color)!important;
 	border-radius: 5px;
 	overflow: hidden;
 	display: flex;
@@ -33,7 +33,7 @@
 		//a
 
 		&:hover {
-			border-color: var(--brand_color);
+			border-color: var(--brand_color)!important;
 		}
 	}
 
