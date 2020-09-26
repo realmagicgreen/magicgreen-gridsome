@@ -138,7 +138,7 @@ So with a few of these aromatic plants, and some simple changes around the house
 
 
 
-**_Know more:_**
+## **_Know more_**
 
 [Garlic](https://en.wikipedia.org/wiki/Garlic)
 

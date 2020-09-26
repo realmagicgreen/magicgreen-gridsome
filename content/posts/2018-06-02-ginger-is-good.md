@@ -88,7 +88,7 @@ Ginger has been battling seasonal colds and flu for centuries. Consuming ginger 
 
 
 
-**_Know more:_**
+## **_Know more_**
 
 
 [Ginger - Wikipedia](https://en.wikipedia.org/wiki/Ginger)

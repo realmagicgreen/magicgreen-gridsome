@@ -32,6 +32,7 @@ query {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+  justify-content: center;
 	padding-top: 6px;
 	padding-bottom: 6px;
 
@@ -62,15 +63,17 @@ query {
 	cursor: pointer;
 	// transition: all 3s ease-in-out;
 	&:hover {
+		border-bottom-color: transparent;
 		.logo__image {
-			animation: pulse 1s infinite;
+
+			animation: pulse 2s infinite;
 		}
 	}
 }
 
 
 @keyframes pulse {
-	10% {transform: scale(1.1)}
+	10% {transform: scale(1.3)}
 }
 
 </style>

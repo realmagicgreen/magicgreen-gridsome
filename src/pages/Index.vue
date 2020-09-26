@@ -114,7 +114,11 @@ export default {
     padding: 10px;
   }
   .tag_cloud.container {
-    box-shadow: var(--top_shadow);
+    a {
+      body[data-theme="light"] & {
+        color: black;
+      }
+    }
   }
 
   .tag_block_icon {

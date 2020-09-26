@@ -1,20 +1,31 @@
-a:not(.button):not(.logo_wrapper) {
+a {
 	color: var(--link_color);
 	text-decoration: none;
-	border-bottom: 1px solid trasparent;
+	margin-bottom: 3px;
+	display: inline-block;
+	border-bottom: 1px solid transparent;
 
-	&:hover:not(.active) {
-		border-bottom-color: currentColor;
+	&:hover {
+		text-decoration: none;
 		border-bottom: 1px solid currentColor;
 	}
+}
 
-	&:visited {
-		color: var(--link_color_hover);
-		border-bottom: 1px solid trasparent;
+a:not(.button),
+a:not(.card.content_box),
+a:not(.logo_wrapper),
+a:not(.post_tag_link) {
+	color: var(--link_color);
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
 
-		&:hover {
-			//color: var(--link_color_hover);
-			border-bottom: 1px solid var(--link_color_hover);
-		}
+}
+
+a:visited {
+	color: var(--link_color_hover);
+
+	&:hover {
+		//color: var(--link_color_hover);
+		border-bottom: 1px solid var(--link_color_hover);
 	}
 }

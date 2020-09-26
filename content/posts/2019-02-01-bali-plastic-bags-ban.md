@@ -71,7 +71,7 @@ Other step will need to include helping establishing the newly born biodegradabl
 
 
 
-**_Know more:_**
+## **_Know more_**
 
 [Telobag](http://telobag.com/en/home/)
 

@@ -129,7 +129,7 @@ Nature is full of diversity and we need to bring diversity back into our lives a
 It's time for a change, where we re-educate our taste buds with foods that actually nourish, heal and revive the body.
 
 
-**_Know more:_**
+## **_Know more_**
 
 [Live Essences website](https://live-essences.com)
 

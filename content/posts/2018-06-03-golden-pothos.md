@@ -36,7 +36,7 @@ Epipremnum aureum can become a highly invasive species when introduced into trop
 
 **Pollutants removed**: Formaldehyde, Xylene, Trichloroethylene and Benzene.
 
-**_Know more:_**
+## **_Know more_**
 
 [Golden pothos - wikipedia](https://en.wikipedia.org/wiki/Epipremnum_aureum)
 

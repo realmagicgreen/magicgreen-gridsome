@@ -75,7 +75,7 @@ When it loses its glossy appearance its restored by gently oiling and waxing the
 
 To remove bamboo mold, lemon oil or a solution of vinegar and water can be used. Bamboo furniture usually 3 coats of polyurethane is applied to ensure the conservation of the furniture after treating it with turpentine and dried out completely. [6]
 
-**_Know more:_**
+## **_Know more_**
 
 [Building with bamboo -  the basics](https://www.buildingtrustinternational.org/BTIBambooToolkit.pdf)
 

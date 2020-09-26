@@ -130,7 +130,7 @@ A commonly used herb for cooking purposes, rosemary can also help you get better
 
 Practitioners today recommend rosemary essential oil for supporting the nervous system and circulatory health, improving concentration, and relieving stress.
 
-**_Know more:_**
+## **_Know more_**
 
 [NASA Clean Air Study](https://en.wikipedia.org/wiki/NASA_Clean_Air_Study)
 

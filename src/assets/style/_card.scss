@@ -31,8 +31,9 @@
 
 	&.content_box {
 		//a
+
 		&:hover {
-			border-color: currentColor;
+			border-color: var(--brand_color);
 		}
 	}
 

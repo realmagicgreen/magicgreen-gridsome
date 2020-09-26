@@ -174,6 +174,14 @@ export default {
 			align-items: center;
 			border: transparent solid 1px;
 			white-space: nowrap;
+			color: var(--link_color);
+			text-decoration: none;
+			margin-bottom: 3px;
+
+			&:hover {
+				text-decoration: none;
+				border-bottom: currentColor solid 1px;
+			}
 
 	    &.active {
 	      border-bottom: 0 none;

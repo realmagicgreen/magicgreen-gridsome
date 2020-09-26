@@ -186,7 +186,7 @@ _Now, as never before, we have the chance to save what’s left of the living sy
 
 
 
-**_Know more:_**
+## **_Know more_**
 
 [About Mission Blue](https://mission-blue.org/about/)
 

@@ -119,4 +119,30 @@ export default {
 
 <style lang="scss" scoped>
 // in post.scss so to have one source of truth...
+body[data-theme="dark"] .post_container {
+  border-bottom: 1px solid var(--border_color);
+
+}
+
+#know-more {
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 80px;
+    left: calc(50% - 40px);
+    top: -80px;
+    [data-theme="light"] & {
+      background: url("../assets/svgs/tagcloud.svg") no-repeat center center;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+    [data-theme="dark"] & {
+      background: url("../assets/svgs/tagcloud_white.svg") no-repeat center center;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+  }
+}
 </style>

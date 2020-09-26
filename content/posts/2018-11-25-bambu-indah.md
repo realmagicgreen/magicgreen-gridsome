@@ -105,7 +105,7 @@ The restaurant offer also breakfast and afternoon tea with traditional Balinese 
 
 
 
-**_Know more:_**
+## **_Know more_**
 
 [Bambu Indah -  website](http://bambuindah.com/)
 

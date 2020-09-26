@@ -59,7 +59,7 @@ These plants prefer a cool location with high humidity and indirect light. They'
 
 **Pollutants removed**: Ammonia, Benzene, Formaldehyde, Trichloroethylene, Toluene, Octane, Terpene.
 
-**_Know more:_**
+## **_Know more_**
 
 [Tips for growing fern plants](https://www.thespruce.com/tips-for-growing-fern-plants-1402823)
 

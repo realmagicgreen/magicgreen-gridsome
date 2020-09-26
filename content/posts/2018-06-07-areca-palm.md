@@ -41,7 +41,7 @@ Meattle's [presentation at the TED 2009](https://www.ted.com/talks/kamal_meattle
 
 **Pollutants removed**: Xylene, Toluene, Formaldehyde
 
-**_Know more:_**
+## **_Know more_**
 
 [Areca palm - wikipedia](https://en.wikipedia.org/wiki/Dypsis_lutescens)
 

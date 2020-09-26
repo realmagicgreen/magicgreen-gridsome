@@ -42,7 +42,7 @@ A study conducted in the University of Agriculture in Norway concluded that hous
 
 **Pollutants removed**: Benzene, Trichloroethylene, Formaldehyde, Carbon dioxide
 
-**_Know more:_**
+## **_Know more_**
 
 [Dracaena uses](http://www.westcoastnurseries.com/dracaena-why-use-dracaena/)
 
