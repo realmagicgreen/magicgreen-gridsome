@@ -23,21 +23,28 @@
     &[aria-label*="next"],
     &[aria-label*="previous"] {
       border: 0 none!important;
-      font-size: 150%;
+      background-color: transparent!important;
+      font-size: 167.5%;
+
+      &:hover {
+        color: var(--tag_page_bg_color);
+      }
     }
 
     &.active,
     &:hover {
-      font-size: 155%;
+      background-color: var(--tag_page_bg_color);
 
       &:first-child {
         border: 1px solid var(--link_color);
-        color: var(--link_color);
+        //color: var(--link_color);
+        background-color: transparent;
       }
 
       &:last-child {
         border: 1px solid var(--link_color);
-        color: var(--link_color);
+        //color: var(--link_color);
+        background-color: transparent;
       }
     }
     @media screen and (min-width: 640px) {
