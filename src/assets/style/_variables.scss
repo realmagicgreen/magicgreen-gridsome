@@ -32,6 +32,8 @@ body {
 	//shadows
 	--top_shadow: 0 -2px 4px 0 rgba(0,0,0,0.1), 0 -4px 10px 0 rgba(0,0,0,0.2);
 	--bottom_shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+	--top_shadow_inside: 0 -2px 4px 0 rgba(0,0,0,0.1), 0 -4px 10px 0 rgba(0,0,0,0.2);
+	--bottom_shadow_inside: 0 4px 10px 0 rgba(0,0,0,0.2);
 	--card_shadow: 1px 1px 2px 0 rgba(0,0,0,0.1), 2px 2px 3px 0 rgba(0,0,0,0.2);
 	--card_shadow--hover: 4px 4px 8px 0 rgba(0,0,0,0.1), 8px 8px 8px 0 rgba(0,0,0,0.2);
 
@@ -64,7 +66,7 @@ body {
 	--border_color: rgba(0,0,0,0.35);
 	--text_color: #444;
 	--title_color: #111;
-	--link_color: hsla(100, 88%, 40%, 1); // hsla(100, 88%, 40%, 1);
+	--link_color: hsla(100, 88%, 28%, 1); // hsla(100, 88%, 40%, 1);
 	--link_color_hover: hsla(100, 88%, 52%, 1);
 	--tag_page_bg_color: hsla(93, 93%, 69%, 1);
 }

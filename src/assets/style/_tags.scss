@@ -6,8 +6,16 @@
 }
 
 .tag_cloud.container {
-	background-color: var(--tag_page_bg_color);
 	max-width: none;
+	border-top: 1px solid var(--black);
+	background-color: var(--tag_page_bg_color);
+
+	[data-theme="dark"] & {
+		background-color: transparent;
+		border-top: 1px solid var(--brand_color--dark);
+		border-bottom: 1px solid var(--brand_color--dark);
+	}
+
 }
 
 .tag_link {

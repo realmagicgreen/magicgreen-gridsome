@@ -77,7 +77,7 @@ Spirulina contains an abundance of nucleic acids, according to the Beth Israel D
 
 If you are susceptible to gout attacks or kidney stones, spirulina may be especially harmful to you. To avoid excessive uric acid, the hospital recommends limiting your intake of spirulina to less than 50 grams per day.
 
-## ## **_Know more_**
+## **_Know more_**
 
 [Spirulina - Wikipedia](https://en.wikipedia.org/wiki/Spirulina_(dietary_supplement))
 

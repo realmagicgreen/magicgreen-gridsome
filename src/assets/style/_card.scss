@@ -1,3 +1,5 @@
+//card sitewide css
+
 .post_grid {
 	display: flex;
 	flex-wrap: wrap;
@@ -22,7 +24,7 @@
 	background-color: var(--bg_content_color);
 	box-shadow: var(--card_shadow);
 	transition: var(--transition_shadow);
-	border: 1px solid var(--border_color)!important;
+	border: 1px solid var(--border_color);
 	border-radius: 5px;
 	overflow: hidden;
 	display: flex;
@@ -31,9 +33,14 @@
 
 	&.content_box {
 		//a
-
 		&:hover {
-			border-color: var(--brand_color)!important;
+			body[data-theme="dark"] & {
+				border-color: #aaa;
+			}
+
+			body[data-theme="light"] & {
+				border-color: black;
+			}
 		}
 	}
 

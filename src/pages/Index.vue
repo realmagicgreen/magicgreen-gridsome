@@ -53,7 +53,7 @@ query ($page: Int){
       }
     }
   }
-  posts: allPost(filter: { published: { eq: true }} perPage: 3, page: $page) @paginate {
+  posts: allPost(filter: { published: { eq: true }} perPage: 6, page: $page) @paginate {
     pageInfo {
       totalPages
       currentPage
@@ -125,6 +125,7 @@ export default {
     display: flex;
   	align-items: center;
     justify-content: center;
+    margin: 4rem;
     &:before {
       content: "";
 

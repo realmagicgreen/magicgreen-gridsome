@@ -119,10 +119,7 @@ export default {
 
 <style lang="scss" scoped>
 // in post.scss so to have one source of truth...
-body[data-theme="dark"] .post_container {
-  border-bottom: 1px solid var(--border_color);
 
-}
 
 #know-more {
   position: relative;

@@ -132,7 +132,21 @@ export default {
 	  width: 100%;
 	  background-color:  var(--black);
 	  color: var(--brand_color--dark);
-		box-shadow: var(--top_shadow);
+		border-top: 1px solid var(--brand_color--dark);
+		// [data-theme="dark"] & {
+		// 	 border-top: 0 none;
+		// }
+
+
+		.logo__text {
+			display: none;
+		}
+		.logo__image {
+			margin-top: var(--space);
+	    transform: scale(1.85);
+	    padding: 0;
+			margin: calc(var(--space) * 2.25) 0 calc(var(--space) * 0.625) 0;
+		}
 
 
 		.menu_container {
