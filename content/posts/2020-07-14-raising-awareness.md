@@ -55,7 +55,9 @@ In 2020, the Mission Blue alliance includes more than 200 respected ocean conser
 
 ![raising awareness](./images/solutions/raising-awareness/raising-awareness-02.jpg)
 
-Mission Blue supports the work of conservation NGOs that share the mission of building public support for ocean protection. With the concerted effort and passion of people and organizations around the world, Hope Spots can become a reality and form a global network of marine protected areas large enough to restore the ocean, the blue heart of the planet.
+Mission Blue supports the work of conservation NGOs that share the mission of building public support for ocean protection.
+
+With the concerted effort and passion of people and organizations around the world, Hope Spots can become a reality and form a global network of marine protected areas large enough to restore the ocean, the blue heart of the planet.
 
 ## HOPE SPOTS
 
@@ -66,17 +68,19 @@ Hope Spots allow us to plan for the future and look beyond current marine protec
 
 ![raising awareness](./images/solutions/raising-awareness/raising-awareness-07.jpg)
 
-Hope Spots are often areas that need new protection, but they can also be existing MPAs where more action is needed. They can be large, they can be small, but they all provide hope due to:
+Hope Spots are often areas that need new protection, but they can also be existing MPAs where more action is needed.
 
-A special abundance or diversity of species, unusual or representative species, habitats or ecosystems
-Particular populations of rare, threatened or endemic species.
+They can be large, they can be small, but they all provide hope due to:
 
-A site with potential to reverse damage from negative human impacts.
+- A special abundance or diversity of species, unusual or representative species, habitats or ecosystems.
 
-The presence of natural processes such as major migration corridors or spawning grounds.
+- Particular populations of rare, threatened or endemic species.
 
-Significant historical, cultural or spiritual values
-Particular economic importance to the community.
+- A site with potential to reverse damage from negative human impacts.
+
+- The presence of natural processes such as major migration corridors or spawning grounds.
+
+- Significant historical, cultural or spiritual values of particular economic importance to the community.
 
 The idea is that anyone can nominate a site special to him or her, a site that gives HOPE.
 
@@ -92,7 +96,9 @@ Since 2008, Mission Blue expeditions have visited Hope Spots around the world, d
 
 ![raising awareness](./images/solutions/raising-awareness/raising-awareness-04.jpg)
 
-Led by Dr. Sylvia Earle and Expeditions Director Kip Evans, these voyages explore our most critical ocean habitats and are designed to create awareness, foster partnerships and build broad public support for the creation of marine protected areas across the globe.
+Led by Dr. Sylvia Earle and Expeditions Director Kip Evans, these voyages explore our most critical ocean habitats.
+
+Designed to create awareness, foster partnerships and build broad public support for the creation of marine protected areas across the globe.
 
 &nbsp;
 
@@ -157,18 +163,38 @@ We’re passionate about shark conservation. [Click HERE to dive into our shark 
 
 ### Lower your carbon footprint
 
-Our greenhouse gas emissions are causing climate change and ocean acidification. By driving less and carpooling, flying less, using less electricity, choosing renewable energy (solar power, hybrid vehicles, etc) whenever possible and voting for policymakers who believe in solving climate change, we can all make a big difference for the ocean and all of life on Earth.
+Our greenhouse gas emissions are causing climate change and ocean acidification.
+
+By driving less and carpooling, flying less, using less electricity, choosing renewable energy (solar power, hybrid vehicles, etc) whenever possible.
+
+And voting for policymakers who believe in solving climate change, we can all make a big difference for the ocean and all of life on Earth.
 
 
 ### Choose not to eat marine wildlife.
 
-Overfishing is another huge issue impacting the ocean. By choosing not to eat seafood, or as Dr. Earle calls it, marine wildlife, we can help by showing fisheries that there’s less demand for their fish supply and we want them to leave the fish, mollusks and other edible marine life in the sea where it belongs. Of course, many people around the world depend on protein from the ocean to survive, and artisanal fisheries are crucial for many coastal populations. But in America and other developed countries, we have more of a choice.
+Overfishing is another huge issue impacting the ocean.
+
+By choosing not to eat seafood, or as Dr. Earle calls it, marine wildlife.
+
+We can help by showing fisheries that there’s less demand for their fish supply.
+
+We want them to leave the fish, mollusks and other edible marine life in the sea where it belongs.
+
+Of course, many people around the world depend on protein from the ocean to survive.
+
+Artisanal fisheries are crucial for many coastal populations.
+
+But in America and other developed countries, we have more of a choice.
 
 ### Stop using single-use plastics
 
 Plastic pollution is clogging up waterways and poisoning marine creatures from sea turtles to fish and seabirds.
 
-By carrying a reusable water bottle and avoiding using plastic drinking straws, utensils, etc., we can greatly reduce the amount of plastic thrown into landfills that often release plastics into the ocean.
+By carrying a reusable water bottle and avoiding using plastic.
+
+Starting with single use plastic, as drinking straws, utensils, etc., we can greatly reduce the amount of plastic thrown into landfills.
+
+That often release plastics into the ocean.
 
 
 ### Use your own special talent to help fight for the ocean.

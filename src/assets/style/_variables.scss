@@ -4,17 +4,17 @@
 // --maxWidth: 1260px;
 
 // Default variables
-html {
+:root {
 	// fonts sizes
 	--font_family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-	--base_font_size: 20px;
-	--base-line-height: 1.4446;
-	// all headings are derived from:
-	--heading1: 1.7rem;
 }
 
 // Light default theme
 body {
+	// all headings are derived from:
+	--heading1: clamp(2rem, 2.2250rem + -1.2500vw, 1.7rem); //use: font-size: var(--heading1);
+	--base_font_size: 1rem;
+	--base-line-height: 1.4446;
 	//spaces
 	--space: 2rem;
 	--space--small: 1rem;

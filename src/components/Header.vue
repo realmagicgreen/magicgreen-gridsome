@@ -107,7 +107,7 @@ export default {
 		padding: var(--space--small) calc(var(--space--small)/2);
 		width: 100%;
 		max-width: 1500px;
-		border-bottom: 1px solid var(--brand_color--dark);
+		//border-bottom: 1px solid var(--brand_color--dark);
 		[data-theme="light"] & {
 			 border-top: 0 none;
 		}

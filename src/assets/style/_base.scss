@@ -1,3 +1,6 @@
+// --minWidth: 640px;
+// --bp1Width: 880px;
+// --maxWidth: 1260px;
 // Default
 
 * {
@@ -14,10 +17,12 @@ body {
 	background-color: var(--bg_color);
 	color: var(--text_color);
 	transition: color .6s, background-color .6s;
+
 	font-family: var(--font_family);
+	line-height: var(--base-line-height);
+
 	margin: 0;
 	padding: 0;
-	line-height: var(--base-line-height);
 }
 
 img {
