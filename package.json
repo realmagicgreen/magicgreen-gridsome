@@ -1,6 +1,6 @@
 {
   "name": "magicgreensome",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "private": true,
   "scripts": {
     "build": "gridsome build",
@@ -16,6 +16,7 @@
     "@gridsome/transformer-remark": "^0.6.3",
     "gridsome": "^0.7.21",
     "gridsome-remark-unwrap-images": "^1.0.0",
+    "gridsome-scroll-reveal": "^1.0.11",
     "gridsome-source-static-meta": "^1.0.1",
     "gridsome-transformer-yamljson": "^0.1.5",
     "medium-zoom": "^1.0.6"
