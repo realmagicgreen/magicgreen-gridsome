@@ -248,7 +248,7 @@ export default {
 			padding-top: 1rem;
 			flex-direction: column;
 			justify-content: space-around;
-			min-height: calc(100vh - 60px);
+			min-height: calc(100vh - 110px);
 			min-width: 100%;
 			padding-top: 6vh;
 			padding-bottom: 6vh;

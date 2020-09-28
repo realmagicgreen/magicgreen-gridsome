@@ -7,14 +7,16 @@
 :root {
 	// fonts sizes
 	--font_family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	--base_font_size--html: 20px;
 }
 
 // Light default theme
 body {
-	// all headings are derived from:
-	--heading1: clamp(2rem, 2.2250rem + -1.2500vw, 1.7rem); //use: font-size: var(--heading1);
-	--base_font_size: 1rem;
+	--base_font_size--body: 1rem;
 	--base-line-height: 1.4446;
+	// all headings are derived from:
+	--heading1: clamp(1.7rem, 2.2250rem + -1.2500vw, 2rem); //use: font-size: var(--heading1);
+
 	//spaces
 	--space: 2rem;
 	--space--small: 1rem;
@@ -92,12 +94,12 @@ body[data-theme="dark"] {
 
 // MAKE  THINGS SMALLER FOR MOBILE
 @media screen and (max-width: 640px) {
-	html {
-		--base_font_size: 18px;
-	}
-
+	// html {
+	// 	--base_font_size: 18px;
+	// }
+	//
 	body {
 		--space: 1rem;
-		--header_height: 60px;
+		//--header_height: 60px;
 	}
 }

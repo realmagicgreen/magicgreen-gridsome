@@ -3,20 +3,11 @@
 // --maxWidth: 1260px;
 
 html {
-  font-size: 20px;
-  @media screen and (max-width: 640px) {
-    font-size: 20px;
-  }
-  @media screen and (max-width: 880px) {
-    font-size: 20px;
-  }
-  @media screen and (max-width: 1260px) {
-    font-size: 20px;
-  }
+  font-size: var(--base_font_size--html);
 }
 
 body {
-  font-size: var(--base_font_size);
+  font-size: var(--base_font_size--body);
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   font-weight: 400;
   line-height: var(--base-line-height);
