@@ -118,8 +118,8 @@ export default {
     padding: 10px;
   }
   .container .tag_cloud {
-    padding-left: var(--space--small);
-    padding-right: var(--space--small);
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
     a {
       body[data-theme="light"] & {
         color: black;

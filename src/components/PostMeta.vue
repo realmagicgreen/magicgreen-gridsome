@@ -87,9 +87,9 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: var(--space--small);
-    padding-bottom: calc(var(--space)/2);
-    padding-right: calc(var(--space)/2);
+    padding-top: var(--space-1);
+    padding-bottom: calc(var(--space-2)/2);
+    padding-right: calc(var(--space-2)/2);
     font-size: .9rem;
     white-space: nowrap;
 

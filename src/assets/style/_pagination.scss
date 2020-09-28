@@ -13,24 +13,24 @@
 
     [data-theme="light"] & {
       color: var(--black);
-      border: 1px solid var(--black);
+      border: 3px solid var(--black);
     }
 
     [data-theme="dark"] & {
       color: var(--link_color);
-      border: 1px solid var(--link_color);
+      border: 3px solid var(--link_color);
     }
 
     &[aria-label*="first"],
     &[aria-label*="last"],
     &[aria-label*="next"],
     &[aria-label*="previous"] {
-      border: 0 none!important;
+      border-color: transparent!important;
       background-color: transparent!important;
       font-size: 167.5%;
 
       &:hover {
-        color: var(--tag_page_bg_color);
+        color: var(--link_color);
       }
     }
 
@@ -39,13 +39,13 @@
       background-color: var(--tag_page_bg_color);
 
       &:first-child {
-        border: 1px solid var(--link_color);
+        //border-color: var(--link_color);
         //color: var(--link_color);
         background-color: transparent;
       }
 
       &:last-child {
-        border: 1px solid var(--link_color);
+        border-color: var(--link_color);
         //color: var(--link_color);
         background-color: transparent;
       }

@@ -14,7 +14,7 @@ body {
 }
 
 p {
-  padding: var(--space--small) 0;
+  padding: var(--space-1) 0;
 }
 
 .h1,
@@ -29,7 +29,7 @@ h4,
 h5 {
   transition: color .6s;
   color: var(--title_color);
-  padding: var(--space--small) 0;
+  padding: var(--space-1) 0;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -73,12 +73,12 @@ strong {
 
 blockquote {
   border-left: 2px solid var(--title_color);
-  padding-left: calc(var(--space) / 2);
+  padding-left: calc(var(--space-1) / 2);
   color: var(--title_color);
   font-size: 1.25rem;
   line-height: 1.25;
-  margin-top: var(--space--small);
-  margin-bottom: var(--space--small);
+  margin-top: var(--space-1);
+  margin-bottom: var(--space-1);
 
   @media screen and (min-width: 881px) {
     margin-right: 12vw;
@@ -86,7 +86,7 @@ blockquote {
   }
 
   p {
-    padding: calc(var(--space--small)/2) 0;
+    padding: calc(var(--space-1)/2) 0;
   }
 }
 

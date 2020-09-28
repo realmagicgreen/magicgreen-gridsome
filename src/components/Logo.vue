@@ -56,7 +56,7 @@ query {
 		height: clamp(5vw, 40px, 10vw);//min,pref,max
 		width: clamp(5vw, 40px, 10vw);
 		fill: var(--brand_color);
-		margin-right: calc(var(--space--small)/2);
+		margin-right: calc(var(--space-1)/2);
 	}
 }
 .logo_wrapper {

@@ -128,7 +128,7 @@ export default {
 <style lang="scss">
 	.footer {
 	  display: block;
-	  padding: var(--space) 0;
+	  padding: var(--space-2) 0;
 	  width: 100%;
 	  background-color:  var(--black);
 	  color: var(--brand_color--dark);
@@ -142,10 +142,10 @@ export default {
 			display: none;
 		}
 		.logo__image {
-			margin-top: var(--space);
+			margin-top: var(--space-2);
 	    transform: scale(1.85);
 	    padding: 0;
-			margin: calc(var(--space) * 2.25) 0 calc(var(--space) * 0.625) 0;
+			margin: calc(var(--space-2) * 2.25) 0 calc(var(--space-2) * 0.625) 0;
 		}
 
 
@@ -158,9 +158,9 @@ export default {
 		}
 
 	  .title {
-	    padding-top: var(--space);
-	    padding-bottom: calc(var(--space)/3);
-	    margin-bottom: var(--space);
+	    padding-top: var(--space-2);
+	    padding-bottom: calc(var(--space-2)/3);
+	    margin-bottom: var(--space-2);
 	    border-bottom: 1px solid var(--brand_color--dark);
 	    width: 100%;
 	    text-transform: uppercase;
@@ -199,8 +199,8 @@ export default {
 
 	    &.active {
 	      border-bottom: 0 none;
-				padding-left: var(--space--small);
-				padding-right: var(--space--small);
+				padding-left: var(--space-1);
+				padding-right: var(--space-1);
 				border: var(--brand_color--dark) solid 1px;
 	    }
 	}
@@ -222,7 +222,7 @@ export default {
 	.menu_contacts {
 	  > div {
 	    min-height: 22px;
-	    margin-bottom: calc(var(--space)/4);
+	    margin-bottom: calc(var(--space-2)/4);
 	  }
 	  .name {
 	    color: black;
@@ -270,7 +270,7 @@ export default {
 	.copyright {
 	  font-size: 14px;
 		text-align: center;
-	  padding-top: var(--space);
-	  margin-top: var(--space);
+	  padding-top: var(--space-2);
+	  margin-top: var(--space-2);
 	}
 </style>

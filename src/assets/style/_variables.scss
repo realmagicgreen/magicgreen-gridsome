@@ -15,16 +15,15 @@ body {
 	--base_font_size--body: 1rem;
 	--base-line-height: 1.4446;
 	// all headings are derived from:
-	--heading1: clamp(1.7rem, 2.2250rem + -1.2500vw, 2rem); //use: font-size: var(--heading1);
+	--heading1: clamp(1rem, 2rem + -1.2500vw, 2rem); //use: font-size: var(--heading1);
 
 	//spaces
-	--spacing_base_unit: 1rem;
-	--space: 2rem;
-	--space--small: 1rem;
+	--space-1: 1rem;
+	--space-2: 2rem;
 
 	//gridsome theme block sizes
-	--content_width: 860px;
-	--header_height: 80px;
+	--content_width: 54rem; //860px;
+	--header_height: 5rem; //80px;
 
 	//mix
 	--radius: 5px;

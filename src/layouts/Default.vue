@@ -31,7 +31,7 @@ export default {
   margin-bottom: 0;
   max-width: 1920px;
   @media only screen and (min-width: 1921px) {
-    margin-top: var(--space--small);
+    margin-top: var(--space-1);
   }
 }
 </style>

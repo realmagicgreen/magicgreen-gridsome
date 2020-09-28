@@ -104,7 +104,7 @@ export default {
 	  justify-content: space-between;
 	  align-items: center;
 		flex-wrap: nowrap;
-		padding: var(--space--small) calc(var(--space--small)/2);
+		padding: var(--space-1) 0;
 		width: 100%;
 		max-width: 1500px;
 		//border-bottom: 1px solid var(--brand_color--dark);
@@ -121,8 +121,8 @@ export default {
 
 		@media screen and (min-width: 1260px) {
 			flex-direction: row;
-			padding-left: var(--space--small);
-			padding-right: var(--space--small);
+			padding-left: var(--space-1);
+			padding-right: var(--space-1);
 			margin: 0 auto;
 		}
 
@@ -140,6 +140,7 @@ export default {
 	.header_menus {
 		display: flex;
 		align-items: center;
+		flex-grow: 1;
 	}
 }
 
@@ -166,8 +167,8 @@ export default {
 		}
 		@media only screen and (min-width: 880px) {
 			border: 0 none;
-			margin-left: calc(var(--space--small)/2);
-			margin-right: calc(var(--space--small)/2);
+			margin-left: calc(var(--space-1)/2);
+			margin-right: calc(var(--space-1)/2);
 			&.active {
 				border: 0 none;
 				font-size: 100%;
@@ -240,21 +241,24 @@ export default {
 		&.menu-is-open {
 			background-color: var(--black);
 			position: fixed;
-			left: 0;
+			top: 79px;
 			right: 0;
+			bottom: 0;
+			left: 0;
 			z-index: 11;
+
 			display: flex;
-			min-width: 100%;
-			padding-top: 1rem;
 			flex-direction: column;
 			justify-content: space-around;
-			min-height: calc(100vh - 110px);
+			min-height: calc(100vh - var(--header_height));
+
+	    // min-height: 100%;
+	    height: 100vh;
 			min-width: 100%;
 			padding-top: 6vh;
-			padding-bottom: 6vh;
+	    padding-bottom: 24vh;
 		}
 	}
-
 }
 
 @media only screen and (min-width: 880px) {
