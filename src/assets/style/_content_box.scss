@@ -10,18 +10,28 @@
 }
 
 .container {
-	padding: calc(var(--space--small)*1.5);
-	max-width: 100%;
+	padding: calc(var(--space--small)*1) calc(var(--space--small)*0.5);
+	width: 90vw;
+	margin: 0 auto;
+
 	@media screen and (min-width: 640px) {
 		padding: var(--space);
+		//width: 85vw;
 	}
 	@media screen and (min-width: 880px) {
-		max-width: calc(var(--content_width)*1.25);
+		width: calc(var(--content_width)*1.25);
 		margin: 0 auto;
+		//width: 80vw;
 	}
 	@media screen and (min-width: 1260px) {
-		max-width: calc(var(--content_width)*1.5);
+		width: calc(var(--content_width)*1.5);
 		margin: 0 auto;
+		//width: 75vw;
+	}
+
+	&--tag_cloud {
+		background-color: var(--brand_color);
+		color: var(--black);
 	}
 
 	&.small {

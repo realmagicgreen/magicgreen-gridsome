@@ -1,18 +1,19 @@
 <template>
   <Layout>
-    <h1 class="hide">
-      {{ $page.category.title }}
-    </h1>
-    <h2 class="h3">
-      <CategorySlogan />
-    </h2>
+    <div class="container">
+      <h1 class="hide">
+        {{ $page.category.title }}
+      </h1>
+      <h2 class="h3">
+        <CategorySlogan />
+      </h2>
 
-    <div class="posts post_grid">
-      <PostCard v-for="edge in $page.category.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
+      <div class="posts post_grid">
+        <PostCard v-for="edge in $page.category.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
+      </div>
+
+      <!-- <Pager :info="$page.category.pageInfo" class="pagination_block center"/> -->
     </div>
-
-    <!-- <Pager :info="$page.category.pageInfo" class="pagination_block center"/> -->
-
   </Layout>
 </template>
 

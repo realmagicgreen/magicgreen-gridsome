@@ -1,14 +1,20 @@
 <template>
   <Layout>
-    <div class="title_wrapper">
-      <h1 class="tag_page_title h2">
-        {{ $page.tag.title }}
-      </h1>
+
+    <div class="container">
+
+      <div class="title_wrapper">
+        <h1 class="tag_page_title h2">
+          {{ $page.tag.title }}
+        </h1>
+      </div>
+
+      <div class="posts post_grid">
+        <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
+      </div>
+      
     </div>
 
-    <div class="posts post_grid">
-      <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
-    </div>
   </Layout>
 </template>
 

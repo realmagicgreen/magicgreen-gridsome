@@ -15,23 +15,29 @@
       </div>
     </div>
 
-    <div class="post_container">
+    <div class="container">
 
-      <div class="post_header">
 
-        <h1 class="post_title" :class="[$page.post.ad ? 'is-adv' : '' ]" >
-          {{ $page.post.title }}
-        </h1>
 
-        <h2 class="post_subtitle border_top border_bottom">
-          {{ $page.post.subtitle }}
-        </h2>
+      <div class="post_container">
 
-        <PostMeta :post="$page.post" />
+        <div class="post_header">
+
+          <h1 class="post_title" :class="[$page.post.ad ? 'is-adv' : '' ]" >
+            {{ $page.post.title }}
+          </h1>
+
+          <h2 class="post_subtitle border_top border_bottom">
+            {{ $page.post.subtitle }}
+          </h2>
+
+          <PostMeta :post="$page.post" />
+
+        </div>
+
+        <div class="post_content" v-html="$page.post.content" />
 
       </div>
-
-      <div class="post_content" v-html="$page.post.content" />
 
     </div>
 

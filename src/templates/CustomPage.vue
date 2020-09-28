@@ -1,32 +1,34 @@
 <template>
   <Layout>
+    <div class="container">
 
-    <g-image
-    alt="Cover image"
-    v-if="$page.entry.cover_image"
-    :src="$page.entry.cover_image"
-    class="post_cover_image"
-    />
+      <g-image
+      alt="Cover image"
+      v-if="$page.entry.cover_image"
+      :src="$page.entry.cover_image"
+      class="post_cover_image"
+      />
 
-    <div class="post_container">
+      <div class="post_container">
 
-      <div class="post_header">
+        <div class="post_header">
 
-        <h1 class="post_title">
-          {{ $page.entry.title }}
-        </h1>
+          <h1 class="post_title">
+            {{ $page.entry.title }}
+          </h1>
 
-        <h2 class="post_subtitle border_top border_bottom">
-          {{ $page.entry.subtitle }}
-        </h2>
+          <h2 class="post_subtitle border_top border_bottom">
+            {{ $page.entry.subtitle }}
+          </h2>
 
+        </div>
+
+        <div class="post_content" v-html="$page.entry.content" />
 
       </div>
 
-      <div class="post_content" v-html="$page.entry.content" />
-
     </div>
-
+    
   </Layout>
 </template>
 

@@ -1,30 +1,36 @@
 <template>
   <Layout :show-logo="true">
 
+    <div class="container">
 
-
-    <div class="slogan_block container">
-      <Slogan />
-    </div>
-
-    <div class="posts post_grid">
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
-    </div>
-
-    <Pager :info="$page.posts.pageInfo" class="pagination_block center"/>
-
-    <!-- tagCloudBlock -->
-    <div class="tag_cloud container">
-      <div class="tag_block_icon"></div>
-      <div class="links_list" role="menu">
-        <TagLink
-        v-for="edge in $page.tags.edges"
-        :key="edge.node.id"
-        :tag="edge.node"
-        />
+      <div class="slogan_block">
+        <Slogan />
       </div>
+
+      <div class="posts post_grid">
+        <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+      </div>
+
+      <Pager :info="$page.posts.pageInfo" class="pagination_block center"/>
+
     </div>
-    <!-- /tagCloudBlock -->
+
+    <div class="container">
+
+      <!-- tagCloudBlock -->
+      <div class="tag_cloud">
+        <div class="tag_block_icon"></div>
+        <div class="links_list" role="menu">
+          <TagLink
+          v-for="edge in $page.tags.edges"
+          :key="edge.node.id"
+          :tag="edge.node"
+          />
+        </div>
+      </div>
+      <!-- /tagCloudBlock -->
+
+    </div>
 
   </Layout>
 </template>
@@ -111,7 +117,9 @@ export default {
   .posts {
     padding: 10px;
   }
-  .tag_cloud.container {
+  .container .tag_cloud {
+    padding-left: var(--space--small);
+    padding-right: var(--space--small);
     a {
       body[data-theme="light"] & {
         color: black;

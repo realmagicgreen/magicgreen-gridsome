@@ -1,51 +1,55 @@
 <template>
   <Layout>
 
-    <table class="green_pages_table responsive_table">
+    <div class="container">
 
-  <thead>
-    <tr class="green_pages_table_header_row">
-      <td class="table_header_brand">Brand</td>
-      <td class="table_header_product">Products</td>
-      <td class="hide">Address</td>
-      <td class="hide">Country</td>
-      <td>Email</td>
-      <td>Tel</td>
-      <td>Map</td>
-      <td>Website</td>
-    </tr>
-  </thead>
+      <table class="green_pages_table responsive_table">
 
-  <tbody class="list">
-    {% for company in site.data.companies %}
-      <tr class="green_pages_table_row" id="{{ company.brand | slugify }}"  itemscope itemtype="http://schema.org/Organization">
+        <thead>
+          <tr class="green_pages_table_header_row">
+            <td class="table_header_brand">Brand</td>
+            <td class="table_header_product">Products</td>
+            <td class="hide">Address</td>
+            <td class="hide">Country</td>
+            <td>Email</td>
+            <td>Tel</td>
+            <td>Map</td>
+            <td>Website</td>
+          </tr>
+        </thead>
 
-        <td class="brand" data-th="Brand" itemprop="brand">{{ company.brand }}</td>
+        <tbody class="list">
+          {% for company in site.data.companies %}
+            <tr class="green_pages_table_row" id="{{ company.brand | slugify }}"  itemscope itemtype="http://schema.org/Organization">
 
-        <td class="products" data-th="Products" itemscope itemtype="http://schema.org/Product">{{ company.products }}</td>
+              <td class="brand" data-th="Brand" itemprop="brand">{{ company.brand }}</td>
 
-        <td class="show_on_phones address" data-th="Address" itemscope itemtype="http://schema.org/PostalAddress">{% if company.address %}{{ company.address }}{% endif %}</td>
+              <td class="products" data-th="Products" itemscope itemtype="http://schema.org/Product">{{ company.products }}</td>
 
-        <td class="show_on_phones country" data-th="Country" itemprop="addressLocality">{% if company.country %}{{ company.country }}{% endif %}</td>
+              <td class="show_on_phones address" data-th="Address" itemscope itemtype="http://schema.org/PostalAddress">{% if company.address %}{{ company.address }}{% endif %}</td>
 
-        <td class="email" itemprop="email"><a class="sober_link "title="email" href="mailto:{{ company.email }}">{% if company.email %}{% include svg/use.html id="icn--email" class="email" %}{% endif %}</a></td>
+              <td class="show_on_phones country" data-th="Country" itemprop="addressLocality">{% if company.country %}{{ company.country }}{% endif %}</td>
 
-        <td class="telephone" itemprop="telephone">{% if company.telephone %}<a class="sober_link "title="tel:+{{ company.telephone }}" href="tel:+{{ company.telephone }}">{% include svg/use.html id="icn--localphone" class="localphone" %}</a>{% endif %}</td>
+              <td class="email" itemprop="email"><a class="sober_link "title="email" href="mailto:{{ company.email }}">{% if company.email %}{% include svg/use.html id="icn--email" class="email" %}{% endif %}</a></td>
 
-        <td class="location" itemprop="location">{% if company.location %}<a class="sober_link "title="location" href="{{ company.location }}">{% include svg/use.html id="icn--location" class="location" %}</a>{% endif %}</td>
+              <td class="telephone" itemprop="telephone">{% if company.telephone %}<a class="sober_link "title="tel:+{{ company.telephone }}" href="tel:+{{ company.telephone }}">{% include svg/use.html id="icn--localphone" class="localphone" %}</a>{% endif %}</td>
 
-        {% comment %} old way to display URL
-        {{ company.website | remove:'http://' | remove:'https://' | remove:'www.' | remove:'/' }}
-        {% endcomment %}
+              <td class="location" itemprop="location">{% if company.location %}<a class="sober_link "title="location" href="{{ company.location }}">{% include svg/use.html id="icn--location" class="location" %}</a>{% endif %}</td>
 
-        <td class="website"><a title="website" class="sober_link " href="{{ company.website}}">{% if company.website %}{% include svg/use.html id="icn--link" class="link" %}{% endif %}</a></td>
+              {% comment %} old way to display URL
+              {{ company.website | remove:'http://' | remove:'https://' | remove:'www.' | remove:'/' }}
+              {% endcomment %}
+
+              <td class="website"><a title="website" class="sober_link " href="{{ company.website}}">{% if company.website %}{% include svg/use.html id="icn--link" class="link" %}{% endif %}</a></td>
 
 
-      </tr>
-    {% endfor %}
-  </tbody>
+            </tr>
+          {% endfor %}
+        </tbody>
 
-</table>
+      </table>
+
+    </div>
 
   </Layout>
 </template>

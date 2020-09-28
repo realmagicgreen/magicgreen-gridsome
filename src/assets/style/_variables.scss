@@ -18,6 +18,7 @@ body {
 	--heading1: clamp(1.7rem, 2.2250rem + -1.2500vw, 2rem); //use: font-size: var(--heading1);
 
 	//spaces
+	--spacing_base_unit: 1rem;
 	--space: 2rem;
 	--space--small: 1rem;
 
