@@ -53,9 +53,16 @@ body {
 	--black--soft: #161616;
 	--grey: hsl(0,0%,45%);
 	--grey--light: hsl(0,0%,85%);
-	--transparent_grey: hsla(0,0%,0%,.65);
 
-	// - BRAND COLOR
+	--transparent_white75: hsla(100, 88%, 95%,.75);
+	--transparent_white5: hsla(100, 88%, 95%,.5);
+	--transparent_white25: hsla(100, 88%, 95%,.25);
+	--transparent_white125: hsla(360,100%,95%,.125);
+	--transparent_black5: hsla(0,0%,95%,.5);
+	--transparent_black25: hsla(0,0%,95%,.25);
+	--transparent_black125: hsla(0,0%,95%,.125);
+
+	// - BRAND COLORs
 	--brand_color: hsla(100, 88%, 64%, 1);
 	--brand_color--hex: #88f452;
 	--brand_color--dark: hsla(100, 88%, 28%, 1);

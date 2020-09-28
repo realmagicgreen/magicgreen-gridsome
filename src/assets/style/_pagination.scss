@@ -1,5 +1,8 @@
 .main .pagination_block {
+  //nav
   padding: 4rem 0;
+  position: relative;
+  z-index: 10;
 
   a {
     text-decoration: none;
