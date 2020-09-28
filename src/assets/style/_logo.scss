@@ -1,0 +1,66 @@
+.logo_wrapper {
+	flex-grow: 4;
+	text-decoration: none;
+}
+
+.logo {
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding-top: 6px;
+	padding-bottom: 6px;
+
+	footer & {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&__text {
+		transform: scale(1,1.35);
+		text-transform: uppercase;
+		color: var(--brand_color);
+		height: clamp(5vw, 40px, 10vw);
+		font-size: 7vw;
+		font-weight: 500;
+		@media only screen and (min-width: 641px) {
+			font-size: 7vw;
+		}
+		@media only screen and (min-width: 881px) {
+			font-size: 8vw;
+		}
+		@media only screen and (min-width: 1260px) {
+			font-size: 49px;
+		}
+	}
+
+	&__image {
+		height: clamp(5vw, 40px, 10vw); //min,pref,max
+		width: clamp(5vw, 40px, 10vw);
+		fill: var(--brand_color);
+		margin-right: var(--space-1);
+	}
+}
+
+.logo_wrapper {
+	cursor: pointer;
+	// transition: all 3s ease-in-out;
+	&:hover {
+		border-bottom-color: transparent;
+
+		.logo__image {
+
+			animation: pulse 2s infinite;
+		}
+	}
+}
+
+@keyframes pulse {
+	10% {
+		transform: scale(1.3);
+	}
+}

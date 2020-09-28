@@ -1,5 +1,5 @@
 <template>
-  <Layout :show-logo="true">
+  <Layout :showLogo="true" :showText="true">
 
     <div class="container">
 

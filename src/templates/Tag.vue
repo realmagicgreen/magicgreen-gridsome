@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :show-logo="true" >
 
     <div class="container">
 
@@ -12,7 +12,7 @@
       <div class="posts post_grid">
         <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
       </div>
-      
+
     </div>
 
   </Layout>

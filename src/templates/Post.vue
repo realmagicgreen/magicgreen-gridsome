@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :show-logo="true">
 
     <SEO/>
 

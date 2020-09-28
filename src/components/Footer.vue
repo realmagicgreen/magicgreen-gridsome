@@ -1,8 +1,10 @@
 <template>
 	<footer class="footer">
 
-		<div class="container small flex flex_align_center flex_justify_center logo_wrapper">
-			<Logo />
+		<div class="header">
+			<g-link class="logo_wrapper" to="/#top">
+				<Logo :showLogo="true" :showText="true" />
+			</g-link>
 		</div>
 
 		<div class="container small menu_container">
@@ -118,10 +120,11 @@ import Logo from '~/components/Logo'
 import PostLink from '~/components/PostLink.vue'
 
 export default {
-  components: {
+	components: {
     Logo,
 		PostLink
   }
+
 }
 </script>
 
@@ -133,20 +136,7 @@ export default {
 	  background-color:  var(--black);
 	  color: var(--brand_color--dark);
 		border-top: 1px solid var(--brand_color--dark);
-		// [data-theme="dark"] & {
-		// 	 border-top: 0 none;
-		// }
 
-
-		.logo__text {
-			display: none;
-		}
-		.logo__image {
-			margin-top: var(--space-2);
-	    transform: scale(1.85);
-	    padding: 0;
-			margin: calc(var(--space-2) * 2.25) 0 calc(var(--space-2) * 0.625) 0;
-		}
 
 
 		.menu_container {
@@ -159,7 +149,7 @@ export default {
 
 	  .title {
 	    padding-top: var(--space-2);
-	    padding-bottom: calc(var(--space-2)/3);
+	    padding-bottom: var(--space-05);
 	    margin-bottom: var(--space-2);
 	    border-bottom: 1px solid var(--brand_color--dark);
 	    width: 100%;
@@ -222,7 +212,7 @@ export default {
 	.menu_contacts {
 	  > div {
 	    min-height: 22px;
-	    margin-bottom: calc(var(--space-2)/4);
+	    margin-bottom: var(--space-05);
 	  }
 	  .name {
 	    color: black;

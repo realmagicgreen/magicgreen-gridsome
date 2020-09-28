@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :show-logo="true">
     <div class="container">
 
       <g-image
@@ -28,7 +28,7 @@
       </div>
 
     </div>
-    
+
   </Layout>
 </template>
 

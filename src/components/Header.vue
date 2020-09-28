@@ -3,7 +3,7 @@
 		<div class="header">
 
 			<g-link class="logo_wrapper" to="/">
-				<Logo v-if="showLogo" />
+				<Logo :showLogo="true" :showText="true" />
 			</g-link>
 
 			<div class="header_menus">
@@ -70,7 +70,8 @@ import ToggleTheme from '~/components/ToggleTheme.vue'
 
 export default {
   props: {
-    showLogo: { default: true }
+    showLogo: { default: true },
+		showText: { default: true }
   },
   components: {
     Logo,
@@ -84,65 +85,7 @@ export default {
 
 
 <style lang="scss">
-.header_wrap {
-  background-color: var(--black);
-  display: flex;
-	flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  min-height: var(--header_height);
-	box-shadow: var(--bottom_shadow);
-	&.menu-is-open {
-		position: fixed;
-		z-index: 11;
-		width: 100%;
-	}
 
-	.header {
-		display: flex;
-		flex-direction: row;
-	  justify-content: space-between;
-	  align-items: center;
-		flex-wrap: nowrap;
-		padding: var(--space-1) 0;
-		width: 100%;
-		max-width: 1500px;
-		//border-bottom: 1px solid var(--brand_color--dark);
-		[data-theme="light"] & {
-			 border-top: 0 none;
-		}
-
-		@media screen and (min-width: 880px) {
-			flex-direction: column;
-			.logo_wrapper {
-				min-height: 70px;
-			}
-		}
-
-		@media screen and (min-width: 1260px) {
-			flex-direction: row;
-			padding-left: var(--space-1);
-			padding-right: var(--space-1);
-			margin: 0 auto;
-		}
-
-		@media only screen and (min-width: 1500px) {
-			margin: 0 auto;
-		}
-	}
-
-	.logo_wrapper {
-		flex-grow: 4;
-		text-decoration: none;
-	}
-
-
-	.header_menus {
-		display: flex;
-		align-items: center;
-		flex-grow: 1;
-	}
-}
 
 .head_menu {
 	width: 100%;
@@ -167,8 +110,8 @@ export default {
 		}
 		@media only screen and (min-width: 880px) {
 			border: 0 none;
-			margin-left: calc(var(--space-1)/2);
-			margin-right: calc(var(--space-1)/2);
+			margin-left: var(--space-05);
+			margin-right: var(--space-05);
 			&.active {
 				border: 0 none;
 				font-size: 100%;
