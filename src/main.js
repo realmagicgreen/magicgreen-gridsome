@@ -18,8 +18,8 @@ export default function (Vue, { router, head, isClient }) {
     // applied to elements with the v-scroll-reveal directive; useful for animation overrides.
     class: 'v-scroll-reveal',
     duration: 1000,
-    scale: 1.5,
-    distance: '5px',
+    scale: 0.25,
+    distance: '250px',
     mobile: true
   });
 }

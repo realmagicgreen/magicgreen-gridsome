@@ -3,7 +3,7 @@
 
 		<div class="header" v-scroll-reveal.reset>
 			<g-link class="logo_wrapper" to="/#top">
-				<Logo :showLogo="true" :showText="true" />
+				<Logo />
 			</g-link>
 		</div>
 

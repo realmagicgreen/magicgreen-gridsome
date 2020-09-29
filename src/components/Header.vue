@@ -1,9 +1,9 @@
 <template>
 	<header class="header_wrap" :class="{'menu-is-open': isMenuActive}">
-		<div class="header">
+		<div class="header container">
 
 			<g-link class="logo_wrapper" to="/">
-				<Logo :showLogo="true" :showText="true" />
+				<Logo />
 			</g-link>
 
 			<div class="header_menus">
