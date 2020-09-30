@@ -1,7 +1,7 @@
 <template>
 	<footer class="footer">
 
-		<div class="header" v-scroll-reveal.reset>
+		<div class="header load_hidden" v-scroll-reveal.reset>
 			<g-link class="logo_wrapper" to="/#top">
 				<Logo />
 			</g-link>
