@@ -23,28 +23,28 @@
 						<span aria-hidden="true" />
 					</button>
 
-					<div
-					role="contentinfo"
-					class="head_menu togglable_menu"
-					:class="{'menu-is-open': isMenuActive}"
-					@click="isMenuActive = !isMenuActive">
-				    <div
-						v-for="navItem in $static.metadata.headerNavigation"
-						:key="navItem.name"
-						class="menu_item_wrap"
-						role="menu">
-						  <g-link
-							class="menu_item"
-							role="menuitem"
-			        :to="navItem.link"
-			        :title="navItem.name">
-							  {{ navItem.name}}
-							</g-link>
-				    </div>
-					</div>
-
 				</div>
 
+			</div>
+
+			<div
+			role="contentinfo"
+			class="head_menu togglable_menu"
+			:class="{'menu-is-open': isMenuActive}"
+			@click="isMenuActive = !isMenuActive">
+				<div
+				v-for="navItem in $static.metadata.headerNavigation"
+				:key="navItem.name"
+				class="menu_item_wrap"
+				role="menu">
+					<g-link
+					class="menu_item"
+					role="menuitem"
+					:to="navItem.link"
+					:title="navItem.name">
+						{{ navItem.name}}
+					</g-link>
+				</div>
 			</div>
 
 		</div>
@@ -182,24 +182,22 @@ export default {
 	display: none;
 	@media only screen and (max-width: 880px) {
 		&.menu-is-open {
-			background-color: var(--black);
 			position: fixed;
-			top: 79px;
+			z-index: 11;
+			top: 0;
 			right: 0;
 			bottom: 0;
 			left: 0;
-			z-index: 11;
 
 			display: flex;
 			flex-direction: column;
 			justify-content: space-around;
-			min-height: calc(100vh - var(--header_height));
-
-	    // min-height: 100%;
+			//min-height: calc(100vh - var(--header_height));
 	    height: 100vh;
 			min-width: 100%;
-			padding-top: 6vh;
-	    padding-bottom: 24vh;
+			padding-top: 20vh;
+    	padding-bottom: 10vh;
+			background-color: var(--black);
 		}
 	}
 }
@@ -211,5 +209,10 @@ export default {
 	.toggle_menu_button {
 		display: none;
 	}
+}
+
+.header.container {
+	position: relative;
+	z-index: 10;
 }
 </style>
