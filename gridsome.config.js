@@ -8,7 +8,46 @@ module.exports = {
   siteName: 'Magic Green',
   siteDescription: 'Magic Green magazine is a showcase of examples, infos and addresses of all stuff green from South East Asia and beyond.',
   siteUrl: 'https://magicgreensome.netlify.app',
+  titleTemplate: `%s | MagicGreen`,
+  // settings: {
+  //    // Place site-wide settings here and query them from the GraphQL layer's metadata {settings} key.
+  //    likes: {
+  //      language: 'JavaScript',
+  //      frameworks: [
+  //        'Vue',
+  //        'Gridsome',
+  //        'Tailwind'
+  //      ]
+  //    }
+  // },
   plugins: [
+    {
+      use: 'gridsome-plugin-svg',
+      options: {
+      // default options below
+      goesBothWays: true, //default false
+      svgo: [
+        {
+          removeTitle: false
+        },
+        {
+          prefixIds: {
+            prefix: (_, {path}) => basename(path, '.svg'),
+            delim: '-',
+          },
+        },
+        {
+          removeDesc: false
+        },
+        {
+          removeViewBox: false,
+        },
+        {
+          sortAttrs: true,
+        }
+        ],
+      }
+    },
     {
       use: '@gridsome/plugin-critical',
       options: {
@@ -19,8 +58,7 @@ module.exports = {
     },
     {
       use: '@gridsome/source-filesystem',
-      options:
-        {
+      options: {
           path: 'component/site/*.yml',
           typeName: 'Yaml',
           yamljson: {

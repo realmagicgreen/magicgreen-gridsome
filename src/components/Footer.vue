@@ -120,6 +120,9 @@ import Logo from '~/components/Logo'
 import PostLink from '~/components/PostLink.vue'
 
 export default {
+	props: {
+    showLogo: { default: true }
+  },
 	components: {
     Logo,
 		PostLink

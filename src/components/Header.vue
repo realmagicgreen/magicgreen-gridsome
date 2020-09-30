@@ -70,8 +70,7 @@ import ToggleTheme from '~/components/ToggleTheme.vue'
 
 export default {
   props: {
-    showLogo: { default: true },
-		showText: { default: true }
+    showLogo: { default: true }
   },
   components: {
     Logo,
