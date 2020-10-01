@@ -1,7 +1,7 @@
 <template>
   <Layout :show-logo="true" >
 
-    <div class="container">
+    <div class="horizontal_spacing">
 
       <div class="title_wrapper">
         <h1 class="tag_page_title h2 load_hidden" v-scroll-reveal.reset>
@@ -86,8 +86,11 @@ export default {
   components: {
     PostCard
   },
-  metaInfo: {
-    title: 'Tags'
+  metaInfo () {
+    return {
+      title: this.$page.tag.title
+
+    }
   }
 }
 </script>
@@ -97,35 +100,6 @@ export default {
   padding: 10px;
 }
 
-.tag_page_title {
-  position: relative;
-  margin: 6rem 0 4rem 0;
-  padding-bottom: 6px;
-  padding-top: 20px;
-  max-width: 80%;
-  font-weight: 400;
-  text-align: center;
-
-  &:before {
-    position: absolute;
-    content: "";
-    width: 80px;
-    height: 80px;
-    left: calc(50% - 40px);
-    top: -80px;
-    [data-theme="light"] & {
-      background: url("../assets/svgs/tagcloud.svg") no-repeat center center;
-      -webkit-background-size: cover;
-      background-size: cover;
-    }
-    [data-theme="dark"] & {
-      background: url("../assets/svgs/tagcloud_white.svg") no-repeat center center;
-      -webkit-background-size: cover;
-      background-size: cover;
-    }
-  }
-}
-
 .title_wrapper {
   display: flex;
   flex-direction: column;
@@ -133,13 +107,5 @@ export default {
   justify-content: center;
   width: 100%;
   margin-bottom: 10px;
-}
-.tag_count {
-  text-transform: uppercase;
-  font-size: 80%;
-  opacity: .65;
-  text-align: left;
-  width: 70%;
-  padding-left: 25px;
 }
 </style>

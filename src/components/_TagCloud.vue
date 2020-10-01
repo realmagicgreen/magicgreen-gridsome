@@ -1,7 +1,7 @@
 <template>
 
 <!-- to fix -->
-<div class="tag_cloud container">
+<div class="tag_cloud horizontal_spacing">
   <div class="links_list">
     <TagLink
     v-for="edge in $page.tags.edges"

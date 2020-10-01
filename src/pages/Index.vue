@@ -1,7 +1,7 @@
 <template>
   <Layout>
 
-    <div class="container">
+    <div class="horizontal_spacing">
 
       <div class="slogan_block">
         <Slogan />
@@ -15,10 +15,10 @@
 
     </div>
 
-    <div class="container">
+    <div class="horizontal_spacing">
 
       <!-- tagCloudBlock -->
-      <div class="tag_cloud">
+      <div class="tag_cloud vertical_spacing">
         <div class="tag_block_icon"></div>
         <div class="links_list" role="menu">
           <TagLink
@@ -116,38 +116,5 @@ export default {
 <style lang="scss" scoped>
   .posts {
     padding: 10px;
-  }
-  .container .tag_cloud {
-    padding-left: var(--space-1);
-    padding-right: var(--space-1);
-    a {
-      body[data-theme="light"] & {
-        color: black;
-      }
-    }
-  }
-
-  .tag_block_icon {
-  	min-height: 80px;
-    width: 80px;
-    display: flex;
-  	align-items: center;
-    justify-content: center;
-    margin: 4rem;
-    &:before {
-      content: "";
-
-      width: 80px;
-      height: 80px;
-      position: absolute;
-      left: calc(50% - 40px);
-      [data-theme="light"] & {
-        background: url("../assets/svgs/tagcloud.svg") no-repeat;
-  		}
-
-  		[data-theme="dark"] & {
-        background: url("../assets/svgs/tagcloud_green.svg") no-repeat;
-  		}
-    }
   }
 </style>

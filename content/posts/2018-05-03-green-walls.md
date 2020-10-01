@@ -10,6 +10,7 @@ tags:
   - CO2
   - design
   - environment-friendly
+  - pollutants-remove
   - Indonesia
 canonical_url: false
 cover_image: ./images/solutions/green-walls/green-walls.jpg
@@ -20,6 +21,8 @@ sticky: # 'true' or empty
 show_in_home_slideshow: # 'true' or empty
 home_slideshow_caption: # lowercase, max 12 digits, including spaces
 photography: # put here photographer name
+links:
+  - "[green wall - wikipedia ](https://en.wikipedia.org/wiki/Green_wall)"
 ---
 
 Green walls are not only visually pleasant, but naturally absorb CO2 and other pollutants thus cleaning the air.

@@ -10,6 +10,7 @@ tags:
   - botany
   - horticulture
   - plants
+  - pollutants-remove
   - learning
   - superfood
   - wellness
@@ -21,6 +22,10 @@ ad: # use 'true' to have post displaying AD
 featured: true # use 'true' to have it displayed in home
 sticky: true # 'true' or empty
 photography:  # put here photographer name
+links:
+  - "[Ginger - Wikipedia](https://en.wikipedia.org/wiki/Ginger)"
+  - "[Ginger benefits](https://www.naturalfoodseries.com/13-ginger-benefits/)"
+  - "[6 anti inflammatory supplements](https://www.healthline.com/nutrition/6-anti-inflammatory-supplements)"
 ---
 Ginger, is a root which provides us with a wealth of anti-inflammatory and analgesic effects. It's great for treating chronic joint problems, aches and pains.
 
@@ -85,14 +90,3 @@ A yeast called Candida leads to fungal infections on your toenail. A fresh piece
 **Treats Cold and Flu**
 
 Ginger has been battling seasonal colds and flu for centuries. Consuming ginger by adding it chopped into your tea can treat flu and regain lost energy.
-
-
-
-## **_Know more_**
-
-
-[Ginger - Wikipedia](https://en.wikipedia.org/wiki/Ginger)
-
-[Ginger benefits](https://www.naturalfoodseries.com/13-ginger-benefits/)
-
-[6 anti inflammatory supplements](https://www.healthline.com/nutrition/6-anti-inflammatory-supplements)

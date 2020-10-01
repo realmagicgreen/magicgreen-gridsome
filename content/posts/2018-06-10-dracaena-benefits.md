@@ -12,6 +12,7 @@ tags:
   - botany
   - horticulture
   - plants
+  - pollutants-remove
   - learning
   - wellness
 cover_image: ./images/health/dracena-benefits/dracena-benefits.jpg
@@ -22,6 +23,13 @@ ad: # use 'true' to have post displaying AD
 featured: true # use 'true' to have it displayed in home
 sticky: true # 'true' or empty
 photography: # put here photographer name
+links:
+  - "[Dracaena uses](http://www.westcoastnurseries.com/dracaena-why-use-dracaena/)"
+  - "[Effectiveness of Houseplants in Reducing the Indoor Air Pollutant](http://horttech.ashspublications.org/cgi/content/abstract/19/2/286)"
+  - "[Houseplants that clean the air](https://www.mnn.com/health/healthy-spaces/stories/houseplants-that-clean-the-air)"
+  - "[92% of the world’s population exposed to unsafe levels of air pollution](https://www.sciencedaily.com/releases/2016/09/160927144248.htm)"
+  - "[NASA Clean Air Study](https://en.wikipedia.org/wiki/NASA_Clean_Air_Study)"
+  - "[Aphrodisiac potentials of Dracaena Arborea](https://www.sciencedirect.com/science/article/pii/S1995764514601036)"
 ---
 
 People use Dracaena for the health benefits they offer. Dracaena, which name comes from ancient greek, meaning female dragon, is a genus of about 120 species of trees and succulent shrubs.
@@ -41,18 +49,3 @@ A study conducted in the University of Agriculture in Norway concluded that hous
 
 
 **Pollutants removed**: Benzene, Trichloroethylene, Formaldehyde, Carbon dioxide
-
-## **_Know more_**
-
-[Dracaena uses](http://www.westcoastnurseries.com/dracaena-why-use-dracaena/)
-
-
-[Effectiveness of Houseplants in Reducing the Indoor Air Pollutant](http://horttech.ashspublications.org/cgi/content/abstract/19/2/286)
-
-[Houseplants that clean the air](https://www.mnn.com/health/healthy-spaces/stories/houseplants-that-clean-the-air)
-
-[92% of the world’s population exposed to unsafe levels of air pollution](https://www.sciencedaily.com/releases/2016/09/160927144248.htm)
-
-[NASA Clean Air Study](https://en.wikipedia.org/wiki/NASA_Clean_Air_Study)
-
-[Aphrodisiac potentials of Dracaena Arborea](https://www.sciencedirect.com/science/article/pii/S1995764514601036)

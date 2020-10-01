@@ -1,7 +1,7 @@
 <template>
-  <g-link class="card content_box" :to="post.path" :class="[post.category.title]" >
+  <g-link class="card vertical_spacing" :to="post.path" :class="[post.category.title]" >
 
-    <div class="category vertical uppercase" v-html="post.category.title" />
+    <div class="category vertical-90 uppercase" v-html="post.category.title" />
 
     <div class="card_post_image clipped">
       <g-image

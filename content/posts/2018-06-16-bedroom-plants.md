@@ -11,6 +11,7 @@ tags:
   - bedroom-plants
   - botany
   - plants
+  - pollutants-remove
   - learning
   - wellness
 cover_image: ./images/health/bedroom-plants/bedroom-plants.jpg
@@ -21,6 +22,14 @@ ad: # use 'true' to have post displaying AD
 featured: true # use 'true' to have it displayed in home
 sticky: true # pinned to top 'true' or empty
 photography: # put here photographer name
+links:
+  - "[NASA Clean Air Study](https://en.wikipedia.org/wiki/NASA_Clean_Air_Study)"
+  - "[(Excellent guide) Air Cleaning Plants - ohsospotless](https://ohsospotless.com/air-cleaning-plants/)"
+  - "[Plants to help you sleep](http://www.naturallivingideas.com/12-plants-for-your-bedroom-to-help-you-sleep/)"
+  - "[Indoor plants which clean the air](https://www.livescience.com/38445-indoor-plants-clean-air.html)"
+  - "[Crassulacean acid metabolism, CAM photosynthesis](https://en.wikipedia.org/wiki/Crassulacean_acid_metabolism)"
+  - "Houseplants that clean air](https://greatist.com/connect/houseplants-that-clean-air)"
+  - "[Benefits of lavender oil](https://bettermindbodysoul.com/benefits-of-lavender-oil/)"
 ---
 
 Sure, that potted fern is pretty, but can it really spruce up the air quality in your home? Studies by scientists at NASA, Pennsylvania State University, the University of Georgia and other respected institutions suggest that it can.
@@ -129,19 +138,3 @@ A commonly used herb for cooking purposes, rosemary can also help you get better
 ![Rosemary](./images/health/bedroom-plants/bedroom-plants-13.jpg)
 
 Practitioners today recommend rosemary essential oil for supporting the nervous system and circulatory health, improving concentration, and relieving stress.
-
-## **_Know more_**
-
-[NASA Clean Air Study](https://en.wikipedia.org/wiki/NASA_Clean_Air_Study)
-
-[(Excellent guide) Air Cleaning Plants - ohsospotless](https://ohsospotless.com/air-cleaning-plants/)
-
-[Plants to help you sleep](http://www.naturallivingideas.com/12-plants-for-your-bedroom-to-help-you-sleep/)
-
-[Indoor plants which clean the air](https://www.livescience.com/38445-indoor-plants-clean-air.html)
-
-[Crassulacean acid metabolism, CAM photosynthesis](https://en.wikipedia.org/wiki/Crassulacean_acid_metabolism)
-
-[Houseplants that clean air](https://greatist.com/connect/houseplants-that-clean-air)
-
-[Benefits of lavender oil](https://bettermindbodysoul.com/benefits-of-lavender-oil/)

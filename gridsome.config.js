@@ -4,11 +4,32 @@
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+// to implement
+// module.exports = {
+//   chainWebpack: config => {
+//     const svgRule = config.module.rule('svg')
+//     svgRule.uses.clear()
+//     svgRule
+//       .use('vue-svg-loader')
+//       .loader('vue-svg-loader')
+//   }
+// }
+
 module.exports = {
   siteName: 'Magic Green',
   siteDescription: 'Magic Green magazine is a showcase of examples, infos and addresses of all stuff green from South East Asia and beyond.',
   siteUrl: 'https://magicgreensome.netlify.app',
   titleTemplate: `%s | MagicGreen`,
+
+  //// https://gridsome.org/docs/assets-svg/#using-svgs-as-components
+  chainWebpack: config => {
+    const svgRule = config.module.rule('svg')
+    svgRule.uses.clear()
+    svgRule.use('vue-svg-loader')
+      .loader('vue-svg-loader')
+  },
+
+  //// to test
   // settings: {
   //    // Place site-wide settings here and query them from the GraphQL layer's metadata {settings} key.
   //    likes: {
@@ -23,30 +44,9 @@ module.exports = {
   plugins: [
     {
       use: 'gridsome-plugin-svg',
-      options: {
-      // default options below
-      goesBothWays: true, //default false
-      svgo: [
-        {
-          removeTitle: false
-        },
-        {
-          prefixIds: {
-            prefix: (_, {path}) => basename(path, '.svg'),
-            delim: '-',
-          },
-        },
-        {
-          removeDesc: false
-        },
-        {
-          removeViewBox: false,
-        },
-        {
-          sortAttrs: true,
-        }
-        ],
-      }
+      // options: {
+      //  goesBothWays: true, //default false
+      // }
     },
     {
       use: '@gridsome/plugin-critical',

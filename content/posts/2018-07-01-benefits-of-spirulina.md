@@ -20,6 +20,11 @@ ad: # use 'true' to have post displaying AD
 featured: true # use 'true' to have it displayed in home
 sticky: # 'true' or empty
 photography:  # put here photographer name
+links:
+  - "[Spirulina - Wikipedia](https://en.wikipedia.org/wiki/Spirulina_(dietary_supplement)"
+  - "[10 Health Benefits of Spirulina](https://www.healthline.com/nutrition/10-proven-benefits-of-spirulina)"
+  - "[Spirulina project at Auroville](https://www.auroville.com/spirulina)"
+  - "[Dangers of Spirulina](https://healthyeating.sfgate.com/dangers-spirulina-7035.html)"
 ---
 **Spirulina** is a type of bacteria called cyanobacterium, a dark blue-green algae that has been touted as one of the most potent and protective **superfood** in existence.
 
@@ -76,13 +81,3 @@ They analyzed 13 commercially distributed products and found cytotoxins, substan
 Spirulina contains an abundance of nucleic acids, according to the Beth Israel Deaconess Medical Center. These substances, which are related to DNA, produce uric acid when they are metabolized. If too much uric acid accumulates in your body, gout or kidney stones can develop.
 
 If you are susceptible to gout attacks or kidney stones, spirulina may be especially harmful to you. To avoid excessive uric acid, the hospital recommends limiting your intake of spirulina to less than 50 grams per day.
-
-## **_Know more_**
-
-[Spirulina - Wikipedia](https://en.wikipedia.org/wiki/Spirulina_(dietary_supplement))
-
-[10 Health Benefits of Spirulina](https://www.healthline.com/nutrition/10-proven-benefits-of-spirulina)
-
-[Spirulina project at Auroville](https://www.auroville.com/spirulina)
-
-[Dangers of Spirulina](https://healthyeating.sfgate.com/dangers-spirulina-7035.html)

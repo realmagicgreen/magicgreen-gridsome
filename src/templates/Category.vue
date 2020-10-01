@@ -1,11 +1,11 @@
 <template>
   <Layout :show-logo="true">
-    <div class="container">
+    <div class="horizontal_spacing">
       <h1 class="hide">
         {{ $page.category.title }}
       </h1>
       <h2 class="h3">
-        <CategorySlogan />
+        <!-- <CategorySlogan /> -->
       </h2>
 
       <div class="posts post_grid">

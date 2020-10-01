@@ -17,6 +17,17 @@ sticky: true # 'true' or empty
 show_in_home_slideshow: # 'true' or empty
 home_slideshow_caption: # lowercase, max 12 digits, including spaces
 photography: # put here photographer name
+links:
+  - "[Garlic](https://en.wikipedia.org/wiki/Garlic)"
+  - "[Peppermint](https://en.wikipedia.org/wiki/Peppermint)"
+  - "[Citronella](https://en.wikipedia.org/wiki/Citronella)"
+  - "[Lavender](https://en.wikipedia.org/wiki/Lavandula)"
+  - "[Catnip](https://en.wikipedia.org/wiki/Catnip)"
+  - "[Basil](https://en.wikipedia.org/wiki/Basil)"
+  - "[Rosemary](https://en.wikipedia.org/wiki/Rosemary)"
+  - "[Attracted by the carbon dioxide we exhale](http://theconversation.com/health-check-why-mosquitoes-seem-to-bite-some-people-more-36425)"
+  - "[Grow mosquito repellent plants](https://krishijagran.com/health-lifestyle/easy-to-grow-mosquito-repellent-plants-at-home/)"
+  - "[Plants that repel mosquitoes](https://www.proflowers.com/blog/plants-that-repel-mosquitoes)"
 ---
 Mosquitoes can be a terrible nuisance. Before you grab a can of chemical bug spray, you can take a stand against mosquitoes with a few well-chosen.
 
@@ -126,7 +137,7 @@ It’s definitely worth putting a little extra effort in keeping your home and y
 
 Get rid of any stagnant or standing water in your yard as much as possible. That’s where mosquitoes lay their eggs, which can lead to huge population explosions around the house when they mature.
 
-Open water barrels, decorative ponds and unused kiddy pools are all a potential breeding ground for mosquitoes. Drain pools or other containers when not needed, and consider adding lids or screening to places you can’t drain.
+Open water barrels, decorative ponds and unused kiddy pools are all a potential breeding ground for mosquitoes. Drain pools or other horizontal_spacings when not needed, and consider adding lids or screening to places you can’t drain.
 
 A little solar-powered bubbler would keep water moving in a pond enough to prevent insect development without sacrificing the water feature. Mosquitoes won’t lay eggs in moving water. These can be a more natural option that treating a pond with chemical pesticides.
 
@@ -135,27 +146,3 @@ Depending on where you live, mosquitoes are very much a seasonal pest and their 
 They also need the water of spring rains for over-wintered eggs to hatch. These are the times to make sure you have thriving plants in the house to keep out the mosquitoes.
 
 So with a few of these aromatic plants, and some simple changes around the house, you can have a more mosquito-free summer without having to resort to chemical sprays.
-
-
-
-## **_Know more_**
-
-[Garlic](https://en.wikipedia.org/wiki/Garlic)
-
-[Peppermint](https://en.wikipedia.org/wiki/Peppermint)
-
-[Citronella](https://en.wikipedia.org/wiki/Citronella)
-
-[Lavender](https://en.wikipedia.org/wiki/Lavandula)
-
-[Catnip](https://en.wikipedia.org/wiki/Catnip)
-
-[Basil](https://en.wikipedia.org/wiki/Basil)
-
-[Rosemary](https://en.wikipedia.org/wiki/Rosemary)
-
-[Attracted by the carbon dioxide we exhale](http://theconversation.com/health-check-why-mosquitoes-seem-to-bite-some-people-more-36425)
-
-[Grow mosquito repellent plants](https://krishijagran.com/health-lifestyle/easy-to-grow-mosquito-repellent-plants-at-home/)
-
-[Plants that repel mosquitoes](https://www.proflowers.com/blog/plants-that-repel-mosquitoes)

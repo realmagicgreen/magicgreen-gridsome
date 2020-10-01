@@ -1,7 +1,7 @@
 <template>
   <Layout :show-logo="true">
 
-    <div class="container">
+    <div class="horizontal_spacing">
 
       <table class="green_pages_table responsive_table">
 

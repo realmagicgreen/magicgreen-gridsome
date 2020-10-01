@@ -1,0 +1,32 @@
+// Used to wrap content inside a nice box.
+
+.vertical_spacing {
+	//for vertical spacing
+	width: 100%;
+	max-width: var(--content_width);
+	margin: 0 auto;
+	border-radius: var(--radius);
+
+	// SMOOTH transition
+	transition: background-color .6s;
+	transition: transform .3s, background-color .3s, box-shadow .6s;
+
+}
+
+.horizontal_spacing {
+	//for horizontal spacing
+	padding: 0 var(--space-1);
+	margin: 0;
+
+	&--tag_cloud {
+		background-color: var(--brand_color);
+		color: var(--black);
+	}
+
+	&.small {
+		@media screen and (min-width: 880px) {
+			max-width: 880px;
+			margin: 0 auto;
+		}
+	}
+}

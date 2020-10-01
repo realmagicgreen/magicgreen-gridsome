@@ -21,8 +21,10 @@ ad: # use 'true' to have post displaying AD
 featured: true # use 'true' to have it displayed in home
 sticky: true # 'true' or empty
 photography:  # put here photographer name
+links:
+  - "[Six benefits of Moringa](https://www.healthline.com/nutrition/6-benefits-of-moringa-oleifera)"
+  - "[Moringa - wikipedia](https://en.wikipedia.org/wiki/Moringa_oleifera)"
 ---
-
 Moringa also called drumstick tree, horseradish tree, ben oil tree or benzoil tree is a fast-growing, drought-resistant tree, native to the southern foothills of the Himalayas.
 
 Almost all parts of the tree are eaten or used as ingredients in traditional herbal medicines.
@@ -67,9 +69,3 @@ One study in women found that taking 1.5 teaspoons (7 grams) of moringa leaf pow
 However, there is one downside, Moringa leaves may also [contain high levels of antinutrients](https://www.sciencedirect.com/science/article/abs/pii/S0044848602004970), which can reduce the absorption of minerals and protein.
 
 The results suggest that Moringa leaf meal can be used to substitute up to 10% of dietary protein in Nile tilapia fish without significant reduction in growth. Diets with higher inclusion levels of moringa leaves significantly depressed growth performance on the fish tested.
-
-## **_Know more_**
-
-[Six benefits of Moringa](https://www.healthline.com/nutrition/6-benefits-of-moringa-oleifera)
-
-[Moringa - wikipedia](https://en.wikipedia.org/wiki/Moringa_oleifera)

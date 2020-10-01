@@ -11,6 +11,7 @@ tags:
   - eco-entrepreneurs
   - eco-friendly
   - healthier
+  - pollutants-remove
   - social-responsibility
   - sustainable-development
 cover_image: ./images/solutions/bio-cement/bio-cement.jpg
@@ -21,6 +22,11 @@ sticky: true # 'true' or empty
 show_in_home_slideshow: true # 'true' or empty
 home_slideshow_caption: bio cement # lowercase, max 12 digits, including spaces
 photography: # put here photographer name
+links:
+  - "[Biomason - website](https://www.biomason.com)"
+  - "[Ginger Krieg Dosier presents the idea - Youtube](https://youtu.be/6BqoM4am8kw)"
+  - "[Biomason - IG](https://www.instagram.com/biomason)"
+  - "[Biomason - Twitter](https://twitter.com/biomason)"
 ---
 
 
@@ -141,16 +147,3 @@ Illustrates Krieg Dosier.
 Khan feels _"Coral Reef"_ is an exciting challenge:
 
 >"I like that this project gave me the opportunity of remaking something that was precious to us the museum’s original design]. Perhaps we should all challenge our design assumptions more often."
-
-
-
-
-## **_Know more_**
-
-[Biomason - website](https://www.biomason.com)
-
-[Ginger Krieg Dosier presents the idea - Youtube](https://youtu.be/6BqoM4am8kw)
-
-[Biomason - IG](https://www.instagram.com/biomason)
-
-[Biomason - Twitter](https://twitter.com/biomason)

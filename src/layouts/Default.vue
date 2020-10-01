@@ -27,6 +27,7 @@ export default {
 <style lang="scss">
 
 .main {
+  width: 100vw;
   margin: 0 auto;
   margin-bottom: 0;
   max-width: 1920px;

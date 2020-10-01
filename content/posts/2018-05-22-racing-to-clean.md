@@ -12,6 +12,7 @@ tags:
   - free
   - Indonesia
   - initiative
+  - pollutants-remove
   - social-responsibility
   - save-oceans
   - waste
@@ -23,6 +24,8 @@ ad: # use 'true' to have post displaying AD
 featured: true # use 'true' to have it displayed in home
 sticky: # 'true' or empty
 photography: Rokma # put here photographer name
+links:
+  - "[The red bag race - Fumes magazine](https://fumes.junglestar.org/balance/the-red-bag-race/)"
 ---
 
 From the great mind of Ketut "King Kong" Kasih, owner of Volcom Indonesia.
@@ -44,6 +47,6 @@ Cleaning plastic pollution is a game. Kids are given a 10 minutes and a red bag.
 At the end the beach is left way cleaner than it was before the local surf contest started.
 
 
-**_See more:_**
+**_See the full article here:_**
 
 [The red bag race - Fumes magazine](https://fumes.junglestar.org/balance/the-red-bag-race/)

@@ -11,6 +11,7 @@ tags:
   - horticulture
   - wellness
   - plants
+  - pollutants-remove
   - superfood
   - eco-entrepreneur
 cover_image: ./images/health/immune-boost-drinks/immune-boost-drinks.jpg
@@ -21,6 +22,13 @@ sticky: true # 'true' or empty
 show_in_home_slideshow: # 'true' or empty
 home_slideshow_caption: health boosters # lowercase, max 12 digits, including spaces
 photography: # put here photographer name
+links:
+  - "[Live Essences website](https://live-essences.com)"
+  - "[Live Essences Facebook](https://www.facebook.com/liveessences)"
+  - "[Live Essences Instagram](https://www.instagram.com/liveessences/)"
+  - "[Live Essences youtube](https://www.youtube.com/channel/UC-CrtGFNj_L4-7vbRtXzQQw/featured?disable_polymer=1)"
+  - "[Ways to improve your gut health - Medical News today](https://www.medicalnewstoday.com/articles/325293)"
+  - "[How Your Gut Health Affects Your Whole Body - WebMD](https://www.webmd.com/digestive-disorders/ss/slideshow-how-gut-health-affects-whole-body)"
 ---
 
 Rooted in ancient knowledge, crafted from Mother Nature’s most powerful plants, botanical remedies has been used since the beginning of time.
@@ -127,18 +135,3 @@ The focus is to nourish and replenish both the stomach and gut flora. Drinks the
 Nature is full of diversity and we need to bring diversity back into our lives and bodies in all the forms. Agriculture, communities and food. Following our bodies needs and making intelligent choices and better decisions.
 
 It's time for a change, where we re-educate our taste buds with foods that actually nourish, heal and revive the body.
-
-
-## **_Know more_**
-
-[Live Essences website](https://live-essences.com)
-
-[Live Essences Facebook](https://www.facebook.com/liveessences)
-
-[Live Essences Instagram](https://www.instagram.com/liveessences/)
-
-[Live Essences youtube](https://www.youtube.com/channel/UC-CrtGFNj_L4-7vbRtXzQQw/featured?disable_polymer=1)
-
-[Ways to improve your gut health - Medical News today](https://www.medicalnewstoday.com/articles/325293)
-
-[How Your Gut Health Affects Your Whole Body - WebMD](https://www.webmd.com/digestive-disorders/ss/slideshow-how-gut-health-affects-whole-body)

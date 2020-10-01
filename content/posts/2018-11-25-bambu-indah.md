@@ -26,6 +26,9 @@ sticky: # 'true' or empty
 show_in_home_slideshow: # 'true' or empty
 home_slideshow_caption: # lowercase, max 12 digits, including spaces
 photography: Rokma # put here photographer name
+links:
+  - "[Bambu Indah -  website](http://bambuindah.com/)"
+  - "[Bambu Indah - has received lots of press](http://bambuindah.com/press/)"
 ---
 
 
@@ -102,11 +105,3 @@ Guests are pampered with homemade dishes, breads, granola, jams, teas and desert
 The restaurant offer also breakfast and afternoon tea with traditional Balinese sweets.
 
 ![Guests are pampered. Photo by Rokma](./images/services/bambu-indah/bambu-indah-16.jpg)
-
-
-
-## **_Know more_**
-
-[Bambu Indah -  website](http://bambuindah.com/)
-
-[Bambu Indah - has received lots of press](http://bambuindah.com/press/)

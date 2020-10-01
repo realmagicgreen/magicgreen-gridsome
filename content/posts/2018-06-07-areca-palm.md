@@ -22,6 +22,11 @@ ad: # use 'true' to have post displaying AD
 featured: true # use 'true' to have it displayed in home
 sticky: true # 'true' or empty
 photography: # put here photographer name
+links:
+  - "[Areca palm - wikipedia](https://en.wikipedia.org/wiki/Dypsis_lutescens)"
+  - "[Air purifiers plants](http://air-purifier-reviewsite.com/blog/15-house-plants-you-can-use-as-air-purifiers/)"
+  - "[NASA Clean Air Study](https://en.wikipedia.org/wiki/NASA_Clean_Air_Study)"
+  - "[Air freshener? Try plants - NY Times](https://www.nytimes.com/1994/02/13/nyregion/cuttings-need-an-air-freshener-try-plants.html)"
 ---
 Dypsis lutescens, also known as golden Cane Palm, Areca Palm, Yellow Palm, or Butterfly Palm is a wonder plant.
 
@@ -40,13 +45,3 @@ Kamal Meattle used three just three indoor plant species to increase oxygen, fil
 Meattle's [presentation at the TED 2009](https://www.ted.com/talks/kamal_meattle_on_how_to_grow_your_own_fresh_air) conference details a large-scale success, using thousands of plants for hundreds of workers. In any living or working space, though, the three plants—Areca palm, Mother-in-law's Tongue, and a "Money Plant" can be used to convert carbon dioxide into oxygen, remove organic compounds, and generally filter and freshen the ambient air.
 
 **Pollutants removed**: Xylene, Toluene, Formaldehyde
-
-## **_Know more_**
-
-[Areca palm - wikipedia](https://en.wikipedia.org/wiki/Dypsis_lutescens)
-
-[Air purifiers plants](http://air-purifier-reviewsite.com/blog/15-house-plants-you-can-use-as-air-purifiers/)
-
-[NASA Clean Air Study](https://en.wikipedia.org/wiki/NASA_Clean_Air_Study)
-
-[Air freshener? Try plants - NY Times](https://www.nytimes.com/1994/02/13/nyregion/cuttings-need-an-air-freshener-try-plants.html)

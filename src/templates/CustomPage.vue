@@ -1,6 +1,6 @@
 <template>
   <Layout :show-logo="true">
-    <div class="container">
+    <div class="horizontal_spacing">
 
       <g-image
       alt="Cover image"
@@ -9,7 +9,7 @@
       class="post_cover_image"
       />
 
-      <div class="post_container">
+      <div class="post_horizontal_spacing">
 
         <div class="post_header">
 

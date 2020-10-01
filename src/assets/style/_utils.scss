@@ -10,6 +10,14 @@
 	margin-bottom: var(--space-1);
 }
 
+.margin_left {
+	margin-left: var(--space-1);
+}
+
+.margin_right {
+	margin-right: var(--space-1);
+}
+
 .border_top {
 	border-top: 1px solid var(--border_color);
 }
@@ -40,7 +48,7 @@
 	display: inline-block;
 }
 
-.vertical {
+.vertical-90 {
 	transform: rotate(-90deg);
 	transform-origin: top right;
 	position: absolute;

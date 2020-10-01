@@ -15,11 +15,11 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="horizontal_spacing">
 
 
 
-      <div class="post_container">
+      <div class="post_horizontal_spacing">
 
         <div class="post_header">
 
@@ -104,6 +104,13 @@ export default {
     PostLink,
     SEO
   },
+  metaInfo () {
+    return {
+      title: this.$page.post.title,
+      subtitle: this.$page.post.subtitle,
+      ad: this.$page.post.ad
+    }
+  },
   mounted () {
     import('medium-zoom').then(mediumZoom => {
       this.zoom = mediumZoom.default(
@@ -111,13 +118,6 @@ export default {
         { background: 'var(--bg_color)' }
       )
     })
-  },
-  metaInfo () {
-    return {
-      title: this.$page.post.title,
-      subtitle: this.$page.post.subtitle,
-      ad: this.$page.post.ad
-    }
   }
 }
 </script>
@@ -125,27 +125,4 @@ export default {
 
 <style lang="scss" scoped>
 // in post.scss so to have one source of truth...
-
-
-#know-more {
-  position: relative;
-  &:before {
-    position: absolute;
-    content: "";
-    width: 80px;
-    height: 80px;
-    left: calc(50% - 40px);
-    top: -80px;
-    [data-theme="light"] & {
-      background: url("../assets/svgs/tagcloud.svg") no-repeat center center;
-      -webkit-background-size: cover;
-      background-size: cover;
-    }
-    [data-theme="dark"] & {
-      background: url("../assets/svgs/tagcloud_white.svg") no-repeat center center;
-      -webkit-background-size: cover;
-      background-size: cover;
-    }
-  }
-}
 </style>

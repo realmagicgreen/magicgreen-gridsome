@@ -21,6 +21,14 @@ sticky: # 'true' or empty
 show_in_home_slideshow: true # 'true' or empty
 home_slideshow_caption: balsa boards # lowercase, max 12 digits, including spaces
 photography: # put here photographer name
+links:
+  - "[Kayu surfboards - Bali](https://kayusurfboards.com/)"
+  - "[Riley Balsawood Surfboards - Australia](https://balsawoodsurfboardsriley.com/)"
+  - "[Gaspard Surfboards - France](http://gaspard-surfboards.fr/)"
+  - "[Kuntiqi - Spain](https://www.kuntiqi.com/)"
+  - "[Ecosurfshop - Europe](https://ecosurfshop.eu/)"
+  - "[Yanasurf - Usa](https://yanasurf.com/balsa-wood-surfboards/)"
+  - "[Grain Surfboards - Usa](https://www.grainsurfboards.com/)"
 ---
 Surfing is one of the most environment-friendly sports , because of the love to the ocean every surfer keeps. But there is also a side of it thats not eco-friendly at all: the equipment. Everything is made out of plastic and the boards are mostly out of foam with epoxy, what is not very green.
 
@@ -51,19 +59,3 @@ The prices for a signature board starts at 315 USD up to 2200 USD, but for the c
 Un fortunately Vince business is now permanently closed, here is [Vince Tierny Fb page](https://www.facebook.com/pg/vincetierny/shop/) in case you want to still get in contact with him.
 
 You can get a Balsa Surfboard form one of the links below, or even build one yourself, following [this video tutorial](https://youtu.be/00HYKyeiDe0) or [this other one](https://youtu.be/Df96N1WCBe8) or even make yourself a [5'10" bamboo shortboard](https://youtu.be/xhBOHScs2Ec).
-
-**_See more:_**
-
-[Kayu surfboards - Bali](https://kayusurfboards.com/)
-
-[Riley Balsawood Surfboards - Australia](https://balsawoodsurfboardsriley.com/)
-
-[Gaspard Surfboards - France](http://gaspard-surfboards.fr/)
-
-[Kuntiqi - Spain](https://www.kuntiqi.com/)
-
-[Ecosurfshop - Europe](https://ecosurfshop.eu/)
-
-[Yanasurf - Usa](https://yanasurf.com/balsa-wood-surfboards/)
-
-[Grain Surfboards - Usa](https://www.grainsurfboards.com/)

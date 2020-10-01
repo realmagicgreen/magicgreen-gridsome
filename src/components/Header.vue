@@ -1,51 +1,59 @@
 <template>
 	<header class="header_wrap" :class="{'menu-is-open': isMenuActive}">
-		<div class="header container">
+		<div class="header horizontal_spacing">
 
 			<g-link class="logo_wrapper" to="/">
 				<Logo />
 			</g-link>
 
-			<div class="header_menus">
+			<div class="menu_wrapper">
+				<div class="header_menus">
 
-				<ToggleTheme />
+					<ToggleTheme />
 
-				<div class="menu_wrap header_item">
+					<div class="menu_wrap header_item">
 
-					<button
-					class="toggle_menu_button"
-					aria-label="Toggle menu"
-					:class="{'is-active': isMenuActive}"
-					@click="isMenuActive = !isMenuActive"
-					@keyup="isMenuActive = !isMenuActive">
-						<span aria-hidden="true" />
-						<span aria-hidden="true" />
-						<span aria-hidden="true" />
-					</button>
+						<button
+						class="toggle_menu_button"
+						aria-label="Toggle menu"
+						:class="{'is-active': isMenuActive}"
+						@click="isMenuActive = !isMenuActive"
+						@keyup="isMenuActive = !isMenuActive">
+							<span aria-hidden="true" />
+							<span aria-hidden="true" />
+							<span aria-hidden="true" />
+						</button>
+
+					</div>
 
 				</div>
 
-			</div>
-
-			<div
-			role="contentinfo"
-			class="head_menu togglable_menu"
-			:class="{'menu-is-open': isMenuActive}"
-			@click="isMenuActive = !isMenuActive">
 				<div
-				v-for="navItem in $static.metadata.headerNavigation"
-				:key="navItem.name"
-				class="menu_item_wrap"
-				role="menu">
-					<g-link
-					class="menu_item"
-					role="menuitem"
-					:to="navItem.link"
-					:title="navItem.name">
-						{{ navItem.name}}
-					</g-link>
+				role="contentinfo"
+				class="head_menu togglable_menu"
+				:class="{'menu-is-open': isMenuActive}"
+				@click="isMenuActive = !isMenuActive">
+
+					<div
+					v-for="navItem in $static.metadata.headerNavigation"
+					:key="navItem.name"
+					class="menu_item_wrap"
+					role="menu">
+						<g-link
+						class="menu_item"
+						role="menuitem"
+						:to="navItem.link"
+						:title="navItem.name">
+
+							{{ navItem.name}}
+						</g-link>
+
+					</div>
+
 				</div>
+
 			</div>
+
 
 		</div>
 	</header>
@@ -84,11 +92,15 @@ export default {
 
 
 <style lang="scss">
-
+.menu_wrapper {
+	display: flex;
+}
 
 .head_menu {
 	width: 100%;
 	display: flex;
+	justify-content: center;
+
 	.menu_item {
 		color: var(--brand_color);
 		text-transform: uppercase;
@@ -100,6 +112,7 @@ export default {
     margin-left: 20vw;
     margin-right: 20vw;
     min-height: 7vh;
+
 		&.active {
 			border: 2px solid var(--brand_color);
 			padding-top: 10px;
@@ -107,10 +120,12 @@ export default {
 			font-weight: 600;
       font-size: 115%;
 		}
+
 		@media only screen and (min-width: 880px) {
 			border: 0 none;
 			margin-left: var(--space-05);
 			margin-right: var(--space-05);
+
 			&.active {
 				border: 0 none;
 				font-size: 100%;
@@ -118,7 +133,6 @@ export default {
 				border-bottom: 1px solid var(--brand_color);
 			}
 		}
-
 	}
 }
 
@@ -210,7 +224,7 @@ export default {
 	}
 }
 
-.header.container {
+.header.horizontal_spacing {
 	position: relative;
 	z-index: 10;
 }

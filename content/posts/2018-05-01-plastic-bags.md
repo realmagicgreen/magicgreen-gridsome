@@ -19,6 +19,8 @@ sticky: # 'true' or empty
 show_in_home_slideshow: # 'true' or empty
 home_slideshow_caption: # lowercase, max 12 digits, including spaces
 photography: # put here photographer name
+links:
+  - "[Worldwatch Institute](http://www.worldwatch.org/)"
 ---
 Billions of plastic bags are made each year. Of these bags, one hundred billion are thrown away according to [Worldwatch Institute](http://www.worldwatch.org/), with less than 1 percent finding their way into a recycle bin.
 
