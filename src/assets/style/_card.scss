@@ -32,16 +32,15 @@
 	flex-direction: column;
 	margin-bottom: var(--space-1);
 
-	&.vertical_spacing {
-		//a
-		&:hover {
-			body[data-theme="dark"] & {
-				border-color: #aaa;
-			}
+	&:hover,
+	&:visited,
+	&:visited:hover {
+		body[data-theme="dark"] & {
+			border-color: #aaa;
+		}
 
-			body[data-theme="light"] & {
-				border-color: black;
-			}
+		body[data-theme="light"] & {
+			border-color: black;
 		}
 	}
 
