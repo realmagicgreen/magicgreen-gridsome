@@ -34,59 +34,25 @@
 
 	a {
 		body[data-theme="light"] & {
-			color: black;
+			color: var(--black);
 		}
 	}
 }
 
 .tag_block_icon {
-	min-height: 80px;
-	width: 80px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 4rem;
-
-	&:before {
-		content: "";
-		width: 80px;
-		height: 80px;
-		position: absolute;
-		left: calc(50% - 40px);
-		background-attachment: fixed;
-	}
+	padding: var(--space-1);
 }
 
 .tag_page_title {
 	position: relative;
-	margin: 6rem 0 2rem;
 	padding-bottom: 6px;
 	padding-top: 20px;
 	max-width: 80%;
 	font-weight: 400;
 	text-align: center;
-
-	&:before {
-		position: absolute;
-		content: "";
-		width: 80px;
-		height: 80px;
-		left: calc(50% - 40px);
-		top: -80px;
-		background-attachment: fixed;
-
-		[data-theme="light"] & {
-			// background: url("../assets/svgs/tagcloud.svg") no-repeat center center;
-			// -webkit-background-size: cover;
-			// background-size: cover;
-		}
-
-		[data-theme="dark"] & {
-			// background: url("../assets/svgs/tagcloud_white.svg") no-repeat center center;
-			// -webkit-background-size: cover;
-			// background-size: cover;
-		}
-	}
 }
 
 .tag_count {

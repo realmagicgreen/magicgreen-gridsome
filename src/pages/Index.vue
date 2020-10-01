@@ -19,7 +19,9 @@
 
       <!-- tagCloudBlock -->
       <div class="tag_cloud">
-        <div class="tag_block_icon"></div>
+        <div class="tag_block_icon">
+          <IcoTag />
+        </div>
         <div class="links_list" role="menu">
           <TagLink
           v-for="edge in $page.tags.edges"
@@ -100,12 +102,15 @@ import Slogan from '~/components/Slogan.vue'
 import TagLink from '~/components/TagLink.vue'
 import { Pager } from 'gridsome'
 
+import IcoTag from '~/assets/svgs/tag.svg'
+
 export default {
   components: {
     PostCard,
     Slogan,
     TagLink,
-    Pager
+    Pager,
+    IcoTag
   },
   metaInfo: {
     title: 'Hello, greener world!'

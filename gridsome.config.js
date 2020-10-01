@@ -42,12 +42,12 @@ module.exports = {
   //    }
   // },
   plugins: [
-    {
-      use: 'gridsome-plugin-svg',
-      // options: {
-      //  goesBothWays: true, //default false
-      // }
-    },
+    // {
+    //   use: 'gridsome-plugin-svg',
+    //   // options: {
+    //   //  goesBothWays: true, //default false
+    //   // }
+    // },
     {
       use: '@gridsome/plugin-critical',
       options: {

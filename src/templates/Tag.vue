@@ -1,9 +1,12 @@
 <template>
   <Layout :show-logo="true" >
 
-    <div class="horizontal_spacing">
+    <div class="tagpage horizontal_spacing">
 
       <div class="title_wrapper">
+
+        <IcoTag class="icotag"/>
+
         <h1 class="tag_page_title h2 load_hidden" v-scroll-reveal.reset>
           {{ $page.tag.title }}
         </h1>
@@ -81,10 +84,12 @@ query Tag ($id: ID!) {
 
 <script>
 import PostCard from '~/components/PostCard.vue'
+import IcoTag from '~/assets/svgs/tag.svg'
 
 export default {
   components: {
-    PostCard
+    PostCard,
+    IcoTag
   },
   metaInfo () {
     return {
@@ -107,5 +112,9 @@ export default {
   justify-content: center;
   width: 100%;
   margin-bottom: 10px;
+
+  icotag {
+
+  }
 }
 </style>
