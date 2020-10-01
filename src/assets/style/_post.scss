@@ -32,7 +32,6 @@
 	}
 
 	&_title {
-		padding: var(--space-1) 0;
 		text-align: center;
 	}
 
@@ -49,6 +48,13 @@
 	}
 
 	&_content {
+		margin-bottom: calc(var(--space-1)*2);
+
+		.g-image {
+			border-radius: 5px;
+			margin-top: var(--space-2);
+		}
+
 		ol,
 		p,
 		ul {

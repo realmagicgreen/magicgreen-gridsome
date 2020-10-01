@@ -19,11 +19,11 @@ export default function (Vue, { router, head, isClient }) {
   Vue.use(VueScrollReveal, {
     // applied to elements with the v-scroll-reveal directive; useful for animation overrides.
     class: 'v-scroll-reveal',
-    delay: 500,
-    duration: 500,
+    //delay: 50,
+    //duration: 250,
     //scale: 1,
     //distance: '0px',
-    fade: '10',
+    //left: '100%',
     mobile: true
   })
 }

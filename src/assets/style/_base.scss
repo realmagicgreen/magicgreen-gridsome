@@ -28,12 +28,3 @@ body {
 img {
 	max-width: 100%;
 }
-
-.post_content {
-	margin-bottom: calc(var(--space-1)*2);
-
-	.g-image {
-		border-radius: 5px;
-		margin-top: var(--space-1);
-	}
-}
