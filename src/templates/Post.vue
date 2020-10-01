@@ -23,7 +23,7 @@
 
         <div class="post_header">
 
-          <h1 class="post_title" :class="[$page.post.ad ? 'is-adv' : '' ]" >
+          <h1 class="post_title vertical_spacing" :class="[$page.post.ad ? 'is-adv' : '' ]" >
             {{ $page.post.title }}
           </h1>
 

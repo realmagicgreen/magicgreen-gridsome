@@ -5,6 +5,7 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	overflow: hidden;
+	margin: var(--space-2) 0;
 
 	> * {
 		display: block;
@@ -42,6 +43,12 @@
 				border-color: black;
 			}
 		}
+	}
+
+	.post_metas {
+		border-bottom: 0 none;
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 
 	.card_post_image {

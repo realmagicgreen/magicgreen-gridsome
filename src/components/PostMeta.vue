@@ -83,16 +83,20 @@ export default {
 <style lang="scss">
 
   .post_metas {
+    font-style: italic;
+    font-size: .9rem;
+    white-space: nowrap;
     color: var(--grey);
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-top: var(--space-1);
     padding-bottom: var(--space-1);
     padding-right: var(--space-1);
-    font-size: .9rem;
-    white-space: nowrap;
-
+    border-bottom: 1px solid var(--border_color);
+    margin-bottom: var(--space-2);
+    
     @media screen and (min-width: 880px) {
       flex-direction: row;
     }

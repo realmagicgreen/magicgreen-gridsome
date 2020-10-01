@@ -60,3 +60,24 @@
 	line-height: 20px;
 	border: 1px solid var(--border_color);
 }
+
+.border_top {
+	border-top: 1px solid var(--border_color);
+}
+
+.border_bottom {
+	border-bottom: 1px solid var(--border_color);
+}
+
+.border_brand_top {
+	body[data-theme="dark"] & {
+		border-top: 1px solid var(--brand_color--dark);
+	}
+
+}
+
+.border_brand_bottom {
+	body[data-theme="dark"] & {
+		border-bottom: 1px solid var(--brand_color--dark);
+	}
+}

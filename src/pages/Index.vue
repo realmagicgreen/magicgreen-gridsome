@@ -15,10 +15,10 @@
 
     </div>
 
-    <div class="horizontal_spacing">
+    <div class="vertical_spacing border_brand_top">
 
       <!-- tagCloudBlock -->
-      <div class="tag_cloud vertical_spacing">
+      <div class="tag_cloud">
         <div class="tag_block_icon"></div>
         <div class="links_list" role="menu">
           <TagLink

@@ -18,6 +18,7 @@
 		h3 {
 			color: var(--title_color);
 			border-bottom: 1px solid var(--border_color);
+			margin-top: 30px;
 			margin-bottom: 20px;
 		}
 	}
@@ -74,13 +75,6 @@
 			display: block;
 		}
 	}
-
-	.post_metas {
-		padding-top: 0;
-		padding-bottom: 0;
-		font-style: italic;
-	}
-
 }
 
 .post_image .category {
@@ -129,4 +123,8 @@
 		background-color: var(--category_07);
 	}
 
+}
+
+.links_list {
+	padding-bottom: var(--space-2);
 }

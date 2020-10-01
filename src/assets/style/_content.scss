@@ -4,7 +4,10 @@
 	//for vertical spacing
 	width: 100%;
 	max-width: var(--content_width);
-	margin: 0 auto;
+	padding-top: var(--space-2);
+	//padding-right: auto;
+	padding-bottom: var(--space-3);
+	//padding-left: auto;
 	border-radius: var(--radius);
 
 	// SMOOTH transition

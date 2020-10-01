@@ -22,6 +22,7 @@ body {
 	--space-05: .5rem;
 	--space-1: 1rem;
 	--space-2: 2rem;
+	--space-2: 3rem;
 
 	//gridsome theme block sizes
 	--content_width: 100vw; //860px;
@@ -100,8 +101,8 @@ body[data-theme="dark"] {
 	// 	--base_font_size: 18px;
 	// }
 	//
-	body {
-		--space: 1rem;
-		//--header_height: 60px;
-	}
+	// body {
+	// 	--space: 1rem;
+	// 	//--header_height: 60px;
+	// }
 }

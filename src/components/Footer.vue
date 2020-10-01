@@ -1,5 +1,5 @@
 <template>
-	<footer class="footer">
+	<footer class="footer border_brand_top">
 
 		<div class="header load_hidden" v-scroll-reveal.reset>
 			<g-link class="logo_wrapper" to="/#top">
@@ -138,7 +138,7 @@ export default {
 	  width: 100%;
 	  background-color:  var(--black);
 	  color: var(--brand_color--dark);
-		border-top: 1px solid var(--brand_color--dark);
+		//border-top: 1px solid var(--brand_color--dark);
 
 
 
