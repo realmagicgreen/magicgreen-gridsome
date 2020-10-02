@@ -258,7 +258,7 @@ export default {
 	    color: black;
 	  }
 		.menu_item {
-			align-items: end;
+			align-items: flex-start;
 			//can be a link!
 			&:hover {
 				border-bottom-color: transparent!important;
