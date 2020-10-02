@@ -30,35 +30,58 @@
 
 				<div class="menu_contacts" role="menu">
 
-					<div v-for="navItem in $static.metadata.footerNavigation" :key="navItem.name" class="menu_item">
-						<g-link
-							class="menu_item"
-							role="menuitem"
-							:to="navItem.link"
-							:title="navItem.name"
-							v-if="navItem.external!=true"
-							:class="[navItem.fullname]"
-						>{{ navItem.name}}&nbsp;<span class="user_name">{{ navItem.username}}</span></g-link>
+					<div class="menu_item">
 						<a
-							class="menu_item"
+							class="menu_item about"
 							role="menuitem"
-							rel="noopener"
-							:href="navItem.link"
-							target="_blank"
-							:title="navItem.name"
-							v-if="navItem.external==true"
-							:class="[navItem.fullname]"
-						>{{ navItem.name}}&nbsp;<span class="user_name">{{ navItem.username}}</span></a>
+							href="/about-us"
+							title="About us">
+							<span>About us</span>
+						</a>
+					</div>
+
+					<div class="menu_item">
+						<a
+						class="menu_item facebook external_link"
+						role="menuitem"
+						target="_blank"
+						rel="noopener"
+						href="https://web.facebook.com/magicgreen.junglestar.org"
+						title="facebook">
+							<span class="svg"><IcoFb /></span>
+							<span>Fb:</span>
+							<span class="user_name">magicgreen.junglestar.org</span>
+						</a>
+					</div>
+
+					<div class="menu_item">
+						<a
+						class="menu_item instagram external_link"
+						role="menuitem"
+						target="_blank"
+						rel="noopener"
+						href="https://www.instagram.com/realmagicgreen"
+						title="Intagram">
+							<span class="svg"><IcoIg /></span>
+							<span>Ig:</span>
+							<span class="user_name">realmagicgreen</span>
+						</a>
+					</div>
+
+					<div class="menu_item">
+						<a
+						class="menu_item email"
+						role="menuitem"
+						href="mailto:magicgreen@junglestar.org"
+						title="email">
+							<span class="svg"><IcoMail /></span>
+							<span></span>
+							<span class="user_name">magicgreen@junglestar.org</span>
+						</a>
 					</div>
 
 					<div class="menu_item footer_icon qr_box">
-
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 866.2 866.2">
-						  <path fill="#000" d="M0 0h866.2v866.2H0z"/>
-						  <path fill="#88f452" d="M525 52.5h-26.2V105H525V78.8h26.2V52.5H525zM315 105h-26.2V78.8h52.4V105h26.2V78.8h26.2V105h-26.2v26.2H420v26.2h26.2v26.2h26.2v-52.4h-26.2V105h26.2V52.5H262.6v78.7h78.6V105H315zm26.2 26.2v26.2h26.2v-26.2h-26.2zm157.6 0v26.2H525v-26.2h-26.2zm-210 26.3h-26.2v26.2h26.2v-26.2zm288.7 26.3v-26.2h26.2V78.8h-52.4V105h26.2v26.2h-26.2v26.2H525v26.2h52.5zm-78.7 0V210H525v-26.2h-26.2zM262.5 210v26.2h26.2V210h-26.2zm78.7 0v-26.2H315v52.4h26.2V210zm131.3 26.2h26.2V210h-26.2v26.2zm105 0h26.2v-52.4h-26.2v52.4zm-26.3 52.6H525V315h52.4v-26.2H630v-26.2h-52.4v-26.2h-26.2V210H525v52.4h26.2v26.4zm210-26.3H735v78.7h26.2V315h26.2v-26.2h26.2v-26.2h-52.4zM157.5 315v-26.2h26.2V315H210v-26.2h26.2V315h26.2v-26.2H315v52.4h26.2v-52.4h26.2v52.4h26.2v-52.4H420v78.6h-26.2v26.2h52.4v-26.2h26.2v-26.2h-26.2v-52.4H525v-26.2h-78.6v-78.8H420v-26.2h-52.4v26.2h26.2V210H420v52.4h-26.2V210h-26.2v26.2h-26.2v26.2H315v-26.2h-26.2v26.2H131.4v26.2H105V315h52.5zm551.3-26.2v-26.2h-26.2v26.2h-26.2V315h26.2v26.2h26.2v-52.4zM157.5 315v26.2h26.2V315h-26.2zm52.5 0v26.2h26.2V315H210zm288.8 26.2v26.2H525V315h-26.2v26.2zm105 0v26.2H630V315h-52.4v26.2h26.2zm-420 0v26.2H210v-26.2h-26.2zm367.4 0v26.2h26.2v-26.2h-26.2zm105 26.3H630v78.7h26.2v52.4h26.2v-26.2h26.2v-26.2h-26.2V420H735v52.4h26.2V420h26.2v52.4h26.2v-131h-26.2v52.4H682.6v-52.4h-26.2v26.1zm52.6 0H735v-26.2h-26.2v26.2zm-630 0H105V315H78.8v-52.4H52.5V420h26.2v-52.5zm26.2 0v26.2h26.2v-26.2H105zm393.8 26.3v-26.2h-26.2v26.2h26.2zm78.7 0h26.2v-26.2h-26.2v26.2zM393.8 420v-26.2h-52.4V420H315v26.2h52.4V420h26.4zM105 472.5h52.4v26.2h-26.2V525H210v-26.2h26.2v-26.2H210v-26.2h52.4v104.8h26.2V525H315v-26.2h52.4v-26.2h-78.6V315h-26.2v26.2h-26.2v26.2H210v26.2h52.4V420H210v-26.2h-26.2v-26.2h-26.2v26.2h-26.2V420H78.8v26.2H105v26.3zm498.8 0H630v-26.2h-26.2v26.2zm105 26.3H735v-26.2h-26.2v26.2zm0 0h-26.2v78.6h-26.2V525H630v-26.2h-26.2V525h-26.2v-26.2h26.2v-26.2h-26.2V420h-78.8v26.2h52.4v105H630v26.2h-52.4V630h-26.2v-26.2H525V630h-52.4v-78.6H525V498.8h-26.2V525h-26.2V420H420v26.2h-52.4v26.2h78.6V525H341.4v26.2h26.2v26.2h26.2V630h-26.2v26.2h-26.2V551.4H315v26.2H210v-26.2h-26.2v26.2h-26.2v-26.2H105V525H78.8v-26.2H105v-26.2H78.8v-26.2H52.5v157.2H262.4V735h26.2v52.4h-26.2v26.2H446.2v-26.2h-52.4V735h52.4v52.4h26.2v-26.2H525v52.4h78.6v-26.2h-52.4V735h-52.4v-52.4h-26.2v26.2H420V551.4h26.2v131h26.2v-26.2h26.2v26.2H525v-26.2h26.2v52.4h26.2V735h26.2v52.4h157.6v-26.2h26.2v26.2h26.2v-131h-52.4v52.4h26.2V735H735v26.2h-26.2V735h-52.4v26.2H630v-52.4h105v-26.2h-26.2v-26.2H735V603.8h52.4v-26.2h-26.2v-26.2H735V525h-26.2v-26.2zM315 656.2v52.4h-26.2V630H315v26.2zm52.5 131.3h-26.2v-26.2h26.2v26.2zm26.3-78.7h-26.2V735h-26.2v-52.4h52.4v26.2zM682.5 630v52.4h-78.7v-78.6h78.6V630zm78.7-105h26.2v-26.2H735V525h26.2zm-525 0H210v26.2h26.2V525zm577.6 26.2V525h-26.2v26.2h26.2zM525 577.5h26.2v-26.2H525v26.2zm-26.2 0v26.2H525v-26.2h-26.2zM630 656.2h26.2V630H630v26.2zM236.2 52.5H52.5v183.8h183.8V52.5zm-27.5 156.2H80.1V80.1h128.6v128.6zM786.2 52.5H630v183.8h183.8V52.5h-27.6zm0 156.2H657.6V80.1h128.6v128.6zM52.5 630v183.8h183.8V630H52.5zm156.2 156.2H80.1V657.6h128.6v128.6zM183.8 105H105v78.8h78.8V105zm577.4 0h-78.8v78.8h78.8V105zM183.8 682.5H105v78.8h78.8v-78.8z"/>
-						</svg>
-
-
+						<span class="svg"><IcoQr /></span>
 					</div>
 
 				</div>
@@ -118,6 +141,10 @@ query {
 <script>
 import Logo from '~/components/Logo'
 import PostLink from '~/components/PostLink.vue'
+import IcoFb from '~/assets/svgs/facebook.svg'
+import IcoIg from '~/assets/svgs/instagram.svg'
+import IcoMail from '~/assets/svgs/email.svg'
+import IcoQr from '~/assets/svgs/magicgreen-junglestar-org-qr-code-green.svg'
 
 export default {
 	props: {
@@ -125,7 +152,11 @@ export default {
   },
 	components: {
     Logo,
-		PostLink
+		PostLink,
+		IcoFb,
+		IcoIg,
+		IcoMail,
+		IcoQr
   }
 
 }
@@ -213,6 +244,12 @@ export default {
 	}
 
 	.menu_contacts {
+		align-items: flex-start;
+		.svg {
+			//span
+			padding-right: var(--space-05);
+
+		}
 	  > div {
 	    min-height: 22px;
 	    margin-bottom: var(--space-05);
@@ -221,6 +258,7 @@ export default {
 	    color: black;
 	  }
 		.menu_item {
+			align-items: end;
 			//can be a link!
 			&:hover {
 				border-bottom-color: transparent!important;
@@ -230,31 +268,13 @@ export default {
 				}
 			}
 			&.facebook {
-				&:before {
-			    content: "";
-			    //background: url("../assets/svgs/facebook.svg") no-repeat;
-					width: 30px;
-					height: 30px;
-					padding-right: 10px;
-				}
+
 			}
 			&.instagram {
-				&:before {
-			    content: "";
-			    //background: url("../assets/svgs/instagram.svg") no-repeat;
-					width: 30px;
-					height: 30px;
-					padding-right: 10px;
-				}
+
 			}
 			&.email {
-				&:before {
-			    content: "";
-			    //background: url("../assets/svgs/email.svg") no-repeat;
-					width: 30px;
-					height: 30px;
-					padding-right: 10px;
-				}
+
 			}
 		}
 	}
