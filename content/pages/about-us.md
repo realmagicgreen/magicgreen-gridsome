@@ -7,8 +7,13 @@ category: solutions
 tags:
 cover_image: ./images/about-us/about-us.jpg
 description: "We are a network of communication professionals. We feel the need to make something meaningful and necessary, to push the world towards the right direction." # max 160 digits cos dunno how to trim it, yet...
-photography: # put here photographer name
+photography: Rokma # put here photographer name
 ---
+
+// test
+
+{{ $frontmatter.photography }}
+
 
 >"**Nothing is as powerful as an idea whose time has come.**" _Victor Hugo_
 

@@ -6,14 +6,6 @@
 	</div>
 </template>
 
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
-
 
 <script>
 import IcoLogo from '~/assets/svgs/mg_logo.svg'

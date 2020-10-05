@@ -1,13 +1,9 @@
 <template>
 	<footer class="footer border_brand_top">
 
-		<div class="header load_hidden" v-scroll-reveal.reset>
-			<g-link class="logo_wrapper" to="/#top">
-				<Logo />
-			</g-link>
-		</div>
+		<Logo />
 
-		<div class="horizontal_spacing small menu_horizontal_spacing">
+		<div class="horizontal_spacing slim menus">
 
 			<div class="menu_footer">
 
@@ -15,7 +11,7 @@
 
 				<div class="menu_posts" role="menu">
 
-					<PostLink
+					<PostMenuLink
 					v-for="edge in $page.links.edges"
 					:key="edge.node.id"
 					:post="edge.node"/>
@@ -90,9 +86,9 @@
 
 		</div>
 
-		<div class="horizontal_spacing small copyright">
+		<div class="horizontal_spacing copyright">
 			Copyright © {{ new Date().getFullYear() }}.
-			<br class="show_on_phones">Released under <a class="inline" rel="noopener" id="magicgreen-to-creativecommons" title="This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most accommodating of licenses offered. Recommended for maximum dissemination and use of licensed materials." href="https://creativecommons.org/licenses/by/4.0/">CC_BY license</a>. <br class="show_on_phones">
+			<br class="show_on_phones">Released under <a class="inline" rel="noopener" id="magicgreen-to-creativecommons" title="This license let others distribute, remix, tweak, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most accommodating of licenses offered. Recommended for maximum dissemination and use of licensed materials." href="https://creativecommons.org/licenses/by/4.0/">CC_BY license</a>. <br class="show_on_phones">
 			Powered by <a class="inline" title="This website was designed and coded by the fabulous Junglestar" id="magicgreen-to-junglestar" rel="noopener" href="https://junglestar.org">Junglestar</a>
 		</div>
 
@@ -103,23 +99,6 @@
 query {
 	metadata {
     siteName
-		footerNavigation {
-	    name
-			fullname
-			username
-	    link
-	    external
-	  }
-  }
-	links: allPost(filter: { published: { eq: true }}) {
-    edges {
-      node {
-        id
-        title
-        ad
-        path
-      }
-    }
   }
 	posts: allPost {
 		edges {
@@ -140,7 +119,7 @@ query {
 
 <script>
 import Logo from '~/components/Logo'
-import PostLink from '~/components/PostLink.vue'
+import PostMenuLink from '~/components/PostMenuLink.vue'
 import IcoFb from '~/assets/svgs/facebook.svg'
 import IcoIg from '~/assets/svgs/instagram.svg'
 import IcoMail from '~/assets/svgs/email.svg'
@@ -152,13 +131,12 @@ export default {
   },
 	components: {
     Logo,
-		PostLink,
+		PostMenuLink,
 		IcoFb,
 		IcoIg,
 		IcoMail,
 		IcoQr
   }
-
 }
 </script>
 
@@ -169,15 +147,14 @@ export default {
 	  width: 100%;
 	  background-color:  var(--black);
 	  color: var(--brand_color--dark);
-		//border-top: 1px solid var(--brand_color--dark);
 
 
-
-		.menu_horizontal_spacing {
+		.menus {
 			display: flex;
 			flex-direction: column;
 			@media only screen and (min-width: 880px) {
 	      flex-direction: row;
+				padding-left: 6rem;
 	    }
 		}
 
@@ -267,18 +244,8 @@ export default {
 					font-weight: 600!important;
 				}
 			}
-			&.facebook {
-
-			}
-			&.instagram {
-
-			}
-			&.email {
-
-			}
 		}
 	}
-
 
 	.copyright {
 	  font-size: 14px;

@@ -95,13 +95,11 @@ query Post ($id: ID!) {
 
 <script>
 import PostMeta from '~/components/PostMeta'
-import PostLink from '~/components/PostLink'
 import SEO from '~/components/SEO.vue'
 
 export default {
   components: {
     PostMeta,
-    PostLink,
     SEO
   },
   metaInfo () {

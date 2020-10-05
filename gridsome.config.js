@@ -4,17 +4,6 @@
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-// to implement
-// module.exports = {
-//   chainWebpack: config => {
-//     const svgRule = config.module.rule('svg')
-//     svgRule.uses.clear()
-//     svgRule
-//       .use('vue-svg-loader')
-//       .loader('vue-svg-loader')
-//   }
-// }
-
 module.exports = {
   siteName: 'Magic Green',
   siteDescription: 'Magic Green magazine is a showcase of examples, infos and addresses of all stuff green from South East Asia and beyond.',
@@ -29,18 +18,27 @@ module.exports = {
       .loader('vue-svg-loader')
   },
 
-  //// to test
-  // settings: {
-  //    // Place site-wide settings here and query them from the GraphQL layer's metadata {settings} key.
-  //    likes: {
-  //      language: 'JavaScript',
+// testing
+settings: {
+// Place site-wide settings here and query them from the GraphQL layer's metadata {settings} key.
+  slogans: {
+    home: 'Sustainable and environment-friendly examples from South East Asia and beyond.',
+    services: 'Services to lower your environmental impact.',
+    products: 'Sometimes it\'s easy to stop buying polluting products and start supporting more sustainable ones.',
+    techniques: 'The way to sustainable living explained in details.',
+    solutions: 'Small or big, here are some solutions to environmental problems.',
+    know: 'Did you know that... hum, actually i didn\t. thanks for letting me know!',
+    health: 'How to improve your life. food, plants medicines, healthy living, superfoods.',
+    esources: 'to solve big problems we need resources. these organisations are doing the right thing and can help. make a wise choice and support them.'
   //      frameworks: [
   //        'Vue',
   //        'Gridsome',
   //        'Tailwind'
   //      ]
-  //    }
-  // },
+     }
+  },
+
+
   plugins: [
     // {
     //   use: 'gridsome-plugin-svg',
@@ -49,6 +47,31 @@ module.exports = {
     //   // }
     // },
     {
+      // Create pages with Vue components in Markdown.
+      // Perfect for building Documentation, Design Systems, Portfolios, Blogs, etc.
+      // https://gridsome.org/plugins/@gridsome/vue-remark
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Blah', // Required
+        baseDir: './content/blah', // Where .md files are located
+        pathPrefix: 'blah',
+        template: './src/templates/Blah.vue' // Optional
+      }
+    },
+    // {
+    //   // Create pages with Vue components in Markdown.
+    //   // Perfect for building Documentation, Design Systems, Portfolios, Blogs, etc.
+    //   // https://gridsome.org/plugins/@gridsome/vue-remark
+    //   use: '@gridsome/vue-remark',
+    //   options: {
+    //     typeName: 'Post', // Required
+    //     baseDir: './content/posts', // Where .md files are located
+    //     pathPrefix: '',
+    //     template: './src/templates/Post.vue' // Optional
+    //   }
+    // },
+    {
+      // critical css
       use: '@gridsome/plugin-critical',
       options: {
         paths: ['/'],
@@ -57,6 +80,7 @@ module.exports = {
       }
     },
     {
+      // use yaml files
       use: '@gridsome/source-filesystem',
       options: {
           path: 'component/site/*.yml',
@@ -69,6 +93,7 @@ module.exports = {
         }
     },
     {
+      // sitemap
       use: '@gridsome/plugin-sitemap'
     },
     {
@@ -87,6 +112,11 @@ module.exports = {
           category: {
             typeName: 'Category',
             create: true
+          },
+            // Creates a GraphQL collection from 'extlinks' in front-matter and adds a reference.
+            extlinks: {
+              typeName: 'ExtLinks',
+              create: true
           }
         }
       }
@@ -109,9 +139,6 @@ module.exports = {
   ],
 
   templates: {
-    Post: [{
-      path: '/:category/:title'
-    }],
     CustomPage: [{
       path: '/:title',
       component: '~/templates/CustomPage.vue'

@@ -1,5 +1,6 @@
 <template>
   <Layout :show-logo="true">
+    
     <div class="horizontal_spacing">
 
       <g-image
