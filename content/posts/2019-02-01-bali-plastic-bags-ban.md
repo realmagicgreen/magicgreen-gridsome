@@ -20,27 +20,6 @@ sticky: true # 'true' or empty
 show_in_home_slideshow: # 'true' or empty
 home_slideshow_caption: # lowercase, max 12 digits, including spaces
 photography: # put here photographer name
-links:
-  - "[Telobag](http://telobag.com/en/home/)"
-  - "[Telobag instagram](https://www.instagram.com/telobagindo/)"
-  - "[Evoware seaweed plastics](http://www.evoware.id/)"
-  - "[Oxium Indonesian biodegradable plastic](http://www.oxium.net/page/)"
-  - "[Avani website](https://www.avanieco.com/)"
-  - "[Satvika Bhoga shop in Sanur](https://goo.gl/maps/uskEeZ96ALJ2)"
-  - "[Eco Bali Recycling service](http://eco-bali.com)"
-  - "[Avani biodegradable plastic life cycle](https://www.avanieco.com/life-cycle-3/)"
-  - "[Evoware – Edible Sachet and Food Wraps to End Plastic Waste Video](https://youtu.be/24T6ruz1GhU)"
-  - "[Evoware – Youtube channel](https://www.youtube.com/channel/UCBN9aRJfC-bI-f3ll4abZaQ/videos)"
-  - "[Reuters Evoware review](https://www.reuters.com/article/us-indonesia-evoware/indonesian-startup-wages-war-on-plastic-with-edible-seaweed-cups-idUSKBN1DN0XA)"
-  - "[Bamboo straws](https://bamboo-straws.com/)"
-  - "[World Watch Institute](http://www.worldwatch.org/)"
-  - "[plastic oceans website](https://plasticoceans.org/)"
-  - "[A Plastic Ocean - on Netflix](https://www.netflix.com/id/title/80164032)"
-  - "Byebye plastic bags website](http://www.byebyeplasticbags.org)"
-  - "[Bali plastic bag free - video](https://youtu.be/SsF4xun1-u0)"
-  - "[It's about time we start listening - Ted-X video](https://youtu.be/Y6Z5eOv6Nnk)"
-  - "[Our campaign to ban plastic in Bali - Ted video](https://youtu.be/P8GCjrDWWUM)"
-
 ---
 Starting with the new year, Bali Denpasar area has banned the plastic bags. Tabanan regency now is set to follow up with similar initiative.
 
@@ -89,3 +68,43 @@ We can't wait for this starting measure to spread, which could definitely be a g
 
 
 Other step will need to include helping establishing the newly born biodegradable plastic industry and a better organized trash collection system. But hey, a good starting is surely a positive news.
+
+## Know More Links
+
+[Telobag](http://telobag.com/en/home/)
+
+[Telobag instagram](https://www.instagram.com/telobagindo/)
+
+[Evoware seaweed plastics](http://www.evoware.id/)
+
+[Oxium Indonesian biodegradable plastic](http://www.oxium.net/page/)
+
+[Avani website](https://www.avanieco.com/)
+
+[Satvika Bhoga shop in Sanur](https://goo.gl/maps/uskEeZ96ALJ2)
+
+[Eco Bali Recycling service](http://eco-bali.com)
+
+[Avani biodegradable plastic life cycle](https://www.avanieco.com/life-cycle-3/)
+
+[Evoware – Edible Sachet and Food Wraps Video](https://youtu.be/24T6ruz1GhU)
+
+[Evoware – Youtube channel](https://www.youtube.com/channel/UCBN9aRJfC-bI-f3ll4abZaQ/videos)
+
+[Reuters Evoware review](https://www.reuters.com/article/us-indonesia-evoware/indonesian-startup-wages-war-on-plastic-with-edible-seaweed-cups-idUSKBN1DN0XA)
+
+[Bamboo straws](https://bamboo-straws.com/)
+
+[World Watch Institute](http://www.worldwatch.org/)
+
+[plastic oceans website](https://plasticoceans.org/)
+
+[A Plastic Ocean - on Netflix](https://www.netflix.com/id/title/80164032)"
+
+[Byebye plastic bags website](http://www.byebyeplasticbags.org)
+
+[Bali plastic bag free - video](https://youtu.be/SsF4xun1-u0)
+
+[It's about time we start listening - Ted-X video](https://youtu.be/Y6Z5eOv6Nnk)
+
+[Our campaign to ban plastic in Bali - Ted video](https://youtu.be/P8GCjrDWWUM)"

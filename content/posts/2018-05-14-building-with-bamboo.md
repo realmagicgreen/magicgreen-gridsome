@@ -21,14 +21,7 @@ sticky: # 'true' or empty
 show_in_home_slideshow: # 'true' or empty
 home_slideshow_caption: # lowercase, max 12 digits, including spaces
 photography: # put here photographer name
-links:
-  - "[Building with bamboo -  the basics](https://www.buildingtrustinternational.org/BTIBambooToolkit.pdf)"
-  - "[Bamboo](https://en.wikipedia.org/wiki/Bamboo)"
-  - "[bamboo facts, by Ibuku](http://ibuku.com/resources/bamboo-facts/)"
-  - "[cultur of permaculture](http://www.cultureofpermaculture.org)"
-  - "[asia green buildings](http://www.asiagreenbuildings.com)"
-  - "[gua dua bamboo](https://www.guaduabamboo.com)"
-  - "[Cure bamboo](https://www.wikihow.com/Cure-Bamboo)"
+
 ---
 Bamboo, technically a grass, has been used in building for centuries due to its impressive strength. It offer twice the compressive strength of concrete and about the same strength-to-weight ratio of steel in tension. [1]
 
@@ -103,3 +96,21 @@ To remove bamboo mold, lemon oil or a solution of vinegar and water can be used.
 
 6.
 [Remove bamboo mold](https://www.guaduabamboo.com/preservation/how-to-remove-bamboo-mold)
+
+
+
+## Know More Links
+
+[Building with bamboo -  the basics](https://www.buildingtrustinternational.org/BTIBambooToolkit.pdf)"
+
+[Bamboo](https://en.wikipedia.org/wiki/Bamboo)
+
+[bamboo facts, by Ibuku](http://ibuku.com/resources/bamboo-facts/)
+
+[cultur of permaculture](http://www.cultureofpermaculture.org)
+
+[asia green buildings](http://www.asiagreenbuildings.com)
+
+[gua dua bamboo](https://www.guaduabamboo.com)
+
+[Cure bamboo](https://www.wikihow.com/Cure-Bamboo)

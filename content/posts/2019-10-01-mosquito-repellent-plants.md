@@ -17,17 +17,6 @@ sticky: true # 'true' or empty
 show_in_home_slideshow: # 'true' or empty
 home_slideshow_caption: # lowercase, max 12 digits, including spaces
 photography: # put here photographer name
-links:
-  - "[Garlic](https://en.wikipedia.org/wiki/Garlic)"
-  - "[Peppermint](https://en.wikipedia.org/wiki/Peppermint)"
-  - "[Citronella](https://en.wikipedia.org/wiki/Citronella)"
-  - "[Lavender](https://en.wikipedia.org/wiki/Lavandula)"
-  - "[Catnip](https://en.wikipedia.org/wiki/Catnip)"
-  - "[Basil](https://en.wikipedia.org/wiki/Basil)"
-  - "[Rosemary](https://en.wikipedia.org/wiki/Rosemary)"
-  - "[Attracted by the carbon dioxide we exhale](http://theconversation.com/health-check-why-mosquitoes-seem-to-bite-some-people-more-36425)"
-  - "[Grow mosquito repellent plants](https://krishijagran.com/health-lifestyle/easy-to-grow-mosquito-repellent-plants-at-home/)"
-  - "[Plants that repel mosquitoes](https://www.proflowers.com/blog/plants-that-repel-mosquitoes)"
 ---
 Mosquitoes can be a terrible nuisance. Before you grab a can of chemical bug spray, you can take a stand against mosquitoes with a few well-chosen.
 
@@ -146,3 +135,26 @@ Depending on where you live, mosquitoes are very much a seasonal pest and their 
 They also need the water of spring rains for over-wintered eggs to hatch. These are the times to make sure you have thriving plants in the house to keep out the mosquitoes.
 
 So with a few of these aromatic plants, and some simple changes around the house, you can have a more mosquito-free summer without having to resort to chemical sprays.
+
+## Know More Links
+
+[Garlic](https://en.wikipedia.org/wiki/Garlic)
+
+[Peppermint](https://en.wikipedia.org/wiki/Peppermint)
+
+[Citronella](https://en.wikipedia.org/wiki/Citronella)
+
+[Lavender](https://en.wikipedia.org/wiki/Lavandula)
+
+[Catnip](https://en.wikipedia.org/wiki/Catnip)
+
+
+[Basil](https://en.wikipedia.org/wiki/Basil)
+
+[Rosemary](https://en.wikipedia.org/wiki/Rosemary)
+
+[Attracted by the carbon dioxide we exhale](http://theconversation.com/health-check-why-mosquitoes-seem-to-bite-some-people-more-36425)
+
+[Grow mosquito repellent plants](https://krishijagran.com/health-lifestyle/easy-to-grow-mosquito-repellent-plants-at-home/)
+
+[Plants that repel mosquitoes](https://www.proflowers.com/blog/plants-that-repel-mosquitoes)

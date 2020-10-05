@@ -2,7 +2,10 @@
 	<header class="header_wrap" :class="{'menu-is-open': isMenuActive}">
 		<div class="header horizontal_spacing">
 
-			<g-link class="logo_wrapper" to="/">
+			<g-link class="logo_wrapper" title="link to starting page" to="/">
+				<div class="hide">
+					Magic Green
+				</div>
 				<Logo />
 			</g-link>
 

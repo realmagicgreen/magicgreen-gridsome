@@ -27,13 +27,6 @@ sticky: true # 'true' or empty
 show_in_home_slideshow: true # 'true' or empty
 home_slideshow_caption: raising awareness # lowercase, max 12 digits, including spaces
 photography: # put here photographer name
-links:
-  - "[About Mission Blue](https://mission-blue.org/about/)"
-  - "[Mission Blue - Hope Spots](https://mission-blue.org/hope-spots/)"
-  - "[Mission Blue Instagram](https://instagram.com/mission_blue/)"
-  - "[Mission Blue Twitter](https://twitter.com/missionblue/)"
-  - "[Nusa Penida Marine Protected Area](https://storymaps.arcgis.com/stories/45f1af5ffaaa4eb29c6b72f0fb498ded)"
-  - "[Timor-Leste Hope Spot](https://storymaps.arcgis.com/stories/5fc1a8d6ae864233919d5cd54ba75faa?utm_source=Mission+Blue+Newsletter&utm_campaign=a0c0f5afa0-july2020&utm_medium=email&utm_term=0_da58e310c1-a0c0f5afa0-320797301&mc_cid=a0c0f5afa0&mc_eid=9f56f752f9)"
 ---
 
 
@@ -214,3 +207,17 @@ That often release plastics into the ocean.
 _Mission Blue depends on the generosity of people to explore and protect Hope Spots. Every dollar donated helps our continued efforts to inspire a world where the ocean is protected and respected._
 
 _Now, as never before, we have the chance to save what’s left of the living systems that support life on our planet. We should act as if our lives depend on a healthy ocean, because they do._
+
+## Know More Links
+
+[About Mission Blue](https://mission-blue.org/about/)
+
+[Mission Blue - Hope Spots](https://mission-blue.org/hope-spots/)
+
+[Mission Blue Instagram](https://instagram.com/mission_blue/)
+
+[Mission Blue Twitter](https://twitter.com/missionblue/)
+
+[Nusa Penida Marine Protected Area](https://storymaps.arcgis.com/stories/45f1af5ffaaa4eb29c6b72f0fb498ded)
+
+[Timor-Leste Hope Spot](https://storymaps.arcgis.com/stories/5fc1a8d6ae864233919d5cd54ba75faa?utm_source=Mission+Blue+Newsletter&utm_campaign=a0c0f5afa0-july2020&utm_medium=email&utm_term=0_da58e310c1-a0c0f5afa0-320797301&mc_cid=a0c0f5afa0&mc_eid=9f56f752f9)

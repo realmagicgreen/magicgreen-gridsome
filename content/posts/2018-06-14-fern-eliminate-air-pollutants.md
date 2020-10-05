@@ -23,12 +23,6 @@ ad: # use 'true' to have post displaying AD
 featured: true # use 'true' to have it displayed in home
 sticky: # 'true' or empty
 photography: Rokma # put here photographer name
-links:
-  - "[Tips for growing fern plants](https://www.thespruce.com/tips-for-growing-fern-plants-1402823)"
-  - "[From contamination to beautification: ferns remove arsenic from soil](https://fcit.usf.edu/florida/teacher/science/mod1/resources/fern-student.pdf)"
-  - "[Screening Indoor Plants for Volatile Organic Pollutant Removal Efficiency](http://hortsci.ashspublications.org/content/44/5/1377.full)"
-  - "[Screening Indoor Plants for Volatile Organic Pollutant Removal Efficiency - PDF ](https://greenplantsforgreenbuildings.org/wp-content/uploads/2014/09/Screening-Indoor-Plants.pdf)"
-  - "[NASA Clean Air Study](https://en.wikipedia.org/wiki/NASA_Clean_Air_Study)"
 ---
 
 The importance of indoor air quality to human health has become of increasing interest in developed countries where inhabitants often spend over 90% of their time indoors.
@@ -65,3 +59,15 @@ Ferns first appear in the fossil record about 360 million years ago.
 These plants prefer a cool location with high humidity and indirect light. They're relatively easy to grow, but they do need to stay moist. Check the Boston Fern’s soil daily to see if it needs water, and give it a good soak once per month.
 
 **Pollutants removed**: Ammonia, Benzene, Formaldehyde, Trichloroethylene, Toluene, Octane, Terpene.
+
+
+## Know More Links
+
+
+[Tips for growing fern plants](https://www.thespruce.com/tips-for-growing-fern-plants-1402823)"
+
+[From contamination to beautification: ferns remove arsenic from soil](https://fcit.usf.edu/florida/teacher/science/mod1/resources/fern-student.pdf)
+
+[Screening Indoor Plants for Volatile Organic Pollutant Removal Efficiency](http://hortsci.ashspublications.org/content/44/5/1377.full)
+
+[Screening Indoor Plants for Volatile Organic Pollutant Removal Efficiency - PDF ](https://greenplantsforgreenbuildings.org/wp-content/uploads/2014/09/Screening-Indoor-Plants.pdf)

@@ -21,8 +21,7 @@ sticky: # 'true' or empty
 show_in_home_slideshow: # 'true' or empty
 home_slideshow_caption: # lowercase, max 12 digits, including spaces
 photography: # put here photographer name
-links:
-  - "[green wall - wikipedia ](https://en.wikipedia.org/wiki/Green_wall)"
+
 ---
 
 Green walls are not only visually pleasant, but naturally absorb CO2 and other pollutants thus cleaning the air.
@@ -37,3 +36,9 @@ Let's not forget that trees, and green in general, created the oxygen in our atm
 While this solution is picking up quickly in many metropolitan areas for the specific work they do for us, in Bali too we have some, like this one in Sanur.
 
 ![Bali, Sanur](./images/solutions/green-walls/green-walls.jpg)
+
+
+
+## Know More Links
+
+[green wall - wikipedia ](https://en.wikipedia.org/wiki/Green_wall)

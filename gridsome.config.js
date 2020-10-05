@@ -139,6 +139,10 @@ settings: {
   ],
 
   templates: {
+    Post: [{
+      path: '/:category/:title',
+      component: '~/templates/Post.vue'
+    }],
     CustomPage: [{
       path: '/:title',
       component: '~/templates/CustomPage.vue'
