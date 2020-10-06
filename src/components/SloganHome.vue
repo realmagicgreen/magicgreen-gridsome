@@ -1,13 +1,17 @@
 <template>
   <div class="horizontal_spacing">
-    <h2 class="center slogan" v-html="$static.metadata.slogan" />
+    <h2 class="center slogan" v-html="$static.metadata.settings.slogans.home" />
   </div>
 </template>
 
 <static-query>
 query {
   metadata {
-    slogan
+    settings {
+      slogans {
+        home
+      }
+    }
   }
 }
 </static-query>

@@ -4,7 +4,7 @@
     <div class="horizontal_spacing">
 
       <div class="slogan_block">
-        <Slogan />
+        <SloganHome />
       </div>
 
       <div class="posts post_grid">
@@ -98,7 +98,7 @@ query ($page: Int){
 
 <script>
 import PostCard from '~/components/PostCard.vue'
-import Slogan from '~/components/Slogan.vue'
+import SloganHome from '~/components/SloganHome.vue'
 import TagLink from '~/components/TagLink.vue'
 import { Pager } from 'gridsome'
 
@@ -107,7 +107,7 @@ import IcoTag from '~/assets/svgs/tag.svg'
 export default {
   components: {
     PostCard,
-    Slogan,
+    SloganHome,
     TagLink,
     Pager,
     IcoTag

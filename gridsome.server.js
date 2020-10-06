@@ -11,9 +11,9 @@ module.exports = function (api) {
     addMetadata('settings', require('./gridsome.config').settings);
   });
 
-  api.loadSource(async store => {
-    store.addMetadata('slogan', 'Sustainable and environment-friendly examples from South East Asia and beyond.')
-  });
+  // api.loadSource(async store => {
+  //   
+  // });
   // api.loadSource(actions => {
   //   const collection = actions.addCollection('MyData')
   //

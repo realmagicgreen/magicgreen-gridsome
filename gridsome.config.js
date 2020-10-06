@@ -27,15 +27,10 @@ settings: {
     products: 'Sometimes it\'s easy to stop buying polluting products and start supporting more sustainable ones.',
     techniques: 'The way to sustainable living explained in details.',
     solutions: 'Small or big, here are some solutions to environmental problems.',
-    know: 'Did you know that... hum, actually i didn\t. thanks for letting me know!',
+    know: 'Did you know that... hum, actually I didn\'t. thanks for letting me know!',
     health: 'How to improve your life. food, plants medicines, healthy living, superfoods.',
-    esources: 'to solve big problems we need resources. these organisations are doing the right thing and can help. make a wise choice and support them.'
-  //      frameworks: [
-  //        'Vue',
-  //        'Gridsome',
-  //        'Tailwind'
-  //      ]
-     }
+    resources: 'To solve big problems we need resources. these organisations are doing the right thing and can help. Make a wise choice and support them.'
+    }
   },
 
 
@@ -46,18 +41,18 @@ settings: {
     //   //  goesBothWays: true, //default false
     //   // }
     // },
-    {
-      // Create pages with Vue components in Markdown.
-      // Perfect for building Documentation, Design Systems, Portfolios, Blogs, etc.
-      // https://gridsome.org/plugins/@gridsome/vue-remark
-      use: '@gridsome/vue-remark',
-      options: {
-        typeName: 'Blah', // Required
-        baseDir: './content/blah', // Where .md files are located
-        pathPrefix: 'blah',
-        template: './src/templates/Blah.vue' // Optional
-      }
-    },
+    // {
+    //   // Create pages with Vue components in Markdown.
+    //   // Perfect for building Documentation, Design Systems, Portfolios, Blogs, etc.
+    //   // https://gridsome.org/plugins/@gridsome/vue-remark
+    //   use: '@gridsome/vue-remark',
+    //   options: {
+    //     typeName: 'Blah', // Required
+    //     baseDir: './content/blah', // Where .md files are located
+    //     pathPrefix: 'blah',
+    //     template: './src/templates/Blah.vue' // Optional
+    //   }
+    // },
     // {
     //   // Create pages with Vue components in Markdown.
     //   // Perfect for building Documentation, Design Systems, Portfolios, Blogs, etc.

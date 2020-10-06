@@ -1,12 +1,10 @@
 <template>
   <Layout :show-logo="true">
-    <div class="horizontal_spacing">
+    <div class="horizontal_spacing" :class="[$page.category.title]">
       <h1 class="hide">
         {{ $page.category.title }}
       </h1>
-      <h2 class="h3">
-        <!-- <CategorySlogan /> -->
-      </h2>
+      <Slogans />
 
       <div class="posts post_grid">
         <PostCard v-for="edge in $page.category.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
@@ -65,17 +63,26 @@ query Category ($id: ID!) {
 			}
 		}
 	}
+  metadata {
+    settings {
+      slogans {
+        home
+      }
+    }
+  }
 }
 </page-query>
 
 <script>
 import PostCard from '~/components/PostCard.vue'
 import { Pager } from 'gridsome'
+import Slogans from '~/components/Slogans.vue'
 
 export default {
   components: {
     PostCard,
-    Pager
+    Pager,
+    Slogans
   },
   metaInfo () {
     return {
