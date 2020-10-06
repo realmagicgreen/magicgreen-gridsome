@@ -24,7 +24,15 @@
 
 				<div class="title"> About {{ $static.metadata.siteName }}</div>
 
-				<div class="menu_contacts" role="menu">
+				<div class="menu_about" role="menu">
+
+					<!-- <g-link
+				  class="menu_item about"
+				  href="/about-us"
+					title="About us"
+				  role="menuitem">
+				    <div class="">About us</div>
+				  </g-link> -->
 
 					<div class="menu_item">
 						<a
@@ -35,6 +43,11 @@
 							<span>About us</span>
 						</a>
 					</div>
+
+				</div>
+
+
+				<div class="menu_contacts" role="menu">
 
 					<div class="menu_item">
 						<a
@@ -213,14 +226,16 @@ export default {
 	}
 
 	.menu_contacts,
-	.menu_posts {
+	.menu_posts,
+	.menu_about {
 	  display: flex;
 	  -ms-flex-direction: column;
 	  flex-direction: column;
 	  align-items: flex-start;
 	}
 
-	.menu_contacts {
+	.menu_contacts,
+	.menu_about {
 		align-items: flex-start;
 		.svg {
 			//span

@@ -10,18 +10,6 @@ module.exports = function (api) {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
     addMetadata('settings', require('./gridsome.config').settings);
   });
-
-  // api.loadSource(async store => {
-  //   
-  // });
-  // api.loadSource(actions => {
-  //   const collection = actions.addCollection('MyData')
-  //
-  //   collection.addNode({
-  //     title: 'Lorem ipsum dolor sit amet.',
-  //     customField: '...'
-  //   })
-  // })
   api.loadSource(({ addCollection }) => {
     // Use the Data store API here: https://gridsome.org/docs/data-store-api/
   })

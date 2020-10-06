@@ -27,32 +27,15 @@ settings: {
     products: 'Sometimes it\'s easy to stop buying polluting products and start supporting more sustainable ones.',
     techniques: 'The way to sustainable living explained in details.',
     solutions: 'Small or big, here are some solutions to environmental problems.',
-    know: 'Did you know that... hum, actually I didn\'t. thanks for letting me know!',
-    health: 'How to improve your life. food, plants medicines, healthy living, superfoods.',
-    resources: 'To solve big problems we need resources. these organisations are doing the right thing and can help. Make a wise choice and support them.'
+    know: 'Did you know that... Hum, actually I didn\'t. Thanks for letting me know!',
+    health: 'How to improve your life. Food, plants medicines, healthy living, superfoods.',
+    resources: 'To solve big problems we need resources. These organisations are doing the right thing and can help. Make a wise choice and support them.'
     }
   },
 
 
   plugins: [
-    // {
-    //   use: 'gridsome-plugin-svg',
-    //   // options: {
-    //   //  goesBothWays: true, //default false
-    //   // }
-    // },
-    // {
-    //   // Create pages with Vue components in Markdown.
-    //   // Perfect for building Documentation, Design Systems, Portfolios, Blogs, etc.
-    //   // https://gridsome.org/plugins/@gridsome/vue-remark
-    //   use: '@gridsome/vue-remark',
-    //   options: {
-    //     typeName: 'Blah', // Required
-    //     baseDir: './content/blah', // Where .md files are located
-    //     pathPrefix: 'blah',
-    //     template: './src/templates/Blah.vue' // Optional
-    //   }
-    // },
+
     // {
     //   // Create pages with Vue components in Markdown.
     //   // Perfect for building Documentation, Design Systems, Portfolios, Blogs, etc.
@@ -107,11 +90,6 @@ settings: {
           category: {
             typeName: 'Category',
             create: true
-          },
-            // Creates a GraphQL collection from 'extlinks' in front-matter and adds a reference.
-            extlinks: {
-              typeName: 'ExtLinks',
-              create: true
           }
         }
       }
@@ -120,9 +98,8 @@ settings: {
       // Create pages from markdown files
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'CustomPage',
-        baseDir: './content/pages',
-        path: '*.md'
+        typeName: 'SpecialPage',
+        path: 'content/pages/*.md'
       }
     },
     {
@@ -138,9 +115,9 @@ settings: {
       path: '/:category/:title',
       component: '~/templates/Post.vue'
     }],
-    CustomPage: [{
+    SpecialPage: [{
       path: '/:title',
-      component: '~/templates/CustomPage.vue'
+      component: '~/templates/SpecialPage.vue'
     }],
     Category: [{
       path: '/:title',

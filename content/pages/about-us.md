@@ -10,10 +10,6 @@ description: "We are a network of communication professionals. We feel the need 
 photography: Rokma # put here photographer name
 ---
 
-// test
-
-{{ $frontmatter.photography }}
-
 
 >"**Nothing is as powerful as an idea whose time has come.**" _Victor Hugo_
 

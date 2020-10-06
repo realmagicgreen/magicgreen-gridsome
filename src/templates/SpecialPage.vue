@@ -1,6 +1,6 @@
 <template>
   <Layout :show-logo="true">
-    
+
     <div class="horizontal_spacing">
 
       <g-image
@@ -34,8 +34,8 @@
 </template>
 
 <page-query>
-query CustomPage ($id: ID!) {
-  entry: customPage (id: $id) {
+query SpecialPage ($id: ID!) {
+  entry: specialPage (id: $id) {
     title
     subtitle
     cover_image
