@@ -10,6 +10,8 @@
         <PostCard v-for="edge in $page.category.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
       </div>
 
+      <TagCloud />
+
       <!-- <Pager :info="$page.category.pageInfo" class="pagination_block center"/> -->
     </div>
   </Layout>
@@ -63,6 +65,18 @@ query Category ($id: ID!) {
 			}
 		}
 	}
+  tags: allTag(sortBy: "title", order: ASC) {
+    totalCount
+    edges {
+      node {
+        title
+        path
+        belongsTo {
+          totalCount
+        }
+      }
+    }
+  }
   metadata {
     settings {
       slogans {
@@ -77,12 +91,14 @@ query Category ($id: ID!) {
 import PostCard from '~/components/PostCard.vue'
 import { Pager } from 'gridsome'
 import Slogans from '~/components/Slogans.vue'
+import TagCloud from '~/components/TagCloud.vue'
 
 export default {
   components: {
     PostCard,
     Pager,
-    Slogans
+    Slogans,
+    TagCloud
   },
   metaInfo () {
     return {

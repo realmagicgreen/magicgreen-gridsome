@@ -13,24 +13,7 @@
 
       <Pager :info="$page.posts.pageInfo" class="pagination_block center"/>
 
-    </div>
-
-    <div class="vertical_spacing border_brand_top">
-
-      <!-- tagCloudBlock -->
-      <div class="tag_cloud">
-        <div class="tag_block_icon">
-          <IcoTag />
-        </div>
-        <div class="links_list" role="menu">
-          <TagLink
-          v-for="edge in $page.tags.edges"
-          :key="edge.node.id"
-          :tag="edge.node"
-          />
-        </div>
-      </div>
-      <!-- /tagCloudBlock -->
+      <TagCloud />
 
     </div>
 
@@ -99,18 +82,15 @@ query ($page: Int){
 <script>
 import PostCard from '~/components/PostCard.vue'
 import SloganHome from '~/components/SloganHome.vue'
-import TagLink from '~/components/TagLink.vue'
+import TagCloud from '~/components/TagCloud.vue'
 import { Pager } from 'gridsome'
-
-import IcoTag from '~/assets/svgs/tag.svg'
 
 export default {
   components: {
     PostCard,
     SloganHome,
-    TagLink,
-    Pager,
-    IcoTag
+    TagCloud,
+    Pager
   },
   metaInfo: {
     title: 'Hello, greener world!'

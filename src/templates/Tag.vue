@@ -16,6 +16,8 @@
         <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
       </div>
 
+      <TagCloud />
+
     </div>
 
   </Layout>
@@ -23,6 +25,18 @@
 
 <page-query>
 query Tag ($id: ID!) {
+  tags: allTag(sortBy: "title", order: ASC) {
+    totalCount
+    edges {
+      node {
+        title
+        path
+        belongsTo {
+          totalCount
+        }
+      }
+    }
+  }
   links: allPost(filter: { published: { eq: true }}) {
     edges {
       node {
@@ -85,11 +99,13 @@ query Tag ($id: ID!) {
 <script>
 import PostCard from '~/components/PostCard.vue'
 import IcoTag from '~/assets/svgs/tag.svg'
+import TagCloud from '~/components/TagCloud.vue'
 
 export default {
   components: {
     PostCard,
-    IcoTag
+    IcoTag,
+    TagCloud
   },
   metaInfo () {
     return {

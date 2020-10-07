@@ -34,16 +34,6 @@
 				    <div class="">About us</div>
 				  </g-link>
 
-					<!-- <div class="menu_item">
-						<a
-							class="menu_item about"
-							role="menuitem"
-							href="/about-us"
-							title="About us">
-							<span>About us</span>
-						</a>
-					</div> -->
-
 				</div>
 
 
@@ -251,21 +241,28 @@ export default {
 		.menu_item {
 			//can be a link!
 			&:not(.active):hover {
-				border-bottom-color: transparent!important;
+				border-bottom-color: transparent;
 				.user_name {
 					//the social profile name or email
 					font-weight: 600!important;
 				}
 			}
 		}
-	}
 
+	}
 	.menu_contacts {
-		padding-top: 10px;
+		padding-top: 12px;
 		.menu_item {
 			align-items: flex-start;
 		}
 	}
+	.menu_about .menu_item {
+		&:not(.active):hover {
+			border-bottom: currentColor solid 1px;
+		}
+	}
+
+
 
 	.copyright {
 	  font-size: 14px;
