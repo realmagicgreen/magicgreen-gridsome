@@ -17,75 +17,75 @@
 			max-width: calc(33.33% - 10px);
 		}
 	}
-}
 
-.card {
-	text-decoration: none;
-	position: relative;
-	background-color: var(--bg_content_color);
-	box-shadow: var(--card_shadow);
-	transition: var(--transition_shadow);
-	border: 1px solid var(--border_color);
-	border-radius: 5px;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	margin-bottom: var(--space-1);
-
-	&:hover,
-	&:visited,
-	&:visited:hover {
-		body[data-theme="dark"] & {
-			border-color: #aaa;
-		}
-
-		body[data-theme="light"] & {
-			border-color: black;
-		}
-	}
-
-	.post_metas {
-		border-bottom: 0 none;
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-
-	.card_post_image {
+	.card {
+		text-decoration: none;
 		position: relative;
-		width: 100%;
-		color: var(--transparent_grey);
-		transition: transform .25s ease-in-out;
-		max-height: 60vw;
-		transform: scale(1.005);
-		@media screen and (min-width: 880px) {
-			max-height: 30vw;
-		}
-		@media screen and (min-width: 1260px) {
-			max-height: 20vw;
-		}
-	}
+		background-color: var(--bg_content_color);
+		box-shadow: var(--card_shadow);
+		transition: var(--transition_shadow);
+		border: 1px solid var(--border_color);
+		border-radius: 5px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: var(--space-1);
 
-	&:focus,
-	&:hover {
-		box-shadow: var(--card_shadow--hover);
+		&:hover,
+		&:visited,
+		&:visited:hover {
+			body[data-theme="dark"] & {
+				border-color: #aaa;
+			}
+
+			body[data-theme="light"] & {
+				border-color: black;
+			}
+		}
+
+		.post_metas {
+			border-bottom: 0 none;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
 
 		.card_post_image {
-			transform: scale(1.05);
+			position: relative;
+			width: 100%;
+			color: var(--transparent_grey);
+			transition: transform .25s ease-in-out;
+			max-height: 60vw;
+			transform: scale(1.005);
+			@media screen and (min-width: 880px) {
+				max-height: 30vw;
+			}
+			@media screen and (min-width: 1260px) {
+				max-height: 20vw;
+			}
 		}
-	}
 
-	&:active {
-		transform: translateY(0.25em);
-	}
+		&:focus,
+		&:hover {
+			box-shadow: var(--card_shadow--hover);
 
-	h1,
-	h3 {
-		text-transform: uppercase;
-	}
+			.card_post_image {
+				transform: scale(1.05);
+			}
+		}
 
-	.post_date,
-	.post_tags {
-		display: none;
+		&:active {
+			transform: translateY(0.25em);
+		}
+
+		h1,
+		h3 {
+			text-transform: uppercase;
+		}
+
+		.post_date,
+		.post_tags {
+			display: none;
+		}
 	}
 }
 

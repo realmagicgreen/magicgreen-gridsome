@@ -130,8 +130,8 @@ export default {
   margin-bottom: 10px;
 
   .icotag {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 }
 </style>
