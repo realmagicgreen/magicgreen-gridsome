@@ -99,7 +99,15 @@ settings: {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'SpecialPage',
-        path: 'content/pages/*.md'
+        path: 'content/special_pages/*.md'
+      }
+    },
+    {
+      // Create pages from markdown files
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'AboutPage',
+        path: 'content/about/*.md'
       }
     },
     {
@@ -118,6 +126,10 @@ settings: {
     SpecialPage: [{
       path: '/:title',
       component: '~/templates/SpecialPage.vue'
+    }],
+    AboutPage: [{
+      path: '/:title',
+      component: '~/templates/AboutPage.vue'
     }],
     Category: [{
       path: '/:title',

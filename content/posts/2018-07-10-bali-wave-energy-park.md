@@ -40,7 +40,8 @@ The Penguins are anchored to sea bottom at a depth of approximately 50 meters. O
 The device does not have any moving parts in contact with sea water and the service needs are minimal. Remote connection allows for continuous monitoring and adjustment of the solution.
 
 
-**_Read more:_**
+
+## Know More Links
 
 [Wello news](https://wello.eu/2017/12/28/wello-supplying-10-mw-wave-energy-park-bali/)
 

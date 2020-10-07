@@ -26,15 +26,15 @@
 
 				<div class="menu_about" role="menu">
 
-					<!-- <g-link
+					<g-link
 				  class="menu_item about"
-				  href="/about-us"
+				  to="/about-us/"
 					title="About us"
 				  role="menuitem">
 				    <div class="">About us</div>
-				  </g-link> -->
+				  </g-link>
 
-					<div class="menu_item">
+					<!-- <div class="menu_item">
 						<a
 							class="menu_item about"
 							role="menuitem"
@@ -42,7 +42,7 @@
 							title="About us">
 							<span>About us</span>
 						</a>
-					</div>
+					</div> -->
 
 				</div>
 
@@ -240,7 +240,6 @@ export default {
 		.svg {
 			//span
 			padding-right: var(--space-05);
-
 		}
 	  > div {
 	    min-height: 22px;
@@ -250,15 +249,21 @@ export default {
 	    color: black;
 	  }
 		.menu_item {
-			align-items: flex-start;
 			//can be a link!
-			&:hover {
+			&:not(.active):hover {
 				border-bottom-color: transparent!important;
 				.user_name {
 					//the social profile name or email
 					font-weight: 600!important;
 				}
 			}
+		}
+	}
+
+	.menu_contacts {
+		padding-top: 10px;
+		.menu_item {
+			align-items: flex-start;
 		}
 	}
 

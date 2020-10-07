@@ -7,7 +7,7 @@
 
         <IcoTag class="icotag"/>
 
-        <h1 class="tag_page_title h2 load_hidden" v-scroll-reveal.reset>
+        <h1 class="tag_page_title h2">
           {{ $page.tag.title }}
         </h1>
       </div>
@@ -113,8 +113,9 @@ export default {
   width: 100%;
   margin-bottom: 10px;
 
-  icotag {
-
+  .icotag {
+    width: 100px;
+    height: 100px;
   }
 }
 </style>

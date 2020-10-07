@@ -57,5 +57,3 @@ If you life far away and want to make something using reclaimed wood here is a [
 [Recycled furniture Indonesia](http://www.recycledfurnitureindonesia.com/)
 
 [Indonesia reclaimed teak](http://www.indonesiareclaimedteak.com/)
-
-**_Read more:_**

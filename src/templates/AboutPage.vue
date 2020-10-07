@@ -18,7 +18,7 @@
             {{ $page.entry.title }}
           </h1>
 
-          <h2 class="post_subtitle border_top border_bottom" v-if="$page.entry.subtitle">
+          <h2 class="post_subtitle border_top border_bottom">
             {{ $page.entry.subtitle }}
           </h2>
 
@@ -34,8 +34,8 @@
 </template>
 
 <page-query>
-query SpecialPage ($id: ID!) {
-  entry: specialPage (id: $id) {
+query AboutPage ($id: ID!) {
+  entry: aboutPage (id: $id) {
     title
     subtitle
     cover_image
