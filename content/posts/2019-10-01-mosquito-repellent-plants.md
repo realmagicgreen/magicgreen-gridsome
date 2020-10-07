@@ -20,7 +20,11 @@ photography: # put here photographer name
 ---
 Mosquitoes can be a terrible nuisance. Before you grab a can of chemical bug spray, you can take a stand against mosquitoes with a few well-chosen.
 
-Mosquitoes are stimulated by a number of factors when seeking out a blood meal. Initially, they’re [attracted by the carbon dioxide we exhale](http://theconversation.com/health-check-why-mosquitoes-seem-to-bite-some-people-more-36425). Body heat is probably important too, but once the mosquito gets closer, she will respond to the smell of a potential blood source’s skin.
+Mosquitoes are stimulated by a number of factors when seeking out a blood meal.
+
+Initially, they’re [attracted by the carbon dioxide we exhale.](http://theconversation.com/health-check-why-mosquitoes-seem-to-bite-some-people-more-36425)
+
+Body heat is probably important too, but once the mosquito gets closer, she will respond to the smell of a potential blood source’s skin.
 
 
 
@@ -58,9 +62,15 @@ An added bonus is the wonderful minty smell that makes a delicious addition to f
 
 This is by far the most well-known mosquito repellent because the compounds in its leaves are a common ingredient in commercial repellent products. It has a pleasant lemon smell and is very powerful at driving away mosquitoes.
 
-[Citronella](https://en.wikipedia.org/wiki/Citronella), a tropical plant, it will thrive in warm weather and full sunshine. It may benefit from regular fertilising and even a little added artificial light during the winter months if you have very short days.
+[Citronella](https://en.wikipedia.org/wiki/Citronella), a tropical plant, it will thrive in warm weather and full sunshine.
 
-If looking to buy citronella, be careful when choosing the plants. There are a few varieties of scented geraniums that go by the name mosquito plant or even citronella plant, and they are not what you’re looking for. True citronella looks a lot like thick grass, and does not have wide rippled leaves.
+It may benefit from regular fertilising and even a little added artificial light during the winter months if you have very short days.
+
+If looking to buy citronella, be careful when choosing the plants.
+
+There are a few varieties of scented geraniums that go by the name mosquito plant or even citronella plant, and they are not what you’re looking for.
+
+True citronella looks a lot like thick grass, and does not have wide rippled leaves.
 
 
 ## Lavender - (Lavandula)
@@ -89,35 +99,49 @@ In folk medicine practices, such as those of _Ayurveda_ or traditional Chinese m
 
 Basil doesn’t handle dry conditions very well, but you also don’t want to drown the roots. Damp, well-draining soil is the key.
 
-They prefer a warm environment, so they may not be the best indoor houseplant if you have a cold house during the winters. Otherwise, they should thrive just fine. Feel free to harvest a few leaves now and again for cooking too.
+They prefer a warm environment, so they may not be the best indoor houseplant if you have a cold house during the winters.
+
+Otherwise, they should thrive just fine. Feel free to harvest a few leaves now and again for cooking too.
 
 
 ## Rosemary - (Salvia Rosmarinus)
 
 ![Rosemary plant](./images/solutions/mosquito-repellent-plants/mosquito-repellent-plants-08.jpg)
 
-Another seasoning herb that has mosquito-repelling qualities is [rosemary](https://en.wikipedia.org/wiki/Rosemary). Maybe not the best choice for a novice gardener, but it would be worth giving a try. You need a place with as much sunlight as possible, even a grow light occasionally, and you should know it can be finicky about watering.
+Another seasoning herb that has mosquito-repelling qualities is [rosemary.](https://en.wikipedia.org/wiki/Rosemary)
+
+Maybe not the best choice for a novice gardener, but it would be worth giving a try.
+
+You need a place with as much sunlight as possible, even a grow light occasionally, and you should know it can be finicky about watering.
 
 Use a well-draining potting soil mix, watering when the surface is dry to the touch. It can be sensitive to either too much or too little water.
 
-Rosemary is also prone to powdery mildew so you have to have a lot of air movement around the plant to prevent that from settling in. Like with lavender, try to find a breezy location, or even set up a small fan around your plants to keep the air moving.
+Rosemary is also prone to powdery mildew so you have to have a lot of air movement around the plant to prevent that from settling in.
+
+Like with lavender, try to find a breezy location, or even set up a small fan around your plants to keep the air moving.
 
 
 # Placement
 
 Keep your plants in a spot offer the right amount of light or temperatures your indoor plants require. Choose strategic areas.
 
-Keep your plants near busy entrances. Bedrooms and common living areas are the next placement spots, to keep them out of the room. Remember, these plants only repel mosquitoes, they aren’t going to kill the bugs.
+Keep your plants near busy entrances. Bedrooms and common living areas are the next placement spots, to keep them out of the room.
+
+Remember, these plants only repel mosquitoes, they aren’t going to kill the bugs.
 
 # Stop Attracting Them
 
-You’ll have fewer mosquitoes to deal with around the house if you stop attracting them in the first place. Unlike with other houseflies, mosquitoes aren’t attracted to food or garbage that might be in your house. So keeping things clean won’t have much impact here.
+You’ll have fewer mosquitoes to deal with around the house if you stop attracting them in the first place.
+
+Unlike with other houseflies, mosquitoes aren’t attracted to food or garbage that might be in your house. So keeping things clean won’t have much impact here.
 
 They’re drawn to the dark colours, body heat and a range of fragrances, including perfumes, lotions and even strong body odour.
 
 Now, these aren’t things that are likely to bring them directly into your house, but if you are outdoors wearing dark clothes and smelling of cologne, you’re going to draw mosquitoes inside with you every time you come back in the house.
 
-Mosquitoes are usually at their busiest at dusk and into the night, though not all species are exactly the same. This is definitely the time to be careful you’re not drawing them into the house by opening the doors too often, or attracting them as we mentioned above.
+Mosquitoes are usually at their busiest at dusk and into the night, though not all species are exactly the same.
+
+This is definitely the time to be careful you’re not drawing them into the house by opening the doors too often, or attracting them as we mentioned above.
 
 
 # Other advices
@@ -126,9 +150,13 @@ It’s definitely worth putting a little extra effort in keeping your home and y
 
 Get rid of any stagnant or standing water in your yard as much as possible. That’s where mosquitoes lay their eggs, which can lead to huge population explosions around the house when they mature.
 
-Open water barrels, decorative ponds and unused kiddy pools are all a potential breeding ground for mosquitoes. Drain pools or other horizontal_spacings when not needed, and consider adding lids or screening to places you can’t drain.
+Open water barrels, decorative ponds and unused kiddy pools are all a potential breeding ground for mosquitoes.
 
-A little solar-powered bubbler would keep water moving in a pond enough to prevent insect development without sacrificing the water feature. Mosquitoes won’t lay eggs in moving water. These can be a more natural option that treating a pond with chemical pesticides.
+Drain pools or other horizontal_spacings when not needed, and consider adding lids or screening to places you can’t drain.
+
+A little solar-powered bubbler would keep water moving in a pond enough to prevent insect development without sacrificing the water feature. Mosquitoes won’t lay eggs in moving water.
+
+These can be a more natural option that treating a pond with chemical pesticides.
 
 Depending on where you live, mosquitoes are very much a seasonal pest and their numbers are at their highest during the summer, and sometimes the late spring if the weather is warm enough.
 

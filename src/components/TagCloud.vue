@@ -1,26 +1,21 @@
 <template>
-  <div class="vertical_spacing border_brand_top">
+  <div class="tag_cloud">
+    <div class="vertical_spacing border_brand_top">
 
-    <!-- tagCloudBlock -->
-    <div class="tag_cloud">
       <div class="tag_block_icon">
-
         <IcoTag />
-
       </div>
-      <div class="links_list" role="menu">
 
+      <div class="links_list" role="menu">
         <TagLink
         v-for="edge in $page.tags.edges"
         :key="edge.node.id"
         :tag="edge.node"
         :count="edge.node.belongsTo.totalCount"
         />
-
       </div>
-    </div>
-    <!-- /tagCloudBlock -->
 
+    </div>
   </div>
 </template>
 

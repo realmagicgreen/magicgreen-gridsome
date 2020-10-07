@@ -22,7 +22,7 @@ query {
 <style lang="scss" scoped>
 
 [data-theme="dark"] .slogan {
-    color: var(--brand_color);
+    color: var(--text_color);
 }
 
 </style>

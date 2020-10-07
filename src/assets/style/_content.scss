@@ -8,10 +8,9 @@
 	//padding-right: auto;
 	padding-bottom: var(--space-3);
 	//padding-left: auto;
-	border-radius: var(--radius);
+	//border-radius: var(--radius);
 
 	// SMOOTH transition
-	transition: background-color .6s;
 	transition: transform .3s, background-color .3s, box-shadow .6s;
 
 }

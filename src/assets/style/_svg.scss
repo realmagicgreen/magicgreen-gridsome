@@ -19,13 +19,12 @@
 svg {
 	.tag_block_icon &,
 	.tagpage & {
-		stroke: var(--link_color);
-		stroke-width: .75;
-		width: 80px;
+		stroke: var(--text_color);
+		stroke-width: 1;
+		width: 60px;
 	}
 
 	.tagpage .title_wrapper & {
-		// margin-top: calc(var(--space-1) + var(--space-05));
 		stroke: var(--title_color);
 	}
 }

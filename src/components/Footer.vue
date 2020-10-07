@@ -192,7 +192,7 @@ export default {
 			align-items: center;
 			border: transparent solid 1px;
 			white-space: nowrap;
-			color: var(--link_color);
+			color: var(--brand_color);
 			text-decoration: none;
 			margin-bottom: 3px;
 

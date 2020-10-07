@@ -11,11 +11,13 @@
         <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
       </div>
 
-      <Pager :info="$page.posts.pageInfo" class="pagination_block center"/>
 
-      <TagCloud />
 
     </div>
+
+    <Pager :info="$page.posts.pageInfo" class="pagination_block center"/>
+
+    <TagCloud />
 
   </Layout>
 </template>

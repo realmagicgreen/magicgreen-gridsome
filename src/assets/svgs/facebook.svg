@@ -4,7 +4,7 @@
   height="32"
   viewBox="0 0 24 24"
   fill="none"
-  stroke="#88f452"
+  stroke="currentColor"
   stroke-width="1"
   stroke-linecap="round"
   stroke-linejoin="round"

@@ -7,7 +7,7 @@
 
         <IcoTag class="icotag"/>
 
-        <h1 class="tag_page_title h2">
+        <h1 class="tag_page_title">
           {{ $page.tag.title }}
         </h1>
       </div>
@@ -16,9 +16,9 @@
         <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
       </div>
 
-      <TagCloud />
-
     </div>
+
+    <TagCloud />
 
   </Layout>
 </template>
@@ -123,15 +123,15 @@ export default {
 
 .title_wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 10px;
+  margin-top: var(--space-1);
 
   .icotag {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
 }
 </style>

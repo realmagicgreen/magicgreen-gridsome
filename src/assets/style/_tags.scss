@@ -3,14 +3,25 @@
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	max-width: 80vw;
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 94vw;
+	font-size: 86%;
+	@media screen and (min-width: 640px) {
+		max-width: 86vw;
+		font-size: 94%;
+	}
+	@media screen and (min-width: 880px) {
+		max-width: 80vw;
+		font-size: 100%;
+	}
 }
 
 .tag_cloud {
 	max-width: none;
 	background-color: var(--tag_page_bg_color);
+	// padding-left: var(--space-1);
+	// padding-right: var(--space-1);
 
 	[data-theme="dark"] & {
 		background-color: transparent;
@@ -22,20 +33,13 @@
 	padding: 5px;
 	margin: 0 2px;
 	text-decoration: none;
-	color: var(--link_color);
+	color: var(--text_color);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
 
-.horizontal_spacing .tag_cloud {
-	padding-left: var(--space-1);
-	padding-right: var(--space-1);
-
-	a {
-		body[data-theme="light"] & {
-			color: var(--black);
-		}
+	body[data-theme="dark"] & {
+		color: var(--link_color);
 	}
 }
 
@@ -43,13 +47,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: var(--space-1);
+	padding: var(--space-1) var(--space-1) var(--space-2);
 }
 
 .tag_page_title {
-	position: relative;
-	padding-bottom: 6px;
-	padding-top: 20px;
+	padding-left: var(--space-05);
 	max-width: 80%;
 	font-weight: 400;
 	text-align: center;
