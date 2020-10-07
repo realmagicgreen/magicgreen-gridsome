@@ -1,6 +1,6 @@
 <template>
   <g-link
-  class="tag_link tag_title"
+  class="tag_link"
   :to="tag.path"
   role="menuitem"
   >
@@ -19,10 +19,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .tag_link {
-    padding: 5px;
-    margin: 0 2px;
-    text-decoration: none;
-  }
 
 </style>

@@ -14,18 +14,18 @@
 
 	[data-theme="dark"] & {
 		background-color: transparent;
-		//border-top: 1px solid var(--brand_color--dark);
-		//border-bottom: 1px solid var(--brand_color--dark);
 	}
 }
 
 .tag_link {
 	//a
-	//.tag_title
 	padding: 5px;
 	margin: 0 2px;
 	text-decoration: none;
 	color: var(--link_color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .horizontal_spacing .tag_cloud {
@@ -55,11 +55,119 @@
 	text-align: center;
 }
 
-.tag_count {
-	text-transform: uppercase;
-	font-size: 80%;
-	opacity: .65;
-	text-align: left;
-	width: 70%;
-	padding-left: 25px;
+[count="1"] {
+	display: none;
+}
+
+[count="2"] {
+	font-size: 90%;
+}
+
+[count="3"],
+[count="4"],
+[count="5"] {
+	.tag_title {
+		font-size: 100%;
+	}
+}
+
+[count="6"],
+[count="7"],
+[count="8"],
+[count="9"],
+[count="10"] {
+	.tag_title {
+		font-size: 115%;
+	}
+}
+
+[count="11"],
+[count="12"],
+[count="13"],
+[count="14"],
+[count="15"] {
+	.tag_title {
+		font-size: 130%;
+	}
+}
+
+[count="16"],
+[count="17"],
+[count="18"],
+[count="19"],
+[count="20"] {
+	.tag_title {
+		font-size: 145%;
+	}
+}
+
+[count="21"],
+[count="22"],
+[count="23"],
+[count="24"],
+[count="25"] {
+	.tag_title {
+		font-size: 160%;
+	}
+}
+
+[count="26"],
+[count="27"],
+[count="28"],
+[count="29"],
+[count="30"] {
+	.tag_title {
+		font-size: 175%;
+	}
+}
+
+[count="31"],
+[count="32"],
+[count="33"],
+[count="34"],
+[count="35"] {
+	.tag_title {
+		font-size: 190%;
+	}
+}
+
+[count="36"],
+[count="37"],
+[count="38"],
+[count="39"],
+[count="40"] {
+	.tag_title {
+		font-size: 205%;
+	}
+}
+
+[count="41"],
+[count="42"],
+[count="43"],
+[count="44"],
+[count="45"] {
+	.tag_title {
+		font-size: 220%;
+	}
+}
+
+[count="46"],
+[count="47"],
+[count="48"],
+[count="49"],
+[count="50"] {
+	.tag_title {
+		font-size: 235%;
+	}
+}
+
+[count="51"],
+[count="52"],
+[count="53"],
+[count="54"],
+[count="55"] {
+	.tag_title {
+		font-size: 250%;
+		color: white;
+	}
 }
