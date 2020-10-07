@@ -9,7 +9,7 @@ tags:
   - Bali
   - bamboo
   - design
-  - environmental-friendly
+  - environment-friendly
   - eco-entrepreneurs
   - eco-tourism
   - eco-friendly

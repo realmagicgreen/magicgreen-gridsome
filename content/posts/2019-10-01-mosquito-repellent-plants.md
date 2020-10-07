@@ -5,7 +5,7 @@ date: 2019-10-01
 published: true
 category: solutions
 tags:
-  - environmental-friendly
+  - environment-friendly
   - eco-friendly
   - plants
   - mosquitoes

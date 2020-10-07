@@ -7,7 +7,7 @@ category: solutions
 tags:
   - Bali
   - Indonesia
-  - environmental-friendly
+  - environment-friendly
   - eco-friendly
   - plastic
   - recycle
