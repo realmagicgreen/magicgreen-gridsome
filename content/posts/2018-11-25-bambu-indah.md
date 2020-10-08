@@ -14,6 +14,7 @@ tags:
   - eco-tourism
   - eco-friendly
   - Indonesia
+  - permaculture
   - sustainable-development
   - sustainable-construction
   - tropical

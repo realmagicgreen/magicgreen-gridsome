@@ -87,10 +87,8 @@
 
 		&.active {
 			border: 2px solid var(--brand_color);
-			padding-top: 10px;
-			padding-bottom: 10px;
-			font-weight: 600;
-			font-size: 115%;
+			border: 0 none;
+			font-size: 150%;
 		}
 
 		@media only screen and (min-width: 880px) {

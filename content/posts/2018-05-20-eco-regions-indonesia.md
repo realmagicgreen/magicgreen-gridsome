@@ -5,7 +5,7 @@ description: "The plan is to create green destination and attract the world's mo
 date: 2018-05-20
 published: true
 category: solutions
-tags: [biodiversity, eco-tourism, eco-entrepreneurs, Lombok, Indonesia, initiative, social-responsibility, Sumbawa, sustainable-development]
+tags: [biodiversity, eco-tourism, eco-entrepreneurs, Indonesia, initiative, Lombok, permaculture, social-responsibility, Sumbawa, sustainable-development]
 cover_image: ./images/solutions/eco-regions-indonesia/eco-regions-indonesia.jpg
 show_in_home_slideshow: # use 'true' to have it displayed in home slideshow
 home_slideshow_caption: # lowercase, max 12 digits, including spaces

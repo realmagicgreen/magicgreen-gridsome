@@ -5,7 +5,7 @@ description: "Biodiversity is the variety of life on Earth and include microorga
 date: 2018-06-13
 published: true
 category: know
-tags: [ASEAN, Indonesia, Malaysia, Myanmar, Philippines, Singapore, biodiversity, initiative, learning, tropical]
+tags: [ASEAN, Indonesia, Malaysia, Myanmar, Philippines, Singapore, biodiversity, initiative, learning, permaculture, tropical]
 cover_image: ./images/know/zooming-in-on-biodiversity/zooming-in-on-biodiversity.jpg
 show_in_home_slideshow: # use 'true' to have it displayed in home slideshow
 home_slideshow_caption: BIO DIVERSITY # lowercase, max 12 digits, including spaces

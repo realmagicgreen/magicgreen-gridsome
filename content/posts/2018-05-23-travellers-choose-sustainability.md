@@ -5,7 +5,7 @@ description: "Data show travelers preferences: 87% want to travel more sustainab
 date: 2018-05-23
 published: true
 category: know
-tags:  [eco-entrepreneurs, environment-friendly, eco-tourism, learning, social-responsibility, travel]
+tags:  [eco-entrepreneurs, environment-friendly, eco-tourism, learning, permaculture, social-responsibility, travel]
 cover_image: ./images/know/travellers-choose-sustainability/travellers-choose-sustainability.jpg
 show_in_home_slideshow: # use 'true' to have it displayed in home slideshow
 home_slideshow_caption: # lowercase, max 12 digits, including spaces

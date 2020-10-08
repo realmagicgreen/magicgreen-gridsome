@@ -5,7 +5,7 @@ description: "The Indonesian island of Bali is witnessing a new trend. Bamboo bu
 date: 2018-05-26
 published: true
 category: solutions
-tags: [architecture, bamboo, Bali, design, eco-friendly, eco-entrepreneur, recycle, hydro-power, Indonesia, learning, permacultur, sustainable-construction, wood]
+tags: [architecture, bamboo, Bali, design, eco-friendly, eco-entrepreneur, Indonesia, learning, sustainable-construction, wood]
 cover_image: ./images/solutions/bamboo-buildings-in-bali/bamboo-buildings-in-bali.jpg
 show_in_home_slideshow: true # use 'true' to have it displayed in home slideshow
 home_slideshow_caption: bamboo buildings # lowercase, max 12 digits, including spaces

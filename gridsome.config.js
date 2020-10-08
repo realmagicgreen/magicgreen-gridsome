@@ -19,20 +19,30 @@ module.exports = {
   },
 
 // testing
-settings: {
-// Place site-wide settings here and query them from the GraphQL layer's metadata {settings} key.
-  slogans: {
-    home: 'Sustainable and environment-friendly examples from South East Asia and beyond.',
-    services: 'Services to lower your environmental impact.',
-    products: 'Sometimes it\'s easy to stop buying polluting products and start supporting more sustainable ones.',
-    techniques: 'The way to sustainable living explained in details.',
-    solutions: 'Small or big, here are some solutions to environmental problems.',
-    know: 'Did you know that... Hum, actually I didn\'t. Thanks for letting me know!',
-    health: 'How to improve your life. Food, plants medicines, healthy living, superfoods.',
-    resources: 'To solve big problems we need resources. These organisations are doing the right thing and can help. Make a wise choice and support them.'
+  settings: {
+    // Place site-wide settings here + query 'em from GraphQL layer's metadata {settings} key.
+    slogans: {
+      home: 'Sustainable and environment-friendly examples from South East Asia and beyond.',
+      services: 'Services to lower your environmental impact.',
+      products: 'Sometimes it\'s easy to stop buying polluting products and start supporting more sustainable ones.',
+      techniques: 'The way to sustainable living explained in details.',
+      solutions: 'Small or big, here are some solutions to environmental problems.',
+      know: 'Did you know that... Hum, actually I didn\'t. Thanks for letting me know!',
+      health: 'How to improve your life. Food, plants medicines, healthy living, superfoods.',
+      resources: 'To solve big problems we need resources. These organisations are doing the right thing and can help. Make a wise choice and support them.'
+    },
+    nav: {
+      links: [
+        { path: '/services/', title: 'services' },
+        { path: '/products/', title: 'products' },
+        { path: '/techniques/', title: 'techniques' },
+        { path: '/solutions/', title: 'solutions' },
+        { path: '/know/', title: 'know' },
+        { path: '/health/', title: 'health' },
+        { path: '/resources/', title: 'resources' }
+      ]
     }
   },
-
 
   plugins: [
 
@@ -108,12 +118,6 @@ settings: {
       options: {
         typeName: 'AboutPage',
         path: 'content/about/*.md'
-      }
-    },
-    {
-      use: 'gridsome-source-static-meta',
-      options: {
-        path: 'content/site/*.json'
       }
     }
   ],

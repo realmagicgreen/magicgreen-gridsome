@@ -3,9 +3,7 @@
 		<div class="header horizontal_spacing">
 
 			<g-link class="logo_wrapper" title="link to starting page" to="/">
-				<div class="hide">
-					Magic Green
-				</div>
+				<div class="hide">Magic Green</div>
 				<Logo />
 			</g-link>
 
@@ -32,12 +30,12 @@
 				</div>
 
 				<div
-				role="contentinfo"
+				role="menu"
 				class="head_menu togglable_menu"
 				:class="{'menu-is-open': isMenuActive}"
 				@click="isMenuActive = !isMenuActive">
 
-					<div
+					<!-- <div
 					v-for="navItem in $static.metadata.headerNavigation"
 					:key="navItem.name"
 					class="menu_item_wrap"
@@ -51,7 +49,21 @@
 							{{ navItem.name}}
 						</g-link>
 
-					</div>
+					</div> -->
+
+					<div
+					v-if="settings.nav.links.length > 0"
+					v-for="link in settings.nav.links"
+					:key="link.path"
+					class="menu_item_wrap">
+            <g-link
+              :to="link.path"
+							:title="link.title"
+							role="menuitem"
+              class="menu_item">
+              {{ link.title }}
+            </g-link>
+          </div>
 
 				</div>
 
@@ -65,11 +77,14 @@
 <static-query>
 query {
   metadata {
-		headerNavigation {
-	    name
-	    link
-			slogan
-	  }
+		settings {
+      nav {
+        links {
+          path
+          title
+        }
+      }
+    }
   }
 }
 </static-query>
@@ -86,6 +101,14 @@ export default {
   components: {
     Logo,
     ToggleTheme
+  },
+	computed: {
+    meta() {
+      return this.$static.metadata;
+    },
+    settings() {
+      return this.meta.settings;
+    }
   },
 	data: () => ({
     isMenuActive: false
