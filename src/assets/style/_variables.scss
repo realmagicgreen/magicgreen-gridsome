@@ -12,6 +12,8 @@
 
 // Light default theme
 body {
+	--base_font_weight: 400;
+	--semibold_font_weight: 500;
 	--base_font_size--body: 1rem;
 	--base-line-height: 1.4446;
 	// all headings are derived from:
@@ -93,16 +95,4 @@ body[data-theme="dark"] {
 	--link_color: hsla(100, 88%, 64%, 1);
 	--link_color_hover: hsla(100, 88%, 28%, 1);
 	--tag_page_bg_color: hsla(100, 100%, 12%, 1);
-}
-
-// MAKE  THINGS SMALLER FOR MOBILE
-@media screen and (max-width: 640px) {
-	// html {
-	// 	--base_font_size: 18px;
-	// }
-	//
-	// body {
-	// 	--space: 1rem;
-	// 	//--header_height: 60px;
-	// }
 }

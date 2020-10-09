@@ -18,33 +18,33 @@
           </tr>
         </thead>
 
-        <tbody class="list">
-          {% for company in site.data.companies %}
-            <tr class="green_pages_table_row" id="{{ company.brand | slugify }}"  itemscope itemtype="http://schema.org/Organization">
+        <tbody
+        v-for="company in companies"
+        :key="company.brand"
+        class="list"
+        >
+
+            <tr class="green_pages_table_row" :id="company.brand"  itemscope itemtype="http://schema.org/Organization">
 
               <td class="brand" data-th="Brand" itemprop="brand">{{ company.brand }}</td>
 
               <td class="products" data-th="Products" itemscope itemtype="http://schema.org/Product">{{ company.products }}</td>
 
-              <td class="show_on_phones address" data-th="Address" itemscope itemtype="http://schema.org/PostalAddress">{% if company.address %}{{ company.address }}{% endif %}</td>
+              <td class="show_on_phones address" data-th="Address" itemscope itemtype="http://schema.org/PostalAddress">{{ company.address }}</td>
 
-              <td class="show_on_phones country" data-th="Country" itemprop="addressLocality">{% if company.country %}{{ company.country }}{% endif %}</td>
+              <td class="show_on_phones country" data-th="Country" itemprop="addressLocality">{{ company.country }}</td>
 
-              <td class="email" itemprop="email"><a class="sober_link "title="email" href="mailto:{{ company.email }}">{% if company.email %}{% include svg/use.html id="icn--email" class="email" %}{% endif %}</a></td>
-
-              <td class="telephone" itemprop="telephone">{% if company.telephone %}<a class="sober_link "title="tel:+{{ company.telephone }}" href="tel:+{{ company.telephone }}">{% include svg/use.html id="icn--localphone" class="localphone" %}</a>{% endif %}</td>
-
-              <td class="location" itemprop="location">{% if company.location %}<a class="sober_link "title="location" href="{{ company.location }}">{% include svg/use.html id="icn--location" class="location" %}</a>{% endif %}</td>
-
-              {% comment %} old way to display URL
-              {{ company.website | remove:'http://' | remove:'https://' | remove:'www.' | remove:'/' }}
-              {% endcomment %}
-
-              <td class="website"><a title="website" class="sober_link " href="{{ company.website}}">{% if company.website %}{% include svg/use.html id="icn--link" class="link" %}{% endif %}</a></td>
+              <!-- <td class="email" itemprop="email"><a class="sober_link "title="email" href="mailto:{{ company.email }}">{% if company.email %}{% include svg/use.html id="icn--email" class="email" %}{% endif %}</a></td> -->
+<!--
+              <td class="telephone" itemprop="telephone">{% if company.telephone %}<a class="sober_link "title="tel:+{{ company.telephone }}" href="tel:+{{ company.telephone }}">{% include svg/use.html id="icn--localphone" class="localphone" %}</a>{% endif %}</td> -->
+<!--
+              <td class="location" itemprop="location">{% if company.location %}<a class="sober_link "title="location" href="{{ company.location }}">{% include svg/use.html id="icn--location" class="location" %}</a>{% endif %}</td> -->
+              
+              <!--
+              <td class="website"><a title="website" class="sober_link " href="{{ company.website}}">{% if company.website %}{% include svg/use.html id="icn--link" class="link" %}{% endif %}</a></td> -->
 
 
             </tr>
-          {% endfor %}
         </tbody>
 
       </table>
@@ -59,13 +59,21 @@
 </page-query>
 
 <script>
+import companies from '~/assets/data/companies.yml'
+
 export default {
+  data() {
+    return {
+      companies
+    }
+  },
   metaInfo () {
     return {
       title: this.$page.entry.title
     }
   }
 }
+
 </script>
 
 <style lang="scss" scoped>

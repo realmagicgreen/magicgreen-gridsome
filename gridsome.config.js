@@ -108,8 +108,8 @@ module.exports = {
       // Create pages from markdown files
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'SpecialPage',
-        path: 'content/special_pages/*.md'
+        typeName: 'Resources',
+        path: 'content/resources/resources.md'
       }
     },
     {
@@ -127,9 +127,9 @@ module.exports = {
       path: '/:category/:title',
       component: '~/templates/Post.vue'
     }],
-    SpecialPage: [{
+    Resources: [{
       path: '/:title',
-      component: '~/templates/SpecialPage.vue'
+      component: '~/templates/Resources.vue'
     }],
     AboutPage: [{
       path: '/:title',

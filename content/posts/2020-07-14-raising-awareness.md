@@ -125,7 +125,7 @@ Designed to create awareness, foster partnerships and build broad public support
 - [Costa Rica Thermal Dome](https://mission-blue.org/events/costa-rica-thermal-dome/)
 04/02/2017.
 
-- [Revillagigedo Archipelago, Mexico](Revillagigedo Archipelago, Mexico)
+- [Revillagigedo Archipelago, Mexico](https://mission-blue.org/events/revillagigedo-archipelago-a-k-a-socorro/)
 01/08/2017.
 
 - [Gulf of California, Mexico](https://mission-blue.org/events/gulf-of-california-mexico/)
@@ -214,9 +214,9 @@ _Now, as never before, we have the chance to save what’s left of the living sy
 
 [Mission Blue - Hope Spots](https://mission-blue.org/hope-spots/)
 
-[Mission Blue Instagram](https://instagram.com/mission_blue/)
+[Mission Blue - Instagram](https://instagram.com/mission_blue/)
 
-[Mission Blue Twitter](https://twitter.com/missionblue/)
+[Mission Blue - Twitter](https://twitter.com/missionblue/)
 
 [Nusa Penida Marine Protected Area](https://storymaps.arcgis.com/stories/45f1af5ffaaa4eb29c6b72f0fb498ded)
 

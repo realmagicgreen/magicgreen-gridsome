@@ -95,6 +95,10 @@
 			Powered by <a class="inline" title="This website was designed and coded by the fabulous Junglestar" id="magicgreen-to-junglestar" rel="noopener" href="https://junglestar.org">Junglestar</a>
 		</div>
 
+		<div class="horizontal_spacing scroll_to_top center">
+			<a href="#top" title="Jump to top of page">^</a>
+		</div>
+
 	</footer>
 </template>
 
@@ -269,5 +273,20 @@ export default {
 		text-align: center;
 	  padding-top: var(--space-2);
 	  margin-top: var(--space-2);
+	}
+
+	.scroll_to_top {
+		margin-top: var(--space-2);
+		a {
+			width: 50px;
+			height: 50px;
+			font-size: 200%;
+			font-weight: 300;
+			border-radius: 3px;
+			border: 2px solid var(--brand_color);
+			&:hover {
+				background-color: var(--tag_page_bg_color);
+			}
+		}
 	}
 </style>

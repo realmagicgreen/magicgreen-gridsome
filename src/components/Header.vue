@@ -35,22 +35,6 @@
 				:class="{'menu-is-open': isMenuActive}"
 				@click="isMenuActive = !isMenuActive">
 
-					<!-- <div
-					v-for="navItem in $static.metadata.headerNavigation"
-					:key="navItem.name"
-					class="menu_item_wrap"
-					role="menu">
-						<g-link
-						class="menu_item"
-						role="menuitem"
-						:to="navItem.link"
-						:title="navItem.name">
-
-							{{ navItem.name}}
-						</g-link>
-
-					</div> -->
-
 					<div
 					v-if="settings.nav.links.length > 0"
 					v-for="link in settings.nav.links"
@@ -68,7 +52,6 @@
 				</div>
 
 			</div>
-
 
 		</div>
 	</header>

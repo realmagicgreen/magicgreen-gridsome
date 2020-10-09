@@ -1,0 +1,54 @@
+.responsive_table_block {
+  tbody {
+    margin-top: var(--space-1);
+    @media screen and (min-width: 640px) {
+      margin-top: 0;
+    }
+  }
+
+  thead td {
+    display: none;
+    margin-top: var(--space-1);
+    @media screen and (min-width: 640px) {
+      display: table-cell;
+    }
+  }
+
+  td {
+    display: block;
+    @media screen and (min-width: 640px) {
+      display: table-cell;
+    }
+
+    &:before {
+      content: attr(data-th) "";
+      display: inline-block;
+      font-weight: var(--base_font_weight);
+      font-size: 65%; // this refers to the already responsive size of parent!
+      padding-top: var(--space-05);
+      width: 18%;
+      @media screen and (min-width: 640px) {
+        display: none;
+      }
+    }
+
+    &:first-child {
+      margin-top: 5px;
+      padding-top: 10px;
+      @media screen and (min-width: 640px) {
+        margin-top: 0;
+        padding-top: 0;
+      }
+    }
+
+    &.website_link {
+      padding-bottom: 10px;
+      text-align: left;
+      @media screen and (min-width: 640px) {
+        padding-right: 0;
+        padding-bottom: 0;
+        text-align: right;
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@ html {
 body {
   font-size: var(--base_font_size--body);
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  font-weight: 400;
+  font-weight: var(--base_font_weight);
   line-height: var(--base-line-height);
 }
 
