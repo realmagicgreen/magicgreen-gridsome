@@ -124,6 +124,11 @@
   //tr
 }
 
+.green_pages_table_row:nth-child(even) {
+  //tr
+  background-color: transparent;
+}
+
 .green_pages_table_row:nth-child(odd) {
   //tr
   background-color: hsla(100, 88%, 64%, .5);

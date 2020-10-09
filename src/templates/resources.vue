@@ -18,13 +18,14 @@
           </tr>
         </thead>
 
-        <tbody
-        v-for="company in companies"
-        :key="company.brand"
-        class="list"
-        >
+        <tbody class="list">
 
-            <tr class="green_pages_table_row" :id="company.brand"  itemscope itemtype="http://schema.org/Organization">
+            <tr
+              v-for="company in companies"
+              :key="company.brand"
+              :id="company.brand"
+              class="green_pages_table_row"
+              itemscope itemtype="http://schema.org/Organization">
 
               <td class="brand" data-th="Brand" itemprop="brand">{{ company.brand }}</td>
 
@@ -34,14 +35,56 @@
 
               <td class="show_on_phones country" data-th="Country" itemprop="addressLocality">{{ company.country }}</td>
 
-              <!-- <td class="email" itemprop="email"><a class="sober_link "title="email" href="mailto:{{ company.email }}">{% if company.email %}{% include svg/use.html id="icn--email" class="email" %}{% endif %}</a></td> -->
-<!--
-              <td class="telephone" itemprop="telephone">{% if company.telephone %}<a class="sober_link "title="tel:+{{ company.telephone }}" href="tel:+{{ company.telephone }}">{% include svg/use.html id="icn--localphone" class="localphone" %}</a>{% endif %}</td> -->
-<!--
-              <td class="location" itemprop="location">{% if company.location %}<a class="sober_link "title="location" href="{{ company.location }}">{% include svg/use.html id="icn--location" class="location" %}</a>{% endif %}</td> -->
-              
-              <!--
-              <td class="website"><a title="website" class="sober_link " href="{{ company.website}}">{% if company.website %}{% include svg/use.html id="icn--link" class="link" %}{% endif %}</a></td> -->
+              <td
+              class="email"
+              itemprop="email">
+                <a
+                  v-if="company.email"
+                  class="sober_link"
+                  title="email"
+                  target="_blank"
+                  :href="`mailto:${company.email}`">
+                  <IcoMail />
+                </a>
+              </td>
+
+              <td
+              class="telephone"
+              itemprop="telephone">
+                <a
+                  v-if="company.telephone"
+                  class="sober_link"
+                  target="_blank"
+                  :title="`tel:+${company.telephone}`"
+                  :href="`tel:+${company.telephone}`">
+                  <IcoPhone />
+                </a>
+              </td>
+
+              <td
+              class="location"
+              itemprop="location">
+                <a
+                  v-if="company.location"
+                  class="sober_link"
+                  title="location"
+                  target="_blank"
+                  :href="`${company.location}`">
+                  <IcoLocation />
+                </a>
+              </td>
+
+
+              <td class="website">
+                <a
+                  v-if="company.website"
+                  title="website"
+                  class="sober_link"
+                  target="_blank"
+                  :href="`${company.website}`">
+                  <IcoLink />
+                </a>
+              </td>
 
 
             </tr>
@@ -60,6 +103,10 @@
 
 <script>
 import companies from '~/assets/data/companies.yml'
+import IcoMail from '~/assets/svgs/email.svg'
+import IcoPhone from '~/assets/svgs/localphone.svg'
+import IcoLink from '~/assets/svgs/link.svg'
+import IcoLocation from '~/assets/svgs/location.svg'
 
 export default {
   data() {
@@ -71,6 +118,12 @@ export default {
     return {
       title: this.$page.entry.title
     }
+  },
+  components: {
+    IcoMail,
+    IcoPhone,
+    IcoLink,
+    IcoLocation
   }
 }
 
