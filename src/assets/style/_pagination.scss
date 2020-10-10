@@ -9,7 +9,7 @@
     margin: 4px 3px;
     padding: 6px 4px;
     font-size: 105%;
-    border-radius: 3px;
+    border-radius: var(--radius);
 
     [data-theme="light"] & {
       color: var(--black);

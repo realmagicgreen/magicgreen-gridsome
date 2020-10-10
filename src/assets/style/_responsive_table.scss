@@ -15,7 +15,9 @@
   }
 
   td {
-    display: block;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
     @media screen and (min-width: 640px) {
       display: table-cell;
     }
@@ -24,8 +26,8 @@
       content: attr(data-th) "";
       display: inline-block;
       font-weight: var(--base_font_weight);
-      font-size: 65%; // this refers to the already responsive size of parent!
       padding-top: var(--space-05);
+      padding-right: var(--space-1);
       width: 18%;
       @media screen and (min-width: 640px) {
         display: none;

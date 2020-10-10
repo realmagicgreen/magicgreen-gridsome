@@ -1,7 +1,9 @@
 <template>
   <Layout :show-logo="true">
 
-    <div class="horizontal_spacing">
+    <div id="brands" class="responsive_table_block">
+
+      <div class="horizontal_spacing">
 
       <table class="green_pages_table responsive_table">
 
@@ -94,11 +96,36 @@
 
     </div>
 
+    </div>
   </Layout>
 </template>
 
 <page-query>
-
+query {
+  links: allPost(filter: { published: { eq: true }}) {
+    edges {
+      node {
+        id
+        title
+        ad
+        path
+      }
+    }
+  }
+  posts: allPost {
+		edges {
+			node {
+				id
+				title
+				...on Post {
+				id
+				title
+				path
+				}
+			}
+		}
+	}
+}
 </page-query>
 
 <script>
@@ -109,26 +136,29 @@ import IcoLink from '~/assets/svgs/link.svg'
 import IcoLocation from '~/assets/svgs/location.svg'
 
 export default {
-  data() {
-    return {
-      companies
-    }
-  },
-  metaInfo () {
-    return {
-      title: this.$page.entry.title
-    }
-  },
   components: {
     IcoMail,
     IcoPhone,
     IcoLink,
     IcoLocation
+  },
+  data() {
+    return {
+      companies
+    }
   }
+  // ,
+  // metaInfo () {
+  //   return {
+  //     title: this.$page.entry.title
+  //   }
+  // }
 }
 
 </script>
 
 <style lang="scss" scoped>
-
+  svg {
+    stroke: black;
+  }
 </style>

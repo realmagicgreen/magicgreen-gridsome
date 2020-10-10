@@ -6,6 +6,8 @@
 	align-items: center;
 	min-height: var(--header_height);
 	box-shadow: var(--bottom_shadow);
+	padding-left: 10px;
+	padding-right: 10px;
 
 	@media screen and (max-width: 880px) {
 		&.menu-is-open {
@@ -19,7 +21,6 @@
 		display: flex;
 		align-items: center;
 		flex-grow: 1;
-		margin-right: var(--space-1);
 		position: relative;
 		z-index: 12;
 	}

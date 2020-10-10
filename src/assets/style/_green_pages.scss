@@ -10,22 +10,27 @@
 
   tbody td,
   thead td {
-    //font-size: 86%;
-    font-size: clamp(14px,4.53125vw, 24px); //responsive-font (4.53125vw, 14px, 24px, 14px);
+    font-size: clamp(14px,4.53125vw, 24px);
     vertical-align: middle;
     margin: 0;
     padding: 0;
     border: 0;
     padding-left: 10px;
+
+    &:before {
+      font-size: clamp(13px, 2vw, 24px);
+    }
+
     @media screen and (min-width: 640px) {
-      font-size: clamp(13px, 2vw, 24px); //responsive-font(2vw, 13px, 24px, 15px);
+      font-size: clamp(13px, 2vw, 24px);
     }
 
     &.address {
-      font-size: clamp(13px, 2vw, 24px); //responsive-font(2vw, 13px, 24px, 15px);
+      font-size: clamp(13px, 2vw, 24px);
 
       &:before {
-        font-size: clamp(13px, 2vw, 24px); //responsive-font(2vw, 13px, 24px, 15px);
+        // hack to fix the dbl line addrs, which fails when just 1 line... gosh!
+        // padding-right: calc(1rem + 4px);
       }
     }
 
@@ -50,6 +55,11 @@
         -ms-flex-pack: center;
         justify-content: center;
         margin-bottom: 10px;
+
+        &:hover {
+          text-decoration: none;
+          border-bottom: 0 none;
+        }
       }
       @media screen and (min-width: 640px) {
         display: table-cell;

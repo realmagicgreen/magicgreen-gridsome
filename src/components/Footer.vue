@@ -282,10 +282,13 @@ export default {
 			height: 50px;
 			font-size: 200%;
 			font-weight: 300;
-			border-radius: 3px;
+			border-radius: var(--radius);
+			color: var(--brand_color);
 			border: 2px solid var(--brand_color);
 			&:hover {
 				background-color: var(--tag_page_bg_color);
+				color: var(--black);
+				border: 2px solid var(--black);
 			}
 		}
 	}

@@ -33,7 +33,7 @@
 }
 
 .hide {
-	display: none;
+	display: none!important;
 }
 
 .uppercase {
@@ -82,5 +82,4 @@
 	}
 }
 
-.external_link {
-	}
+.external_link {}
