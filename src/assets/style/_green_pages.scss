@@ -25,6 +25,14 @@
       font-size: clamp(13px, 2vw, 24px);
     }
 
+    &.brand {
+      text-transform: uppercase;
+
+      &:before {
+        text-transform: none;
+      }
+    }
+
     &.address {
       font-size: clamp(13px, 2vw, 24px);
 
@@ -141,7 +149,7 @@
 
 .green_pages_table_row:nth-child(odd) {
   //tr
-  background-color: hsla(100, 88%, 64%, .5);
+  background-color: hsla(100, 88%, 64%, .25);
 }
 
 .functionalities_block {

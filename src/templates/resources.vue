@@ -1,6 +1,12 @@
 <template>
   <Layout :show-logo="true">
 
+    <h1 class="show_on_phones center">
+      Resources
+    </h1>
+
+    <!-- <Slogans /> -->
+
     <div id="brands" class="responsive_table_block">
 
       <div class="horizontal_spacing">
@@ -159,6 +165,6 @@ export default {
 
 <style lang="scss" scoped>
   svg {
-    stroke: black;
+    stroke: var(--title_color);
   }
 </style>
