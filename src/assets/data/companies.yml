@@ -96,27 +96,6 @@
   telephone: 62 878 60131485
   address:   Jl Cargo Sari II no.6, Br Uma Sari, Ubung Kaja,Denpasar, Bali
   location:
-  country:   Indonesia
-
-- brand:     Bamboo Central
-  products:  Bamboo
-  company:   Environmental Bamboo Foundation
-  website:   http://bamboocentral.org
-  email:     bamboolinda@gmail.com
-  telephone: 62 361 974028
-  address:   P.O. box 196, Ubud, Bali 80571
-  location:
-  country:   Indonesia
-
-- brand:     Bamboo straws
-  products:  Bamboo Straws
-  company:
-  website:   https://bamboo-straws.com
-  email:     strawsbamboo@gmail.com
-  telephone:
-  address:
-  location:
-  country:   Indonesia
 
 - brand:     Bambu
   products:  Sustainable Kitchen Ware
@@ -181,7 +160,7 @@
 - brand:     Byo Living
   products:  Weaving Spoecialist, Furniture
   company:   Byo Living
-  website:   http://bioliving.com
+  website:   https://byoliving.com/
   email:     lim@byoliving.com
   telephone:
   address:   Pluit karang utara 79a Jakarta
@@ -197,16 +176,6 @@
   address:   139 Harristown Rd Suite 101, Glen Rock, NJ 07452
   location:
   country:   U.S.A.
-
-- brand:     ChokChok Chocolate
-  products:  Organic Chocolate
-  company:
-  website:   http://chokchokchocolate.com
-  email:     info@chokchokchocolate.com
-  telephone: 62 819 16337753
-  address:
-  location:
-  country:   Indonesia
 
 - brand:     Conservation International
   products:  Conservation, Education
@@ -241,10 +210,10 @@
 - brand:     Down To Earth
   products:  Organic Food Distibution
   company:   PT Down To Earth Bali
-  website:   http://www.downtoearthbali.com
+  website:   https://www.dtebali.com/
   email:     info@downtoearthbali.com
   telephone: 62 361 736645
-  address:   Jl. Lesmana/Oberoi No. 99, Seminyak, Bali 80361
+  address:   Jl. Kayu Aya No.99, Kerobokan, Bali 80361
   location:
   country:   Indonesia
 
@@ -334,7 +303,7 @@
   website:   https://www.econyl.com
   email:     info@econyl.com
   telephone:
-  address:   via linfano 9, 38062 Arco Tn, Italy
+  address:   via linfano 9, 38062 Arco, Trento
   location:
   country:   Italy
 
@@ -349,13 +318,13 @@
   country:   United Kingdom
 
 - brand:     Emas Hitam
-  products:  Ecological Solutions
+  products:  Permaculture Garden
   company:
-  website:   http://emashitam.org
+  website:   https://emas-hitam-indonesia-site.business.site/
   email:     emas.hitam.indonesia@gmail.com
-  telephone:
-  address:   C/O Outpost, Jl. Raya Nyuh Kuning, Ubud, Bali 80571
-  location:
+  telephone: 62 813 3968 3345
+  address:   Jl Subak Uma Petulu Lebah, Ubud, Bali 80571
+  location:  https://goo.gl/maps/GDJpVcc6emGLJhzM8
   country:   Indonesia
 
 - brand:     ET scooter
@@ -508,21 +477,11 @@
   location:  https://goo.gl/maps/4C5MJzot4TC2
   country:   Indonesia
 
-- brand:     Lampbond Indonesia
-  products:  LED Bulbs
-  company:
-  website:   https://www.lampbond1ndonesia.com
-  email:
-  telephone:
-  address:
-  location:
-  country:   Indonesia
-
 - brand:     Leaf Republic
   products:  Leaf Plates, Bowls, Biodegradable
   company:   Leaf Republic GmbH
-  website:   https://www.leaf-republic.com
-  email:     sales@leaf-republic.com
+  website:   https://www.linkedin.com/company/leaf-republic
+  email:
   telephone: 49 89 18912857
   address:   Mehlbeerenstr. 6, 82024 Taufkirchen, Munich
   location:  https://goo.gl/maps/5Dmc4zsWiJ52
@@ -631,7 +590,7 @@
 - brand:     Oxium
   products:  Biodegradable Plastic
   company:   Greenhope - PT. Harapan Interaksi Swadaya
-  website:   http://www.oxium.net
+  website:   https://www.greenhope.co/oxium
   email:     info@greenhope.co
   telephone: 62 2150178989
   address:   Grand ITC Permata Hijau, Blok Saphire 22, Jl. A. Raya Permata Hijau, Kebayoran Lama, Jakarta 12210
@@ -727,16 +686,6 @@
   address:
   location:
   country:   Canada
-
-- brand:     Sea Sanctuaries
-  products:  Ocean Protection, Information
-  company:
-  website:   http://www.seasanctuaries.org
-  email:     expeditions@seasanctuaries.org
-  telephone:
-  address:
-  location:
-  country:   United Kingdom
 
 - brand:     SEE
   products:  Environmental Justice
@@ -878,16 +827,6 @@
   location:
   country:   Indonesia
 
-- brand:     Vince Tierny Surfboards
-  products:  Balsa Wooden Surfboards
-  company:
-  website:   http://vincetierny.com
-  email:     info@vincetierny.com
-  telephone: 62 858 14327942
-  address:   Jl. Pantai Berawa No.5A, Canggu, Bali
-  location:  https://goo.gl/maps/6kgsznMZLdK2
-  country:   Indonesia
-
 - brand:     Welcome Alternative Bags
   products:  Sustainable Bags
   company:
@@ -931,8 +870,8 @@
 - brand:     World Watch Institute
   products:  Information, Fact analysis
   company:
-  website:   http://www.worldwatch.org
-  email:     worldwatch@worldwatch.org
+  website:   https://worldwatch.news/
+  email:     memberservices@wng.org
   telephone: 1 202 7458092
   address:   1400 16th St. NW, Ste. 430, Washington DC 20036
   location:
