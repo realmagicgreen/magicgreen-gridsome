@@ -1,9 +1,11 @@
 <template>
   <Layout :show-logo="true">
     <div class="horizontal_spacing" :class="[$page.category.title]">
+
       <h1 class="show_on_phones center">
         {{ $page.category.title }}
       </h1>
+
       <Slogans />
 
       <div class="posts post_grid">

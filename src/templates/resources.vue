@@ -5,26 +5,26 @@
       Resources
     </h1>
 
-    <!-- <Slogans /> -->
+    <Slogans />
 
     <div id="brands" class="responsive_table_block">
-
-      <div class="horizontal_spacing">
 
       <table class="green_pages_table responsive_table">
 
         <thead>
           <tr class="green_pages_table_header_row">
-            <td class="table_header_brand">Brand</td>
-            <td class="table_header_product">Products</td>
-            <td class="hide">Address</td>
-            <td class="hide">Country</td>
-            <td>Email</td>
-            <td>Tel</td>
-            <td>WA</td>
-            <td>Map</td>
-            <td>IG</td>
-            <td>Website</td>
+            <th class="table_header_brand maybe_vert"><span>Brand</span></th>
+            <th class="table_header_product maybe_vert"><span>Products</span></th>
+            <th class="hide"><span>Address</span></th>
+            <th class="hide"><span>Counthy</span></th>
+            <th class="table_header_mail maybe_vert"><span>Email</span></th>
+            <th class="table_header_tel maybe_vert"><span>telephone</span></th>
+            <th class="table_header_wa maybe_vert"><span>WhatsApp</span></th>
+            <th class="table_header_map maybe_vert"><span>Map</span></th>
+            <th class="table_header_twitter maybe_vert"><span>Twitter</span></th>
+            <th class="table_header_youtube maybe_vert"><span>YouTube</span></th>
+            <th class="table_header_ig maybe_vert"><span>Instagram</span></th>
+            <th class="table_header_web maybe_vert"><span>Website</span></th>
           </tr>
         </thead>
 
@@ -158,8 +158,6 @@
       </table>
 
     </div>
-
-    </div>
   </Layout>
 </template>
 
@@ -192,6 +190,7 @@ query {
 </page-query>
 
 <script>
+import Slogans from '~/components/Slogans.vue'
 import companies from '~/assets/data/companies.yml'
 import IcoMail from '~/assets/svgs/email.svg'
 import IcoPhone from '~/assets/svgs/localphone.svg'
@@ -206,6 +205,7 @@ import IcoWhatsapp from '~/assets/svgs/whatsapp.svg'
 
 export default {
   components: {
+    Slogans,
     IcoMail,
     IcoPhone,
     IcoLink,
