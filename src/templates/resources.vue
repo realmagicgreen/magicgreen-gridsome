@@ -21,6 +21,7 @@
             <td class="hide">Country</td>
             <td>Email</td>
             <td>Tel</td>
+            <td>WA</td>
             <td>Map</td>
             <td>IG</td>
             <td>Website</td>
@@ -69,6 +70,22 @@
                   <IcoPhone />
                 </a>
               </td>
+
+              <td
+              class="whatsapp"
+              itemprop="whatsapp">
+                <a
+                  v-if="company.whatsapp"
+                  class="sober_link"
+                  target="_blank"
+                  :title="`tel:+${company.whatsapp}`"
+                  :href="`https:\/\/wa\.me/${company.whatsapp}`">
+                  <IcoWhatsapp />
+                </a>
+              </td>
+
+
+
 
               <td
               class="location"
@@ -183,6 +200,7 @@ import IcoLocation from '~/assets/svgs/location.svg'
 import IcoInstagram from '~/assets/svgs/instagram.svg'
 import IcoTwitter from '~/assets/svgs/twitter.svg'
 import IcoYoutube from '~/assets/svgs/youtube.svg'
+import IcoWhatsapp from '~/assets/svgs/whatsapp.svg'
 
 
 
@@ -194,7 +212,8 @@ export default {
     IcoLocation,
     IcoInstagram,
     IcoTwitter,
-    IcoYoutube
+    IcoYoutube,
+    IcoWhatsapp
   },
   data() {
     return {
