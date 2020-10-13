@@ -30,6 +30,13 @@
 	@media screen and (min-width: 640px) {
 		display: none!important;
 	}
+
+	&.1024 {
+		display: contents;
+		@media screen and (min-width: 1024px) {
+			display: none!important;
+		}
+	}
 }
 
 .hide {

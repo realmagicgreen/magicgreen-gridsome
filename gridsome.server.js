@@ -14,14 +14,3 @@ module.exports = function (api) {
     // Use the Data store API here: https://gridsome.org/docs/data-store-api/
   })
 }
-
-
-module.exports = function (api) {
-  api.createManagedPages(({ createPage }) => {
-    createPage({
-      path: '/resources',
-      component: './src/templates/Resources.vue'
-    })
-  })
-}
-#

@@ -1,11 +1,9 @@
 <template>
   <Layout :show-logo="true">
 
-    <h1 class="show_on_phones center">
+    <h1 class="show_on_phones 1024 center">
       Resources
     </h1>
-
-    <Slogans />
 
     <div id="brands" class="responsive_table_block">
 
@@ -41,9 +39,9 @@
 
               <td class="products" data-th="Products" itemscope itemtype="http://schema.org/Product">{{ company.products }}</td>
 
-              <td class="show_on_phones address" data-th="Address" itemscope itemtype="http://schema.org/PostalAddress">{{ company.address }}</td>
+              <td class="show_on_phones 1024 address" data-th="Address" itemscope itemtype="http://schema.org/PostalAddress">{{ company.address }}</td>
 
-              <td class="show_on_phones country" data-th="Country" itemprop="addressLocality">{{ company.country }}</td>
+              <td class="show_on_phones 1024 country" data-th="Country" itemprop="addressLocality">{{ company.country }}</td>
 
               <td
               class="email"
@@ -158,6 +156,9 @@
       </table>
 
     </div>
+
+    <Slogans />
+
   </Layout>
 </template>
 
@@ -186,6 +187,13 @@ query {
 			}
 		}
 	}
+  metadata {
+    settings {
+      slogans {
+        home
+      }
+    }
+  }
 }
 </page-query>
 

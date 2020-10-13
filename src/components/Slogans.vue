@@ -1,12 +1,26 @@
 <template>
   <div class="horizontal_spacing">
-    <h2 class="center slogan slogan_services hide" v-html="$static.metadata.settings.slogans.services" />
-    <h2 class="center slogan slogan_products hide" v-html="$static.metadata.settings.slogans.products" />
-    <h2 class="center slogan slogan_techniques hide" v-html="$static.metadata.settings.slogans.techniques" />
-    <h2 class="center slogan slogan_solutions hide" v-html="$static.metadata.settings.slogans.solutions" />
-    <h2 class="center slogan slogan_know hide" v-html="$static.metadata.settings.slogans.know" />
-    <h2 class="center slogan slogan_health hide" v-html="$static.metadata.settings.slogans.health" />
-    <h2 class="center slogan slogan_resources hide" v-html="$static.metadata.settings.slogans.resources" />
+    <h2
+    class="center slogan slogan_services hide"
+    v-html="$static.metadata.settings.slogans.services" />
+    <h2
+    class="center slogan slogan_products hide"
+    v-html="$static.metadata.settings.slogans.products" />
+    <h2
+    class="center slogan slogan_techniques hide" 
+    v-html="$static.metadata.settings.slogans.techniques" />
+    <h2
+    class="center slogan slogan_solutions hide"
+    v-html="$static.metadata.settings.slogans.solutions" />
+    <h2
+    class="center slogan slogan_know hide"
+    v-html="$static.metadata.settings.slogans.know" />
+    <h2
+    class="center slogan slogan_health hide"
+    v-html="$static.metadata.settings.slogans.health" />
+    <h2
+    class="center slogan slogan_resources hide"
+    v-html="$static.metadata.settings.slogans.resources" />
   </div>
 </template>
 
