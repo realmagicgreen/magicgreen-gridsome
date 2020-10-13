@@ -7,7 +7,7 @@
     class="center slogan slogan_products hide"
     v-html="$static.metadata.settings.slogans.products" />
     <h2
-    class="center slogan slogan_techniques hide" 
+    class="center slogan slogan_techniques hide"
     v-html="$static.metadata.settings.slogans.techniques" />
     <h2
     class="center slogan slogan_solutions hide"
@@ -45,6 +45,22 @@ query {
 
 
 
+<script>
+// export default {
+// 	computed: {
+//     settings() {
+//       return this.meta.settings;
+//     }
+//   },
+// 	data: () => ({
+//     isMenuActive: false
+//   })
+// }
+</script>
+
+
+
+
 <style lang="scss" scoped>
   [data-theme="dark"] .slogan {
       color: var(--text_color);
@@ -56,5 +72,9 @@ query {
   .know .slogan_know.hide { display: block!important; }
   .health .slogan_health.hide { display: block!important; }
   .resources .slogan_resources.hide { display: block!important; }
+
+  .resources h2.slogan.slogan_resources.hide {
+    display: block!important;
+  }
 
 </style>

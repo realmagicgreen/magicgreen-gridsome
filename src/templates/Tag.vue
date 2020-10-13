@@ -123,11 +123,17 @@ export default {
 
 .title_wrapper {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
   margin-top: var(--space-1);
+  flex-direction: column;
+  height: 35vh;
+
+  @media screen and (min-width: 640px) {
+		flex-direction: row;
+    height: initial;
+	}
 
   .icotag {
     width: 60px;
