@@ -4,6 +4,7 @@
 
       <div class="tag_block_icon">
         <IcoTag />
+        <div class="">BROWSE ALL TAGS</div>
       </div>
 
       <div class="links_list" role="menu">

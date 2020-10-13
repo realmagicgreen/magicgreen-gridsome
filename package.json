@@ -1,6 +1,6 @@
 {
   "name": "magicgreensome",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "private": true,
   "scripts": {
     "build": "gridsome build",
@@ -21,8 +21,6 @@
     "medium-zoom": "^1.0.6"
   },
   "devDependencies": {
-    "async": "^3.2.0",
-    "google-spreadsheet": "^3.0.13",
     "gridsome-plugin-svg": "0.0.14",
     "node-sass": "^4.14.1",
     "sass-loader": "^9.0.2",

@@ -45,6 +45,7 @@
 
 .tag_block_icon {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	padding: var(--space-1) var(--space-1) var(--space-2);

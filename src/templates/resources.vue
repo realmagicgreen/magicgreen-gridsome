@@ -22,6 +22,7 @@
             <td>Email</td>
             <td>Tel</td>
             <td>Map</td>
+            <td>IG</td>
             <td>Website</td>
           </tr>
         </thead>
@@ -83,6 +84,45 @@
               </td>
 
 
+              <td
+              class="twitter"
+              itemprop="twitter">
+                <a
+                  v-if="company.twitter"
+                  title="twitter"
+                  class="sober_link"
+                  target="_blank"
+                  :href="`https:\/\/twitter\.com\/${company.twitter}`">
+                  <IcoTwitter />
+                </a>
+              </td>
+
+              <td
+              class="youtube"
+              itemprop="youtube">
+                <a
+                  v-if="company.youtube"
+                  title="twitter"
+                  class="sober_link"
+                  target="_blank"
+                  :href="`https:\/\/youtube\.com\/${company.youtube}`">
+                  <IcoYoutube />
+                </a>
+              </td>
+
+              <td
+              class="instagram"
+              itemprop="instagram">
+                <a
+                  v-if="company.instagram"
+                  title="instagram"
+                  class="sober_link"
+                  target="_blank"
+                  :href="`https:\/\/instagram\.com\/${company.instagram}`">
+                  <IcoInstagram />
+                </a>
+              </td>
+
               <td class="website">
                 <a
                   v-if="company.website"
@@ -140,13 +180,21 @@ import IcoMail from '~/assets/svgs/email.svg'
 import IcoPhone from '~/assets/svgs/localphone.svg'
 import IcoLink from '~/assets/svgs/link.svg'
 import IcoLocation from '~/assets/svgs/location.svg'
+import IcoInstagram from '~/assets/svgs/instagram.svg'
+import IcoTwitter from '~/assets/svgs/twitter.svg'
+import IcoYoutube from '~/assets/svgs/youtube.svg'
+
+
 
 export default {
   components: {
     IcoMail,
     IcoPhone,
     IcoLink,
-    IcoLocation
+    IcoLocation,
+    IcoInstagram,
+    IcoTwitter,
+    IcoYoutube
   },
   data() {
     return {

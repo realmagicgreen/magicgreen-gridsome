@@ -6,11 +6,9 @@ import fs from "fs";
 
 const doc = new GoogleSpreadsheet(
 	// Using our example spreadsheet: https://docs.google.com/spreadsheets/d/1o_NWrDsVNSVU1jViexKQi08aI6h76fXrMIcvbT9faoM/edit#gid=0
-  "1sGXCAVauVfeBdy3d0Jp_RHwbntCeTQI8Lsw1k4GqFPY"
+  '1sGXCAVauVfeBdy3d0Jp_RHwbntCeTQI8Lsw1k4GqFPY'
 );
 let sheet;
-
-
 
 async.series([function setAuth(step) {
   const creds = require("./magicgreen-ab82b0150ffc.json");
@@ -36,12 +34,12 @@ async.series([function setAuth(step) {
     }, function(err, rows) {
       console.log("Read " + rows.length + " rows");
       // Clean companies.yml
-      fs.truncate("./_data/companies.yml", 0, () => {
+      fs.truncate("./scr/assets/data/companies.yml", 0, () => {
       });
       // Save rows as items in the YAML file
       for (let row of rows) {
         fs.appendFile(
-          "./_data/companies.yml",
+          "./scr/assets/data/companies.yml",
           "- brand: " +
           row.brand +
           "\n\x20\x20" +
