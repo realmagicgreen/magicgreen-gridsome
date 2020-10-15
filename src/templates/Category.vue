@@ -104,7 +104,10 @@ export default {
   },
   metaInfo () {
     return {
-      title: this.$page.category.title
+      title: this.$page.category.title,
+      bodyAttrs: {
+          class: 'page_category'
+      }
     }
   }
 }

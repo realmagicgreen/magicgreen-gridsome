@@ -195,7 +195,7 @@ query {
   metadata {
     settings {
       slogans {
-        home
+        resources
       }
     }
   }
@@ -214,8 +214,6 @@ import IcoTwitter from '~/assets/svgs/twitter.svg'
 import IcoYoutube from '~/assets/svgs/youtube.svg'
 import IcoWhatsapp from '~/assets/svgs/whatsapp.svg'
 
-
-
 export default {
   components: {
     Slogans,
@@ -226,21 +224,23 @@ export default {
     IcoInstagram,
     IcoTwitter,
     IcoYoutube,
-    IcoWhatsapp
+    IcoWhatsapp,
+    companies
   },
   data() {
     return {
       companies
     }
+  },
+  metaInfo () {
+    return {
+      //title: this.$page.entry.title,
+      bodyAttrs: {
+          class: 'page_resources'
+      }
+    }
   }
-  // ,
-  // metaInfo () {
-  //   return {
-  //     title: this.$page.entry.title
-  //   }
-  // }
 }
-
 </script>
 
 <style lang="scss" scoped>

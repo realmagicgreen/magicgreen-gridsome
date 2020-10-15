@@ -1,9 +1,5 @@
 <template>
   <div class="horizontal_spacing">
-
-    <!-- for slogan in $static.metadata.settings.slogans -->
-
-
     <h2
     v-if="slogan_services"
     class="center slogan slogan_services hide"

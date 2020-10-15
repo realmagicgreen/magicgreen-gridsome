@@ -109,8 +109,10 @@ export default {
   },
   metaInfo () {
     return {
-      title: this.$page.tag.title
-
+      title: this.$page.tag.title,
+      bodyAttrs: {
+          class: 'page_tag'
+      }
     }
   }
 }

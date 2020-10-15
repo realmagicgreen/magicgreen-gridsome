@@ -71,7 +71,10 @@ query SpecialPage ($id: ID!) {
 export default {
   metaInfo () {
     return {
-      title: this.$page.entry.title
+      title: this.$page.entry.title,
+      bodyAttrs: {
+          class: 'page_special_page'
+      }
     }
   }
 }

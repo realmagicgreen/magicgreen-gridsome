@@ -1,10 +1,10 @@
 <template>
-  <Layout>
+  <Layout :slogan_home="true">
 
     <div class="horizontal_spacing">
 
       <div class="slogan_block">
-        <SloganHome />
+        <Slogans />
       </div>
 
       <div class="posts post_grid">
@@ -78,24 +78,34 @@ query ($page: Int){
       }
     }
   }
+  metadata {
+    settings {
+      slogans {
+        home
+      }
+    }
+  }
 }
 </page-query>
 
 <script>
 import PostCard from '~/components/PostCard.vue'
-import SloganHome from '~/components/SloganHome.vue'
+import Slogans from '~/components/Slogans.vue'
 import TagCloud from '~/components/TagCloud.vue'
 import { Pager } from 'gridsome'
 
 export default {
   components: {
     PostCard,
-    SloganHome,
+    Slogans,
     TagCloud,
     Pager
   },
   metaInfo: {
-    title: 'Hello, greener world!'
+    title: 'Hello, greener world!',
+    bodyAttrs: {
+        class: 'page_home'
+    }
   }
 }
 </script>

@@ -8,8 +8,18 @@ import DefaultLayout from '~/layouts/Default.vue';
 export default function (Vue, { router, head, isClient }) {
 
   // Add attributes to HTML tag
-  head.htmlAttrs = { lang: 'en', prefix: 'og: http://ogp.me/ns#'}
-  head.htmlAttrs = { id: 'top'}
+  head.htmlAttrs = { lang: 'en', prefix: 'og: http://ogp.me/ns#', id: 'top' }
+
+  // Global Head Metadata
+  head.meta.push(
+    {
+      key: "author",
+      name: "author",
+      content: "Rokma"
+    },
+    { key: "robots", name: "robots", content: "index, follow, noodp, noydir" }
+  )
+
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)

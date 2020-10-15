@@ -4,8 +4,28 @@
     ${head}
   </head>
   <body ${bodyAttrs}>
+
     <script>
-      // Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
+
+      // Debounce your scroll handlers
+      // https://developers.google.com/web/fundamentals/performance/rendering/debounce-your-input-handlers
+      // function onScroll (evt) {
+      //
+      //   // Store the scroll value for laterz.
+      //   lastScrollY = window.scrollY;
+      //
+      //   // Prevent multiple rAF callbacks.
+      //   if (scheduledAnimationFrame)
+      //   return;
+      //
+      //   scheduledAnimationFrame = true;
+      //   requestAnimationFrame(readAndUpdatePage);
+      // }
+      //
+      // window.addEventListener('scroll', onScroll);
+
+
+      // Dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
       (function() {
         window.__onThemeChange = function() {};
         function setTheme(newTheme) {
@@ -47,6 +67,8 @@
       //   });
       // }
     </script>
+
+
 
     ${app}
     ${scripts}

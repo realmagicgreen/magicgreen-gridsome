@@ -106,7 +106,10 @@ export default {
     return {
       title: this.$page.post.title,
       subtitle: this.$page.post.subtitle,
-      ad: this.$page.post.ad
+      ad: this.$page.post.ad,
+      bodyAttrs: {
+          class: 'page_post'
+      }
     }
   },
   mounted () {

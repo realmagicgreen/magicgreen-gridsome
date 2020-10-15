@@ -68,13 +68,16 @@ query AboutPage ($id: ID!) {
 </page-query>
 
 <script>
-export default {
-  metaInfo () {
-    return {
-      title: this.$page.entry.title
+  export default {
+    metaInfo () {
+      return {
+        title: this.$page.entry.title,
+        bodyAttrs: {
+            class: 'page_about_us'
+        }
+      }
     }
   }
-}
 </script>
 
 <style lang="scss" scoped>
