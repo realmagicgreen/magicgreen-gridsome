@@ -3,15 +3,9 @@
 
     <div class="horizontal_spacing">
 
-      <div class="slogan_block">
-        <Slogans />
-      </div>
-
       <div class="posts post_grid">
         <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
       </div>
-
-
 
     </div>
 
@@ -80,8 +74,12 @@ query ($page: Int){
   }
   metadata {
     settings {
-      slogans {
-        home
+      nav {
+        links {
+          path
+          title
+          subtitle
+        }
       }
     }
   }
@@ -90,14 +88,12 @@ query ($page: Int){
 
 <script>
 import PostCard from '~/components/PostCard.vue'
-import Slogans from '~/components/Slogans.vue'
 import TagCloud from '~/components/TagCloud.vue'
 import { Pager } from 'gridsome'
 
 export default {
   components: {
     PostCard,
-    Slogans,
     TagCloud,
     Pager
   },

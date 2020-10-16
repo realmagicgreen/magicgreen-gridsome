@@ -6,8 +6,6 @@
         {{ $page.category.title }}
       </h1>
 
-      <Slogans />
-
       <div class="posts post_grid">
         <PostCard v-for="edge in $page.category.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
       </div>
@@ -81,8 +79,12 @@ query Category ($id: ID!) {
   }
   metadata {
     settings {
-      slogans {
-        home
+      nav {
+        links {
+          path
+          title
+          subtitle
+        }
       }
     }
   }
@@ -92,14 +94,12 @@ query Category ($id: ID!) {
 <script>
 import PostCard from '~/components/PostCard.vue'
 import { Pager } from 'gridsome'
-import Slogans from '~/components/Slogans.vue'
 import TagCloud from '~/components/TagCloud.vue'
 
 export default {
   components: {
     PostCard,
     Pager,
-    Slogans,
     TagCloud
   },
   metaInfo () {

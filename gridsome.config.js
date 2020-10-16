@@ -7,7 +7,7 @@
 module.exports = {
   siteName: 'Magic Green',
   siteDescription: 'Magic Green magazine is a showcase of examples, infos and addresses of all stuff green from South East Asia and beyond.',
-  siteUrl: 'https://magicgreensome.netlify.app',
+  siteUrl: 'https://greensome.netlify.app',
   titleTemplate: `%s | MagicGreen`,
 
   //// https://gridsome.org/docs/assets-svg/#using-svgs-as-components
@@ -20,25 +20,43 @@ module.exports = {
 // testing
   settings: {
     // Place site-wide settings here + query 'em from GraphQL layer's metadata {settings} key.
-    slogans: {
-      home: 'Sustainable and environment-friendly examples from South East Asia and beyond.',
-      services: 'Services to lower your environmental impact.',
-      products: 'Sometimes it\'s easy to stop buying polluting products and start supporting more sustainable ones.',
-      techniques: 'The way to sustainable living explained in details.',
-      solutions: 'Small or big, here are some solutions to environmental problems.',
-      know: 'Did you know that... Hum, actually I didn\'t. Thanks for letting me know!',
-      health: 'How to improve your life. Food, plants medicines, healthy living, superfoods.',
-      resources: 'To solve big problems we need resources. These organisations are doing the right thing and can help. Make a wise choice and support them.'
-    },
     nav: {
       links: [
-        { path: '/services/', title: 'services' },
-        { path: '/products/', title: 'products' },
-        { path: '/techniques/', title: 'techniques' },
-        { path: '/solutions/', title: 'solutions' },
-        { path: '/know/', title: 'know' },
-        { path: '/health/', title: 'health' },
-        { path: '/resources/', title: 'resources' }
+        {
+          title: 'services',
+          subtitle: 'Services to lower your environmental impact.',
+          path: '/services/'
+        },
+        {
+          title: 'products',
+          subtitle: 'Sometimes it\'s easy to stop buying polluting products and start supporting more sustainable ones.',
+          path: '/products/'
+        },
+        {
+          title: 'techniques',
+          subtitle: 'The way to sustainable living explained in details.',
+          path: '/techniques/'
+        },
+        {
+          title: 'solutions',
+          subtitle: 'Small or big, here are some solutions to environmental problems.',
+          path: '/solutions/'
+        },
+        {
+          title: 'know',
+          subtitle: 'Did you know that... Hum, actually I didn\'t. Thanks for letting me know!',
+          path: '/know/'
+        },
+        {
+          title: 'health',
+          subtitle: 'How to improve your life. Food, plants medicines, healthy living, superfoods.',
+          path: '/health/'
+        },
+        {
+          title: 'resources',
+          subtitle: 'To solve big problems we need resources. These organisations are doing the right thing and can help. Make a wise choice and support them.',
+          path: '/resources/'
+        }
       ]
     }
   },

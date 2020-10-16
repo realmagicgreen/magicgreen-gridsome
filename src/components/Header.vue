@@ -3,7 +3,7 @@
 		<div class="header horizontal_spacing">
 
 			<g-link class="logo_wrapper" title="link to starting page" to="/">
-				<div class="hide">Magic Green</div>
+				<h1 class="hide">Magic Green</h1>
 				<Logo />
 			</g-link>
 
@@ -42,7 +42,7 @@
 					class="menu_item_wrap">
             <g-link
               :to="link.path"
-							:title="link.title"
+							:title="link.subtitle"
 							role="menuitem"
               class="menu_item">
               {{ link.title }}
@@ -54,6 +54,18 @@
 			</div>
 
 		</div>
+
+		<div class="subheader horizontal_spacing">
+			<div
+			v-for="link in settings.nav.links"
+			:key="link.subtitle"
+			class="menu_item_wrap">
+				<h2
+					:title="link.subtitle">
+					{{ link.subtitle }}
+				</h2>
+			</div>
+		</div>
 	</header>
 </template>
 
@@ -62,9 +74,10 @@ query {
   metadata {
 		settings {
       nav {
-        links {
+				links {
           path
           title
+          subtitle
         }
       }
     }

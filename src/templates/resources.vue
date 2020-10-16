@@ -6,8 +6,6 @@
         Resources
       </h1>
 
-      <Slogans />
-
       <div id="brands" class="responsive_table_block">
 
         <table class="green_pages_table responsive_table">
@@ -192,18 +190,10 @@ query {
 			}
 		}
 	}
-  metadata {
-    settings {
-      slogans {
-        resources
-      }
-    }
-  }
 }
 </page-query>
 
 <script>
-import Slogans from '~/components/Slogans.vue'
 import companies from '~/assets/data/companies.yml'
 import IcoMail from '~/assets/svgs/email.svg'
 import IcoPhone from '~/assets/svgs/localphone.svg'
@@ -216,7 +206,6 @@ import IcoWhatsapp from '~/assets/svgs/whatsapp.svg'
 
 export default {
   components: {
-    Slogans,
     IcoMail,
     IcoPhone,
     IcoLink,
