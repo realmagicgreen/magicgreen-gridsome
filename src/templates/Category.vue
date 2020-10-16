@@ -106,7 +106,7 @@ export default {
     return {
       title: this.$page.category.title,
       bodyAttrs: {
-          class: 'page_category'
+          class: 'category_page--' + this.$page.category.title
       }
     }
   }

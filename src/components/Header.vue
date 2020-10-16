@@ -114,5 +114,21 @@ export default {
 
 
 <style lang="scss">
-// in _header.scss
+
+ /* the rest is in _header.scss */
+
+ [data-theme="dark"] .slogan {
+		 color: var(--text_color);
+ }
+ .services .slogan_services.hide { display: block!important; }
+ .products .slogan_products.hide { display: block!important; }
+ .techniques .slogan_techniques.hide { display: block!important; }
+ .solutions .slogan_solutions.hide { display: block!important; }
+ .know .slogan_know.hide { display: block!important; }
+ .health .slogan_health.hide { display: block!important; }
+ .resources .slogan_resources.hide { display: block!important; }
+
+ .resources h2.slogan.slogan_resources.hide {
+	 display: block!important;
+ }
 </style>

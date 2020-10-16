@@ -225,7 +225,7 @@ export default {
     return {
       //title: this.$page.entry.title,
       bodyAttrs: {
-          class: 'page_resources'
+          class: 'resources'
       }
     }
   }

@@ -108,7 +108,7 @@ export default {
       subtitle: this.$page.post.subtitle,
       ad: this.$page.post.ad,
       bodyAttrs: {
-          class: 'page_post'
+          class: 'post_category--' + this.$page.post.category.title
       }
     }
   },

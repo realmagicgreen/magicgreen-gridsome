@@ -73,7 +73,7 @@ export default {
     return {
       title: this.$page.entry.title,
       bodyAttrs: {
-          class: 'page_special_page'
+          class: 'special_page'
       }
     }
   }

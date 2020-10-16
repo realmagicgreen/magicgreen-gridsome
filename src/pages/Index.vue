@@ -1,5 +1,5 @@
 <template>
-  <Layout :slogan_home="true">
+  <Layout>
 
     <div class="horizontal_spacing">
 

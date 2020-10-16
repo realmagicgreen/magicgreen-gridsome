@@ -111,7 +111,7 @@ export default {
     return {
       title: this.$page.tag.title,
       bodyAttrs: {
-          class: 'page_tag'
+          class: 'tag_page--' + this.$page.tag.title
       }
     }
   }
