@@ -1,4 +1,9 @@
 .responsive_table_block {
+  padding-top: 40vh;
+  @media screen and (min-width: 640px) {
+    padding-top: 20vh;
+  }
+
   tr {
     padding-right: var(--space-1);
     padding-left: var(--space-1);
@@ -135,10 +140,10 @@
       font-size: clamp(13px, 2vw, 24px);
       text-align: left;
 
-      &:before {
-        // hack to fix the dbl line addrs, which fails when just 1 line... gosh!
-        // padding-right: calc(1rem + 4px);
-      }
+      // &:before {
+      //   // hack to fix the dbl line addrs, which fails when just 1 line... gosh!
+      //   // padding-right: calc(1rem + 4px);
+      // }
     }
 
     &.email,

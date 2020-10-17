@@ -114,8 +114,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// in post.scss so to have one source of truth...
+// all about .post in post.scss so to have one source of truth...
 .post_grid {
-  padding-top: 10px;
+  padding-top: 30vh;
+  @media only screen and (min-width: 640px) {
+    padding-top: 20vh;
+  }
+  @media only screen and (min-width: 1024px) {
+    padding-top: 10vh;
+  }
 }
 </style>
