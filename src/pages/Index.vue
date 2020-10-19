@@ -110,54 +110,22 @@
 </script>
 
 <style lang="scss">
-  // for all other pages
-  .logo_wrapper .site_description {
-    display: none;
-  }
-  // for this page
   .page_home {
-    .logo_wrapper {
-      position: relative;
-      .site_description {
-        display: block;
-        position: absolute;
-        left: 10vw;
-        width: 80vw;
-        height: fit-content;
-        font-size: calc(var(--heading1)/10*8);
-        color: var(--title_color);
-        line-height: 1.2;
-        text-align: center;
-        top: 200%;
-        @media only screen and (min-width: 880px) {
-          top: 110%;
-        }
-      }
+
+    .site_description {
+      display: block;
+      max-width: 80vw;
+      margin: 0 auto;
+      height: fit-content;
+      color: var(--title_color);
+      line-height: 1.2;
+      text-align: center;
+      color: white;
     }
   }
 
-  // &::after {
-  //   content: attr(title);
-  //   display: block;
-  //   position: absolute;
-  //   left: 10vw;
-  //   width: 80vw;
-  //   height: fit-content;
-  //   font-size: calc(var(--heading1)/10*8);
-  //   color: var(--title_color);
-  //   line-height: 1.2;
-  //   text-align: center;
-  //   top: 200%;
-  //   @media only screen and (min-width: 880px) {
-  //     top: 110%;
-  //   }
-  // }
 </style>
 
 <style lang="scss" scoped>
-  .posts {
-    padding: 10px;
-  }
-
 
 </style>

@@ -1,16 +1,17 @@
 <template>
 	<header class="header_wrap" :class="{'menu-is-open': isMenuActive}">
+
 		<div class="header horizontal_spacing">
 
 			<a
 			class="logo_wrapper"
 			:title="$static.metadata.siteDescription"
 			href="/">
-				<h1 class="hide">{{ $static.metadata.siteName }}</h1>
-				<h2 class="site_description">
-					{{ $static.metadata.siteDescription }}
-				</h2>
+
 				<Logo />
+
+				<h1 class="hide">{{ $static.metadata.siteName }}</h1>
+
 			</a>
 
 			<div class="menu_wrapper">
@@ -59,6 +60,11 @@
 
 			</div>
 
+
+		</div>
+
+		<div class="h2 site_description center">
+			{{ $static.metadata.siteDescription }}
 		</div>
 
 	</header>
@@ -115,14 +121,15 @@ export default {
 	 	background-color: var(--black);
 	 	display: flex;
 	 	flex-direction: column;
-	 	justify-content: center;
+	 	justify-content: flex-start;
 	 	align-items: center;
-	 	min-height: var(--header_height);
 	 	box-shadow: var(--bottom_shadow);
 	 	padding-left: 10px;
 	 	padding-right: 10px;
+		top: 0;
 
 	 	@media screen and (max-width: 880px) {
+			//min-height: var(--header_height);
 	 		&.menu-is-open {
 	 			position: fixed;
 	 			z-index: 11;
@@ -171,25 +178,6 @@ export default {
 	 	@media only screen and (min-width: 1500px) {
 	 		margin: 0 auto;
 	 	}
-
-		//.logo_wrapper {
-			// &::after {
-			// 	content: attr(title);
-			// 	display: block;
-			// 	position: absolute;
-			// 	left: 10vw;
-			// 	width: 80vw;
-			// 	height: fit-content;
-			// 	font-size: calc(var(--heading1)/10*8);
-			// 	color: var(--title_color);
-			// 	line-height: 1.2;
-			// 	text-align: center;
-			// 	top: 200%;
-			// 	@media only screen and (min-width: 640px) {
-			// 		top: 110%;
-			// 	}
-			//}
-		//}
 	}
 
 	.header.horizontal_spacing {
@@ -231,6 +219,7 @@ export default {
 	 				width: 80vw;
 	 				height: fit-content;
 	 				font-size: calc(var(--heading1)/10*8);
+					font-weight: 300;
 	 				color: var(--title_color);
 	 				line-height: 1.2;
 					text-align: center;
@@ -358,6 +347,13 @@ export default {
 
 
 <style lang="scss" scoped>
+	.site_description {
+		display: none;
+		height: 0;
+		margin: 0;
+		overflow: hidden;
+		transition: height 0.2s cubic-bezier(.1,.69,.94,.32);
+	}
 	body[class*="post_"] {
 	 .head_menu .menu_item.active::after {
 		  display: none!important;

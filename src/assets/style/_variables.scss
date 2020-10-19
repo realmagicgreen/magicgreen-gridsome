@@ -1,7 +1,4 @@
-// BREAK-POINTS - NOT WORKING AS VAR(--MINWIDTH) IN MEDIA QUERIES!
-// --minWidth: 640px;
-// --bp1Width: 880px;
-// --maxWidth: 1260px;
+// BREAKPOINTS 640 880 1024 1260;
 
 // Default variables
 :root {
@@ -28,8 +25,8 @@ body {
 
 	//gridsome theme block sizes
 	--content_width: 100vw; //860px;
-	--header_height: 5rem; //80px;
-	--header_height--mobile: 50vh; //80px;
+	--header_height: 6rem; //80px++;
+	--header_height--indexes: 50vh; //80px;
 
 	//mix
 	--radius: 5px;
