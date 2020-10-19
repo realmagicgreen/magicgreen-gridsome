@@ -2,7 +2,7 @@
   <Layout :show-logo="true">
     <div class="horizontal_spacing" :class="[$page.category.title]">
 
-      <h1 class="show_on_phones center">
+      <h1 class="category_title center">
         {{ $page.category.title }}
       </h1>
 
@@ -114,14 +114,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// all about .post in post.scss so to have one source of truth...
-.post_grid {
-  padding-top: 30vh;
-  @media only screen and (min-width: 640px) {
-    padding-top: 20vh;
+  // all about .post in post.scss so to have one source of truth...
+  .post_grid {
+    padding-top: 50vw;
+    @media only screen and (min-width: 640px) {
+      padding-top: 40vw;
+    }
+    @media only screen and (min-width: 880px) {
+      padding-top: 20vw;
+    }
+    @media only screen and (min-width: 1024px) {
+      padding-top: 15vw;
+    }
+    @media only screen and (min-width: 1280px) {
+      padding-top: 10vw;
+    }
   }
-  @media only screen and (min-width: 1024px) {
-    padding-top: 10vh;
+  .category_title {
+    @media only screen and (min-width: 881px) {
+      display: none;
+    }
   }
-}
 </style>

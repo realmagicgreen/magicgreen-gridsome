@@ -126,4 +126,5 @@ export default {
 
 <style lang="scss" scoped>
 // in post.scss so to have one source of truth...
+
 </style>

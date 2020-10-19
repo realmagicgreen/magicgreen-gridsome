@@ -40,7 +40,7 @@
 }
 
 .hide {
-	display: none!important;
+	display: none;
 }
 
 .uppercase {
@@ -87,6 +87,14 @@
 	body[data-theme="dark"] & {
 		border-bottom: 1px solid var(--brand_color--dark);
 	}
+}
+
+.centered {
+	//need pos:rel parent
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
 }
 
 .external_link {}

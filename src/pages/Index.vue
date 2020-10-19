@@ -17,7 +17,7 @@
 </template>
 
 <page-query>
-query ($page: Int){
+  query ($page: Int){
   tags: allTag(sortBy: "title", order: ASC) {
     totalCount
     edges {
@@ -73,6 +73,8 @@ query ($page: Int){
     }
   }
   metadata {
+    siteName
+		siteDescription
     settings {
       nav {
         links {
@@ -86,28 +88,76 @@ query ($page: Int){
 }
 </page-query>
 
-<script>
-import PostCard from '~/components/PostCard.vue'
-import TagCloud from '~/components/TagCloud.vue'
-import { Pager } from 'gridsome'
 
-export default {
-  components: {
-    PostCard,
-    TagCloud,
-    Pager
-  },
-  metaInfo: {
-    title: 'Hello, greener world!',
-    bodyAttrs: {
-        class: 'page_home'
+<script>
+  import PostCard from '~/components/PostCard.vue'
+  import TagCloud from '~/components/TagCloud.vue'
+  import { Pager } from 'gridsome'
+
+  export default {
+    components: {
+      PostCard,
+      TagCloud,
+      Pager
+    },
+    metaInfo: {
+      title: 'Hello, greener world!',
+      bodyAttrs: {
+          class: 'page_home'
+      }
     }
   }
-}
 </script>
+
+<style lang="scss">
+  // for all other pages
+  .logo_wrapper .site_description {
+    display: none;
+  }
+  // for this page
+  .page_home {
+    .logo_wrapper {
+      position: relative;
+      .site_description {
+        display: block;
+        position: absolute;
+        left: 10vw;
+        width: 80vw;
+        height: fit-content;
+        font-size: calc(var(--heading1)/10*8);
+        color: var(--title_color);
+        line-height: 1.2;
+        text-align: center;
+        top: 200%;
+        @media only screen and (min-width: 880px) {
+          top: 110%;
+        }
+      }
+    }
+  }
+
+  // &::after {
+  //   content: attr(title);
+  //   display: block;
+  //   position: absolute;
+  //   left: 10vw;
+  //   width: 80vw;
+  //   height: fit-content;
+  //   font-size: calc(var(--heading1)/10*8);
+  //   color: var(--title_color);
+  //   line-height: 1.2;
+  //   text-align: center;
+  //   top: 200%;
+  //   @media only screen and (min-width: 880px) {
+  //     top: 110%;
+  //   }
+  // }
+</style>
 
 <style lang="scss" scoped>
   .posts {
     padding: 10px;
   }
+
+
 </style>

@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Magic Green',
-  siteDescription: 'Magic Green magazine is a showcase of examples, infos and addresses of all stuff green from South East Asia and beyond.',
+  siteDescription: 'Magic Green showcase examples, infos and addresses of all stuff green. Sustainable and environment-friendly examples from South East Asia and beyond.',
   siteUrl: 'https://greensome.netlify.app',
   titleTemplate: `%s | MagicGreen`,
 
