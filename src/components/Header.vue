@@ -60,7 +60,6 @@
 
 			</div>
 
-
 		</div>
 
 		<div class="h2 site_description center">

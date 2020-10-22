@@ -1,5 +1,5 @@
 <template>
-  <div class="tag_cloud">
+  <div class="tag_cloud horizontal_spacing">
     <div class="vertical_spacing border_brand_top">
 
       <div class="tag_block_icon">

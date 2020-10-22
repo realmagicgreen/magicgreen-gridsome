@@ -1,17 +1,17 @@
-- brand:      4ocean
-  products:   Conservation Removing-Trash
-  website:    'https://4ocean.com'
-  instagram:  4ocean
-  twitter:    4ocean
-  youtube:    channel/UCCT_-OGW5IiUuuHwmuyUPYQ
-  email:      null
-  telephone:  null
-  whatsapp:   null
-  address:    null
-  company:    null
-  person:     null
-  personrole: null
-  location:   null
+- brand:      brand
+  products:   products
+  website:    website
+  instagram:  instagram
+  twitter:    twitter
+  youtube:    youtube
+  email:      email
+  telephone:  telephone
+  whatsapp:   whatsapp
+  address:    address
+  company:    company
+  person:     person
+  personrole: personrole
+  location:   location
   country:    WorldWide
 - brand:      ASEAN biodiversity
   products:   Conservation Information
@@ -37,7 +37,7 @@
   email:      null
   telephone:  62 361 9065555
   whatsapp:   null
-  address:    Jl  Cargo Permai no 188 - Dusun Liligundi - Ubung - Denpasar - Bali
+  address:    Jl  Cargo Permai no 188 - Dusun Liligundi - Ubung - Bali
   company:    null
   person:     null
   personrole: null
@@ -595,8 +595,7 @@
   telephone:  62 813 39604779
   whatsapp:   '6281339604779'
   address:    >-
-    -8 742800 - 115 884396 - Unnamed Road - Central Sekotong - West Lombok
-    Regency - West Nusa Tenggara 83365
+    -8 742800 -115 884396 - Central Sekotong - Lombok 83365
   company:    Gili Asahan Eco Lodge & Restaurant
   person:     null
   personrole: null
@@ -656,7 +655,7 @@
   email:      info@green-books.org
   telephone:  62 82144530169
   whatsapp:   '6282144530169'
-  address:    Pondok Gede Eco-Lodge - Jl  Batan Celagi - Tibubeneng - 80361 Kuta - Bali
+  address:    Pondok Gede Eco-Lodge - Jl Batan Celagi - Tibubeneng - Bali 80361
   company:    'Green Books '
   person:     Petr - Tomáš
   personrole: founders
@@ -897,7 +896,7 @@
   telephone:  '62 2150178989 '
   whatsapp:   null
   address:    >-
-    Grand ITC Permata Hijau - Blok Saphire 22 - Jl  A  Raya Permata Hijau -
+    Grand ITC Permata Hijau - Blok Saphire 22 -
     Kebayoran Lama - Jakarta 12210
   company:    Greenhope - PT. Harapan Interaksi Swadaya
   person:     null
@@ -973,7 +972,7 @@
   email:      lakota@akarumput.com
   telephone:  null
   whatsapp:   null
-  address:    Jl  Raya Nyuh Kuning - Mas - Ubud - Bali 80157
+  address:    Jl Raya Nyuh Kuning - Mas - Ubud - Bali 80157
   company:    null
   person:     null
   personrole: null
@@ -1003,9 +1002,7 @@
   email:      info@baliecolodge.com
   telephone:  62 853 33638287
   whatsapp:   '6285333638287'
-  address:    >-
-    Jl  Arjuna - Br  Biyahan - Desa Wanagiri - Dalang - Selemadeg Timur -
-    Tabanan - Bali 82152
+  address:    Jl  Arjuna, Br Biyahan, Wanagiri - Tabanan - Bali 82152
   company:    null
   person:     null
   personrole: null
@@ -1065,7 +1062,7 @@
   email:      customer.service@selis.co.id
   telephone:  62 361 4748205
   whatsapp:   null
-  address:    Jl  Teuku Umar No 216 - Dauh Puri Kauh - Denpasar - Bali 80113
+  address:    Jl Teuku Umar 216 - Dauh Puri Kauh - Denpasar - Bali 80113
   company:    ' '
   person:     null
   personrole: null
@@ -1110,7 +1107,7 @@
   email:      hello@sosfromthedeep.com
   telephone:  62 361 289338
   whatsapp:   null
-  address:    Jl  Betngandang II no 88-89 - Sanur - Bali
+  address:    Jl Betngandang II 88-89 - Sanur - Bali
   company:    ' '
   person:     null
   personrole: null
@@ -1170,7 +1167,7 @@
   email:      marjan@theorganicfarmbali.com
   telephone:  62 852 37950255
   whatsapp:   '6285237950255'
-  address:    Jl  Munduk Lumbang - Angseri - Baturiti - 82191 Bali
+  address:    Jl  Munduk Lumbang - Angseri - Baturiti - Bali 82191
   company:    ' '
   person:     Marjan van Ravenzwaaij
   personrole: founder

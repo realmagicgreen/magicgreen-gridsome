@@ -1,12 +1,7 @@
 .responsive_table_block {
-  padding-top: 40vh;
-  @media screen and (min-width: 640px) {
+  padding-top: 30vh;
+  @media screen and (min-width: 1024px) {
     padding-top: 20vh;
-  }
-
-  tr {
-    padding-right: var(--space-1);
-    padding-left: var(--space-1);
   }
 
   tbody {
@@ -16,27 +11,20 @@
     }
   }
 
-  thead {
-    display: none;
-    @media screen and (min-width: 1024px) {
-      display: contents;
-    }
-  }
-
-  th {
-    display: none;
-    margin-top: var(--space-1);
-    @media screen and (min-width: 1024px) {
-      display: table-cell;
-    }
+  tr {
+    padding-right: var(--space-1);
+    padding-left: var(--space-1);
   }
 
   td {
+    margin-top: var(--space-05);
+    margin-bottom: var(--space-05);
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
     @media screen and (min-width: 1024px) {
       display: table-cell;
+      height: 100px;
     }
 
     &:before {
@@ -45,20 +33,10 @@
       font-weight: var(--base_font_weight);
       padding-top: var(--space-05);
       padding-right: var(--space-1);
-      width: 18%;
       padding-left: var(--space-1);
+      width: 18%;
       @media screen and (min-width: 1024px) {
         display: none;
-      }
-    }
-
-    &:first-child {
-      margin-top: 5px;
-      padding-top: 10px;
-      @media screen and (min-width: 1024px) {
-        margin-top: 0;
-        padding-top: 0;
-        padding-left: var(--space-2);
       }
     }
 
@@ -102,8 +80,20 @@
   border-spacing: 0;
   min-width: 100%;
   width: 100%;
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 0 20px;
+
+  tr:first-child {
+    display: none;
+    @media screen and (min-width: 1024px) {
+      display: table-row;
+      color: grey;
+
+      svg {
+        stroke: grey;
+      }
+    }
+  }
 
   tbody td,
   thead td {
@@ -139,6 +129,10 @@
     &.address {
       font-size: clamp(13px, 2vw, 24px);
       text-align: left;
+
+      @media screen and (min-width: 1024px) and (max-width: 1260px) {
+        display: none;
+      }
 
       // &:before {
       //   // hack to fix the dbl line addrs, which fails when just 1 line... gosh!
@@ -260,12 +254,12 @@
   text-align: center;
 }
 
-.green_pages_table_row:nth-child(even) {
+.green_pages_table_row:nth-child(odd) {
   //tr
   background-color: transparent;
 }
 
-.green_pages_table_row:nth-child(odd) {
+.green_pages_table_row:nth-child(even) {
   //tr
   background-color: hsla(100, 88%, 64%, .25);
 }

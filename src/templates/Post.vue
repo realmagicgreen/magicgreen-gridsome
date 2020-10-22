@@ -17,8 +17,6 @@
 
     <div class="horizontal_spacing">
 
-
-
       <div class="post_horizontal_spacing">
 
         <div class="post_header">
@@ -94,33 +92,33 @@ query Post ($id: ID!) {
 </page-query>
 
 <script>
-import PostMeta from '~/components/PostMeta'
-import SEO from '~/components/SEO.vue'
+  import PostMeta from '~/components/PostMeta'
+  import SEO from '~/components/SEO.vue'
 
-export default {
-  components: {
-    PostMeta,
-    SEO
-  },
-  metaInfo () {
-    return {
-      title: this.$page.post.title,
-      subtitle: this.$page.post.subtitle,
-      ad: this.$page.post.ad,
-      bodyAttrs: {
-          class: 'post_category--' + this.$page.post.category.title
+  export default {
+    components: {
+      PostMeta,
+      SEO
+    },
+    metaInfo () {
+      return {
+        title: this.$page.post.title,
+        subtitle: this.$page.post.subtitle,
+        ad: this.$page.post.ad,
+        bodyAttrs: {
+            class: 'post_category--' + this.$page.post.category.title
+        }
       }
+    },
+    mounted () {
+      import('medium-zoom').then(mediumZoom => {
+        this.zoom = mediumZoom.default(
+          '.post_content .g-image',
+          { background: 'var(--bg_color)' }
+        )
+      })
     }
-  },
-  mounted () {
-    import('medium-zoom').then(mediumZoom => {
-      this.zoom = mediumZoom.default(
-        '.post_content .g-image',
-        { background: 'var(--bg_color)' }
-      )
-    })
   }
-}
 </script>
 
 

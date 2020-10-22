@@ -10,10 +10,11 @@
         <PostCard v-for="edge in $page.category.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
       </div>
 
-      <TagCloud />
-
       <!-- <Pager :info="$page.category.pageInfo" class="pagination_block center"/> -->
     </div>
+
+    <TagCloud />
+
   </Layout>
 </template>
 
@@ -119,6 +120,9 @@ export default {
     padding-top: 50vw;
     @media only screen and (min-width: 640px) {
       padding-top: 40vw;
+    }
+    @media only screen and (min-width: 720px) {
+      padding-top: 30vw;
     }
     @media only screen and (min-width: 880px) {
       padding-top: 20vw;

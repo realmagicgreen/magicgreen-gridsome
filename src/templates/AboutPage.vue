@@ -1,7 +1,9 @@
 <template>
   <Layout :show-logo="true">
 
-    <div class="horizontal_spacing">
+    <SEO/>
+
+    <div class="post_image">
 
       <g-image
       alt="Cover image"
@@ -10,11 +12,15 @@
       class="post_cover_image"
       />
 
+    </div>
+
+    <div class="horizontal_spacing">
+
       <div class="post_horizontal_spacing">
 
         <div class="post_header">
 
-          <h1 class="post_title">
+          <h1 class="page_title">
             {{ $page.entry.title }}
           </h1>
 
@@ -38,6 +44,7 @@ query AboutPage ($id: ID!) {
   entry: aboutPage (id: $id) {
     title
     subtitle
+    description
     cover_image
     content
   }
@@ -68,10 +75,17 @@ query AboutPage ($id: ID!) {
 </page-query>
 
 <script>
+  import SEO from '~/components/SEO.vue'
+
   export default {
+    components: {
+      SEO
+    },
     metaInfo () {
       return {
         title: this.$page.entry.title,
+        subtitle: this.$page.post.subtitle,
+        description: this.$page.post.description,
         bodyAttrs: {
             class: 'page_about_us'
         }
