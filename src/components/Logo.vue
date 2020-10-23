@@ -41,8 +41,11 @@ export default {
 		}
 
 		svg {
-			height: 15vw;
+			height: 13vw;
 			width: auto;
+			@media screen and (min-width: 480px) {
+				height: 14vw;
+			}
 			@media screen and (min-width: 640px) {
 				height: 12vw;
 			}

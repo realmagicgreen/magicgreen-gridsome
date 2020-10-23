@@ -99,12 +99,6 @@
       PostCard,
       TagCloud,
       Pager
-    },
-    metaInfo: {
-      title: 'Hello, greener world!',
-      bodyAttrs: {
-          class: 'page_home'
-      }
     }
   }
 </script>

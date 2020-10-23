@@ -3,7 +3,7 @@
 
     <div class="resources">
       <h1 class="page_title center">
-        {{ $page.entry.title }}
+        Resources
       </h1>
 
       <div id="brands" class="responsive_table_block">
@@ -173,13 +173,7 @@
 </template>
 
 <page-query>
-  query Resources ($id: ID!) {
-    entry: resources (id: $id) {
-      title
-      subtitle
-      description
-      content
-    },
+  query {
     links: allPost(filter: { published: { eq: true }}) {
       edges {
         node {

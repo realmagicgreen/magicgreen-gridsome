@@ -127,7 +127,7 @@ export default {
 	 	padding-right: 10px;
 		top: 0;
 
-	 	@media screen and (max-width: 880px) {
+	 	@media screen and (max-width: 900px) {
 			//min-height: var(--header_height);
 	 		&.menu-is-open {
 	 			position: fixed;
@@ -154,12 +154,17 @@ export default {
 	 	padding: var(--space-1) 0;
 	 	width: 100%;
 	 	max-width: 1500px;
+		padding-right: 4vw;
+		padding-left: 2vw;
+		@media screen and (min-width: 450px) {
+			padding-left: 4vw;
+		}
 
 	 	[data-theme="light"] & {
 	 		border-top: 0 none;
 	 	}
 
-	 	@media screen and (min-width: 880px) {
+	 	@media screen and (min-width: 900px) {
 	 		flex-direction: column;
 
 	 		.logo_wrapper {
@@ -223,13 +228,13 @@ export default {
 	 				line-height: 1.2;
 					text-align: center;
 					top: 200%;
-					@media only screen and (min-width: 880px) {
+					@media only screen and (min-width: 900px) {
 						top: 110%;
 					}
 	 			}
 	 		}
 
-	 		@media only screen and (min-width: 880px) {
+	 		@media only screen and (min-width: 900px) {
 	 			border: 0 none;
 	 			margin-left: var(--space-05);
 	 			margin-right: var(--space-05);
@@ -330,7 +335,7 @@ export default {
 	 	}
 	}
 
-	@media only screen and (min-width: 880px) {
+	@media only screen and (min-width: 900px) {
 	 	.togglable_menu {
 			width: auto;
 			overflow: visible;

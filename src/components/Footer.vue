@@ -28,7 +28,7 @@
 
 					<g-link
 				  class="menu_item about"
-				  to="/about-us/"
+				  to="/about/"
 					title="About us"
 				  role="menuitem">
 				    <div class="">About us</div>

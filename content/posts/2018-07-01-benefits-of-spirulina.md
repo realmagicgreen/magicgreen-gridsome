@@ -79,7 +79,7 @@ If you are susceptible to gout attacks or kidney stones, spirulina may be especi
 
 ## Know More Links
 
-[Spirulina - Wikipedia](https://en.wikipedia.org/wiki/Spirulina_(dietary_supplement)
+[Spirulina - Wikipedia](https://en.wikipedia.org/wiki/Spirulina_(dietary_supplement))
 
 [10 Health Benefits of Spirulina](https://www.healthline.com/nutrition/10-proven-benefits-of-spirulina)
 

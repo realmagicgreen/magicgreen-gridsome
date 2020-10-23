@@ -12,6 +12,24 @@
   </div>
 </template>
 
+<page-query>
+  query {
+    metadata {
+      siteName
+  		siteDescription
+      settings {
+        nav {
+          links {
+            path
+            title
+            subtitle
+          }
+        }
+      }
+    }
+  }
+</page-query>
+
 <script>
 import Header from '~/components/Header.vue'
 import Footer from '~/components/Footer.vue'
@@ -20,6 +38,17 @@ export default {
   components: {
     Header,
     Footer
+  },
+  metaInfo () {
+    return {
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          //content: $metadata.siteDescription
+        }
+      ]
+    }
   }
 }
 </script>

@@ -120,38 +120,10 @@ module.exports = {
           }
         }
       }
-    },
-    {
-      // Create pages from markdown files
-      use: '@gridsome/source-filesystem',
-      options: {
-        typeName: 'Resources',
-        path: 'content/resources/resources.md'
-      }
-    },
-    {
-      // Create pages from markdown files
-      use: '@gridsome/source-filesystem',
-      options: {
-        typeName: 'AboutPage',
-        path: 'content/about/*.md'
-      }
     }
   ],
 
   templates: {
-    Post: [{
-      path: '/:category/:title',
-      component: '~/templates/Post.vue'
-    }],
-    Resources: [{
-      path: '/:title',
-      component: '~/templates/Resources.vue'
-    }],
-    AboutPage: [{
-      path: '/:title',
-      component: '~/templates/AboutPage.vue'
-    }],
     Category: [{
       path: '/:title',
       component: '~/templates/Category.vue'
@@ -159,6 +131,10 @@ module.exports = {
     Tag: [{
       path: '/:title',
       component: '~/templates/Tag.vue'
+    }],
+    Post: [{
+      path: '/:category/:title',
+      component: '~/templates/Post.vue'
     }]
   },
 

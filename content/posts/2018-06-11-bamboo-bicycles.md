@@ -29,7 +29,7 @@ East Bali bamboo bikes project started in 1998.  Then 19 isolated mountain hamle
 
 ![City bamboo bike for women](./images/products/bamboo-bicycles/bamboo-bicycles-03.jpg)
 
-They asked [East Bali Poverty Project]((https://www.eastbalipovertyproject.org/) to help by educating  children so to lead to a better future with growth and prosperity.
+They asked [East Bali Poverty Project](https://www.eastbalipovertyproject.org/) to help by educating  children so to lead to a better future with growth and prosperity.
 
 Since 1999, EBPP have educated more than 1,500 children in 6 remote community schools. They are taught academic subjects and bamboo clump management. These craft skills empower them to create sustainable bamboo businesses.
 

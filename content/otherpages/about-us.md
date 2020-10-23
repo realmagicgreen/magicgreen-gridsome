@@ -1,5 +1,5 @@
 ---
-title: About us
+title: "About us"
 subtitle: "Working towards a necessary future."
 description: "We are a network of communication professionals. We feel the need to make something meaningful and necessary, to push the world towards the right direction." # max 160 digits cos dunno how to trim it, yet...
 date: 2018-05-01

@@ -3,12 +3,17 @@
 </template>
 
 <static-query>
-query {
-  metadata {
-    siteName
-    siteUrl
+  query {
+    post {
+      title
+      subtitle
+      description
+    },
+    metadata {
+      siteName
+      siteUrl
+    }
   }
-}
 </static-query>
 
 <script>

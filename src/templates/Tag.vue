@@ -110,6 +110,13 @@ export default {
   metaInfo () {
     return {
       title: this.$page.tag.title,
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content: 'MagicGreen showcases of all stuff GREEN. Sustainable and environment-friendly examples from South East Asia and beyond. Here are the articles about ' + this.$page.tag.title
+        }
+      ],
       bodyAttrs: {
           class: 'tag_page--' + this.$page.tag.title
       }

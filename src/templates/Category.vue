@@ -94,18 +94,25 @@ query Category ($id: ID!) {
 
 <script>
 import PostCard from '~/components/PostCard.vue'
-import { Pager } from 'gridsome'
 import TagCloud from '~/components/TagCloud.vue'
+import { Pager } from 'gridsome'
 
 export default {
   components: {
     PostCard,
-    Pager,
-    TagCloud
+    TagCloud,
+    Pager
   },
   metaInfo () {
     return {
       title: this.$page.category.title,
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content: 'MagicGreen showcases of all stuff GREEN. Sustainable and environment-friendly examples from South East Asia and beyond. Here are the articles about ' + this.$page.category.title
+        }
+      ],
       bodyAttrs: {
           class: 'category_page--' + this.$page.category.title
       }

@@ -1,7 +1,7 @@
 <template>
   <Layout :show-logo="true">
 
-    <SEO/>
+    <SEOpost/>
 
     <div class="post_image" :class="[$page.post.category.title]">
       <g-image
@@ -48,22 +48,22 @@ query Post ($id: ID!) {
   post: post (id: $id) {
     title
     subtitle
-    category {
-      title
-    }
+    description
+    photography
     path
     date (format: "DD MMMM YYYY")
     timeToRead
+    ad
+    content
+    cover_image (width: 1920)
+    category {
+      title
+    }
     tags {
       id
       title
       path
     }
-    description
-    photography
-    ad
-    content
-    cover_image (width: 1920)
   }
   links: allPost(filter: { published: { eq: true }}) {
     edges {
@@ -93,18 +93,25 @@ query Post ($id: ID!) {
 
 <script>
   import PostMeta from '~/components/PostMeta'
-  import SEO from '~/components/SEO.vue'
+  import SEOpost from '~/components/SEOpost.vue'
 
   export default {
     components: {
       PostMeta,
-      SEO
+      SEOpost
     },
     metaInfo () {
       return {
         title: this.$page.post.title,
         subtitle: this.$page.post.subtitle,
         ad: this.$page.post.ad,
+        meta: [
+          {
+            key: 'description',
+            name: 'description',
+            content: this.$page.post.description
+          }
+        ],
         bodyAttrs: {
             class: 'post_category--' + this.$page.post.category.title
         }
