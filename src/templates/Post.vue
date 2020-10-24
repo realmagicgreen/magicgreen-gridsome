@@ -105,13 +105,6 @@ query Post ($id: ID!) {
         title: this.$page.post.title,
         subtitle: this.$page.post.subtitle,
         ad: this.$page.post.ad,
-        meta: [
-          {
-            key: 'description',
-            name: 'description',
-            content: this.$page.post.description
-          }
-        ],
         bodyAttrs: {
             class: 'post_category--' + this.$page.post.category.title
         }

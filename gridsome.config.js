@@ -6,8 +6,9 @@
 
 module.exports = {
   siteName: 'Magic Green',
-  siteDescription: 'Magic Green showcase examples, infos and addresses of all stuff green. Sustainable and environment-friendly examples from South East Asia and beyond.',
+  siteDescription: 'Magic Green showcases examples, infos and addresses of all stuff green. Sustainable, environment-friendly examples from South East Asia and beyond.',
   siteUrl: 'https://greensome.netlify.app',
+
   titleTemplate: `%s | MagicGreen`,
 
   //// https://gridsome.org/docs/assets-svg/#using-svgs-as-components
@@ -17,9 +18,9 @@ module.exports = {
     svgRule.use('vue-svg-loader').loader('vue-svg-loader')
   },
 
-// testing
   settings: {
-    // Place site-wide settings here + query 'em from GraphQL layer's metadata {settings} key.
+    // Put site-wide settings here + query 'em from GraphQL layer's metadata {settings} key.
+    SEOimage: '/content/otherpages/about/images/about.jpg',
     nav: {
       links: [
         {

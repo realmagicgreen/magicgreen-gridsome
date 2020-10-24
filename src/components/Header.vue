@@ -89,26 +89,26 @@ query {
 
 
 <script>
-import Logo from '~/components/Logo.vue'
-import ToggleTheme from '~/components/ToggleTheme.vue'
+	import Logo from '~/components/Logo.vue'
+	import ToggleTheme from '~/components/ToggleTheme.vue'
 
-export default {
-  components: {
-    Logo,
-    ToggleTheme
-  },
-	computed: {
-    meta() {
-      return this.$static.metadata;
-    },
-    settings() {
-      return this.meta.settings;
-    }
-  },
-	data: () => ({
-    isMenuActive: false
-  })
-}
+	export default {
+	  components: {
+	    Logo,
+	    ToggleTheme
+	  },
+		computed: {
+	    meta() {
+	      return this.$static.metadata;
+	    },
+	    settings() {
+	      return this.meta.settings;
+	    }
+	  },
+		data: () => ({
+	    isMenuActive: false
+	  })
+	}
 </script>
 
 
@@ -357,6 +357,9 @@ export default {
 		margin: 0;
 		overflow: hidden;
 		transition: height 0.2s cubic-bezier(.1,.69,.94,.32);
+		body[class*="page_home"] & {
+			display: block;
+		}
 	}
 	body[class*="post_"] {
 	 .head_menu .menu_item.active::after {

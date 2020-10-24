@@ -71,7 +71,6 @@
  import IcoPhotographer from '~/assets/svgs/photographer.svg'
 
   export default {
-
     components: {
   		IcoPhotographer
     },
@@ -87,7 +86,7 @@
           }
         ],
         bodyAttrs: {
-            class: 'page_about_us'
+            class: 'page_about'
         }
       }
     }

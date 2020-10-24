@@ -17,7 +17,7 @@ module.exports = function (api) {
       component: './src/pages/Resources.vue',
       context: {
         title: 'Resources',
-        subTitle: 'Browse through our list of green resources.',
+        subtitle: 'Browse through our list of green resources.',
         description: 'To solve big problems we need resources. These organisations are doing the right thing and can help. Make a wise choice and support them.'
       }
     })
