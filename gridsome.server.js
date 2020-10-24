@@ -23,17 +23,4 @@ module.exports = function (api) {
     })
   });
 
-  api.createPages(({ createPage }) => {
-    createPage({
-      path: '/about',
-      component: './src/pages/About.vue',
-      context: {
-        title: 'About',
-        subTitle: 'Working towards a necessary future.',
-        description: 'We are a network of communication professionals. We feel the need to make something meaningful and necessary, to push the world towards the right direction.',
-        cover_image: '~/assets/p/about/about.jpg',
-        photography: 'Rokma'
-      }
-    })
-  })
 }

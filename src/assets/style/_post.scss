@@ -136,3 +136,16 @@
 .links_list {
 	padding-bottom: var(--space-2);
 }
+
+.caption {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: center;
+
+	&.right {
+		align-items: baseline;
+		justify-content: flex-end;
+		margin-right: var(--space-1);
+	}
+}

@@ -1,14 +1,19 @@
 <template>
   <Layout :show-logo="true">
 
-    <div class="post_image">
+    <div class="post_image cover_image">
 
       <g-image
-      alt="Cover image"
-      v-if="$context.cover_image"
-      :src="$context.cover_image"
+      :alt="$page.about.photographer"
+      v-if="$page.about.cover_image"
+      :src="$page.about.cover_image"
+      :title="$page.about.photography"
       class="post_cover_image"
       />
+      <div class="caption right">
+        <IcoPhotographer class="small_icon"/>
+        {{$page.about.photography}}
+      </div>
 
     </div>
 
@@ -19,16 +24,18 @@
         <div class="post_header">
 
           <h1 class="page_title">
-            {{ $context.title }}
+            {{ $page.about.title }}
           </h1>
 
           <h2 class="post_subtitle border_top border_bottom">
-            {{ $context.subTitle }}
+            {{ $page.about.subtitle }}
           </h2>
 
         </div>
 
-        <div class="post_content" v-html="$context.content" />
+        <div class="post_content">
+          <VueRemarkContent />
+        </div>
 
       </div>
 
@@ -38,7 +45,15 @@
 </template>
 
 <page-query>
-  query {
+  query About ($id: ID!) {
+    about(id: $id) {
+      title
+      subtitle
+      description
+      content
+      cover_image
+      photography
+    }
     links: allPost(filter: { published: { eq: true }}) {
       edges {
         node {
@@ -53,17 +68,22 @@
 </page-query>
 
 <script>
+ import IcoPhotographer from '~/assets/svgs/photographer.svg'
 
   export default {
+
+    components: {
+  		IcoPhotographer
+    },
+
     metaInfo () {
       return {
-        title: this.$context.title,
-        subtitle: this.$context.subtitle,
+        title: this.$page.about.title,
+        subtitle: this.$page.about.subtitle,
         meta: [
           {
-            key: 'description',
             name: 'description',
-            content: 'MagicGreen. A network of communication professionals feeling the need to make something meaningful & necessary, to push the world towards the right direction.'
+            content: this.$page.about.description
           }
         ],
         bodyAttrs: {

@@ -63,18 +63,18 @@ module.exports = {
 
   plugins: [
 
-    // {
-    //   // Create pages with Vue components in Markdown.
-    //   // Perfect for building Documentation, Design Systems, Portfolios, Blogs, etc.
-    //   // https://gridsome.org/plugins/@gridsome/vue-remark
-    //   use: '@gridsome/vue-remark',
-    //   options: {
-    //     typeName: 'Post', // Required
-    //     baseDir: './content/posts', // Where .md files are located
-    //     pathPrefix: '',
-    //     template: './src/templates/Post.vue' // Optional
-    //   }
-    // },
+    {
+      // Create pages with Vue components in Markdown.
+      // Perfect for building Documentation, Design Systems, Portfolios, Blogs, etc.
+      // https://gridsome.org/plugins/@gridsome/vue-remark
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'About', // Required
+        baseDir: './content/otherpages/about/', // Where .md files are located
+        pathPrefix: '',
+        template: './src/templates/About.vue' // Optional
+      }
+    },
     {
       // critical css
       use: '@gridsome/plugin-critical',

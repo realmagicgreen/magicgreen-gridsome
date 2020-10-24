@@ -99,12 +99,12 @@ Other step will need to include helping establishing the newly born biodegradabl
 
 [plastic oceans website](https://plasticoceans.org/)
 
-[A Plastic Ocean - on Netflix](https://www.netflix.com/id/title/80164032)"
+[A Plastic Ocean - on Netflix](https://www.netflix.com/id/title/80164032)
 
 [Byebye plastic bags website](http://www.byebyeplasticbags.org)
 
 [Bali plastic bag free - video](https://youtu.be/SsF4xun1-u0)
 
-[It's about time we start listening - Ted-X video](https://youtu.be/Y6Z5eOv6Nnk)
+[It's about time we start listening - TedX video](https://youtu.be/Y6Z5eOv6Nnk)
 
-[Our campaign to ban plastic in Bali - Ted video](https://youtu.be/P8GCjrDWWUM)"
+[Our campaign to ban plastic in Bali - Ted video](https://youtu.be/P8GCjrDWWUM)
