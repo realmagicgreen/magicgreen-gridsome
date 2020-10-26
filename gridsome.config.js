@@ -5,11 +5,14 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Magic Green',
-  siteDescription: 'Magic Green showcases examples, infos and addresses of all stuff green. Sustainable, environment-friendly examples from South East Asia and beyond.',
+  siteName: 'MagicGreen',
+  siteDescription: 'MagicGreen showcases examples, infos and addresses of all stuff green. Sustainable, environment-friendly examples from South East Asia and beyond.',
   siteUrl: 'https://greensome.netlify.app',
-
   titleTemplate: `%s | MagicGreen`,
+  siteAuthor: 'Rokma',
+  siteKeywords: 'green, sustainable, infos, addresses, eco-entrepreneur, ecology, services, products, techniques, resources',
+  siteImage: 'p/main.jpg',
+  siteIcon: 'src/favicon.png',
 
   //// https://gridsome.org/docs/assets-svg/#using-svgs-as-components
   chainWebpack: config => {
@@ -20,7 +23,6 @@ module.exports = {
 
   settings: {
     // Put site-wide settings here + query 'em from GraphQL layer's metadata {settings} key.
-    SEOimage: '/content/otherpages/about/images/about.jpg',
     nav: {
       links: [
         {
@@ -66,7 +68,6 @@ module.exports = {
 
     {
       // Create pages with Vue components in Markdown.
-      // Perfect for building Documentation, Design Systems, Portfolios, Blogs, etc.
       // https://gridsome.org/plugins/@gridsome/vue-remark
       use: '@gridsome/vue-remark',
       options: {

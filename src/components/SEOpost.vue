@@ -21,22 +21,62 @@ export default {
   metaInfo() {
     return {
       meta: [
-        { name: "description", content: this.$page.post.description },
+        //key: is needed here to override default values in main.js
+        {
+          key: "description",
+          name: "description",
+          content: this.$page.post.description
+        },
 
         // Some Open Graph Tags
-        { property: "og:title", content: this.$page.post.title },
-        { property: "og:description", content: this.$page.post.description },
-        { property: "og:image", content: this.getCoverImage },
         {
+          key: "og:title",
+          property: "og:title",
+          content: this.$page.post.title
+        },
+        {
+          key: "og:description",
+          property: "og:description",
+          content: this.$page.post.description
+        },
+        {
+          key: "og:image",
+          property: "og:image",
+          content: this.getCoverImage
+        },
+        {
+          key: 'og:image:width',
+          property: 'og:image:width',
+          content: '1920px'
+        },
+        {
+          key: 'og:image:height',
+          property: 'og:image:height',
+          content: '1280px'
+        },
+        {
+          key: "og:url",
           property: "og:url",
           content: this.$static.metadata.siteUrl + this.$page.post.path
         },
 
         // Some Twitter Cards Tags
-        { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:title", content: this.$page.post.title },
-        { name: "twitter:image", content: this.getCoverImage  },
-        { name: "twitter:description", content: this.$page.post.description }
+
+        {
+          key: "twitter:title",
+          name: "twitter:title",
+          content: this.$page.post.title
+        },
+        {
+          key: "twitter:image",
+          name: "twitter:image",
+          content: this.getCoverImage
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content: this.$page.post.description
+        }
       ],
       //Some ld+json tags
       script: [
@@ -48,7 +88,7 @@ export default {
             description: this.$page.post.description,
             datePublished: this.$page.post.date,
             author: {
-              name: this.$page.post.author
+              name: 'MagicGreen'
             },
             headline: this.$page.post.title,
             image: this.getCoverImage,

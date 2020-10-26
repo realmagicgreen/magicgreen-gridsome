@@ -38,17 +38,6 @@ export default {
   components: {
     Header,
     Footer
-  },
-  metaInfo () {
-    return {
-      meta: [
-        {
-          key: 'description',
-          name: 'description',
-          //content: $metadata.siteDescription
-        }
-      ]
-    }
   }
 }
 </script>

@@ -1,8 +1,6 @@
 <template>
   <Layout>
 
-    <SEOhome/>
-
     <div class="horizontal_spacing">
 
       <div class="posts post_grid">
@@ -78,7 +76,6 @@
     siteName
 		siteDescription
     settings {
-      SEOimage
       nav {
         links {
           path
@@ -95,26 +92,17 @@
 <script>
   import PostCard from '~/components/PostCard.vue'
   import TagCloud from '~/components/TagCloud.vue'
-  import SEOhome from '~/components/SEOhome.vue'
   import { Pager } from 'gridsome'
 
   export default {
     components: {
       PostCard,
       TagCloud,
-      Pager,
-      SEOhome
+      Pager
     },
     metaInfo () {
       return {
-        title: this.$page.metadata.siteName,
-        meta: [
-          {
-            key: 'description',
-            name: 'description',
-            content: 'uuuuu'
-          }
-        ],
+        title: 'Feeding the green baby',
         bodyAttrs: {
             class: 'page_home'
         }
