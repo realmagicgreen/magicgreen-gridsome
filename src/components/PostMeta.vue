@@ -72,12 +72,12 @@ export default {
     border-bottom: 1px solid var(--border_color);
     margin-bottom: var(--space-2);
 
-    @media screen and (min-width: 880px) {
+    @media screen and (min-width: 900px) {
       flex-direction: row;
     }
 
     .right {
-      @media screen and (min-width: 880px) {
+      @media screen and (min-width: 900px) {
         text-align: right;
       }
     }

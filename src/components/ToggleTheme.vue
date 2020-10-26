@@ -62,7 +62,7 @@ export default {
   svg {
     position: relative;
     top: 2px;
-    @media screen and (min-width: 880px) {
+    @media screen and (min-width: 900px) {
       top: 0;
     }
   }

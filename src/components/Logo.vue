@@ -49,7 +49,7 @@ export default {
 			@media screen and (min-width: 640px) {
 				height: 12vw;
 			}
-			@media screen and (min-width: 880px) {
+			@media screen and (min-width: 900px) {
 				//
 			}
 			@media screen and (min-width: 1280px) {

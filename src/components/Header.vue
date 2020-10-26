@@ -313,7 +313,7 @@ query {
 		width: 0;
 		overflow: hidden;
 
-	 	@media only screen and (max-width: 879px) {
+	 	@media only screen and (max-width: 900px) {
 
 	 		&.menu-is-open {
 	 			position: fixed;

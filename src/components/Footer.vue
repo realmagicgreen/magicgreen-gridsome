@@ -159,7 +159,7 @@ export default {
 		.menus {
 			display: flex;
 			flex-direction: column;
-			@media only screen and (min-width: 880px) {
+			@media only screen and (min-width: 900px) {
 	      flex-direction: row;
 				padding-left: 6rem;
 	    }
@@ -172,7 +172,7 @@ export default {
 	    border-bottom: 1px solid var(--brand_color--dark);
 	    width: 100%;
 	    text-transform: uppercase;
-	    @media only screen and (min-width: 880px) {
+	    @media only screen and (min-width: 900px) {
 	      border-bottom: 0 none;
 	      width: auto;
 	    }
@@ -184,7 +184,7 @@ export default {
 	  width: 100%;
 	  display: flex;
 	  flex-direction: column;
-	  @media only screen and (min-width:880px) {
+	  @media only screen and (min-width:900px) {
 
 	  }
 

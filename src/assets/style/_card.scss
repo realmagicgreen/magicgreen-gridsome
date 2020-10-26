@@ -56,7 +56,7 @@
 			transition: transform .25s ease-in-out;
 			max-height: 60vw;
 			transform: scale(1.005);
-			@media screen and (min-width: 880px) {
+			@media screen and (min-width: 900px) {
 				max-height: 30vw;
 			}
 			@media screen and (min-width: 1260px) {

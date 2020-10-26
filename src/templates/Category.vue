@@ -108,9 +108,19 @@ export default {
       title: this.$page.category.title,
       meta: [
         {
+          key: 'og:title',
+          property: 'og:title',
+          content: this.$page.category.title + ' | MagicGreen'
+        },
+        {
+          key: "twitter:title",
+          name: "twitter:title",
+          content: this.$page.category.title + ' | MagicGreen'  
+        },
+        {
           key: 'description',
           name: 'description',
-          content: this.$page.category.title + "|" + this.$page.category.title
+          content: 'All articles about: ' + this.$page.category.title
         }
       ],
       bodyAttrs: {
@@ -131,7 +141,7 @@ export default {
     @media only screen and (min-width: 720px) {
       padding-top: 30vw;
     }
-    @media only screen and (min-width: 880px) {
+    @media only screen and (min-width: 900px) {
       padding-top: 20vw;
     }
     @media only screen and (min-width: 1024px) {
@@ -142,7 +152,7 @@ export default {
     }
   }
   .category_title {
-    @media only screen and (min-width: 881px) {
+    @media only screen and (min-width: 900px) {
       display: none;
     }
   }

@@ -244,7 +244,7 @@ export default {
   }
 
   .page_title {
-  	@media screen and (min-width: 880px) {
+  	@media screen and (min-width: 900px) {
   		display: none;
   	}
   }

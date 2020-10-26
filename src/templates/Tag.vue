@@ -93,6 +93,9 @@ query Tag ($id: ID!) {
 			}
 		}
 	}
+  metadata {
+    siteName
+  }
 }
 </page-query>
 
@@ -112,9 +115,19 @@ export default {
       title: this.$page.tag.title,
       meta: [
         {
+          key: 'og:title',
+          property: 'og:title',
+          content: this.$page.tag.title + ' | MagicGreen'
+        },
+        {
+          key: "twitter:title",
+          name: "twitter:title",
+          content: this.$page.tag.title + ' | MagicGreen'  
+        },
+        {
           key: 'description',
           name: 'description',
-          content: 'MagicGreen. Sustainable and environment-friendly examples from South East Asia and beyond. Here are the articles about: ' + this.$page.tag.title
+          content: 'All articles tagged: ' + this.$page.tag.title
         }
       ],
       bodyAttrs: {
