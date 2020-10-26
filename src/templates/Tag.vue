@@ -1,8 +1,6 @@
 <template>
   <Layout :show-logo="true" >
 
-    <SEOpost />
-
     <div class="tagpage horizontal_spacing">
 
       <div class="title_wrapper">
@@ -102,14 +100,12 @@ query Tag ($id: ID!) {
 import PostCard from '~/components/PostCard.vue'
 import IcoTag from '~/assets/svgs/tag.svg'
 import TagCloud from '~/components/TagCloud.vue'
-import SEOpost from '~/components/SEOpost.vue'
 
 export default {
   components: {
     PostCard,
     IcoTag,
-    TagCloud,
-    SEOpost
+    TagCloud
   },
   metaInfo () {
     return {
@@ -118,7 +114,7 @@ export default {
         {
           key: 'description',
           name: 'description',
-          content: 'MagicGreen showcases of all stuff GREEN. Sustainable and environment-friendly examples from South East Asia and beyond. Here are the articles about ' + this.$page.tag.title
+          content: 'MagicGreen. Sustainable and environment-friendly examples from South East Asia and beyond. Here are the articles about: ' + this.$page.tag.title
         }
       ],
       bodyAttrs: {

@@ -110,7 +110,7 @@ export default {
         {
           key: 'description',
           name: 'description',
-          content: 'MagicGreen showcases of all stuff GREEN. Sustainable and environment-friendly examples from South East Asia and beyond. Here are the articles about ' + this.$page.category.title
+          content: this.$page.category.title + "|" + this.$page.category.title
         }
       ],
       bodyAttrs: {

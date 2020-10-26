@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b660daea-44e9-457d-98c6-2faf0131020f/deploy-status)](https://app.netlify.com/sites/magicgreensome/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/afe6c2ab-34a1-4b96-af27-948c41b34967/deploy-status)](https://app.netlify.com/sites/magicgreensome/deploys)
 
 ## Warning:
 
