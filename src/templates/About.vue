@@ -81,6 +81,17 @@
         subtitle: this.$page.about.subtitle,
         meta: [
           {
+            key: 'og:title',
+            property: 'og:title',
+            content: 'About us | MagicGreen'
+          },
+          {
+            key: "twitter:title",
+            name: "twitter:title",
+            content: 'About us | MagicGreen'
+          },
+          {
+            key: 'description',
             name: 'description',
             content: this.$page.about.description
           }

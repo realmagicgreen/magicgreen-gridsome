@@ -230,6 +230,22 @@ export default {
   },
   metaInfo () {
     return {
+      meta: [
+        {
+          key: 'og:title',
+          property: 'og:title',
+          content: 'Resources | MagicGreen'
+        },
+        {
+          key: "twitter:title",
+          name: "twitter:title",
+          content: 'Resources | MagicGreen'
+        },
+        {
+          key: 'description',
+          name: 'description',
+          content: 'To solve big problems we need resources. These organisations are doing the right thing and can help. Make a wise choice and support them.'        }
+      ],
       bodyAttrs: {
           class: 'resources'
       }

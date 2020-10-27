@@ -5,7 +5,7 @@ description: "Over 60% of the worlds electricity comes from fossil fuels. Wello 
 date: 2018-07-10
 published: true
 category: solutions
-tags: [Bali, Indonesia, Nusa-Penida, environment-friendly, renewable-energy, eco-entrepreneurs, social-responsibility, sustainable-development, water, wave-power]
+tags: [Bali, Indonesia, Nusa-Penida, environment-friendly, eco-entrepreneurs, hydro-power, renewable-energy, social-responsibility, sustainable-development, water, wave-power]
 cover_image: ./images/solutions/bali-wave-energy-park/bali-wave-energy-park.jpg
 show_in_home_slideshow: # use 'true' to have it displayed in home slideshow
 home_slideshow_caption: # lowercase, max 12 digits, including spaces
