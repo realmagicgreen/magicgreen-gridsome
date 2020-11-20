@@ -1,5 +1,5 @@
 .responsive_table_block {
-  padding-top: 30vh;
+  padding-top: 40vh;
   @media screen and (min-width: 1024px) {
     padding-top: 20vh;
   }
@@ -95,15 +95,15 @@
     }
   }
 
-  tbody td,
-  thead td {
+  td,
+  th {
     font-size: clamp(14px,4.53125vw, 24px);
     vertical-align: middle;
     margin: 0;
     padding: 0;
     border: 0;
-    padding-left: var(--space-1);
-    padding-right: var(--space-1);
+    padding-left: var(--space-05);
+    padding-right: var(--space-05);
     text-align: left;
 
     &:before {
@@ -126,18 +126,30 @@
       }
     }
 
-    &.address {
+    &.address,
+    &.country {
       font-size: clamp(13px, 2vw, 24px);
       text-align: left;
 
       @media screen and (min-width: 1024px) and (max-width: 1260px) {
         display: none;
       }
+    }
 
-      // &:before {
-      //   // hack to fix the dbl line addrs, which fails when just 1 line... gosh!
-      //   // padding-right: calc(1rem + 4px);
-      // }
+    &:last-child {
+      text-align: right;
+
+      a {
+        padding-right: 20px;
+
+        &:after {
+          display: none;
+        }
+
+        &:hover:after {
+          display: none;
+        }
+      }
     }
 
     &.email,
@@ -187,22 +199,6 @@
       @media screen and (min-width: 1024px) {
         display: table-cell;
       }
-    }
-  }
-
-  td:last-child {
-    text-align: right;
-
-    a {
-      padding-right: 20px;
-    }
-
-    a:after {
-      display: none;
-    }
-
-    a:hover:after {
-      display: none;
     }
   }
 

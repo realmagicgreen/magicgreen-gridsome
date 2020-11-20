@@ -8,39 +8,77 @@
 
       <div id="brands" class="responsive_table_block">
 
+        <div class="functionalities_block">
+
+          <input
+          class="search input"
+          placeholder="Search (ex: organic)" />
+
+          <button
+          class="sort button"
+          data-sort="products"
+          @click="onClick">
+            Sort by Products
+          </button>
+
+          <button
+          class="sort button"
+          data-sort="brand">
+            Sort by Brand
+          </button>
+          
+        </div>
+
         <table class="green_pages_table responsive_table">
+
+          <thead>
+            <tr class="green_pages_table_header_row">
+              <td class="brand table_header_brand">Brand</td>
+              <td class="products table_header_product">Products</td>
+              <td class="address hide">Address</td>
+              <td class="country hide">Country</td>
+              <td class="email"><IcoMail /></td>
+              <td class="localphone"><IcoPhone /></td>
+              <td class="whatsapp"><IcoWhatsapp /></td>
+              <td class="location"><IcoLocation /></td>
+              <td class="twitter"><IcoTwitter /></td>
+              <td class="youtube"><IcoYoutube /></td>
+              <td class="instagram"><IcoInstagram /></td>
+              <td class="website"><IcoLink /></td>
+            </tr>
+          </thead>
 
           <tbody class="list">
             <tr
-            v-for="company in companies"
-            :key="company.brand"
-            :id="company.brand"
-            class="green_pages_table_row"
-            itemscope itemtype="http://schema.org/Organization">
+              v-for="company in companies"
+              :key="company.brand"
+              :id="company.brand"
+              class="green_pages_table_row"
+              itemscope itemtype="http://schema.org/Organization">
 
               <!--01-->
               <td
-              class="brand"
+              class="brand sortable"
               data-th="Brand"
               itemprop="brand">{{ company.brand }}</td>
 
               <!--02-->
               <td
-              class="products"
+              class="products sortable"
               data-th="Products"
               itemscope itemtype="http://schema.org/Product">
               {{ company.products }}</td>
 
               <!--03-->
               <td
-              class="show_on_phones 1024 address"
+              class="address show_on_phones 1024 sortable"
               data-th="Address"
               itemscope itemtype="http://schema.org/PostalAddress">
               {{ company.address }}</td>
 
               <!--04-->
               <td
-              class="show_on_phones 1024 country"
+              class="country show_on_phones 1024 sortable"
               data-th="Country"
               itemprop="addressLocality">
               {{ company.country }}</td>
@@ -169,6 +207,7 @@
       </div>
     </div>
 
+
   </Layout>
 </template>
 
@@ -228,6 +267,11 @@ export default {
       companies
     }
   },
+  methods: {
+    onClick () {
+      this.message = 'Here you go :)'
+    }
+  },
   metaInfo () {
     return {
       meta: [
@@ -254,7 +298,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" scoped >
   svg {
     stroke: var(--title_color);
   }
@@ -265,4 +309,67 @@ export default {
   	}
   }
 
+  //search
+  .functionalities_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    @media screen and (min-width: 900px) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+  }
+
+  .sort:after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    content: "";
+    position: relative;
+    top: -10px;
+    right: -3px;
+  }
+
+  .sort.asc:after {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--black);
+    content: "";
+    position: relative;
+    top: 4px;
+    right: -3px;
+  }
+
+  .sort.desc:after {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid var(--black);
+    content: "";
+    position: relative;
+    top: -4px;
+    right: -3px;
+  }
+
+  .hide_on_phones {
+    display: none!important;
+    @media screen and (min-width: 900px) {
+      display: table-cell;
+    }
+  }
 </style>

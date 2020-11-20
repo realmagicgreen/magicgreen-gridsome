@@ -1,18 +1,3 @@
-- brand:      brand
-  products:   products
-  website:    website
-  instagram:  instagram
-  twitter:    twitter
-  youtube:    youtube
-  email:      email
-  telephone:  telephone
-  whatsapp:   whatsapp
-  address:    address
-  company:    company
-  person:     person
-  personrole: personrole
-  location:   location
-  country:    WorldWide
 - brand:      ASEAN biodiversity
   products:   Conservation Information
   website:    'https://aseanbiodiversity.org'
